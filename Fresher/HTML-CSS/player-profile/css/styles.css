@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia,"Times New Roman", Times, serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+/* Player profile */
+.title {
+    background: url(../images/title_bg.gif) repeat-x;
+    height: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.player-profile-info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.info {
+    font-size: 14px;
+    margin-left: 25px;
+    height: 100px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.facts {
+    margin-top: 20px;
+}
+
+.facts ul li:before {
+    content: url('../images/star.png');
+    margin-right: 3px;
+}
+
+.facts-content {
+    font-size: 14px;
+    margin-left: 50px;
+    list-style: none;
+}
+
+.facts h3 {
+    background: none;
+}
+/* End of player profile */
+
+/* Posted */
+.posted {
+    margin-top: 20px;
+    padding: 0 4px;
+    font-size: 15px;
+}
+
+.posted-content:after {
+    position: absolute;
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ECECEC;
+    top: 100%;
+    left: 12%;
+}
+
+.posted-content {
+    position: relative;
+    background: #ECECEC;
+    padding: 6px;
+}
+
+.posted-by {
+    margin-left: 90px;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.posted-by a {
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+    color: blue;
+}
+/* End of posted */
+
+/* Comment */
+.comment h3 {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 5px;
+    background: none;
+}
+  
+.comment {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.comment form table tr td:first-child {
+    padding-left: 10px;
+}
+/* End of comment */
