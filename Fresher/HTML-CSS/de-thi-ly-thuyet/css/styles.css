@@ -38,6 +38,8 @@ body {
 .content-box img {
     float: left;
     margin-right: 15px;
+    width: 200px;
+    height: 100px;
 }
 
 .content-box:after {
@@ -66,7 +68,7 @@ body {
 }
 
 .more-info:before {
-    content: url(../images/more-info.gif);
+    content: url(../images/info.gif);
     margin-top: 1px;
     margin-right: 4px;
     float: left;

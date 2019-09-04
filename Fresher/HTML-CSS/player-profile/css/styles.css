@@ -14,8 +14,11 @@ body {
 }
 
 /* Player profile */
-.title {
+.player-profile h3 {
     background: url(../images/title_bg.gif) repeat-x;
+}
+
+.title {
     height: 20px;
     line-height: 1.6;
     font-size: 16px;
@@ -51,10 +54,6 @@ body {
     font-size: 14px;
     margin-left: 50px;
     list-style: none;
-}
-
-.facts h3 {
-    background: none;
 }
 /* End of player profile */
 
@@ -102,16 +101,16 @@ body {
     text-align: center;
     font-size: 17px;
     margin-bottom: 5px;
-    background: none;
 }
   
 .comment {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 .comment form table tr td:first-child {
     padding-left: 10px;
+    font-size: 14px;
 }
 /* End of comment */

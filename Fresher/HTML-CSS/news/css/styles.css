@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.container {
+    background: #e6f3f9;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.news b {
+    color: #0a6395;
+}
+
+.news h3 {
+    font-size: 12px;
+    padding: 2px 0px;
+}
+
+a {
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+    color: #0a6395;
+}
+
+/* Blogroll */
+.content img {
+    float: left;
+    border: 2px solid rgba(193, 183, 183, 0.74);
+    width: 55%;
+    padding: 1px;
+    height: auto;
+}
+
+.content {
+    border-top: 2px solid #ffa500;
+    padding: 10px;
+    background: #fff;
+}
+
+.content:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.content p {
+    float: left;
+    width: 40%;
+    margin-left: 6px;
+}
+
+.blogroll-content {
+    background: #faf0bf;
+    color: #0a6395;
+    list-style-type: none;
+}
+  
+.blogroll-content li {
+    padding: 7px 0 7px 10px;
+    border-bottom: 1px solid #ffffff;
+}
+/* End of blogroll */
+
+/* Heroscopes */
+.content.edit1 p {
+    width: 60%;
+    line-height: 1.4;
+}
+
+.content.edit1 span {
+    color: #808080;
+}
+
+.content.edit1 img {
+    border: none;
+    width: 32%;
+}
+
+.heroscopes-content {
+    background: #f4f4ec;
+    position: relative;
+    height: 40px;
+    padding: 15px 0px 10px 20px;
+    margin-bottom: 20px;
+}
+.heroscopes-content img {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 94px;
+    height: 68px;
+}
+/* End of heroscopes */
+
+/* News mobile */
+.content.edit2 img {
+    float: right;
+    border: none;
+    width: 50%;
+    padding: 0;
+}
+
+.content.edit2 p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.competition ul {
+    background: white;
+    border: 1px solid #dadada;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.competition {
+    border-top: 1px solid #cccccc;
+    margin-top: 10px;
+    padding-top: 8px;
+}
+/* End of news mobile */
