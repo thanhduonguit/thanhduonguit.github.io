@@ -46,9 +46,9 @@ function renderGameScene() {
     titleGameSceneText3 = addTextGameScreen("秒まで", titleGameSceneText2Style, 0.25, 200, 38.8, gameScene, false);
 
     // Text answer
-    textAnswer1 = addImageGameScreen("images/textAnswer1.png", 63, 10.8, 0.235, gameScene, false);
-    textAnswer2 = addImageGameScreen("images/textAnswer2.png", 63, 10.8, 0.235, gameScene, false);
-    textOk = addImageGameScreen("images/textOk.png", 88, 6.2, 0.25, gameScene, false);
+    textAnswer1 = addImageGameScreen("images/textAnswer1.png", 70, 11.8, 0.1175, gameScene, false);
+    textAnswer2 = addImageGameScreen("images/textAnswer2.png", 70, 11.8, 0.106, gameScene, false);
+    textOk = addImageGameScreen("images/textOk.png", 95, 11.5, 0.063, gameScene, false);
 
     // Random second
     randomSecondText = addTextGameScreen("1", randomSecondTextStyle, 0.25, 180, 37.4, gameScene, false);

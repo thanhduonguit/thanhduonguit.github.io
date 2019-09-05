@@ -3,8 +3,8 @@ function renderIntroduceScene() {
     // Intro background
     introBg = addImage("images/defaultBg.png", 0, 0, 240, 240, introScene, true);
 
-    // Intro screen text
-    // englishText = addImage("images/englishText.png", 66, 153, 109, 19, introScene, true);
+    // Title game
+    englishText = addImage("images/englishText.png", 63, 153, 115, 19, introScene, true);
 
     // Button graphic
     btnGraphic = new PIXI.Graphics();

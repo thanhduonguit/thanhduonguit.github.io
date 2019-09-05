@@ -1,10 +1,130 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
+
+.container {
+  background: #121212;
+  color: #505959;
+}
+
+/* Header */
+.header {
+  background: url(../images/header-bg1.jpg);
+  height: 254px;
+  position: relative;
+  margin-bottom: auto;
+}
+
+.title {
+  background: url(../images/logo.jpg);
+  width: 353px;
+  height: 116px;
+  position: absolute;
+  top: 53px;
+  left: 50px;
+}
+
+.title h2 {
+  color: black;
+  font-size: 40px;
+  margin-top: 35px;
+  margin-left: 100px;
+}
+
+.navbar {
+  position: absolute;
+  bottom: -57px;
+  left: 68px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar span {
+  display: block;
+}
+
+.navbar a {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+}
+/* End of header */
+
+/* Main */
+.main {
+  margin-top: 114px;
+  margin-left: 70px;
+  width: 670px;
+  /* display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; */
+  border-bottom: 1px dotted #323232;
+}
+
+.sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #1f1f1f;
+  padding: 50px 35px;
+  height: 60%;
+}
+
+.box-1 {
+  border-top: 1px solid #7e7e7e;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.box-2 {
+  border-top: 1px solid #2c2c2c;
+  padding-top: 30px;
+}
+
+.box-2 ul {
+  list-style-type: none;
+}
+
+.box-2 li {
+  margin-left: 26px;
+}
+
+/* Create > graphic */
+.box-2 li:before {
+  content: "";
+  border-color: transparent #707070;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.55em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+/* End of main */
+
+
+
   
-  #footer a {
+  /* #footer a {
     color: #505959;
   }
   
@@ -50,121 +170,12 @@
     margin: 50px 0 0 50px;
   }
   
-  .box-2 li {
-    margin-left: 26px;
-  }
   
-  .box-2 li:before {
-    content: "";
-    border-color: transparent #707070;
-    border-style: solid;
-    border-width: 0.35em 0 0.35em 0.45em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0.9em;
-    position: relative;
-  }
   
   .box-2 li a {
     color: #707070;
     line-height: 18px;
   }
   
-  .box-2 ul {
-    list-style-type: none;
-  }
-  
-  .box-2 {
-    border-top: 1px solid #2c2c2c;
-    padding-top: 30px;
-  }
-  
-  .box-1 {
-    border-top: 1px solid #7e7e7e;
-    padding-top: 30px;
-    padding-bottom: 70px;
-  }
-  
-  div#sidebar {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #1f1f1f;
-    padding: 50px 35px;
-    height: 60%;
-  }
-  
-  div#main {
-    margin-top: 114px;
-    margin-left: 70px;
-    width: 670px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    border-bottom: 1px dotted #323232;
-  }
-  
-  .nav li a {
-    color: white;
-    font-size: 22px;
-    -webkit-text-decoration: none;
-    -moz-text-decoration: none;
-    -ms-text-decoration: none;
-    -o-text-decoration: none;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-  }
-  
-  .nav li a span {
-    display: block;
-  }
-  
-  .nav li {
-    display: inline-block;
-    margin-left: 1px;
-  }
-  
-  .nav ul {
-    list-style: none;
-  }
-  
-  .nav {
-    position: absolute;
-    bottom: -57px;
-    left: 68px;
-  }
-  
-  .site-title h2 {
-    color: black;
-    font-size: 40px;
-    margin-top: 35px;
-    margin-left: 100px;
-  }
-  
-  .site-title {
-    background: url(images/logo.jpg) no-repeat;
-    width: 353px;
-    height: 116px;
-    position: absolute;
-    top: 53px;
-    left: 50px;
-  }
-  
-  div#header {
-    background: url(images/fill_header.jpg);
-    height: 254px;
-    position: relative;
-    margin-bottom: auto;
-  }
-  
-  div#container {
-    background: #121212;
-    color: #505959;
-  } */
+
+   */
