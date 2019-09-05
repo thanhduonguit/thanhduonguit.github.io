@@ -1,0 +1,35 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    overflow-y: hidden;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 0px;
+}
+
+@font-face {
+    font-family: 'noto-900';
+    font-style: normal;
+    src: url('../fonts/noto-serif-jp-v7-japanese-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'mplus1p-800';
+    font-style: normal;
+    src: local('mplus1p-800'), url('../fonts/m-plus-1p-v19-japanese-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Noto Serif JP';
+    font-style: normal;
+    src: local('Noto Serif JP'), url('../fonts/noto-serif-jp-v6-japanese-700.woff2') format('woff2');
+}
