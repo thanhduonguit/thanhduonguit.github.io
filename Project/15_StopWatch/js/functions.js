@@ -52,7 +52,7 @@ function listenToEvent() {
         setTimeout(function() {
             animationScene.visible = false;
             waitingGame();
-        }, 2700);
+        }, 2800);
     }));
 
     // Listen to reset game
@@ -150,7 +150,7 @@ function moveToResultScene() {
     setTimeout(function() {
         blackSquare = addGraphic(0x000000, 1, 0, 0, 240, 240);
         resultScene.visible = true;
-    }, 1700);
+    }, 1500);
 
     // Show close animation
     setTimeout(function() {
@@ -180,7 +180,7 @@ function resetNewGame() {
     setTimeout(function() {
         resultScene.visible = false;
         gameScene.visible = true;
-    }, 1700);
+    }, 1500);
 }
 
 // Calculate age

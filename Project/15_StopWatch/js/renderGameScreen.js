@@ -47,7 +47,7 @@ function renderGameScene() {
 
     // Text answer
     textAnswer1 = addImageGameScreen("images/textAnswer1.png", 70, 11.8, 0.1175, gameScene, false);
-    textAnswer2 = addImageGameScreen("images/textAnswer2.png", 70, 11.8, 0.106, gameScene, false);
+    textAnswer2 = addImageGameScreen("images/textAnswer2.png", 71, 11.8, 0.106, gameScene, false);
     textOk = addImageGameScreen("images/textOk.png", 95, 11.5, 0.063, gameScene, false);
 
     // Random second

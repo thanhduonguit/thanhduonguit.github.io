@@ -119,6 +119,10 @@
   top: 0.9em;
   position: relative;
 }
+
+.box-2 li a {
+  color: #707070;
+}
 /* End of main */
 
 
@@ -172,10 +176,7 @@
   
   
   
-  .box-2 li a {
-    color: #707070;
-    line-height: 18px;
-  }
+  
   
 
    */

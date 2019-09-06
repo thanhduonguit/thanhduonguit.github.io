@@ -18,7 +18,7 @@ function nextTurn() {
         });
         blackSquare = addGraphic(0x000000, 1, 0, 0, 240, 240);
         clockwise.rotation = 0;
-    }, 1700);
+    }, 1500);
 
     // Show close animation
     setTimeout(function() {

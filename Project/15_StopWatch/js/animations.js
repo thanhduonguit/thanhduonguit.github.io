@@ -1,85 +1,104 @@
-// Close elements
-function closeElm(element, y, height, time, minHeight) {
-    let moveCloseElm = setInterval(() => {
-        if (element.height > minHeight) {
-            element.height -= height;
-            element.y += y;
+// Open element
+function openElm(element) {
+    let moveOpenBg = function() {
+        if (element.graphicsData[0].shape.height < 30) {
+            element.graphicsData[0].shape.height += 0.5;
+            element.y -= 0.25;
         } else {
             element.visible = false;
-            clearInterval(moveCloseElm);
+            app.ticker.remove(moveOpenBg);
         }
-    }, time);
+    };
+    app.ticker.add(moveOpenBg);
+}
+// Open animation
+function openAnimation() {
+    // Add open element
+    openBg1 = addGraphic(0x000000, 1, 0, 24, 240, 0);
+    openBg2 = addGraphic(0x000000, 1, 0, 48, 240, 0);
+    openBg3 = addGraphic(0x000000, 1, 0, 72, 240, 0);
+    openBg4 = addGraphic(0x000000, 1, 0, 96, 240, 0);
+    openBg5 = addGraphic(0x000000, 1, 0, 120, 240, 0);
+    openBg6 = addGraphic(0x000000, 1, 0, 144, 240, 0);
+    openBg7 = addGraphic(0x000000, 1, 0, 168, 240, 0);
+    openBg8 = addGraphic(0x000000, 1, 0, 192, 240, 0);
+    openBg9 = addGraphic(0x000000, 1, 0, 216, 240, 0);
+
+    // Zoom out element
+    openElm(openBg1);
+    openElm(openBg2);
+    openElm(openBg3);
+    openElm(openBg4);
+    openElm(openBg5);
+    openElm(openBg6);
+    openElm(openBg7);
+    openElm(openBg8);
+    openElm(openBg9);
+    setTimeout(function() {
+        openBg = addGraphic(0x000000, 1, 0, 11, 240, 218);
+        let moveOpenBg = function() {
+            if (openBg.graphicsData[0].shape.height < 250) {
+                openBg.graphicsData[0].shape.height += 0.6;
+                openBg.y -= 0.3;
+            } else {
+                openBg.visible = false;
+                app.ticker.remove(moveOpenBg);
+            }
+        };
+        app.ticker.add(moveOpenBg);
+    }, 880);
+}
+
+// Close element
+function closeElm(element) {
+    let moveCloseBg = function() {
+        if (element.graphicsData[0].shape.height > 1) {
+            element.graphicsData[0].shape.height -= 0.36;
+            element.y += 0.18;
+        } else {
+            element.visible = false;
+            app.ticker.remove(moveCloseBg);
+        }
+    };
+    app.ticker.add(moveCloseBg);
 }
 
 // Close animation
 function closeAnimation() {
+    // Add close element
     closeBg = addGraphic(0x000000, 1, 0, 0, 240, 240);
-    closeBg1 = addGraphic(0x000000, 1, 0, 10, 240, 24);
-    closeBg2 = addGraphic(0x000000, 1, 0, 34, 240, 24);
-    closeBg3 = addGraphic(0x000000, 1, 0, 58, 240, 24);
-    closeBg4 = addGraphic(0x000000, 1, 0, 82, 240, 24);
-    closeBg5 = addGraphic(0x000000, 1, 0, 106, 240, 24);
-    closeBg6 = addGraphic(0x000000, 1, 0, 130, 240, 24);
-    closeBg7 = addGraphic(0x000000, 1, 0, 154, 240, 24);
-    closeBg8 = addGraphic(0x000000, 1, 0, 178, 240, 24);
-    closeBg9 = addGraphic(0x000000, 1, 0, 202, 240, 24);
+    closeBg1 = addGraphic(0x000000, 1, 0, 10, 240, 28);
+    closeBg2 = addGraphic(0x000000, 1, 0, 34, 240, 28);
+    closeBg3 = addGraphic(0x000000, 1, 0, 58, 240, 28);
+    closeBg4 = addGraphic(0x000000, 1, 0, 82, 240, 28);
+    closeBg5 = addGraphic(0x000000, 1, 0, 106, 240, 28);
+    closeBg6 = addGraphic(0x000000, 1, 0, 130, 240, 28);
+    closeBg7 = addGraphic(0x000000, 1, 0, 154, 240, 28);
+    closeBg8 = addGraphic(0x000000, 1, 0, 178, 240, 28);
+    closeBg9 = addGraphic(0x000000, 1, 0, 200, 240, 28);
 
-    // Zoom in box animation
-    closeElm(closeBg, 1, 2, 50, 220);
-
-    // Zoom in animation
-    setTimeout(function() {
-        closeElm(closeBg1, 0.8, 1, 35, 2);
-        closeElm(closeBg2, 1.5, 0.8, 35, 2);
-        closeElm(closeBg3, 1.7, 0.6, 25, 2);
-        closeElm(closeBg4, 1.7, 0.45, 24, 2);
-        closeElm(closeBg5, 2.1, 0.45, 25, 2);
-        closeElm(closeBg6, 2.62, 0.45, 25, 2);
-        closeElm(closeBg7, 3.1, 0.45, 24, 2);
-        closeElm(closeBg8, 3.65, 0.46, 23, 2);
-        closeElm(closeBg9, 4.07, 0.46, 23, 2);
-    }, 500);
-}
-
-// Close elements
-function openElm(element, y, height, time, maxHeight) {
-    let moveOpenElm = setInterval(() => {
-        if (element.height < maxHeight) {
-            element.height += height;
-            element.y -= y;
+    // Zoom in element
+    let moveCloseBg = function() {
+        if (closeBg.graphicsData[0].shape.height > 210) {
+            closeBg.graphicsData[0].shape.height -= 0.6;
+            closeBg.y += 0.3;
         } else {
-            element.visible = false;
-            clearInterval(moveOpenElm);
+            closeBg.visible = false;
+            app.ticker.remove(moveCloseBg);
         }
-    }, time);
-}
-
-// Open animation
-function openAnimation() {
-    openBg1 = addGraphic(0x000000, 1, 0, 20, 240, 2);
-    openBg2 = addGraphic(0x000000, 1, 0, 44, 240, 1);
-    openBg3 = addGraphic(0x000000, 1, 0, 68, 240, 1);
-    openBg4 = addGraphic(0x000000, 1, 0, 92, 240, 1);
-    openBg5 = addGraphic(0x000000, 1, 0, 116, 240, 1);
-    openBg6 = addGraphic(0x000000, 1, 0, 140, 240, 1);
-    openBg7 = addGraphic(0x000000, 1, 0, 164, 240, 1);
-    openBg8 = addGraphic(0x000000, 1, 0, 188, 240, 1);
-    openBg9 = addGraphic(0x000000, 1, 0, 212, 240, 1);
-
-    // Zoom out elements
-    openElm(openBg1, 2.06, 0.2, 12, 24);
-    openElm(openBg2, 8.9, 0.2, 8, 24);
-    openElm(openBg3, 13.7, 0.2, 8, 24);
-    openElm(openBg4, 18.5, 0.2, 8, 24);
-    openElm(openBg5, 23.3, 0.2, 8, 24);
-    openElm(openBg6, 28.1, 0.2, 8, 24);
-    openElm(openBg7, 32.9, 0.2, 8, 24);
-    openElm(openBg8, 37.7, 0.2, 8, 24);
-    openElm(openBg9, 42.5, 0.2, 8, 24);
+    };
+    app.ticker.add(moveCloseBg);
     setTimeout(function() {
-        openBg = addGraphic(0x000000, 1, 0, 15, 240, 210);
-        openElm(openBg, 1, 1.6, 35, 245);
-    }, 900);
+        closeElm(closeBg1);
+        closeElm(closeBg2); 
+        closeElm(closeBg3); 
+        closeElm(closeBg4); 
+        closeElm(closeBg5); 
+        closeElm(closeBg6); 
+        closeElm(closeBg7); 
+        closeElm(closeBg8); 
+        closeElm(closeBg9); 
+    }, 490);
 }
 
 // Fade animation
