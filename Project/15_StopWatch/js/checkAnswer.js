@@ -37,7 +37,7 @@ function nextTurn() {
                 clockCover.interactive = true;
             }, 6000);
         }, 1500);
-    }, 4400);
+    }, 4500);
 }
 
 // Set position

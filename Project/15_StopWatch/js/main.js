@@ -35,9 +35,9 @@ let app = new Application({
     backgroundColor: 0xffffff,
     width: logicalWidth,
     height: logicalHeight,
-    antialiasing: true, 
+    antialiasing: false, 
     transparent: true, 
-    resolution: 2,
+    resolution: window.devicePixelRatio || 1,
     autoResize: true
 });
 
