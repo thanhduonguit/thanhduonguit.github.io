@@ -30,22 +30,22 @@ function renderTutorialScene() {
     tutorialBackground = addImage("images/background.png", 0, 0, 240, 240, tutorialScene, true);
 
     // Box tutorial 1
-    boxTutorial1 = addFrames(1.5, 0x6b6145, 0.7, 0xFFFFFF, 0.88, 4, 34, 231, 194, 6, tutorialScene);
+    boxTutorial1 = addFrames(1.5, 0x6b6145, 0.7, 0xFFFFFF, 0.7, 9, 34, 221, 194, 6, tutorialScene);
 
     // Text content
     tutorialTitleText = addText("ゲーム説明", tutorialTitleTextStyle, 0.38, 1, 0, tutorialScene, true);
-    textContent1 = addText("指定秒数を頭の中で", textContent1Style, 0.25, 1, 74, tutorialScene, true);
-    textContent2 = addText("カウントしてください", textContent1Style, 0.25, 1, 99, tutorialScene, true);
-    textContent3 = addText("時間になったと思ったら", textContent1Style, 0.25, 1, 124, tutorialScene, true);
-    textContent4 = addText("時計をタッチしてください", textContent1Style, 0.25, 0, 149, tutorialScene, true);
+    textContent1 = addText("指定秒数を頭の中で", textContent1Style, 0.24, 1, 78, tutorialScene, true);
+    textContent2 = addText("カウントしてください", textContent1Style, 0.24, 1, 97.2, tutorialScene, true);
+    textContent3 = addText("時間になったと思ったら", textContent1Style, 0.24, 1, 126, tutorialScene, true);
+    textContent4 = addText("時計をタッチしてください", textContent1Style, 0.24, 0, 145.5, tutorialScene, true);
     
     // Box tutorial 2
-    boxTutorial2 = addFrames(1.5, 0x6b6145, 0.7, 0xFFFFFF, 0.8, 147, 188, 80, 32, 6, tutorialScene);
+    boxTutorial2 = addFrames(1.5, 0x6b6145, 0.7, 0xFFFFFF, 0.8, 142, 188, 80, 32, 6, tutorialScene);
     boxTutorial2.buttonMode = true;
     boxTutorial2.interactive = true;
 
     // Start game button
-    startGameBtn = addText("開始", textContent1Style, 0.25, -67.5, 193, tutorialScene, true);
+    startGameBtn = addText("開始", textContent1Style, 0.25, -62.5, 193, tutorialScene, true);
     startGameBtn.buttonMode = true;
     startGameBtn.interactive = true;
 }

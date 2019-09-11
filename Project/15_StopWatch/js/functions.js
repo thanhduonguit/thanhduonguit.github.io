@@ -17,6 +17,7 @@ function init() {
     gameScene.addChild(titleGameSceneText);
     gameScene.addChild(titleGameSceneText2);
     gameScene.addChild(titleGameSceneText3);
+    gameScene.addChild(titleGameSceneText4);
     gameScene.addChild(randomSecondText);
     gameScene.addChild(boxCaculate);
     gameScene.addChild(numberCaculate);
@@ -52,7 +53,7 @@ function listenToEvent() {
         setTimeout(function() {
             animationScene.visible = false;
             waitingGame();
-        }, 2800);
+        }, 2900);
     }));
 
     // Listen to reset game
@@ -78,21 +79,21 @@ function waitingGame() {
 
     // Random time number and random second
     if (currentQuestion === 1) {
-        randomTimeSecond(3, 1, 180, 45);
+        randomTimeSecond(3, 1, 178.2, 45);
     } else if (currentQuestion === 2) {
-        randomTimeSecond(5, 1, 180, 45);
+        randomTimeSecond(5, 1, 178.2, 45);
     } else if (currentQuestion === 3) {
-        randomTimeSecond(randomInt(7, 10), 1, 180, 45);
+        randomTimeSecond(randomInt(7, 10), 1, 178.2, 45);
     } else if (currentQuestion === 4) {
-        randomTimeSecond(randomInt(12, 14), 1, 180, 33);
+        randomTimeSecond(randomInt(12, 14), 1, 178.2, 33);
     } else if (currentQuestion === 5) {
-        randomTimeSecond(randomArr[randomInt(0, 5)], 1, 180, 33);
+        randomTimeSecond(randomArr[randomInt(0, 5)], 1, 178.2, 33);
     } else if (currentQuestion > 5 && currentQuestion < 8) {
-        randomTimeSecond(randomInt(36, 80) / 10, 0.5, 173, 33);
+        randomTimeSecond(randomInt(36, 80) / 10, 0.5, 171, 33);
     } else if (currentQuestion === 8) {
-        randomTimeSecond(randomInt(36, 80) / 10, 0.4, 173, 33);
+        randomTimeSecond(randomInt(36, 80) / 10, 0.4, 171, 33);
     } else if (currentQuestion === 9) {
-        randomTimeSecond(randomInt(36, 80) / 10, 0.3, 173, 33);
+        randomTimeSecond(randomInt(36, 80) / 10, 0.3, 171, 33);
     } else if (currentQuestion >= 10) {
         randomTimeSecond(randomLevel10[randomInt(0, 5)], 0.2, 173, 33);
     }
@@ -101,6 +102,7 @@ function waitingGame() {
     titleGameSceneText.visible = true;
     titleGameSceneText2.visible = true;
     titleGameSceneText3.visible = true;
+    titleGameSceneText4.visible = true;
     randomSecondText.visible = true;
 
     // Show number 321

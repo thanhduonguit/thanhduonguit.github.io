@@ -42,8 +42,9 @@ function renderGameScene() {
 
     // Title game scene text
     titleGameSceneText = addTextGameScreen("秒待って下さい", titleGameSceneTextStyle, 0.265, 79, 10.5, gameScene, false);
-    titleGameSceneText2 = addTextGameScreen("誤差", titleGameSceneText2Style, 0.25, 143, 38.8, gameScene, false);
-    titleGameSceneText3 = addTextGameScreen("秒まで", titleGameSceneText2Style, 0.25, 200, 38.8, gameScene, false);
+    titleGameSceneText2 = addTextGameScreen("差", titleGameSceneText2Style, 0.25, 156, 38.8, gameScene, false);
+    titleGameSceneText3 = addTextGameScreen("秒まで", titleGameSceneText2Style, 0.25, 196.5, 38.8, gameScene, false);
+    titleGameSceneText4 = addImage("images/titleGameSceneText4.png", 143.2, 41, 11.8, 11.8, gameScene, false);
 
     // Text answer
     textAnswer1 = addImageGameScreen("images/textAnswer1.png", 70, 11.8, 0.1175, gameScene, false);
@@ -51,7 +52,7 @@ function renderGameScene() {
     textOk = addImageGameScreen("images/textOk.png", 95, 11.5, 0.063, gameScene, false);
 
     // Random second
-    randomSecondText = addTextGameScreen("1", randomSecondTextStyle, 0.25, 180, 37.4, gameScene, false);
+    randomSecondText = addTextGameScreen("1", randomSecondTextStyle, 0.25, 178.2, 37.4, gameScene, false);
 
     // Box result
     boxCaculate = addImage("images/boxCaculate.png", 70, 217, 101, 22, gameScene, false)

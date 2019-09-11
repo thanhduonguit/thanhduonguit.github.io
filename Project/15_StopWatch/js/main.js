@@ -57,6 +57,7 @@ app.stage.addChild(animationScene);
 // Load Images
 loader
     .add([
+        "images/titleGameSceneText4.png",
         "images/textOk.png",
         "images/textAnswer1.png",
         "images/textAnswer2.png",

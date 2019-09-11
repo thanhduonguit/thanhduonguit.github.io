@@ -62,6 +62,7 @@ function hideSpritesForEachAnswer() {
         titleGameSceneText,
         titleGameSceneText2,
         titleGameSceneText3,
+        titleGameSceneText4,
         randomSecondText,
     ].forEach(el => {
         el.visible = false;

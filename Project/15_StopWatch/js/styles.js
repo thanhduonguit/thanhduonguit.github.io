@@ -10,7 +10,7 @@ function setFontStyle(font, size, fontweight, color) {
 }
 
 // Styles for all scene text
-tutorialTitleTextStyle = setFontStyle("Noto Serif JP", 70, "bold", "black");
+tutorialTitleTextStyle = setFontStyle("noto-900", 70, "bold", "black");
 textContent1Style = setFontStyle('mplus1p-800', 70, "bold", "black");
 titleGameSceneTextStyle = setFontStyle('mplus1p-800', 72, "bold", "black");
 titleGameSceneText2Style = setFontStyle('mplus1p-800', 52, "bold", "black");

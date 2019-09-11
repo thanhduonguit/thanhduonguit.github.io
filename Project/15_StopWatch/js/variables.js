@@ -6,7 +6,7 @@ let watch, clockwise, mainsquare, number3, number2, number1, numbertext, clockCo
 let randomTime, textAnswer1, textAnswer2, textOk, nextStage, closeBg1, closeBg2, closeBg3, blackSquare;
 let closeBg4, closeBg5, closeBg6, closeBg7, closeBg, closeBg8, closeBg9, closeBg10, boxCaculate;
 let openBg, openBg1, openBg2, openBg3, openBg4, openBg5, openBg6, openBg7, openBg8, openBg9;
-let itemRandom1, randomSecond, flag, titleGameSceneText3, randomSecondText, englishText;
+let itemRandom1, randomSecond, flag, titleGameSceneText3, randomSecondText, englishText, titleGameSceneText4;
 let scoreNumber, ageNumber, age, tutorialBackground, gameSceneBackground, boxGameScene3;
 let rectAnimation = [];
 let randomArr = [4.5, 5.5, 6.5, 7.5, 8.5, 9.5];
