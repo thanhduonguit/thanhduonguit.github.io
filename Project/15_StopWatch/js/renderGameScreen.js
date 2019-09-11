@@ -44,7 +44,7 @@ function renderGameScene() {
     titleGameSceneText = addTextGameScreen("秒待って下さい", titleGameSceneTextStyle, 0.265, 79, 10.5, gameScene, false);
     titleGameSceneText2 = addTextGameScreen("差", titleGameSceneText2Style, 0.25, 156, 38.8, gameScene, false);
     titleGameSceneText3 = addTextGameScreen("秒まで", titleGameSceneText2Style, 0.25, 196.5, 38.8, gameScene, false);
-    titleGameSceneText4 = addImage("images/titleGameSceneText4.png", 143.2, 41, 11.8, 11.8, gameScene, false);
+    titleGameSceneText4 = addImage("images/titleGameSceneText4.png", 143.2, 40.7, 12, 12, gameScene, false);
 
     // Text answer
     textAnswer1 = addImageGameScreen("images/textAnswer1.png", 70, 11.8, 0.1175, gameScene, false);
