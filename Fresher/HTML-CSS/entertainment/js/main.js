@@ -1,3 +1,4 @@
+// Variables
 const showPanel = document.getElementsByClassName('show-panel');
 
 // Show panel
