@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calendar</title>
+    <title>Form Ajax</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 </head>
 <body>
-    <input type="text" id="show-calendar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="title mx-auto">Form Ajax</h1>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <form onsubmit="return submitFormAjax()">
+                            <div class="form-group">
+                                <input type="text" placeholder="Username" class="form-control" id="username">
+                                <span id="user_error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" class="form-control" id="password">
+                                <span id="pass_error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Email" class="form-control" id="email">
+                                <span id="email_error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Birthday" class="form-control" id="show-calendar">
+                                <span id="birth_error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Submit</button>
+                            <button type="button" class="btn btn-success btn-block" onclick="resetForm()">Refresh</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main javascript -->
     <script src="js/main.js"></script>
+    <script src="js/form-ajax.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ let titleGameSceneText2, resultText, boxResult1, scoreText, ageText, boxResult2,
 let watch, clockwise, mainsquare, number3, number2, number1, numbertext, clockCover, titleGameSceneText;
 let randomTime, textAnswer1, textAnswer2, textOk, nextStage, closeBg1, closeBg2, closeBg3, blackSquare;
 let closeBg4, closeBg5, closeBg6, closeBg7, closeBg, closeBg8, closeBg9, closeBg10, boxCaculate;
-let openBg, openBg1, openBg2, openBg3, openBg4, openBg5, openBg6, openBg7, openBg8, openBg9;
+let openBg, openBg1, openBg2, openBg3, openBg4, openBg5, openBg6, openBg7, openBg8, openBg9, circle;
 let itemRandom1, randomSecond, flag, titleGameSceneText3, randomSecondText, englishText, titleGameSceneText4;
 let scoreNumber, ageNumber, age, tutorialBackground, gameSceneBackground, boxGameScene3;
 let rectAnimation = [];

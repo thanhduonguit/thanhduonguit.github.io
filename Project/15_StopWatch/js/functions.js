@@ -9,6 +9,7 @@ function init() {
     gameScene.addChild(number1);
     gameScene.addChild(numbertext);
     gameScene.addChild(clockCover);
+    gameScene.addChild(circle);
     gameScene.addChild(boxGameScene);
     gameScene.addChild(randomTime);
     gameScene.addChild(textAnswer1);
@@ -95,7 +96,7 @@ function waitingGame() {
     } else if (currentQuestion === 9) {
         randomTimeSecond(randomInt(36, 80) / 10, 0.3, 171, 33);
     } else if (currentQuestion >= 10) {
-        randomTimeSecond(randomLevel10[randomInt(0, 5)], 0.2, 173, 33);
+        randomTimeSecond(randomLevel10[randomInt(0, 5)], 0.2, 171, 33);
     }
 
     // Show game scene text
@@ -125,6 +126,7 @@ function waitingGame() {
 
                         // Hide time play
                         clockCover.visible = true;
+                        circle.visible = true;
 
                         // Get start time
                         questionStartTime = new Date().getTime();

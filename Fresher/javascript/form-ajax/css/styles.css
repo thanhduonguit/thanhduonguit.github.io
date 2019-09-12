@@ -25,8 +25,8 @@ table, tr, td {
 }
 
 td {
-    width: 50px;
-    height: 30px;
+    width: 70px;
+    height: 40px;
     text-align: center;
 }
 
@@ -42,4 +42,17 @@ td.week {
 
 td:hover {
     background: aqua;
+}
+
+.title {
+    color: white;
+}
+
+span {
+    display: block;
+    font-size: 16px;
+    background-color: bisque;
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
 }

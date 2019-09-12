@@ -34,7 +34,7 @@ function nextTurn() {
         setTimeout(function() {
             waitingGame();
             setTimeout(function() {
-                clockCover.interactive = true;
+                circle.interactive = true;
             }, 6000);
         }, 1500);
     }, 4500);
@@ -115,11 +115,12 @@ function checkAnswerForEachLevel(limitedSecond) {
 
 // Check answer
 function checkAnswer() {
-    clockCover.on('pointerdown', function() {
+    circle.on('pointerdown', function() {
         // Get end time play
         questionEndTime = new Date().getTime();
-        clockCover.interactive = false;
+        circle.interactive = false;
         clockCover.visible = false;
+        circle.visible = false;
     
         // Caculate time answer for each question
         timeAnswerOneQuestion = questionEndTime - questionStartTime;
@@ -132,7 +133,7 @@ function checkAnswer() {
         // Show caculate result
         numberTime.text = timeAnswerOneQuestion;
         numberTime.visible = true;
-        setPosition(timeAnswerOneQuestion, numberTime, 107, 102, 98, 93);
+        setPosition(timeAnswerOneQuestion, numberTime, 107, 101, 96, 91.5);
         boxCaculate.visible = true;
 
         // Check answer for each level

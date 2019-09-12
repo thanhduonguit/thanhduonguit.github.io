@@ -16,8 +16,6 @@ function addGameSceneElm() {
 
     // Clock cover
     clockCover = addImage("images/clockCover.png", 49, 65.5, 144.8, 145, gameScene, false);
-    clockCover.interactive = true;
-    clockCover.buttonMode = true;
 
     // Number 321
     number3 = addText("3", numberStyle, 0.5, -0.5, 99.5, gameScene, false);
@@ -59,5 +57,18 @@ function renderGameScene() {
 
     // Number caculate
     numberCaculate = addTextGameScreen("+0.5", numberCaculateStyle, 0.25, 101, 216.3, gameScene, false);
-    numberTime = addTextGameScreen("8.5", numberCaculateStyle, 0.25, 107, 154, gameScene, false);
+    numberTime = addTextGameScreen("839.5", numberCaculateStyle, 0.25, 96, 154, gameScene, false);
+
+    // Circle click
+    circle = new Graphics();
+    circle.beginFill(0x9966FF);
+    circle.drawCircle(0, 0, 80);
+    circle.endFill();
+    circle.x = 120.3;
+    circle.y = 137.5;
+    circle.interactive = true;
+    circle.buttonMode = true;
+    circle.alpha = 0;
+    circle.visible = false;
+    gameScene.addChild(circle);
 }
