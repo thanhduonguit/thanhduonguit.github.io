@@ -1,5 +1,68 @@
 @charset "utf-8";
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
 body {
     color: #73523f;
     font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
@@ -443,7 +506,7 @@ p.aside_p_1 {
 
 /* Footer */
 .footer {
-    /* background: url(../images/bg_footer.jpg) repeat-x left top; */
+    background: url(../images/bg_footer.jpg) repeat-x left top;
     margin: 50px auto 0 auto;
     display: block;
     width: 100%;
@@ -453,7 +516,7 @@ p.aside_p_1 {
     padding: 30px 0;
 }
 
-/* div.f_l {
+div.f_l {
     display: inline-block;
     width: 100%;
     max-width: 350px;
@@ -465,9 +528,9 @@ p.aside_p_1 {
 
 div.f_l p {
     margin: 8px 0px;
-} */
+}
 
-/* div.menu_footer_1 {
+.menu_footer_1 {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -477,29 +540,29 @@ div.f_l p {
     float: left;
 }
 
-div.menu_footer_1 ul {
+.menu_footer_1 ul {
     display: inline-block;
     width: 100%;
     max-width: 150px;
     float: left;
     vertical-align: top;
-} */
-/* 
-div.menu_footer_1 ul li {
+}
+
+.menu_footer_1 ul li {
     text-align: left;
     margin: 3px 0;
     display: inline-block;
     width: 100%;
 }
 
-div.menu_footer_1 ul li a {
+.menu_footer_1 ul li a {
     background: url(../images/bullet_3.jpg) no-repeat left center;
     color: #525260;
     font-size: 14px;
     padding-left: 15px;
 }
 
-div.menu_footer_2 {
+.menu_footer_2 {
     background: rgba(255, 255, 255, 0.72);
     width: 100%;
     max-width: 178px;
@@ -509,28 +572,28 @@ div.menu_footer_2 {
     float: left;
 }
 
-div.menu_footer_2 ul li {
-    margin: 1.5px 0 1.5px 8px;
+.menu_footer_2 ul li {
+    margin: 1.5px 0px 1.5px 8px;
     text-align: left;
 }
 
-div.menu_footer_2 ul li.menu_1 {
+.menu_footer_2 ul li.menu_1 {
     margin: 3px 0;
 }
 
-div.menu_footer_2 ul li a {
+.menu_footer_2 ul li a {
     color: #525260;
     background: url(../images/bullet_3.jpg) no-repeat left center;
     padding-left: 20px;
     display: inline-block;
 }
 
-div.menu_footer_2 ul li.menu_1 a {
+.menu_footer_2 ul li.menu_1 a {
     background: url(../images/bullet_1.jpg) no-repeat left 5px;
     font-size: 16px;
-} */
+}
 
-/* #page-top {
+#page-top {
     position: fixed;
     bottom: 30px;
     right: 20px;
@@ -550,9 +613,9 @@ div.menu_footer_2 ul li.menu_1 a {
 
 #page-top a:hover {
     background: #ffb452;
-} */
+}
 
-/* div.copyright {
+.copyright {
     text-align: center;
     padding: 7px 0;
     display: inline-block;
@@ -561,93 +624,8 @@ div.menu_footer_2 ul li.menu_1 a {
     font-weight: bold;
     background: #f88e01;
     color: #fff;
-} */
+}
 /* End of footer */
-
-/* Common */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-tbody,
-tfoot,
-thead {
-    border: 0;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-}
-
-/* :focus {
-    outline: 0;
-}
-
-caption {
-    font-weight: normal;
-    text-align: left;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-}
-
-blockquote,
-q {
-    quotes: "" "";
-}
 
 article,
 aside,
@@ -680,5 +658,26 @@ a.img_button_2 img:hover,
 .btSli7 a:hover {
     opacity: 0.6;
     filter: alpha(opacity=60);
-} */
-/* End of common */
+}
+
+/* :focus {
+    outline: 0;
+}
+
+caption {
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+ */

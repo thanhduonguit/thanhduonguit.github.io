@@ -9,7 +9,7 @@ showSlides();
 // Auto run slide
 setInterval(function() {
     showSlides(slideIndex += 1);
-}, 4500);
+}, 3500);
 
 function plusSlides(n) {
 	showSlides(slideIndex += n);

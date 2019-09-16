@@ -66,7 +66,6 @@ window.onload = function() {
         td.appendChild(prevM);
         tr.appendChild(td);
 
-        /*----------  Chose month year  ----------*/
         // Chose month
         td = document.createElement('td');
         var listMonth = document.createElement('select');
@@ -76,7 +75,7 @@ window.onload = function() {
             show();      
         };
 
-        //Chose year
+        // Chose year
         var listYear = document.createElement('select');
         listYear.onchange = function() {
             year = parseInt(this.options[this.selectedIndex].value);
@@ -105,7 +104,6 @@ window.onload = function() {
         td.appendChild(listYear);
         td.setAttribute("colspan", "3");
         tr.appendChild(td);
-        /*----------  End Chose month year  ----------*/
         
         // Create button next month
         td = document.createElement('td');
@@ -158,7 +156,7 @@ window.onload = function() {
             tr.appendChild(td);
         }
 
-        /*----------  Print day in month  ----------*/
+        // Print day in month
         var count = 1;
         for (; c <= 6; c++) {
             td = document.createElement('td');
@@ -195,7 +193,6 @@ window.onload = function() {
             }
             table.appendChild(tr);
         }
-        /*----------  End Print day in month  ----------*/
         return table;
     }
 

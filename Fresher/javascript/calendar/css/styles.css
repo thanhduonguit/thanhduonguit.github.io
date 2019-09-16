@@ -38,8 +38,13 @@ td.days:hover {
 td.week {
     font-weight: bold;
     color: red;
+    background: #adb0b3;
 }
 
 td:hover {
     background: aqua;
+}
+
+tr:first-child {
+    background: #bad0f5;
 }
