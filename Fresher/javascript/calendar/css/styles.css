@@ -1,5 +1,6 @@
 select {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .calendar-container button {
@@ -16,6 +17,7 @@ select {
 #show-calendar {
     background: url(../images/calendar.png) no-repeat right;
     background-size: contain;
+    cursor: pointer;
 }
 
 table, tr, td {

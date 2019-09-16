@@ -9,7 +9,7 @@ window.onload = function() {
     // Add event click when click show calendar
     showCalendar.addEventListener("click", show);
 
-    //Main function to show calendar, create with div container
+    // Main function to show calendar, create with div container
     function show() {
         showCalendar.removeEventListener("click", show);
         var firstDate = monthName[month] + " " + 1 + " " + year;
@@ -31,7 +31,7 @@ window.onload = function() {
             showCalendar.parentNode.appendChild(div);
         }
     }
-    
+
     // Create calendar 
     function getCalendar(dayNo, days) {
         // Create table calendar

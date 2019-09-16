@@ -9,37 +9,43 @@
 </head>
 <body>
     <div class="container">
-		<div class="slide fade">
-			<div class="numbertext">1/4</div>
-			<img src="images/cabin.png" alt="cabin">
-			<div class="text">Cabin</div>
-		</div>
-		<div class="slide fade">
-			<div class="numbertext">2/4</div>
-			<img src="images/cake.png" alt="cake">
-			<div class="text">Cake</div>
-		</div>
-		<div class="slide fade">
-			<div class="numbertext">3/4</div>
-			<img src="images/circus.png" alt="circus">
-			<div class="text">Circus</div>
-        </div>
-        <div class="slide fade">
-			<div class="numbertext">4/4</div>
-			<img src="images/game.png" alt="game">
-			<div class="text">Game</div>
-		</div>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <ul>
+            <li class="mySlides fade">
+                <div class="numbertext">1/4</div>
+                <img src="images/cake.png" alt="cake">
+            </li>
+            <li class="mySlides fade">
+                <div class="numbertext">2/4</div>
+                <img src="images/cabin.png" alt="cabin">
+            </li>
+            <li class="mySlides fade">
+                <div class="numbertext">3/4</div>
+                <img src="images/circus.png" alt="circus">
+			</li>
+			<li class="mySlides fade">
+                <div class="numbertext">4/4</div>
+                <img src="images/game.png" alt="game">
+            </li>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;&#10094;</a>
+            <a class="next"onclick="plusSlides(1)">&#10095;&#10095;</a>
+        </ul>
+        <ul class="row">
+            <li class="column">
+                <img class="slide cursor" src="images/cake.png" onclick="currentSlide(1)" alt="cake">
+            </li>
+            <li class="column">
+                <img class="slide cursor" src="images/cabin.png" onclick="currentSlide(2)" alt="cabin">
+            </li>
+            <li class="column">
+                <img class="slide cursor" src="images/circus.png" onclick="currentSlide(3)" alt="circus">
+			</li>
+			<li class="column">
+                <img class="slide cursor" src="images/game.png" onclick="currentSlide(4)" alt="game">
+            </li>
+        </ul>
 	</div>
-	<div class="dot-list">
-		<span class="dot" onclick="currentSlide(1)"></span>
-		<span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-    
-    <!-- Main javascript -->
-	<script src="js/main.js"></script>
+	
+	<!-- Main javascript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
