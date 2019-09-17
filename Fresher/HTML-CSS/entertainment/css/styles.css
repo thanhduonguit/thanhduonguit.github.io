@@ -104,6 +104,10 @@ a {
     margin-right: 15px;
 }
 
+.panel img {
+    height: 95px;
+}
+
 .show-panel {
     background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e3e4e8));
     background: linear-gradient(to bottom, #fbfbfb, #e3e4e8);
