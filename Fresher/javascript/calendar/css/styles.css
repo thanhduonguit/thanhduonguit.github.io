@@ -1,5 +1,5 @@
 select {
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -33,7 +33,7 @@ td {
 }
 
 td.days:hover {
-    background: rgba(136, 243, 243, 0.83);
+    background: #5955a3;
     cursor: pointer;
 }
 
@@ -49,4 +49,6 @@ td:hover {
 
 tr:first-child {
     background: #bad0f5;
+    font-size: 20px;
+    color: red;
 }
