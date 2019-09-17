@@ -45,7 +45,7 @@ a {
 
 .title-news {
     background: url(../images/title-news.gif);
-    height: 26px;
+    height: 24px;
     color: white;
     font-size: 17.5px;
     font-weight: 500;
@@ -165,7 +165,7 @@ a {
 }
 
 .now-showing select {
-    width: 70%;
+    width: 69%;
 }
 /* End of movie trailer */
 
