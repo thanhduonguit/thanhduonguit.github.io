@@ -65,6 +65,7 @@
 
 /* Main */
 .main {
+    font-size: 14px;
     margin-top: 114px;
     margin-left: 70px;
     width: 670px;
@@ -122,6 +123,7 @@
 
 .box-2 li a {
     color: #707070;
+    font-size: 12px;
 }
 /* End of main */
 
@@ -165,10 +167,15 @@
 /* End of content */
 
 .footer {
+    font-size: 14px;
     margin-left: 57px;
     padding: 20px;
 }
 
 .footer a {
     color: #505959;
+}
+
+.footer-1 {
+    margin-bottom: 40px;
 }
