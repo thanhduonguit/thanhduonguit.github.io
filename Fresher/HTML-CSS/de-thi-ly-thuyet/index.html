@@ -9,69 +9,81 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="container">
-        <!-- Content left -->
-        <div class="conntent-left">
-            <!-- Content 1 -->
-            <div class="content-1">
-                <div class="title-1">De thi ly thuyet</div>
-                <div class="content-box">
-                    <img src="images/group.jpg" alt="group">
-                    <div class="content-text">
-                        <h4>Phần này là tiêu dề của khối, chữ màu trắng</h4>
-                        <div class="content-p">
-                            <p>Phông chữ của cả trang là arial với cỡ chữ là 0.6875em. Trừ những thẻ đặc biệt chữ có màu tô màu trắng, tuyen nhiên lại không có gạch chân ở đưới liên kết. Ảnh minh họa của khối này là group.jpg. Ảnh có kích thước thật 300px150px. Trong khối này thì chỉ hiển thị với kích thước 200px*100px.</p>
-                            <p>Hãy hiển thị khối trên thành hai phần như trên.. còn khối này chỉ 1 mà thôi.</p>
-                        </div>
-                    </div>
+    <div id="container">
+        <div class="content-post">
+            <div class="title">De thi ly thuyet</div>
+            <img src="images/group.jpg" alt="group">
+            <div class="content-text">
+                <div class="subtitle"><a href="" class="link">Phần này là tiêu dề của khối, chữ màu trắng</a></div>
+                <p>
+                    Phông chữ của cả trang là arial với cỡ chữ là 0.6875em. Trừ những thẻ đặc biệt chữ có màu tô màu
+                    trắng, tuyen nhiên lại không có gạch chân ở đưới liên kết. Ảnh minh họa của khối này là group.jpg.
+                    Ảnh có kích thước thật 300px150px. Trong khối này thì chỉ hiển thị với kích thước 200px*100px.
+                    <br>
+                    Hãy thể hiện khối trên thành hai phần như trên.. còn khối này chỉ 1 mà thôi
+                </p>
+                <div class="hr"></div>
+                <div class="more-info">
+                    <a href="" class="link">
+                        <img src="images/more-info.gif" alt="more-info"> more info
+                    </a>
                 </div>
-                <a class="more-info">more info</a>
+                <div class="subtitle">Hãy thể hiện khối tin này với style giống khối trên</div>
+                <div>Và bên dưới khối này thông tin được chia đôi, hãy hiển thị đúng</div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="" class="inner-list"> Quisque nis l portserisque</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list"> Opget,at, nequivamus</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list">Eget nibhtiam ours us leo er</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list">Eget males uada at nequiva</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list edit-1"> Nulla neceros estibulum</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list edit-1"> Eget ours us leo vel metus er</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list edit-1"> Nulla facilisienean cec eros</a>
+                        </li>
+                        <li>
+                            <a href="" class="inner-list edit-1"> anteip um primis in</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hr"></div>
+                <div class="more-info">
+                    <a href="" class="link">
+                        <img src="images/more-info.gif" alt="more-info"> more info
+                    </a>
+                </div>
             </div>
-            <!-- End of content 1 -->
-
-            <!-- Content 2 -->
-            <div class="content-2">
-                <div class="title">
-                    <p class="white">Hãy thể hiện khối tin này với style giống khối trên</p>
-                    <p>Và bên dưới khối này thông tin được chia đôi, hãy hiển thị đúng</p>
-                </div>
-                <div class="content-box">
-                    <div class="list">
-                        <ul>
-                            <li><a>Quisque nis l portserisque</a></li>
-                            <li><a>Eget males uada at nequiva</a></li>
-                            <li><a>Eget nibhtiam ours us leo er</a></li>
-                            <li><a>Nulla neceros estibulum</a></li>
-                        </ul>
-                    </div>
-                    <div class="list list-edit">
-                        <ul>
-                            <li><a>Opget,at, nequivamus</a></li>
-                            <li><a>Eget ours us leo vel metus er</a></li>
-                            <li><a>Nulla facilisienean cec eros</a></li>
-                            <li><a>anteip um primis in</a></li>
-                        </ul>
-                    </div>	
-                </div>
-                <a class="more-info">more info</a>
-            </div>
-            <!-- End of content 2 -->
         </div>
-        <!-- End of content left -->
-
-        <!-- Content right -->
-        <div class="content-right">
-            <div class="content-3">
+        <div class="inner-profile">
+            <div class="hr"></div>
+            <div class="box-img">
                 <img src="images/egif.jpg" alt="egif">
-                <div class="content-3-text">
-                    <p class="white">Đây là khối thông tin bên phải</p>
-                    <p>Ảnh phí bên trên là E.gif Màu nền của khối là #232326</p>
-                    <p><span class="white">Aenean nec eros.</span> Vestibulum ant Ảnh của dòng more info là info.gif</p>
-                </div>
-                <a class="more-info edit-1">more info</a>
+            </div>
+            <div class="subtitle">Đây là khối thông tin bên phải</div>
+            <div>Ảnh phí bên trên là E.gif Màu nền của khối là #232326</div>
+            <div class="note">
+                <span class="white">Aenean nec eros</span>
+                Vestibulum ant Ảnh của dòng more info là info.gif
+            </div>
+            <div class="more-info">
+                <a href="" class="link">
+                    <img src="images/more-info.gif" alt="more-info"> more info
+                </a>
             </div>
         </div>
-        <!-- End of content right -->
-	</div>
+        <div class="clear-both"></div>
+    </div>
 </body>
 </html>
