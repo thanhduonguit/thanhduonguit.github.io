@@ -65,15 +65,28 @@ h3.title-post {
     background-image: url(../images/bg-star.gif);
 }
 
+.edit-1 a {
+    padding-right: 30px;
+}
+
 .edit-2 {
-    background-image: url(../images/bg-star.gif);
+    background-image: url(../images/title_2.jpg);
+}
+
+.edit-2 a {
+    padding-right: 10px;
+}
+
+.edit-2 a::after {
+    content: url(../images/start.jpg);
+    float: right;
+    padding-left: 2px;
 }
 
 .title a { 
     color: black;
     text-decoration: none;
     display: block;
-    padding-right: 30px;
 }
 
 .box-text span {
