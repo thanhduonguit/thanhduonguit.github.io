@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a {
+    cursor: pointer;
+}
+
 body {
     font-family: arial, serif;
     font-size: 0.6875em;
@@ -12,9 +16,9 @@ body {
     background: #121214;
     color: #797782;
     display: flex;
-    padding: 26px 25px;
+    padding: 26px 55px;
     margin: 0 auto;
-    width: 1000px;
+    width: 860px;
 }
 
 .content-left {
@@ -31,15 +35,11 @@ body {
     margin-left: 30px;
 }
 
-.title {
-    margin-bottom: 30px;
-}
-
 .content-box img {
     float: left;
     margin-right: 15px;
-    width: 200px;
-    height: 100px;
+    width: 120px;
+    height: 85px;
 }
 
 .content-box:after {
@@ -58,13 +58,13 @@ body {
     padding-right: 20px;
 }
 
+.content-p {
+    margin-top: 20px;
+}
+
 .content-box {
     border-bottom: 1px dotted #3f3f41;
     padding: 12px 0px;
-}
-
-.content-text p {
-    margin-top: 36px;
 }
 
 .more-info:before {
@@ -82,7 +82,7 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 12px 0;
+    padding: 15px 0;
 }
 
 .content-2 {
@@ -96,7 +96,8 @@ body {
 
 .list {
     float: left;
-    width: 50%;
+    width: 42%;
+    margin-bottom: 10px;
 }
 
 .list ul li a {
@@ -111,6 +112,10 @@ body {
 
 .list ul {
     list-style: none;
+}
+
+.list ul li {
+    padding: 3px;
 }
 
 .list li:before {
@@ -136,5 +141,13 @@ body {
 }
 
 .content-right {
-    margin-right: 200px;
+    margin-right: 210px;
+}
+
+.title-1 {
+    margin-bottom: 20px;
+}
+
+.edit-1 {
+    margin-top: 30px;
 }

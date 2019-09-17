@@ -41,10 +41,6 @@ body {
     overflow: scroll;
 }
 
-.facts {
-    margin-top: 20px;
-}
-
 .facts ul li:before {
     content: url('../images/star.png');
     margin-right: 3px;
@@ -54,12 +50,21 @@ body {
     font-size: 14px;
     margin-left: 50px;
     list-style: none;
+    margin-top: 10px;
+}
+
+.facts h3 {
+    margin-top: 10px;
+}
+
+.facts-content li {
+    padding: 3px;
 }
 /* End of player profile */
 
 /* Posted */
 .posted {
-    margin-top: 20px;
+    margin-top: 45px;
     padding: 0 4px;
     font-size: 15px;
 }
