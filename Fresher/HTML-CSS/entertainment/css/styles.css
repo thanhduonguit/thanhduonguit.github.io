@@ -5,8 +5,13 @@
     font-size: 14px;
 }
 
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
 #container {
-    background-color: #292728;
+    background-color: #393b3a;
     width: 1000px;
     padding-top: 20px;
     margin: auto;
@@ -48,7 +53,6 @@ h3.title-post {
 .clear-both { clear: both; }
 
 .title {
-    background-image: url(../images/bg-star.gif);
     background-repeat: no-repeat;
     margin-left: 10px;
     text-align: right;
@@ -56,6 +60,14 @@ h3.title-post {
     font-weight: bold;
     background-position: 0 2px;
     padding-bottom: 10px;
+}
+
+.edit-1 {
+    background-image: url(../images/bg-star.gif);
+}
+
+.edit-2 {
+    background-image: url(../images/bg-star.gif);
 }
 
 .title a { 
