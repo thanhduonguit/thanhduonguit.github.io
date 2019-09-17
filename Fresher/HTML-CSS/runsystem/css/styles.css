@@ -33,7 +33,9 @@
     width: calc(100% - 520px);
     float: left;
 }
+
 #banner .inner  img { float: right; }
+
 h3.title-banner {
     color: #f2f20b;
     padding-bottom: 30px;
