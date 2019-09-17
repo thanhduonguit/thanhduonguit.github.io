@@ -7,11 +7,10 @@
 
 body {
     background-color: black;
-    overflow: hidden;
 }
 
 #container {
-    background-color: #393b3a;
+    background-color: #292728;
     width: 1000px;
     padding-top: 20px;
     margin: auto;
