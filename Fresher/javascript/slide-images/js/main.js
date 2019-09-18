@@ -1,11 +1,21 @@
 // Variables
 let slides = document.getElementsByClassName("mySlides");
 let cursor = document.getElementsByClassName("cursor");
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
 let slideIndex = 1;
 let isPlay = false;
 
 // Show slide
 showSlides(); 
+
+next.addEventListener("click", function(){
+	showSlides(slideIndex += 1);
+});
+
+prev.addEventListener("click", function(){
+	showSlides(slideIndex -= 1);
+});
 
 // Auto run slide
 let runSlide = setInterval(function() {
@@ -15,10 +25,6 @@ let runSlide = setInterval(function() {
 		clearInterval(runSlide);
 	}
 }, 3000);
-
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}
 
 function currentSlide(n) {
 	showSlides(slideIndex = n);
@@ -33,10 +39,17 @@ function showSlides(n) {
 	if (n < 1) {
 		slideIndex = slides.length;
 	}
+	for(var i = 0; i < cursor.length; i++) {
+		(function(index) {
+			cursor[index].addEventListener("click", function() {
+				showSlides(slideIndex = (index + 1));
+		   	});
+		})(i);
+	}
 	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
+		slides[i].classList.remove("active"); 
 		cursor[i].classList.remove("active"); 
 	}
-	slides[slideIndex - 1].style.display = "block";
+	slides[slideIndex - 1].classList.add("active");
 	cursor[slideIndex - 1].classList.add("active");
 }
