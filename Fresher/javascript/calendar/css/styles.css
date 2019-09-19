@@ -52,3 +52,8 @@ tr:first-child {
     font-size: 20px;
     color: red;
 }
+
+button {
+    width: 100%;
+    height: 100%;
+}

@@ -7,7 +7,7 @@ var containCanvas = document.getElementById("containCanvas");
 var ctx = containCanvas.getContext("2d");
 var menuCanvas = document.getElementById("menuCanvas");
 var ctxMenu = menuCanvas.getContext("2d");
-var speedArr = [ 2, 4, 6, 10]; 
+var speedArr = [ 2, 2.5, 5, 10]; 
 var score = 100; 
 var running = true;
 var heart = 5;
@@ -72,7 +72,7 @@ Monster.prototype.move = function() {
 		this.y = this.initY;
 		this.toX = this.initToX;
 		this.toY = this.initToY;
-		score -= 10;
+		score -= 5;
 		randomMonster();
 	}
 };
@@ -137,7 +137,7 @@ explosionImage.src = "images/boom.png";
 var heartImage = new Image();
 heartImage.src = "images/heart.png";
 
-//Pause
+// Pause
 var pauseImage = new Image();
 pauseImage.src = "images/pause_btn.png";
 
@@ -153,7 +153,7 @@ restartImage.src = "images/restart_btn.png";
 var overImage = new Image();
 overImage.src = "images/over.png";
 
-//SOUND EFFECT 
+// SOUND EFFECT 
 var swordrawSound = new Audio("sound/swordraw.wav");
 var gameoverSound = new Audio("sound/gameover.wav");
 var bombSound = new Audio("sound/bomb.wav");
@@ -203,7 +203,7 @@ menuCanvas.addEventListener("click", function(e){
 
 // Determine the monster clicked to define monster, blood, sound, score,..
 function clickMonster(currX, currY, monster) {
-	//Determine monster have clicked
+	// Determine monster have clicked
 	if (currX >= monster.x && currX <= monster.x + monsterImageSize.width && currY >= monster.y && currY <= monster.y + monsterImageSize.height) {
 		score += 10;
 		heart++;
@@ -231,7 +231,7 @@ function clickMonster(currX, currY, monster) {
 
 		// Level
 		var levelBefore = level;
-		level = Math.floor((score - 100) / 100);
+		level = Math.floor((score - 50) / 100);
 		if (level < levelBefore) {
 			level = levelBefore;
 		}
@@ -357,7 +357,7 @@ function render() {
 
 	// Boom
 	if(explosionReady) {
-		ctx.drawImage(explosionImage, 100, 100, 300, 300);
+		ctx.drawImage(explosionImage, 7, 7, 500, 500);
 	}
 
 	// List blood
@@ -412,7 +412,6 @@ function resetGame() {
 	for(var i = 0; i < 8; i++){
 		initMonster(monster[i]);
 	}
-
 	level = 0;
 	end = false;
 	running = true;
@@ -422,7 +421,6 @@ function resetGame() {
 	highScore = sessionStorage.getItem("highscore");
 	boomNum = 3;
 	bloodList = [];
-
 	monster1.visible = true;
 	main();
 }
@@ -448,7 +446,7 @@ function initMonster(monster) {
 
 // Main function
 function main() {
-	if (heart < 0 || score < 0) {
+	if (heart < 1 || score < 0) {
 		overGame();
 	}
 	var now = Date.now();
@@ -468,7 +466,6 @@ function main() {
 		if (score > highScore) {
 			highScore = score;
 			sessionStorage.setItem("highscore", score);
-
 			ctx.fillStyle = "#F1F1F1";
 			ctx.font = "35px Arial bold";
 			ctx.fillText("NEW HIGHSCORE: " + highScore, 100, 290);
@@ -481,7 +478,6 @@ function main() {
 		ctx.font = "50px Arial bold";
 		ctx.fillText("GAME OVER", 120, 250);
 	}
-
 }
 
 // Run game
