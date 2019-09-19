@@ -354,7 +354,7 @@ function render() {
 
 	// Boom no
 	if(explosionReady) {
-		ctx.drawImage(explosionImage, 100, 100, 300, 300);
+		ctx.drawImage(explosionImage, 7, 7, 500, 500);
 	}
 
 	// List blood
