@@ -1,0 +1,60 @@
+select {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.calendar-container button {
+    border: none;
+    background: none;
+}
+
+.calendar-container button:hover {
+    color: red;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+#show-calendar {
+    background: url(../images/calendar.png) no-repeat right;
+    background-size: contain;
+    cursor: pointer;
+}
+
+table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+td {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+}
+
+td.days:hover {
+    background: #5955a3;
+    cursor: pointer;
+}
+
+td.week {
+    font-weight: bold;
+    color: red;
+    background: #adb0b3;
+}
+
+td:hover {
+    background: #5955a3;
+}
+
+tr:first-child {
+    background: #bad0f5;
+    font-size: 20px;
+    color: red;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+}
+
