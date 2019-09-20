@@ -15,7 +15,6 @@ window.onload = function () {
         var calendar = getCalendar();
         var div = document.createElement("div");
         div.className = "calendar-container";
-        var calendar = getCalendar();
         div.appendChild(calendar);
         input.parentNode.appendChild(div);
         var allDaysInMonth = count - 1;
