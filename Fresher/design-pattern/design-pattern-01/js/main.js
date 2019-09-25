@@ -9,7 +9,7 @@ var slide = (function() {
 	
 	/*----------  Private function  ----------*/
 	// Function for auto slide
-	function privateAutoSlide(){
+	function privateAutoSlide() {
 		privateInterval = setInterval(privateNextSlide, 3000);
 	}
 
@@ -82,21 +82,21 @@ var slide = (function() {
 	};
 })();
 
-$(document).ready(function(){
+$(document).ready(function() {
 	slide.auto();
 	
 	// Event click for prev button
-	$(".prev").click(function(){
+	$(".prev").click(function() {
 		slide.prev();
 	});
 
 	// Event click for next button
-	$(".next").click(function(){
+	$(".next").click(function() {
 		slide.next();
 	});
 
 	// Event click for thumbnail
-	$(".cursor").click(function(){
+	$(".cursor").click(function() {
 		index = $(".cursor").index(this) + 1;
 		slide.thumbnails(index);
 	});

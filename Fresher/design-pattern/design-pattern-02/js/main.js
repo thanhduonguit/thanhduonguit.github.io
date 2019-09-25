@@ -22,7 +22,7 @@ var slide = (function() {
 	function privatePreviewSlide() {
 		slideIndex--;
 		if (slideIndex < 0) {
-			slideIndex = privateSlides.length - 2;
+			slideIndex = privateSlides.length - 3;
 			privateSlideContaint.animate({left: '-='+ (privateSlideWidth*privateSlides.length-privateSlideWidth)}, 500);
 		} else {
 			privateSlideContaint.animate({left: '+='+ privateSlideWidth}, 500);

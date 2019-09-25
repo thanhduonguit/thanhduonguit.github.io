@@ -20,6 +20,10 @@
     position: absolute;
 }
 
+ul {
+    list-style: none;
+}
+
 img {
     width: 100%;;
 }
@@ -31,25 +35,6 @@ img {
 @keyframes fade {
     from {opacity: 0.4}
     to {opacity: 1}
-}
-
-.numbertext {
-    color: white;
-    position: absolute;
-    padding: 8px 12px;
-    top: 0;
-}
-
-.text {
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 4px 10px;
-    width: 30%;
-    text-align: center;
 }
 
 .prev,
@@ -104,6 +89,6 @@ img {
     cursor: pointer;
 }
 
-.thumbnail li.active{
+.thumbnail li.active {
     opacity: 1;
 }
