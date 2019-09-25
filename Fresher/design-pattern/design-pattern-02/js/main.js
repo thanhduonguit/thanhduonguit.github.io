@@ -1,29 +1,19 @@
 var slide = (function() {
 	// Variables
-	var privateSlideWidth = $(".main-container").width();
-	var privateSlideContaint = $(".slideshow-container");
-	var privateSlides = $(".mySlides");
-	var privateCursor = $(".thumbnail").children();
+	var privateSlideWidth = $(".js-container").width();
+	var privateSlideContaint = $(".js-slideshow");
+	var privateSlides = $(".js-slideshow").children();
+	var privateCursor = $(".js-thumbnail").children();
 	var slideIndex = 0; 
 	var privateInterval;
 	
 	/*----------  Private function  ----------*/
-	// Function for auto slide
-	function privateAutoSlide() {
-		privateInterval = setInterval(privateNextSlide, 3000);
-	}
-
-	// Function pause slide
-	function privatePauseSlide() {
-		clearInterval(privateInterval);
-	}
-
 	// Function prev button
 	function privatePreviewSlide() {
 		slideIndex--;
 		if (slideIndex < 0) {
-			slideIndex = privateSlides.length - 3;
-			privateSlideContaint.animate({left: '-='+ (privateSlideWidth*privateSlides.length-privateSlideWidth)}, 500);
+			slideIndex = privateSlides.length - 1;
+			privateSlideContaint.animate({left: '-='+ (privateSlideWidth * privateSlides.length - privateSlideWidth)}, 500);
 		} else {
 			privateSlideContaint.animate({left: '+='+ privateSlideWidth}, 500);
 		}
@@ -35,7 +25,7 @@ var slide = (function() {
 		slideIndex++;
 		if (slideIndex > privateSlides.length - 1) {
 			slideIndex = 0;
-			privateSlideContaint.animate({left: '+='+ (privateSlideWidth*privateSlides.length-privateSlideWidth)}, 500);
+			privateSlideContaint.animate({left: '+='+ (privateSlideWidth * privateSlides.length - privateSlideWidth)}, 500);
 		} else {
 			privateSlideContaint.animate({left: '-='+ privateSlideWidth}, 500);
 		}
@@ -52,25 +42,25 @@ var slide = (function() {
 
 	/*----------  Public function  ----------*/
 	function publicAutoSlide() {
-		privateAutoSlide();
+		privateInterval = setInterval(privateNextSlide, 3000);
 	}
 
 	function publicPreviewSlide() {
-		privatePauseSlide();
+		clearInterval(privateInterval);
 		privatePreviewSlide();
-		privateAutoSlide();
+		privateInterval = setInterval(privateNextSlide, 3000);
 	}
 
 	function publicNextSlide() {
-		privatePauseSlide();
+		clearInterval(privateInterval);
 		privateNextSlide();
-		privateAutoSlide();
+		privateInterval = setInterval(privateNextSlide, 3000);
 	}
 
 	function publicClickThumbnail(index) {
-		privatePauseSlide();
+		clearInterval(privateInterval);
 		privateClickThumbnail(index);
-		privateAutoSlide();
+		privateInterval = setInterval(privateNextSlide, 3000);
 	}
 	/*----------  End Public function  ----------*/
 	
@@ -96,8 +86,8 @@ $(document).ready(function() {
 	});
 
 	// Event click for thumbnail
-	$(".cursor").click(function() {
-		index = $(".cursor").index(this) + 1;
+	$(".js-thumbnail li").click(function() {
+		index = $(".js-thumbnail li").index(this) + 1;
 		slide.thumbnails(index);
 	});
 });

@@ -6,7 +6,7 @@
     -webkit-box-sizing: border-box;
 }
 
-.box {
+.main-container {
     position: relative;
     width: 950px;
     height: 600px;
@@ -14,7 +14,7 @@
     background: url("../images/bg_itm_lineup.jpg");
 }
 
-.main-container {
+.slide-container {
     width: 648px;
     height: 440px;
     position: relative;
@@ -23,7 +23,7 @@
     padding-top: 100px;
 }
 
-.slideshow-container {
+.slide {
     width: 648*5px;
     height: auto;
     position: absolute;
@@ -63,12 +63,12 @@ img {
     right: 0;
 }
 
-.mySlides {
+.slide li {
     position: relative;
     float: left;
 }
 
-.mySlides img {
+.slide img {
     width: 648px;
     height: 335px;
 }
