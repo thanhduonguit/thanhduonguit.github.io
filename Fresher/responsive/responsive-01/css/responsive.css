@@ -1,0 +1,198 @@
+@media all and (min-width: 1280px) {
+	.wrapper-container {
+		max-width: 770px;
+	}
+
+	.banner-title {
+		font-size: 47px;
+	}
+
+	.banner-button img {
+		width: 86px;
+		height: 86px;
+	}
+
+	.banner {
+		height: 700px;
+	}
+
+	.content-bg {
+		height: 500px;
+    }
+    
+    .content-video {
+        width: 770px;
+		padding-bottom: 29%;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1279.9px) {
+	.wrapper-container {
+		max-width: 770px;
+	}
+
+	.banner-title {
+		font-size: 42px;
+	}
+
+	.banner-button img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.banner {
+		height: 660px;
+	}
+
+	.content-bg {
+		height: 460px;
+    }
+    
+    .content-video {
+        width: 770px;
+		padding-bottom: 35%;
+	}
+}
+
+@media (min-width: 880px) and (max-width: 1023.9px) {
+	.wrapper-container {
+		max-width: 650px;
+	}
+
+	.banner-title {
+		font-size: 38px;
+	}
+
+	.banner-button img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.banner {
+		height: 570px;
+	}
+
+	.content-bg {
+		height: 410px;
+    }
+    
+    .content-video {
+        width: 650px;
+		padding-bottom: 38%;
+	}
+}
+
+/* 767px */
+@media (min-width: 767px) and (max-width: 879.9px) {
+	.wrapper-container {
+		max-width: 500px;
+	}
+
+	.banner-title {
+		font-size: 35px;
+	}
+
+	.banner-button img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.banner {
+		height: 450px;
+	}
+
+	.content-bg {
+		height: 330px;
+    }
+    
+    .content-video {
+		width: 500px;
+		padding-bottom: 35%;
+	}
+}
+
+@media (min-width: 680px) and (max-width: 766.9px) {
+	.wrapper-container {
+		max-width: 500px;
+	}
+
+	.banner-title {
+		font-size: 35px;
+	}
+
+	.banner-button img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.banner {
+		height: 450px;
+	}
+
+	.content-bg {
+		height: 330px;
+    }
+    
+    .content-video {
+		width: 500px;
+		padding-bottom: 40%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 679.9px) {
+	.wrapper-container {
+		width: auto;
+		padding: 0px 10px;
+	}
+
+	.banner-title {
+		font-size: 27px;
+	}
+
+	.banner-button img {
+		width: 35px;
+		height: 35px;
+	}
+
+	.banner {
+		height: 340px;
+	}
+
+	.content-bg {
+		height: 260px;
+    }
+    
+    .content-video {
+		width: auto;
+		padding-bottom: 58%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 479.9px) {
+	.wrapper-container {
+		width: auto;
+		padding: 0px 10px;
+	}
+
+	.banner-title {
+		font-size: 24px;
+	}
+
+	.banner-button img {
+		width: 27px;
+		height: 27px;
+	}
+
+	.banner {
+		height: 270px;
+	}
+
+	.content-bg {
+		height: 190px;
+    }
+    
+    .content-video {
+		width: auto;
+		padding-bottom: 61%;
+	}
+}
