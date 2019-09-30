@@ -42,9 +42,9 @@
 		height: 150px;
 	}
 
-	.item-img > img {
+	/* .item-img > img {
 		object-fit: fill;
-	}
+	} */
 
 	/* .btn-text::after {
 		display: block;
@@ -69,3 +69,128 @@
 		opacity: 1;
 	}
 }
+/* 
+<div class="header-above d-flex align-items-center">
+        <div class="header-title">
+            <p class="header-title-1 font-weight-bold">SNOW ACTIVITIES</p>
+            <p class="header-title-2 font-weight-bold">SNOWSHOEING</p>
+        </div>
+    </div>
+    <div class="header-below d-flex align-items-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb title-link-container">
+                <li class="breadcrumb-item">
+                    <a href="#">TOP</a>
+                </li>
+                <li class="breadcrumb-item title-link">
+                    <a href="#">Snow Activities</a>
+                </li>
+                <li class="breadcrumb-item title-link">
+                    <a href="#">Snowshoeing</a>
+                </li>
+            </ol>
+        </nav>
+    </div> */
+
+
+
+    .header-above {
+        height: 120px;
+        background-color: #0c4aa2;
+    }
+    
+    .header-title {
+        padding-left: 174px !important;
+    }
+    
+    .header-title-1 {
+        line-height: 34px;
+        color: white;
+        margin: 0px !important;
+        font-size: 14px;
+    }
+    
+    .header-title-2 {
+        line-height: 34px;
+        color: white;
+        margin: 0px !important;
+        font-size: 34px;
+    }
+    
+    .header-below {
+        height: 30px;
+        background-color: #5581be;
+    }
+      
+    .title-link-container {
+        background-color: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        padding-left: 174px !important;
+    }
+    
+    .title-link:before {
+        content: ">" !important;
+        color: white !important;
+    }
+    
+    .title-link-container a {
+        font-size: 14px;
+        line-height: 19px;
+        color: white;
+    }
+
+    /* var buttons = document.getElementsByClassName('btn-text');
+var contents = document.getElementsByClassName('place-container-images');
+var showAll = document.getElementById('all');
+var showHokkaido = document.getElementById('hokkaido');
+var showTohoku = document.getElementById('tohoku');
+var showKanto = document.getElementById('kanto');
+var showTokai = document.getElementById('tokai');
+var showWest = document.getElementById('west');
+var buttonMore = document.getElementsByClassName('btn-more');
+
+showAll.addEventListener("click", function() {
+    show('all');
+    buttonMore[0].className += buttonMore[0].className.replace(" hide", "");
+});
+
+showHokkaido.addEventListener("click", function() {
+    show('hokkaido');
+    hideButtonMore();
+});
+
+showTohoku.addEventListener("click", function() {
+    show('tohoku');
+    hideButtonMore();
+});
+
+showKanto.addEventListener("click", function() {
+    show('kanto');
+    hideButtonMore();
+});
+
+showTokai.addEventListener("click", function() {
+    show('tokai');
+    hideButtonMore();
+});
+
+showWest.addEventListener("click", function() {
+    show('west');
+    hideButtonMore();
+});
+
+function show(id) {
+    for (let i = 0; i < buttons.length; i++) {
+        $(buttons[i]).removeClass('btn-text-active');
+        $(contents[i]).removeClass('active');
+    }
+    $('#' + id).addClass('btn-text-active');
+    $('#place_' + id).addClass('active');
+}
+
+function hideButtonMore() {
+    buttonMore[0].className += ' hide';
+}
+
+show('all'); */

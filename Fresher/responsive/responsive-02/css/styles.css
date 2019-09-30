@@ -3,6 +3,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px !important;
 	margin: 0 auto;
+	color: #3a4d69;
 }
 
 p {
@@ -45,10 +46,6 @@ p {
 	margin-top: 22px;
 }
 
-.text-color {
-	color: #3a4d69;
-}
-
 /*-------    Navbar    -------*/
 .navbar {
 	font-size: 18px;
@@ -64,21 +61,17 @@ p {
 	background-color: #0c4aa2;
 }
 
-.header-items {
-	height: 100%;
-}
-
-.header-title {
+.header-title-1 {
 	line-height: 34px;
 	color: white;
 	margin: 0px !important;
-}
-
-.header-title-1 {
 	font-size: 14px;
 }
 
 .header-title-2 {
+	line-height: 34px;
+	color: white;
+	margin: 0px !important;
 	font-size: 34px;
 }
 
@@ -91,7 +84,6 @@ p {
 	background-color: transparent !important;
 	padding: 0 !important;
 	margin: 0 !important;
-	height: 30px;
 }
 
 .title-link:before {
@@ -106,18 +98,6 @@ p {
 }
 
 /*------- Content background images -------*/
-.content-bg {
-	padding: 0px;
-}
-
-.content-container-main {
-	max-width: 100%;
-}
-
-.content-container {
-	max-width: 100%;
-}
-
 .content-img {
 	height: 300px;
 	-webkit-background-size: cover;
@@ -138,6 +118,7 @@ p {
 	font-size: 26px;
 	line-height: 30px;
 }
+
 /*------- List images -------*/
 .list-images {
 	padding-top: 84px;
@@ -145,17 +126,12 @@ p {
 	padding-bottom: 50px;
 }
 
-.place-container {
+/*------- List button -------*/
+.place-container-button {
 	display: grid;
-	grid-template-columns: 33% 33% 33%;
 	justify-content: space-between;
 }
 
-.place-container div {
-	width: 100%;
-}
-
-/*------- List button -------*/
 .list-btn {
 	width: 100%;
 	position: relative;
@@ -175,7 +151,6 @@ p {
 .btn-text::after {
 	display: block;
 	content: '';
-	/* display: none; */
 	width: 20px;
 	height: 20px;
 	background: transparent;
@@ -226,9 +201,13 @@ p {
 }
 
 /*------- List images place -------*/
+.active {
+	display: grid !important;
+}
+
 .place-container-images {
-	/* display: none; */
-	grid-template-columns: 49% 49%;
+	display: none;
+	justify-content: space-between;
 	grid-row-gap: 5px;
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
@@ -251,9 +230,13 @@ p {
 	-ms-border-radius: 6px;
 	-o-border-radius: 6px;
 }
-
-/* .item-img:hover > img {
-	transform: scale(1.5, 1.5);
+/* 
+.item-img:hover > img {
+	transform: scale(1.6, 1.6);
+	-webkit-transform: scale(1.6, 1.6);
+	-moz-transform: scale(1.6, 1.6);
+	-ms-transform: scale(1.6, 1.6);
+	-o-transform: scale(1.6, 1.6);
 } */
 
 .item-img > img {
@@ -270,12 +253,17 @@ p {
 }
 
 /*------- Button more -------*/
+.hide {
+	display: none !important;
+}
+
 .btn-more {
 	position: relative;
 	width: 510px;
 	height: 50px;
 	background: #3a4d69;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 i.fas.fa-angle-down {
