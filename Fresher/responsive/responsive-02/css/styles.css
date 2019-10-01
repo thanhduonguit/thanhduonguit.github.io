@@ -6,8 +6,20 @@ body {
 	color: #3a4d69;
 }
 
+.w-1030 {
+	max-width: 1030px;
+}
+
+.w-770 {
+	max-width: 770px;
+}
+
 p {
 	margin-bottom: 0 !important;
+}
+
+.pd-15 {
+	padding: 0px 15px;
 }
 
 .mt-100 {
@@ -132,6 +144,10 @@ p {
 	justify-content: space-between;
 }
 
+.place-container-button div {
+	width: 100%;
+}
+
 .list-btn {
 	width: 100%;
 	position: relative;
@@ -217,6 +233,10 @@ p {
 	animation-name: fadeIn;
 }
 
+.place-container-images div {
+	width: 100%;
+}
+
 .item-img {
 	overflow: hidden;
 	width: 100%;
@@ -230,14 +250,14 @@ p {
 	-ms-border-radius: 6px;
 	-o-border-radius: 6px;
 }
-/* 
+
 .item-img:hover > img {
-	transform: scale(1.6, 1.6);
-	-webkit-transform: scale(1.6, 1.6);
-	-moz-transform: scale(1.6, 1.6);
-	-ms-transform: scale(1.6, 1.6);
-	-o-transform: scale(1.6, 1.6);
-} */
+	transform: scale(1.8, 1.8);
+	-webkit-transform: scale(1.8, 1.8);
+	-moz-transform: scale(1.8, 1.8);
+	-ms-transform: scale(1.8, 1.8);
+	-o-transform: scale(1.8, 1.8);
+}
 
 .item-img > img {
 	width: 100%;
@@ -302,4 +322,21 @@ i.fas.fa-angle-down {
 	color: #9a9a9a;
 }
 
+/* Animations */
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
