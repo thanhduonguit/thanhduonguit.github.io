@@ -118,6 +118,10 @@
 	.mt-42 {
 		margin-top: 22px;
 	}
+
+	.list-images {
+		padding-top: 30px;
+	}
 }
 
 @media (min-width: 320px) and (max-width: 479.9px)  {
@@ -181,5 +185,9 @@
 	
 	.mt-42 {
 		margin-top: 22px;
+	}
+
+	.list-images {
+		padding-top: 30px;
 	}
 }
