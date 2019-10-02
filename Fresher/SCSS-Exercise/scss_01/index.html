@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCSS-01</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-img-1">
+            <img src="images/header_top_left.png" alt="header_top_left">
+        </div>
+        <div class="header-img-2">
+            <img src="images/header_banner.png" alt="header_banner">
+        </div>
+        <div class="header-img-3">
+            <img src="images/header_top_right.png" alt="header_top_right">
+        </div>
+    </div>
+    <!-- End of header -->
+
+    <!-- Navbar -->
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">TOP</a>
+                </li>
+                <li>
+                    <a href="#">エントリー について</a>
+                </li>
+                <li>
+                    <a href="#">ルール説明</a>
+                </li>
+                <li>
+                    <a href="#">賞品紹介</a>
+                </li>
+                <li>
+                    <a href="#">よくある質問</a>
+                </li>
+                <li>
+                    <a href="#">エントリー</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of navbar  -->
+
+    <div class="wrapper">
+        <div class="wrapper-container">
+            <div class="main-title">
+                <h2>エントリー</h2>
+            </div>
+            <div class="title-link-container">
+                <nav>
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item">
+                            <a href="#">TOP</a>
+                        </li>
+                        <li class="breadcrumb-item title-link" aria-current="page">
+                            <a href="#">エントリー</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="border-container">
+                <img class="w-100" src="images/yellow_border.png" alt="yellow_border">
+                <div class="white-bg">
+                    <img class="w-100" src="images/white_bg.png" alt="white_bg">
+                </div>
+                <div class="main-content-container">
+                    <div class="content-container-1">
+                        <div class="section">
+                            <div class="title-1">
+                                <h2>エントリー概要</h2>
+                            </div>
+                            <div class="content-1">
+                                <div class="content-highlight">
+                                    <div class="content-yelolw">
+                                        <p class="text-edit-1">早期エントリー期間</p>
+                                        <p class="text-edit-2">2016年10月6日（木）PM ～10月16日（日）17:00</p>
+                                    </div>
+                                    <div class="content-red">
+                                        <p class="text-edit-1">通常エントリー期間</p>
+                                        <p class="text-edit-2">2016年10月16日（日）17:00 ～10月30日（日）17:00</p>
+                                    </div>
+                                </div>
+                                <div class="content-text">
+                                    <p class="text-edit-3">オッズ・マスターズ・グランプリ2016は1st Stageと2nd
+                                        Stageの2期に分かれて開催され、エントリー期間も1st Stageと2nd
+                                        Stageで分かれています。いずれかの期間に1度エントリーすれば、以降本キャンペーンをお楽しみいただくことができます。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="title-1">
+                                <h2>エントリーフォーム1</h2>
+                            </div>
+                            <div class="section-container">
+                                <p>正しく入力されていない箇所があります。再度ご確認ください。</p>
+                                <div class="content-left">
+                                    <div class="content-left-1">
+                                        <p>加入者番号　※必須</p>
+                                    </div>
+                                    <div class="content-left-2">
+                                        <p>生年月日　※必須</p>
+                                    </div>
+                                    <div class="content-left-3">
+                                        <p>利用規約</p>
+                                    </div>
+                                </div>
+                                <div class="content-right">
+                                    <div class="content-right-1">
+                                        <p>加入者番号を半角で正しく入力してください。</p>
+                                        <input class="form-control" type="text" name="input-1">
+                                    </div>
+                                    <div class="content-right-2">
+                                        <p>生年月日を半角で正しく入力してください。</p>
+                                        <div class="list-input">
+                                            <ul>
+                                                <li>
+                                                    <input class="form-control" type="text" name="input-2">
+                                                    <p>年</p>
+                                                </li>
+                                                <li>
+                                                    <input class="form-control" type="text" name="input-3">
+                                                    <p>月</p>
+                                                </li>
+                                                <li>
+                                                    <input class="form-control" type="text" name="input-4">
+                                                    <p>日</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p>記入例：1985年2月12日（半角）</p>
+                                    </div>
+                                    <div class="content-right-3">
+                                        <p>
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                            利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-container-2">
+                        <p>利用規約への同意が必要です。</p>
+                        <p>利用規約に同意する</p>
+                        <div>
+                            <p>次へ</p>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
