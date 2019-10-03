@@ -1,69 +1,10 @@
 /*-------   Common    --------*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-tbody,
-tfoot,
-thead {
-    border: 0;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
+* {
     margin: 0;
-    outline: 0;
     padding: 0;
 }
 
 body {
-	/* font-family: 'Raleway', sans-serif; */
 	margin: 0 auto;
 }
 
@@ -221,6 +162,10 @@ ul {
     position: relative;
 }
 
+.main-border {
+    height: 1440px;;
+}
+
 .border-container img {
     padding-top: 10px;
 }
@@ -234,7 +179,7 @@ ul {
 }
 
 .white-bg img {
-    height: 1212px;
+    height: 1348px;
 }
 
 .main-content-container {
@@ -245,7 +190,7 @@ ul {
     transform: translateX(-50%);
 }
 
-.title-1 {
+.content-title {
     width: 100%;
     display: flex;
     align-items: center;
@@ -255,14 +200,14 @@ ul {
     margin-top: 24px;
 }
 
-.title-1 h2 {
+.content-title h2 {
     font-size: 22px;
     line-height: 15px;
     color: #fffefe;
     font-weight: bold;
 }
 
-.content-1 {
+.section-1 {
     width: 100%;
     height: 348px;
     background: url("../images/gray_bg.png") no-repeat center center;
@@ -326,7 +271,7 @@ ul {
 
 /* Section container */
 .section {
-    background: url("../images/section_bg.png");
+    background: url("../images/section_bg.png") repeat-y;
 }
 
 .section-container {
@@ -449,4 +394,83 @@ ul {
     line-height: 24px;
     font-weight: 500;
     margin: 0 auto;
+}
+
+.section-content-4 {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.text-above-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.text-above-button p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.text-above-button input {
+    background: url("../images/checkbox_bg.png") no-repeat center center;
+    width: 11px;
+    height: 10px;
+    background-color: #fff1f1;
+    border: 1px solid #ff3333;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    margin-top: 18px;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: url("../images/button.png") no-repeat center center;
+}
+
+.button p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.button img {
+    top: -1px;
+    position: absolute;
+    left: 333px;
+}
+
+.pb-12 {padding-bottom: 12px;}
+
+/*--------- Footer ----------*/
+.list-images {
+    display: flex;
+    justify-content: center;
+}
+
+.list-images img {
+    width: 49.6%;
+}
+
+.footer-2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: white
 }
