@@ -42,6 +42,7 @@ ul {
 
 .header__img--2 {
     padding-top: 13px;
+    padding-left: 65px;
 }
 
 .header__img--3 {
@@ -183,7 +184,7 @@ ul {
 .content__container {
   width: 90%;
   position: absolute;
-  top: 37px;
+  top: 39px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -242,7 +243,7 @@ ul {
 }
 
 .content__1__text {
-  width: 834px;
+  width: 92.66%;
   height: 79px;
   margin: 0 auto;
   padding-top: 18px;
@@ -285,7 +286,7 @@ ul {
 }
 
 .section__container {
-  width: 860px;
+  width: 95.56%;
   margin: 0 auto;
 }
 
