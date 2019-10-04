@@ -37,18 +37,18 @@ ul {
     background-image: url("../images/header_bg.png");
 }
 
-.header-img-1 {
+.header__img--1 {
     position: absolute;
     float: left;
     left: 0;
     padding: 15px;
 }
 
-.header-img-2 {
+.header__img--2 {
     padding-top: 13px;
 }
 
-.header-img-3 {
+.header__img--3 {
     position: absolute;
     float: right;
     right: 0;
@@ -115,20 +115,20 @@ ul {
   background-color: black;
 }
 
-.wrapper-container {
+.wrapper__container {
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 35px;
 }
 
-.main-title {
+.wrapper__container__title {
   background: url("../images/title_bg.png") no-repeat center center;
   display: flex;
   align-items: center;
   height: 72px;
 }
 
-.main-title h2 {
+.wrapper__container__title h2 {
   font-size: 36px;
   letter-spacing: 5px;
   color: #ffffff;
@@ -158,19 +158,19 @@ ul {
 }
 
 /* Main content container  */
-.border-container {
+.border__container {
   position: relative;
 }
 
-.border-container-img {
+.border__container__img {
   height: 1440px;
 }
 
-.border-container img {
+.border__container img {
   padding-top: 10px;
 }
 
-.border-container-bg {
+.border__container__bg {
   position: absolute;
   top: 15px;
   left: 50%;
@@ -182,7 +182,7 @@ ul {
   height: 1348px;
 }
 
-.main-content-container {
+.content__container {
   width: 90%;
   position: absolute;
   top: 37px;
@@ -190,7 +190,7 @@ ul {
   transform: translateX(-50%);
 }
 
-.content-title {
+.content__title {
   width: 100%;
   display: flex;
   align-items: center;
@@ -207,74 +207,74 @@ ul {
   font-weight: bold;
 }
 
-.section-1 {
+.content__1 {
   width: 100%;
   height: 348px;
   background: url("../images/gray_bg.png") no-repeat center center;
   color: #ffffff;
 }
 
-.content-highlight {
+.content__highlight {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.content-highlight-1-bg {
+.content__highlight__1__bg {
   padding-top: 68px;
   float: right;
   position: relative;
 }
 
-.content-highlight-1-text {
+.content__highlight__1__text {
   position: absolute;
   top: 168px;
   left: 199px;
 }
 
-.content-highlight-2-bg {
+.content__highlight__2__bg {
   position: relative;
   padding-top: 68px;
   padding-left: 15px;
 }
 
-.content-highlight-2-text {
+.content__highlight__2__text {
   position: absolute;
   top: 168px;
   right: 200px;
 }
 
-.section-1-text {
+.content__1__text {
   width: 834px;
   height: 79px;
   margin: 0 auto;
   padding-top: 18px;
 }
 
-.text-style-1 {
+.text__style--1 {
   font-size: 19px;
   font-weight: bold;
 }
 
-.text-style-2 {
+.text__style--2 {
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
 }
 
-.text-style-3 {
+.text__style--3 {
   font-size: 16px;
   line-height: 25px;
   font-weight: 500;
 }
 
-.text-style-4 {
+.text__style--4 {
   font-size: 16px;
   line-height: 25px;
   color: #ff6666;
   font-weight: 500;
 }
 
-.text-style-5 {
+.text__style--5 {
   font-size: 14px;
   line-height: 25px;
   color: #ffffff;
@@ -282,16 +282,16 @@ ul {
 }
 
 /* Section 2 */
-.section-2 {
+.content__2 {
   background: url("../images/section_bg.png") repeat-y;
 }
 
-.section-container {
+.section__container {
   width: 860px;
   margin: 0 auto;
 }
 
-.title-border-red {
+.content__border__red {
   width: 100%;
   display: flex;
   align-items: center;
@@ -301,31 +301,31 @@ ul {
   margin-top: 27px;
 }
 
-.title-border-red p {
+.content__border__red p {
   font-size: 16px;
   line-height: 25px;
   color: #cc0000;
   font-weight: 500;
 }
 
-.section-content {
+.section__content {
   display: flex;
   align-items: center;
 }
 
-.section-content-1 {
+.section__content--1 {
     margin-top: 23px;
 }
 
-.section-content-2 {
+.section__content--2 {
     margin-top: 10px;
 }
 
-.section-content-3 {
+.section__content--3 {
     margin-top: 15px;
 }
 
-.content-left {
+.section__content__left {
   width: 290px;
   display: flex;
   align-items: center;
@@ -333,7 +333,7 @@ ul {
   background: url("../images/content_left_bg.png") no-repeat center center;
 }
 
-.content-left p {
+.section__content__left p {
   font-size: 18px;
   line-height: 27px;
   color: #000000;
@@ -341,16 +341,16 @@ ul {
   margin-left: 23px;
 }
 
-.content-left span {
+.section__content__left span {
   color: #ff6666;
   margin-left: 23px;
 }
 
-.content-right {
+.section__content__right {
   margin-left: 20px;
 }
 
-.content-right input {
+.section__content__right input {
   background: url("../images/input_bg_1.png") no-repeat center center;
   width: 310px;
   height: 37px;
@@ -358,20 +358,20 @@ ul {
   border: 1px solid #ff3333;
 }
 
-.list-input {
+.list__input {
   display: flex;
 }
 
-.list-input-item {
+.list__input__item {
   display: flex;
 }
 
-.list-input input {
+.list__input input {
   background: url("../images/list_input_bg.png") no-repeat center center;
   width: 137px;
 }
 
-.list-input p {
+.list__input p {
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
@@ -379,7 +379,7 @@ ul {
   margin: 17px 18px 0px 7px;
 }
 
-.content-left-edit {
+.section__content__left--edit {
   width: 290px;
   height: 320px;
   display: flex;
@@ -387,7 +387,7 @@ ul {
   background: url("../images/content_left_bg_2.png") no-repeat center center;
 }
 
-.content-right-edit {
+.section__content__right--edit {
   background: url("../images/content_right_bg.png") no-repeat center center;
   width: 570px;
   height: 320px;
@@ -396,7 +396,7 @@ ul {
   overflow: auto;
 }
 
-.main-text {
+.section__content__text {
   width: 512px;
   height: 272px;
   font-size: 14px;
@@ -405,25 +405,25 @@ ul {
   margin: 0 auto;
 }
 
-.section-content-4 {
+.section__content--4 {
   text-align: center;
   margin-top: 14px;
 }
 
-.text-above-button {
+.text__above__button {
   display: flex;
   justify-content: center;
   margin-top: 4px;
 }
 
-.text-above-button p {
+.text__above__button p {
   font-size: 16px;
   line-height: 25px;
   color: #ffffff;
   font-weight: 500;
 }
 
-.text-above-button input {
+.text__above__button input {
   background: url("../images/checkbox_bg.png") no-repeat center center;
   width: 11px;
   height: 12px;
@@ -433,7 +433,7 @@ ul {
   margin-right: 15px;
 }
 
-.button {
+.main__button {
   position: relative;
   display: flex;
   margin-top: 21px;
@@ -443,7 +443,7 @@ ul {
   background: url("../images/button.png") no-repeat center center;
 }
 
-.button p {
+.main__button p {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 34px;
@@ -451,7 +451,7 @@ ul {
   font-weight: bold;
 }
 
-.button img {
+.main__button img {
   top: -1px;
   position: absolute;
   left: 333px;
@@ -517,9 +517,6 @@ ul {
   top: 50%;
   left: -16px;
   transform: translateY(-50%);
-}
-.footer__link ul li a:hover {
-  color: red;
 }
 
 .footer__link p {
