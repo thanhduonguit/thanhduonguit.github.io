@@ -102,11 +102,10 @@
     height: 320px;
     display: flex;
     align-items: center;
-    background: url("../images/content_left_bg_2.png") no-repeat center center;
   }
   
   .section__content__right--edit {
-    background: url("../images/content_right_bg.png") no-repeat center center;
+    background-color: #ffffff;
     width: 66.28%;
     height: 320px;
     display: flex;
@@ -142,12 +141,11 @@
   }
   
   .text__above__button input {
-    background: url("../images/checkbox_bg.png") no-repeat center center;
-    width: 11px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     background-color: #fff1f1;
     border: 1px solid #ff3333;
-    margin-top: 4.8px;
+    margin-top: 2.8px;
     margin-right: 15px;
   }
   
