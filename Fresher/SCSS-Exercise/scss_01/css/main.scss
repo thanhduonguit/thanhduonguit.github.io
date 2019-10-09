@@ -1,0 +1,56 @@
+@import "common";
+@import "header";
+@import "navbar";
+@import "content-1";
+@import "content-2";
+@import "footer";
+@import "responsive";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.pb-12 {
+	padding-bottom: 12px;
+}
+body {
+	margin: 0 auto;
+}
+ul {
+	list-style: none;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mt-1 {
+	margin-top: 1px;
+}
+.pt-9 {
+	padding-top: 9px;
+}
+.text__style--1 {
+	font-size: 19px;
+	font-weight: bold;
+}
+.text__style--2 {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+}
+.text__style--3 {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 500;
+}
+.text__style--4 {
+	font-size: 16px;
+	line-height: 25px;
+	color: $color_1;
+	font-weight: 500;
+}
+.text__style--5 {
+	font-size: 14px;
+	line-height: 25px;
+	color: $color_2;
+	font-weight: 500;
+}

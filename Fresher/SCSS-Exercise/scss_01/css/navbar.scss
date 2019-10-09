@@ -1,0 +1,53 @@
+@import "common";
+
+.nav {
+	position: relative;
+	background: url("../images/nav_bg.png") no-repeat;
+	height: 76px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	li {
+		position: relative;
+		list-style-type: none;
+		width: 167px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-right: 1px solid #ccb73d;
+		border-left: 1px solid #fae477;
+		&:last-child {
+			border-right: 1px solid #ccb73d;
+		}
+		&:hover {
+			background: url("../images/button_hover.png");
+			a {
+				color: $color_2;
+				&:before {
+					background: url("../images/nav_before_2.svg") no-repeat;
+				}
+			}
+		}
+		a {
+			position: absolute;
+			text-decoration: none;
+			color: $color_3;
+			font-size: 18px;
+			font-weight: 700;
+			padding-left: 15px;
+			line-height: 26px;
+			&:before {
+				position: absolute;
+				content: "";
+				background: url("../images/nav_before.svg") no-repeat;
+				width: 12px;
+				height: 12px;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
