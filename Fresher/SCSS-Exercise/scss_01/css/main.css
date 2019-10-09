@@ -378,7 +378,7 @@ input.form-control.checkbox {
 
 @media (min-width: 1039px) {
   .footer__background {
-    padding-bottom: 70px; } }
+    padding-bottom: 50px; } }
 @media (min-width: 860px) and (max-width: 1038.9px) {
   .header__img--2 img {
     width: 100%;
