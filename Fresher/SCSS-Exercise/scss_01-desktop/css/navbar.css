@@ -45,9 +45,11 @@
     width: 169px;
     position: absolute;
     top: 76px;
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   .nav .menu__sub:hover .subNav {
-    opacity: 1; }
+    opacity: 1;
+    visibility: visible; }
   .nav .menu__sub ul li.subNav {
     background-color: #352700;
     height: 48px;

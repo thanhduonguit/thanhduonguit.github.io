@@ -56,10 +56,12 @@
 			position: absolute;
 			top: 76px;
 			opacity: 0;
+			visibility: hidden;
 		}
 		&:hover {
 			.subNav {
 				opacity: 1;
+				visibility: visible;
 			}
 		}
 		ul {
