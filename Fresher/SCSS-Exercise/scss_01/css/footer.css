@@ -1,10 +1,10 @@
 .footer {
   position: relative;
-  height: 205px;
+  height: 267px;
   text-align: center; }
 
 .footer__background {
-  padding-bottom: 50px;
+  margin-top: 63px;
   transform: rotate(180deg);
   width: calc(97.7%); }
 
@@ -13,19 +13,19 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 0;
+  top: 37px;
   left: 50%;
   transform: translateX(-50%); }
 
 .footer__link {
   position: absolute;
-  top: 76px;
+  top: 116px;
   display: flex;
   width: 1000px;
   left: 50%;
   transform: translateX(-50%);
   color: #ffffff;
-  font-size: 12px;
+  font-size: 11px;
   align-items: center;
   font-weight: 500; }
   .footer__link ul {

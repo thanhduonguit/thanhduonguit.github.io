@@ -1,5 +1,6 @@
 .content__2 {
-  background: url("../images/section_bg.png") repeat-y; }
+  background: url("../images/section_bg.png") repeat-y;
+  height: 839px; }
 
 .section__container {
   width: 95.56%;
