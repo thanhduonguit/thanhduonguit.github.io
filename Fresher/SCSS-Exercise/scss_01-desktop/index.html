@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SCSS-01 DESKTOP</title>
+    <title>SCSS-01</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -108,7 +108,7 @@
                                     <img src="images/content_yellow.png" alt="content_yellow">
                                 </div>
                                 <div class="content__highlight__1__text">
-                                    <p class="text__style--1 mb-10">早期エントリー期間</p>
+                                    <p class="text__style--1 mb__10">早期エントリー期間</p>
                                     <p class="text__style--2">2016年10月6日（木）PM</p>
                                     <p class="text__style--2">～10月16日（日）17:00</p>
                                 </div>
@@ -118,7 +118,7 @@
                                     <img src="images/content_red.png" alt="content_red">
                                 </div>
                                 <div class="content__highlight__2__text">
-                                    <p class="text__style--1 mb-10">通常エントリー期間</p>
+                                    <p class="text__style--1 mb__10">通常エントリー期間</p>
                                     <p class="text__style--2">2016年10月16日（日）17:00</p>
                                     <p class="text__style--2">～10月30日（日）17:00</p>
                                 </div>
@@ -132,7 +132,7 @@
                     </div>
 
                     <!-- Section content 2 -->
-                    <div class="pt-9">
+                    <div class="pt__9">
                         <div class="content__2">
                             <div class="content__title">
                                 <h2>エントリーフォーム1</h2>
@@ -155,7 +155,7 @@
                                     <div class="section__content__left">
                                         <p>生年月日<span>※必須</span></p>
                                     </div>
-                                    <div class="section__content__right mt-1">
+                                    <div class="section__content__right mt__1">
                                         <p class="text__style--4">生年月日を半角で正しく入力してください。</p>
                                         <div class="list__input">
                                             <div class="list__input__item">
@@ -199,9 +199,16 @@
 
                                 <div class="section__content--4">
                                     <div class="text__style--4">利用規約への同意が必要です。</div>
-                                    <div class="text__above__button">
-                                        <input class="form-control checkbox" type="text">
-                                        <p>利用規約に同意する</p>
+                                    <div class="check">
+                                        <div class="form">
+                                            <input type="checkbox" id="check">
+                                            <label for="check" style="--d: 20px;">
+                                                <svg viewBox="0,0,50,50">
+                                                    <path d="M5 30 L 20 45 L 45 5"></path>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <p class="ml__15">利用規約に同意する</p>
                                     </div>
                                     <div class="main__button">
                                         <img src="images/button_before.png" alt="button_before">

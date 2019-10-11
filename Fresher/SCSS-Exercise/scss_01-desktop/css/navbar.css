@@ -47,7 +47,7 @@
     top: 76px;
     opacity: 0;
     visibility: hidden; }
-  .nav .menu__sub:hover .subNav {
+  .nav .menu__sub:hover ul.subNav {
     opacity: 1;
     visibility: visible; }
   .nav .menu__sub ul li.subNav {
@@ -71,6 +71,6 @@
         background: url(../images/button_before.png) no-repeat;
         width: 23px;
         height: 22px;
-        right: 10px; }
+        right: 13px; }
 
 /*# sourceMappingURL=navbar.css.map */
