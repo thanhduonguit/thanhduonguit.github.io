@@ -2,7 +2,7 @@
 
 .wrapper__container {
 	width: 1000px;
-	margin: auto;
+	margin: 0 auto;
 }
 .title {
 	position: relative;
@@ -15,28 +15,26 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	p {
-		font-family: 'Yu Mincho', sans-serif;
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		font-family: 'Yu Mincho', sans-serif;
 		font-weight: 700;
 		padding-left: 25px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 ol.breadcrumb {
 	display: flex;
 	list-style-type: none;
 	padding-left: 2px;
+	margin-top: 5px;
 }
-.breadcrumb__item {
-	a {
-		color: $color_1;
-		text-decoration: none;
-		font-weight: 700;
-		font-size: 12px;
-	}
-}
+
 li.breadcrumb__item {
+	color: $color_1;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 12px;
 	&+li.breadcrumb__item {
 		padding-left: 10px;
 		&:before {
@@ -48,9 +46,9 @@ li.breadcrumb__item {
 	}
 }
 .main {
-	position: relative;
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 .box {
 	top: 15px;
@@ -65,25 +63,24 @@ li.breadcrumb__item {
 .section {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 .section__title {
-	width: 92.8%;
-	margin-top: 35px;
+	width: 92.81%;
 	background: url("../images/image_4.png") center;
-	height: 45px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 1.414px 1.414px 3px rgba(0, 0, 0, 0.5);
 	font-size: 22px;
 	font-weight: 700;
 	color: $color_1;
+	height: 45px;
+	margin-top: 35px;
 }
 .section__content {
-	width: 92.8%;
+	width: 92.81%;
 	background: url("../images/image_5.png");
 	display: flex;
 	justify-content: center;
@@ -104,7 +101,7 @@ li.breadcrumb__item {
 	align-items: center;
 	margin: 0 10px;
 	background-color: $background_color_2;
-	clip-path: polygon(86% 0, 100% 50%, 100% 51%, 86% 100%, 0 100%, 0 0);
+	clip-path: polygon(86% 0, 100% 50%, 100% 50%, 86% 100%, 0 100%, 0 0);
 	p {
 		width: 58%;
 		color: $color_1;
@@ -127,7 +124,7 @@ li.breadcrumb__item {
 	align-items: center;
 	margin: 0 10px;
 	background-color: $background_color_3;
-	clip-path: polygon(86% 0, 100% 50%, 100% 51%, 86% 100%, 0 100%, 0 0);
+	clip-path: polygon(86% 0, 100% 50%, 100% 50%, 86% 100%, 0 100%, 0 0);
 	p {
 		width: 58%;
 		color: $color_1;
@@ -142,11 +139,11 @@ li.breadcrumb__item {
 	}
 }
 .section__text {
+	margin-top: 22px;
+	margin-bottom: 46px;
 	color: $color_1;
 	width: 92.65%;
 	font-weight: 500;
-	margin-top: 22px;
-	margin-bottom: 46px;
 }
 .section__2 {
 	width: 100%;
