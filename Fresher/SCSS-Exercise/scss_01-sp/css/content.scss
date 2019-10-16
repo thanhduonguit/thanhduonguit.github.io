@@ -338,6 +338,9 @@ li.breadcrumb__item {
 				}
 			}
 			input#check {
+				width: 171px;
+				height: 23px;
+				cursor: pointer;
 				&:checked {
 					&+label {
 						svg {
