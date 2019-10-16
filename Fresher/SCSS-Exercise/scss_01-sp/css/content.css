@@ -6,13 +6,14 @@
   position: relative;
   color: white;
   font-size: 36px;
-  background: url("../images/image_1.png");
+  background: url("../images/main_title_bg.png");
   margin-top: 32px;
   height: 72px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
   .title p {
+    font-family: 'Yu Mincho', sans-serif;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
