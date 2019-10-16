@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 10px;
-    height: 50px;
+    height: 67px;
     background-size: 90px; }
 
   button.header__btn__1 {
@@ -24,11 +24,11 @@
     border: none;
     margin: 10px 20px 10px 0;
     cursor: pointer;
-    width: 70px;
-    font-size: 13px;
+    width: 93px;
+    font-size: 17px;
     line-height: normal; }
 
-  button.header__btn__2 {
+  .header__btn__2 {
     border: none;
     background-color: #278305;
     cursor: pointer;
@@ -40,9 +40,9 @@
     background-color: white;
     margin: 7px 20px;
     transition: 0.4s;
-    height: 3.5px;
-    width: 25px;
-    margin: 4.5px 13px; }
+    height: 5px;
+    width: 33px;
+    margin: 6px 17px; }
 
   .bar2 {
     width: 40px;
@@ -50,9 +50,9 @@
     background-color: white;
     margin: 7px 20px;
     transition: 0.4s;
-    height: 3.5px;
-    width: 25px;
-    margin: 4.5px 13px; }
+    height: 5px;
+    width: 33px;
+    margin: 6px 17px; }
 
   .bar3 {
     width: 40px;
@@ -60,26 +60,26 @@
     background-color: white;
     margin: 7px 20px;
     transition: 0.4s;
-    height: 3.5px;
-    width: 25px;
-    margin: 4.5px 13px; }
+    height: 5px;
+    width: 33px;
+    margin: 6px 17px; }
 
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 8px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
     transform: rotate(-45deg) translate(-12px, 10px);
-    transform: rotate(-45deg) translate(-5px, 8px);
-    -moz-transform: rotate(-45deg) translate(-5px, 8px);
-    -ms-transform: rotate(-45deg) translate(-5px, 8px);
-    -o-transform: rotate(-45deg) translate(-5px, 8px); }
+    transform: rotate(-45deg) translate(-8px, 8px);
+    -moz-transform: rotate(-45deg) translate(-8px, 8px);
+    -ms-transform: rotate(-45deg) translate(-8px, 8px);
+    -o-transform: rotate(-45deg) translate(-8px, 8px); }
   .change .bar2 {
     opacity: 0; }
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-3px, -6px);
+    -webkit-transform: rotate(45deg) translate(-7px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-3px, -6px);
-    -moz-transform: rotate(45deg) translate(-3px, -6px);
-    -ms-transform: rotate(45deg) translate(-3px, -6px);
-    -o-transform: rotate(45deg) translate(-3px, -6px); }
+    transform: rotate(45deg) translate(-7px, -8px);
+    -moz-transform: rotate(45deg) translate(-7px, -8px);
+    -ms-transform: rotate(45deg) translate(-7px, -8px);
+    -o-transform: rotate(45deg) translate(-7px, -8px); }
 
   header {
     background: url("../images/banner_mobile.png");
