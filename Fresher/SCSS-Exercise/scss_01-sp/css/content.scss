@@ -64,11 +64,11 @@
 	width: 100%;
 }
 .section {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 .section__title {
 	width: 92.81%;
@@ -83,12 +83,12 @@
 	margin-top: 35px;
 }
 .section__content {
-	width: 92.81%;
-	background: url("../images/image_5.png");
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 92.81%;
+	background: url("../images/image_5.png");
 }
 .content__highlight {
 	display: flex;
@@ -96,8 +96,6 @@
 	margin-top: 80px;
 }
 .content__highlight--left {
-	width: 297px;
-	height: 123px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -105,6 +103,8 @@
 	margin: 0 10px;
 	background-color: $background_color_2;
 	clip-path: polygon(86% 0, 100% 50%, 100% 50%, 86% 100%, 0 100%, 0 0);
+	width: 297px;
+	height: 123px;
 	p {
 		width: 58%;
 		color: $color_1;
@@ -119,8 +119,6 @@
 	}
 }
 .content__highlight--right {
-	width: 297px;
-	height: 123px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -128,6 +126,8 @@
 	margin: 0 10px;
 	background-color: $background_color_3;
 	clip-path: polygon(86% 0, 100% 50%, 100% 50%, 86% 100%, 0 100%, 0 0);
+	width: 297px;
+	height: 123px;
 	p {
 		width: 58%;
 		color: $color_1;
@@ -142,52 +142,52 @@
 	}
 }
 .section__text {
+	width: 92.65%;
+	font-weight: 500;
 	margin-top: 22px;
 	margin-bottom: 46px;
 	color: $color_1;
-	width: 92.65%;
-	font-weight: 500;
 }
 .section__2 {
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 34px;
+	width: 100%;
 }
 .section__title--2 {
-	box-shadow: 1.414px 1.414px 3px rgba(0, 0, 0, 0.5);
-	background: url("../images/image_4.png") center;
-	width: 92.8%;
-	height: 45px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 22px;
 	font-weight: 700;
 	color: $color_1;
+	box-shadow: 1.414px 1.414px 3px rgba(0, 0, 0, 0.5);
+	background: url("../images/image_4.png") center;
+	width: 92.8%;
+	height: 45px;
 }
 .section__2__content {
-	background: url("../images/image_5.png") no-repeat;
-	width: 92.8%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 56px;
+	background: url("../images/image_5.png") no-repeat;
+	width: 92.8%;
 }
 .title__border__red {
-	width: calc(100% - 46px);
-	color: $color_4;
-	background: #ffffff;
-	border: 2px solid #ff3333;
-	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 500;
 	margin-top: 26px;
+	width: calc(100% - 46px);
+	color: $color_4;
+	background: #ffffff;
+	border: 2px solid #ff3333;
+	height: 40px;
 }
 .box__content {
 	width: calc(100% - 46px);
@@ -228,8 +228,6 @@
 	}
 }
 .content__left {
-	width: 33.73%;
-	background: #fefbd2;
 	display: flex;
 	height: 40px;
 	padding-left: 21px;
@@ -237,6 +235,8 @@
 	font-size: 18px;
 	font-weight: 700;
 	color: $color_3;
+	width: 33.73%;
+	background: #fefbd2;
 	p {
 		font-weight: 500;
 		color: $color_5;
@@ -302,12 +302,12 @@
 			margin-right: 10px;
 		}
 		&:nth-child(2) {
-			color: $color_1;
-			margin-top: 3px;
-			cursor: pointer;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			color: $color_1;
+			margin-top: 3px;
+			cursor: pointer;
 			#check {
 				position: absolute;
 				opacity: 0;
@@ -326,7 +326,6 @@
 					svg {
 						pointer-events: none;
 						path {
-							fill: none;
 							stroke: red;
 							stroke-width: 4px;
 							stroke-linecap: round;
@@ -334,6 +333,7 @@
 							stroke-dasharray: 100;
 							stroke-dashoffset: 101;
 							transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);
+							fill: none;
 						}
 					}
 				}
@@ -359,6 +359,12 @@
 			}
 		}
 		&:nth-child(3) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 700;
+			cursor: pointer;
+			position: relative;
 			margin-bottom: 38px;
 			margin-top: 21px;
 			width: 230px;
@@ -368,20 +374,14 @@
 			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 			background-image: linear-gradient(180deg, #35b556 0%, #259e44 49%, #21882f 50%, #0b710d 100%);
 			border: 1px solid #22972d;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-weight: 700;
-			cursor: pointer;
-			position: relative;
 			&::before {
 				position: absolute;
-				top: 50%;
-				left: 19px;
 				content: "";
+				left: 19px;
 				width: 12px;
 				height: 12px;
 				background: url("../images/nav_before_white.svg");
+				top: 50%;
 				transform: translateY(-50%);
 			}
 		}
