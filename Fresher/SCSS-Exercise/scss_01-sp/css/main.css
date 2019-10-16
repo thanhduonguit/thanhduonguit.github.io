@@ -340,7 +340,17 @@ li.breadcrumb__item + li.breadcrumb__item {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .box__content__last div:nth-child(3)::before {
+      position: absolute;
+      top: 50%;
+      left: 19px;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: url("../images/nav_before_white.svg");
+      transform: translateY(-50%); }
   .box__content__last div:nth-child(4) {
     display: flex;
     color: white;
