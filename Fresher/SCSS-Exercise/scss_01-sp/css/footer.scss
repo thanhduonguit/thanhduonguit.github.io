@@ -41,14 +41,14 @@ footer {
 	left: 50%;
 	transform: translateX(-50%);
 	color: $color_1;
-	font-size: 12px;
+	// font-size: 12px;
 	align-items: center;
 	font-weight: 500;
 	ul {
 		display: flex;
 		width: 62%;
 		justify-content: flex-end;
-		font-size: 10px;
+		// font-size: 10px;
 		li {
 			display: flex;
 			align-items: center;
@@ -56,9 +56,9 @@ footer {
 			list-style-type: none;
 			padding-left: 10px;
 			a {
+				margin-left: 10px;
 				text-decoration: none;
 				color: $color_1;
-				margin-left: 10px;
 			}
 		}
 	}

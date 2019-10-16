@@ -39,14 +39,12 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 12px;
   align-items: center;
   font-weight: 500; }
   .footer__link ul {
     display: flex;
     width: 62%;
-    justify-content: flex-end;
-    font-size: 10px; }
+    justify-content: flex-end; }
     .footer__link ul li {
       display: flex;
       align-items: center;
@@ -54,8 +52,8 @@ footer {
       list-style-type: none;
       padding-left: 10px; }
       .footer__link ul li a {
+        margin-left: 10px;
         text-decoration: none;
-        color: white;
-        margin-left: 10px; }
+        color: white; }
 
 /*# sourceMappingURL=footer.css.map */

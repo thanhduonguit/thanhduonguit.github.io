@@ -18,7 +18,8 @@
       .footer__link ul li {
         margin-left: 20px; }
         .footer__link ul li a {
-          font-size: 14px; }
+          font-size: 14px;
+          margin-right: 10px; }
     .footer__link img {
       order: 2; }
     .footer__link p {
@@ -39,6 +40,11 @@
 
   .footer__bg {
     margin-top: 105px;
-    margin-bottom: 17px; } }
+    margin-bottom: 17px; }
+
+  .footer__link {
+    font-size: 12px; }
+    .footer__link ul {
+      font-size: 10px; } }
 
 /*# sourceMappingURL=responsive-5.css.map */
