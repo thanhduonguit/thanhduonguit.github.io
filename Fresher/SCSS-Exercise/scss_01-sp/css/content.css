@@ -3,17 +3,17 @@
   margin: 0 auto; }
 
 .title {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   font-size: 36px;
   background: url(../images/main_title_bg.png);
-  margin-top: 32px;
+  margin-top: 27px;
   height: 72px; }
   .title p {
     position: absolute;
@@ -45,7 +45,16 @@
 .main {
   display: flex;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  margin-top: 7px; }
+
+.yellow__border {
+  width: 100%;
+  height: 1443px; }
+
+.white__bg {
+  width: 100%;
+  height: 1348px; }
 
 .box {
   top: 15px;
@@ -65,16 +74,16 @@
   width: 100%; }
 
 .section__title {
+  margin-top: 37px;
   width: 92.81%;
-  background: url("../images/image_4.png") center;
+  background: url("../images/section_title.png") center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 22px;
   font-weight: 700;
   color: white;
-  height: 45px;
-  margin-top: 35px; }
+  height: 45px; }
 
 .section__content {
   display: flex;
@@ -82,7 +91,7 @@
   align-items: center;
   flex-direction: column;
   width: 92.81%;
-  background: url("../images/image_5.png"); }
+  background: url("../images/section_content_bg.png"); }
 
 .content__highlight {
   display: flex;
@@ -153,8 +162,7 @@
   font-size: 22px;
   font-weight: 700;
   color: white;
-  box-shadow: 1.414px 1.414px 3px rgba(0, 0, 0, 0.5);
-  background: url("../images/image_4.png") center;
+  background: url("../images/section_title.png") center;
   width: 92.8%;
   height: 45px; }
 
@@ -164,7 +172,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 56px;
-  background: url("../images/image_5.png") no-repeat;
+  background: url("../images/section_content_bg.png") no-repeat;
   width: 92.8%; }
 
 .title__border__red {
@@ -195,7 +203,7 @@
     .box__content__item:last-child .content__left {
       width: 33.73%;
       height: 325px;
-      padding-left: 11px; }
+      padding-left: 18px; }
     .box__content__item:last-child .content__right {
       width: calc(100% - 31.73%);
       background: white;
@@ -209,7 +217,7 @@
 .content__left {
   display: flex;
   height: 40px;
-  padding-left: 21px;
+  padding-left: 18px;
   align-items: center;
   font-size: 18px;
   font-weight: 700;
@@ -252,7 +260,7 @@
     .content__input div p {
       font-size: 18px;
       font-weight: 700;
-      padding: 0 0 0 10px; }
+      padding: 0 0 0 7px; }
 
 .input__text {
   width: 141px;

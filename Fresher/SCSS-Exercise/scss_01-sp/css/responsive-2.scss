@@ -222,7 +222,6 @@
 		&:nth-child(2) {
 			.content__right {
 				.content__input {
-					flex-wrap: wrap;
 					div {
 						&:nth-child(1) {
 							input {
@@ -357,7 +356,7 @@
 			order: 1;
 			flex-direction: column;
 			width: 100%;
-			background: url("../images/image_5.png") no-repeat;
+			background: url("../images/section_content_bg.png") no-repeat;
 			li {
 				padding: 21px 0;
 				padding-left: 0;

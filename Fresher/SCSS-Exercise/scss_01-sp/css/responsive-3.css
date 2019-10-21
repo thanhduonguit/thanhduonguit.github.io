@@ -202,11 +202,9 @@
     .box__content__item:nth-child(1) .content__right p {
       font-size: 15px;
       color: white; }
-    .box__content__item:nth-child(2) .content__right .content__input {
-      flex-wrap: wrap; }
-      .box__content__item:nth-child(2) .content__right .content__input div p {
-        font-size: 17px;
-        color: white; }
+    .box__content__item:nth-child(2) .content__right .content__input div p {
+      font-size: 17px;
+      color: white; }
     .box__content__item:nth-child(2) .content__right p {
       font-size: 15px;
       color: white; }
@@ -290,7 +288,7 @@
       order: 1;
       flex-direction: column;
       width: 100%;
-      background: url("../images/image_5.png") no-repeat; }
+      background: url("../images/section_content_bg.png") no-repeat; }
       .footer__link ul li {
         padding: 19px 0;
         padding-left: 0;

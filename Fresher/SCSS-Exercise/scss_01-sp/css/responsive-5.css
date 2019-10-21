@@ -5,6 +5,12 @@
   .box img {
     margin-top: 2px; }
 
+  .content__input {
+    justify-content: flex-start; }
+
+  .content__input div p {
+    padding: 0 12px 0 7px; }
+
   .footer__bg {
     margin-top: 170px;
     margin-bottom: 10px; }
@@ -35,8 +41,14 @@
   .header__mobile {
     display: none; }
 
+  .content__input {
+    justify-content: flex-start; }
+
+  .content__input div p {
+    padding: 0 12px 0 7px; }
+
   .box img {
-    margin-top: 1.5px; }
+    margin-top: 2px; }
 
   .footer__bg {
     margin-top: 105px;
