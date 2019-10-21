@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCSS-01</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header__mobile">
+        <button class="header__btn__1">ログイン</button>
+        <button class="header__btn__2 js__btn__2">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <img src="images/header_top_left.png" alt="header_left">
+        <img src="images/header_banner.png" alt="header_banner">
+        <img src="images/header_top_right.png" alt="header_right">
+    </header>
+
+    <!-- Navbar -->
+    <div class="nav">
+        <li class="menu">
+            <a class="menu__text" href="#">TOP</a>
+        </li>
+        <li class="menu menu__sub">
+            <a class="menu__text" href="#">エントリー <br> について</a>
+        </li>
+        <li class="menu menu__sub">
+            <a class="menu__text" href="#">ルール説明</a>
+        </li>
+        <li class="menu menu__sub">
+            <a class="menu__text" href="#">賞品紹介</a>
+        </li>
+        <li class="menu">
+            <a class="menu__text" href="#">よくある質問</a>
+        </li>
+        <li class="menu">
+            <a class="menu__text" href="#">エントリー</a>
+        </li>
+    </div>
+    <ul class="sub__nav">
+        <hr>
+        <li class="sub__nav">
+            <a class="sub__nav" href="#">エントリー</a>
+        </li>
+        <hr>
+        <li class="sub__nav">
+            <a class="sub__nav" href="#">PCからのエントリー手順</a>
+        </li>
+        <hr>
+        <li class="sub__nav">
+            <a class="sub__nav" href="#">ルール説明</a>
+        </li>
+        <hr>
+        <li class="sub__nav">
+            <a class="sub__nav" href="#">よくある質問</a>
+        </li>
+        <hr>
+    </ul>
+
+    <!-- Content -->
+    <div class="wrapper__container">
+        <div class="title">
+            <p>エントリー</p>
+        </div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb__item ml-5">
+                TOP
+            </li>
+            <li class="breadcrumb__item">
+                エントリー
+            </li>
+        </ol>
+        <div class="main">
+            <!-- <img class="yellow__border" src="images/yellow_border.png" alt="yellow_border"> -->
+            <div class="box">
+                <!-- <img class="white__bg" src="images/white_bg.png" alt="white_bg"> -->
+                <div class="section__container">
+                    <div class="section">
+                        <div class="section__title">
+                            エントリー概要
+                        </div>
+                        <div class="section__content">
+                            <div class="content__highlight">
+                                <div class="content__highlight--left">
+                                    <p>早期エントリー期間</p>
+                                    <p>2016年10月6日 (木) PM <br> ～10月16日 (日) 17:00</p>
+                                </div>
+                                <div class="content__highlight--right">
+                                    <p>通常エントリー期間</p>
+                                    <p>2016年10月16日 (日)17:00 <br> ～10月30日 (日)17:00</p>
+                                </div>
+                            </div>
+                            <div class="section__text">
+                                オッズ・マスターズ・グランプリ2016は1st Stageと2nd Stageの2期に分かれて開催され、エントリー期間も1st Stageと2nd
+                                Stageで分かれています。いずれかの期間に1度エントリーすれば、以降本キャンペーンをお楽しみいただくことができます。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section__2">
+                        <div class="section__title--2">
+                            エントリーフォーム1
+                        </div>
+                        <div class="section__2__content">
+                            <div class="title__border__red">
+                                正しく入力されていない箇所があります。再度ご確認ください。
+                            </div>
+                            <div class="box__content">
+                                <div class="box__content__item">
+                                    <div class="content__left">
+                                        加入者番号
+                                        <p>※必須</p>
+                                    </div>
+                                    <div class="content__right">
+                                        <p>加入者番号を半角で正しく入力してください。</p>
+                                        <input class="input__text--1" type="text">
+                                        <p class="mt__7">6桁の方は最初に00をつけて下さい。(半角)</p>
+                                    </div>
+                                </div>
+
+                                <div class="box__content__item">
+                                    <div class="content__left">
+                                        生年月日
+                                        <p>※必須</p>
+                                    </div>
+                                    <div class="content__right">
+                                        <p>生年月日を半角で正しく入力してください。</p>
+                                        <div class="content__input">
+                                            <div>
+                                                <input class="input__text" type="text">
+                                                <p>年</p>
+                                            </div>
+                                            <div>
+                                                <input class="input__text" type="text">
+                                                <p>月</p>
+                                            </div>
+                                            <div>
+                                                <input class="input__text" type="text">
+                                                <p>日</p>
+                                            </div>
+                                        </div>
+                                        <p class="mt__7">記入例：1985年2月12日（半角）</p>
+                                    </div>
+                                </div>
+
+                                <div class="box__content__item mt__17">
+                                    <div class="content__left">
+                                        利用規約
+                                    </div>
+                                    <div class="content__right">
+                                        利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入
+                                        利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box__content__last">
+                                <div class="content__last--1">
+                                    利用規約への同意が必要です。
+                                </div>
+                                <div class="check">
+                                    <div class="form">
+                                        <input type="checkbox" id="check">
+                                        <label for="check" style="--d: 20px;">
+                                            <svg viewBox="0,0,50,50">
+                                                <path d="M5 30 L 20 45 L 45 5"></path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    利用規約に同意する
+                                </div>
+                                <div class="main__button">
+                                    <p>次へ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer__bg">
+            <img src="images/header_left.png" alt="">
+            <img src="images/header_right.png" alt="">
+        </div>
+        <div class="footer__text">
+            <p>開催期間</p>&nbsp;
+            2016年10月15日 (土) ～ 2016年12月18日 (日)
+        </div>
+        <div class="footer__list__img">
+            <img src="images/footer_list_img_1.png" alt="Win 5">
+            <img src="images/footer_list_img_2.png" alt="Jra-Van">
+            <img src="images/footer_list_img_3.png" alt="Club A-Pat">
+            <img src="images/footer_list_img_4.png" alt="Jra">
+        </div>
+        <div class="footer__link">
+            <img class="footer__jra" src="images/footer_jra.png" alt="Jra">
+            <p class="copyright">
+                Copyright © Japan Racing Association All rights reserved.
+            </p>
+            <ul>
+                <li>
+                    <img class="svg footer__link__before" src="images/nav_before_white.svg" alt="Navbar Before">
+                    <a href="#">利用規約</a>
+                </li>
+                <li>
+                    <img class="svg footer__link__before" src="images/nav_before_white.svg" alt="Navbar Before">
+                    <a href="#">個人情報の取扱いについて</a>
+                </li>
+                <li>
+                    <img class="svg footer__link__before" src="images/nav_before_white.svg" alt="Navbar Before">
+                    <a href="#">セキュリティポリシー</a>
+                </li>
+                <li>
+                    <img class="svg footer__link__before" src="images/nav_before_white.svg" alt="Navbar Before">
+                    <a href="#">お問合せ</a>
+                </li>
+                <li>
+                    <img class="svg footer__link__before" src="images/nav_before_white.svg" alt="Navbar Before">
+                    <a href="#">サイトマップ</a>
+                </li>
+                <li>
+                    <img class="svg footer__link__before" src="images/nav_before_white.svg" alt="Navbar Before">
+                    <a href="#"> Club A-PAT</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

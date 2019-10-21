@@ -1,0 +1,85 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: url("../images/nav_bg.png") no-repeat;
+  height: 76px;
+  background-position: center;
+  background-size: cover; }
+  .nav li.menu {
+    position: relative;
+    list-style-type: none;
+    width: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ccb73d;
+    border-left: 1px solid #fae477; }
+    .nav li.menu:last-child {
+      border-right: 1px solid #ccb73d; }
+    .nav li.menu:hover {
+      background: url("../images/button_hover.png"); }
+      .nav li.menu:hover a.menu__text {
+        color: white; }
+        .nav li.menu:hover a.menu__text:before {
+          background: url("../images/nav_before_2.svg") no-repeat; }
+    .nav li.menu a.menu__text {
+      position: absolute;
+      text-decoration: none;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 15px;
+      line-height: 26px; }
+      .nav li.menu a.menu__text:before {
+        position: absolute;
+        content: "";
+        background: url("../images/nav_before.svg") no-repeat;
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%); }
+
+ul.sub__nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #352700;
+  height: 76px;
+  background-position: center;
+  background-size: cover; }
+  ul.sub__nav li.sub__nav {
+    position: relative;
+    list-style-type: none;
+    width: 248px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    ul.sub__nav li.sub__nav:hover a.sub__nav {
+      color: #e3b935; }
+      ul.sub__nav li.sub__nav:hover a.sub__nav:before {
+        background: url("../images/nav_before_3.svg") no-repeat; }
+    ul.sub__nav li.sub__nav a.sub__nav {
+      position: absolute;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 15px;
+      line-height: 26px; }
+      ul.sub__nav li.sub__nav a.sub__nav:before {
+        position: absolute;
+        content: "";
+        background: url("../images/nav_before_2.svg") no-repeat;
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%); }
+
+.menu__sub:hover .nav__sub {
+  display: block; }
+
+/*# sourceMappingURL=navbar.css.map */
