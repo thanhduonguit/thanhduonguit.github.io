@@ -26,12 +26,12 @@
       padding-left: 20px; }
 
   .main img {
-    height: 1312px; }
+    height: 1299px; }
   .main .box {
     top: 13px; }
 
   .box img {
-    height: 1225px;
+    height: 1213px;
     margin-top: 3px; }
 
   .section {
@@ -123,6 +123,9 @@
       display: none; }
     .box__content__last div:nth-child(2) #check + label {
       border: none; }
+
+  .box__content__last div:nth-child(3) {
+    margin: 15px 0px 28px 0px; }
 
   footer {
     width: 100%; }

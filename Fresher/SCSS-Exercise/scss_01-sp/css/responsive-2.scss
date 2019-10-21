@@ -119,13 +119,13 @@
 	}
 	.main {
 		img {
-			height: 1175px;
+			height: 1113px;
 		}
 	}
 	.box {
 		top: 13px;
 		img {
-            height: 1100px;
+            height: 1040px;
 		}
 	}
 	.section {
@@ -299,6 +299,9 @@
 				}
 			}
 		}
+	}
+	.box__content__last div:nth-child(3) {
+		margin: 11px 0px 19px 0px;
 	}
 	footer {
 		width: 100%;

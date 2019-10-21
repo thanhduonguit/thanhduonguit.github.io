@@ -113,12 +113,12 @@
 	}
 	.main {
 		img {
-			height: 1175px;
+			height: 1140px;
 		}
 		.box {
 			top: 13px;
 			img {
-				height: 1100px;
+				height: 1067px;
 			}
 		}
 	}
@@ -211,7 +211,6 @@
 		&:nth-child(2) {
 			.content__right {
 				.content__input {
-					flex-wrap: wrap;
 					div {
 						&:nth-child(1) {
 							input {
@@ -289,6 +288,9 @@
 				}
 			}
 		}
+	}
+	.box__content__last div:nth-child(3) {
+		margin: 11px 0px 19px 0px;
 	}
 	footer {
 		width: 100%;
