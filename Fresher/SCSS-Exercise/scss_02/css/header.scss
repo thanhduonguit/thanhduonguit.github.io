@@ -1,0 +1,28 @@
+@import "common.scss";
+
+header {
+	display: flex;
+	justify-content: center;
+	background: url("../images/banner_2.png");
+	height: 182px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 100%;
+	img {
+		position: absolute;
+		top: 12px;
+		&:first-child {
+			left: 15px;
+			transform: rotate(180deg);
+		}
+		&:nth-child(2) {
+			padding-left: 70px;
+		}
+		&:last-child {
+			right: 15px;
+			transform: rotate(180deg);
+		}
+	}
+}
