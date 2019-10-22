@@ -1,0 +1,130 @@
+@import "common.scss";
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.mt__17 {
+		margin-top: 17px;
+	}
+	.header__mobile {
+		display: none;
+	}
+	nav.nav.show {
+		display: none;
+	}
+	input {
+		height: 38px;
+		background-color: $background_color_4;
+		border: 1px solid #ff3333;
+	}
+	.main {
+		border: 15px solid transparent;
+		border-image: url(../images/image_2.png) 15 stretch;
+		margin: 15px 0px 0px 0px;
+	}
+	.box {
+		border: 20px solid transparent;
+		border-image: url(../images/image_3.png) 20 stretch;
+	}
+	.box img {
+		margin-top: 2px;
+	}
+	.box__content__last div:nth-child(3) {
+		margin: 22px 0px 36px 0px;
+	}
+	.content__left {
+		height: 40px;
+	}
+	.content__input {
+		justify-content: flex-start;
+	}
+	.content__input div p {
+		padding: 0 12px 0 7px;
+	}
+	.footer__bg {
+		margin-top: 170px;
+		margin-bottom: 10px;
+	}
+	.footer__text {
+		top: 50px;
+	}
+	.footer__link {
+		flex-direction: column;
+		ul {
+			order: 1;
+			width: 100%;
+			justify-content: center;
+			li {
+				margin-left: 20px;
+				a {
+					font-size: 14px;
+					margin-right: 10px;
+				}
+			}
+		}
+		img {
+			order: 2;
+		}
+		p {
+			order: 3;
+			font-size: 14px;
+		}
+	}
+	.footer__jra {
+		display: none;
+	}
+	.copyright {
+		margin-top: 20px;
+	}
+}
+@media (min-width: 1200px) {
+	.mt__17 {
+		margin-top: 17px;
+	}
+	nav.nav.show {
+		display: none;
+	}
+	input {
+		height: 38px;
+		background-color: $background_color_4;
+		border: 1px solid #ff3333;
+	}
+	.header__mobile {
+		display: none;
+	}
+	.main {
+		border: 15px solid transparent;
+		border-image: url(../images/image_2.png) 15 stretch;
+		margin: 15px 0px 0px 0px;
+	}
+	.box {
+		border: 22px solid transparent;
+		border-image: url(../images/image_3.png) 20 stretch;
+	}
+	.content__left {
+		height: 40px;
+	}
+	.content__input {
+		justify-content: flex-start;
+	}
+	.content__input div p {
+		padding: 0 12px 0 7px;
+	}
+	.box img {
+		margin-top: 2px;
+	}
+	.box__content__last div:nth-child(3) {
+		margin: 22px 0px 36px 0px;
+	}
+	.footer__bg {
+		margin-top: 155px;
+		margin-bottom: 17px;
+	}
+	.footer__text {
+		top: 50px;
+	}
+	.footer__link {
+		font-size: 12px;
+		ul {
+			font-size: 10px;
+		}
+	}
+}

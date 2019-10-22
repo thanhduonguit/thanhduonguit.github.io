@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 14" width="12" height="14">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #e3b935 } 
+	</style>
+	<g id="navigation">
+		<path id="&gt;" class="shp0" d="M1 12.99L6.43 7L1 1.01L10.99 7L1 12.99Z" />
+	</g>
+</svg>
