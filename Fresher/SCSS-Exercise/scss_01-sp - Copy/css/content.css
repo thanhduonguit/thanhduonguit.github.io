@@ -1,3 +1,6 @@
+.mt__2 {
+  margin-top: 2px; }
+
 .wrapper__container {
   width: 1000px;
   margin: 0 auto; }
@@ -231,9 +234,6 @@
       height: 100%; }
   .content__right input.input__text--1 {
     width: 311px;
-    height: 38px;
-    background-color: #fff1f1;
-    border: 1px solid #ff3333;
     margin: 2px 0; }
 
 .content__input {
@@ -251,9 +251,6 @@
 
 .input__text {
   width: 141px;
-  height: 38px;
-  background-color: #fff1f1;
-  border: 1px solid #ff3333;
   margin: 2px 0; }
 
 .box__content__last {

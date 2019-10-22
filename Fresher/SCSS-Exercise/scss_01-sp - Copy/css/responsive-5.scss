@@ -7,6 +7,11 @@
 	.header__mobile {
 		display: none;
 	}
+	input {
+		height: 38px;
+		background-color: $background_color_4;
+		border: 1px solid #ff3333;
+	}
 	.main {
 		background-size: 100% auto;
 		border: 15px solid transparent;
@@ -72,6 +77,11 @@
 @media (min-width: 1200px) {
 	.mt__17 {
 		margin-top: 17px;
+	}
+	input {
+		height: 38px;
+		background-color: $background_color_4;
+		border: 1px solid #ff3333;
 	}
 	.header__mobile {
 		display: none;

@@ -5,6 +5,13 @@
   .mt__7 {
     margin-top: 7px; }
 
+  input {
+    height: 59px;
+    border: 1.5px solid #c39d1a; }
+
+  .nav {
+    display: none; }
+
   .header__mobile {
     position: relative;
     display: flex;

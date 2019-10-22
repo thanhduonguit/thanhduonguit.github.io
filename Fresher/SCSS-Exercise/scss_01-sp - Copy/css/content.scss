@@ -1,5 +1,8 @@
 @import "common.scss";
 
+.mt__2 {
+	margin-top: 2px;
+}
 .wrapper__container {
 	width: 1000px;
 	margin: 0 auto;
@@ -257,9 +260,6 @@
 	}
 	input.input__text--1 {
 		width: 311px;
-		height: 38px;
-		background-color: $background_color_4;
-		border: 1px solid #ff3333;
 		margin: 2px 0;
 	}
 }
@@ -280,9 +280,6 @@
 }
 .input__text {
 	width: 141px;
-	height: 38px;
-	background-color: $background_color_4;
-	border: 1px solid #ff3333;
 	margin: 2px 0;
 }
 .box__content__last {

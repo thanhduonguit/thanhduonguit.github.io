@@ -28,44 +28,88 @@
 
     <!-- Navbar -->
     <div class="nav">
-        <li class="menu">
-            <a class="menu__text" href="#">TOP</a>
+        <li class="nav__item">
+            <a class="nav__link" href="#">TOP</a>
         </li>
-        <li class="menu menu__sub">
-            <a class="menu__text" href="#">エントリー <br> について</a>
+        <li class="nav__item">
+            <a class="nav__link" href="#">エントリー</br> について</a>
+            <ul class="sub__nav">
+                <div>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">エントリー</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">エントリー</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">エントリー</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">エントリー</a>
+                    </li>
+                    <hr>
+                </div>
+            </ul>
         </li>
-        <li class="menu menu__sub">
-            <a class="menu__text" href="#">ルール説明</a>
+        <li class="nav__item">
+            <a class="nav__link" href="#">ルール説明</a>
+            <ul class="sub__nav">
+                <div>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">ルール説明</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">ルール説明</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">ルール説明</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">ルール説明 ついて</a>
+                    </li>
+                    <hr>
+                </div>
+            </ul>
         </li>
-        <li class="menu menu__sub">
-            <a class="menu__text" href="#">賞品紹介</a>
+        <li class="nav__item">
+            <a class="nav__link" href="#">賞品紹介</a>
+            <ul class="sub__nav">
+                <div>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">賞品紹介</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">賞品紹介</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav" href="#">賞品紹介</a>
+                    </li>
+                    <hr>
+                    <li class="sub__nav">
+                        <a class="sub__nav"href="#">賞品紹介</a>
+                    </li>
+                    <hr>
+                </div>
+            </ul>
         </li>
-        <li class="menu">
-            <a class="menu__text" href="#">よくある質問</a>
+        <li class="nav__item">
+            <a class="nav__link" href="#">よくある質問</a>
         </li>
-        <li class="menu">
-            <a class="menu__text" href="#">エントリー</a>
+        <li class="nav__item">
+            <a class="nav__link" href="#">エントリー</a>
         </li>
     </div>
-    <ul class="sub__nav">
-        <hr>
-        <li class="sub__nav">
-            <a class="sub__nav" href="#">エントリー</a>
-        </li>
-        <hr>
-        <li class="sub__nav">
-            <a class="sub__nav" href="#">PCからのエントリー手順</a>
-        </li>
-        <hr>
-        <li class="sub__nav">
-            <a class="sub__nav" href="#">ルール説明</a>
-        </li>
-        <hr>
-        <li class="sub__nav">
-            <a class="sub__nav" href="#">よくある質問</a>
-        </li>
-        <hr>
-    </ul>
 
     <!-- Content -->
     <div class="wrapper__container">
@@ -81,9 +125,7 @@
             </li>
         </ol>
         <div class="main">
-            <!-- <img class="yellow__border" src="images/yellow_border.png" alt="yellow_border"> -->
             <div class="box">
-                <!-- <img class="white__bg" src="images/white_bg.png" alt="white_bg"> -->
                 <div class="section__container">
                     <div class="section">
                         <div class="section__title">
@@ -171,13 +213,13 @@
                                 <div class="check">
                                     <div class="form">
                                         <input type="checkbox" id="check">
-                                        <label for="check" style="--d: 20px;">
+                                        <label for="check" style="--d: 15px;">
                                             <svg viewBox="0,0,50,50">
-                                                <path d="M5 30 L 20 45 L 45 5"></path>
+                                                <path d="M5 25 L 20 45 L 45 5"></path>
                                             </svg>
                                         </label>
                                     </div>
-                                    利用規約に同意する
+                                    <p class="mt__2">利用規約に同意する</p>
                                 </div>
                                 <div class="main__button">
                                     <p>次へ</p>
