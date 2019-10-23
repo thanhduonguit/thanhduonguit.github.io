@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: center;
+  background: url("../../images/banner_2.png");
+  height: 182px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%; }
+  header img {
+    position: absolute;
+    top: 12px; }
+    header img:first-child {
+      left: 15px; }
+    header img:nth-child(2) {
+      padding-left: 67px; }
+    header img:last-child {
+      right: 15px; }
+
+/*# sourceMappingURL=header.css.map */
