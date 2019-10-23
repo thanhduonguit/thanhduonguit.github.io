@@ -7,6 +7,9 @@
 	.mt__7 {
 		margin-top: 7px;
 	}
+	nav.nav.show {
+		display: none;
+	}
 	input {
 		height: 59px;
 		border: 1.5px solid #c39d1a;
@@ -60,13 +63,11 @@
 		}
 	}
 	.main {
-		background-size: 100% auto;
 		border: 11px solid transparent;
 		border-image: url(../images/image_2.png) 15 stretch;
 		margin: 15px 18px 0px 18px;
 	}
 	.box {
-		background-size: 100% auto;
 		border: 20px solid transparent;
 		border-image: url(../images/image_3.png) 20 stretch;
 	}
@@ -98,7 +99,7 @@
 	.section__2__content {
 		margin-bottom: 0;
 	}
-	.title__border__red {
+	.title__border--red {
 		display: none;
 	}
 	.box__content {

@@ -7,19 +7,20 @@
 	.header__mobile {
 		display: none;
 	}
+	nav.nav.show {
+		display: none;
+	}
 	input {
 		height: 38px;
 		background-color: $background_color_4;
 		border: 1px solid #ff3333;
 	}
 	.main {
-		background-size: 100% auto;
 		border: 15px solid transparent;
 		border-image: url(../images/image_2.png) 15 stretch;
 		margin: 15px 0px 0px 0px;
 	}
 	.box {
-		background-size: 100% auto;
 		border: 20px solid transparent;
 		border-image: url(../images/image_3.png) 20 stretch;
 	}
@@ -78,6 +79,9 @@
 	.mt__17 {
 		margin-top: 17px;
 	}
+	nav.nav.show {
+		display: none;
+	}
 	input {
 		height: 38px;
 		background-color: $background_color_4;
@@ -87,13 +91,11 @@
 		display: none;
 	}
 	.main {
-		background-size: 100% auto;
 		border: 15px solid transparent;
 		border-image: url(../images/image_2.png) 15 stretch;
 		margin: 15px 0px 0px 0px;
 	}
 	.box {
-		background-size: 100% auto;
 		border: 22px solid transparent;
 		border-image: url(../images/image_3.png) 20 stretch;
 	}

@@ -9,8 +9,11 @@
     height: 59px;
     border: 1.5px solid #c39d1a; }
 
-  .nav {
+  nav {
     display: none; }
+
+  nav.nav.show {
+    top: 67px; }
 
   .header__mobile {
     position: relative;
@@ -127,13 +130,11 @@
       margin-top: 1px; }
 
   .main {
-    background-size: 100% auto;
     border: 10px solid transparent;
     border-image: url(../images/image_2.png) 15 stretch;
     margin: 15px 18px 0px 18px; }
 
   .box {
-    background-size: 100% auto;
     border: 12px solid transparent;
     border-image: url(../images/image_3.png) 20 stretch; }
 
@@ -204,7 +205,7 @@
     width: calc(100% - (40px / 2));
     margin-bottom: 0; }
 
-  .title__border__red {
+  .title__border--red {
     display: none; }
 
   .box__content {
