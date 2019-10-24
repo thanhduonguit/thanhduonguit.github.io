@@ -215,6 +215,7 @@
             margin-top: 2px;
             font-size: 18px; }
         .footer__link ul li svg {
+          display: none;
           order: 2;
           margin-right: 10px; }
     .footer__link p {
