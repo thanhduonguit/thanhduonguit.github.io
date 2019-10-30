@@ -1,0 +1,80 @@
+@import "common.scss";
+ul.content__img {
+    li.box__img {
+        margin-top: 40px;
+        &:hover {
+            p.visit__text {
+                color: red;
+            }
+        }
+    }
+}
+
+ul.content__item {
+    position: relative;
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li.info__text {
+        position: relative;
+        width: 25.7%;
+        float: left;
+        p.visit__icon {
+            font-family: 'BebasNeue Book', sans-serif;
+            display: flex;
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/visit_icon.png) no-repeat;
+            background-size: cover;
+            margin: 0 auto 52px;
+            width: 140px;
+            height: 140px;
+            margin-bottom: 35px;
+            margin-top: 70px;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        p.visit__text {
+            color: #ffffff;
+            font-size: 21px;
+            line-height: 1.5;
+            padding: 0px 40px;
+        }
+    }
+    li.info__text--1 {
+        background-color: #f9ba16;
+        p.visit__icon {
+            color: #f9ba16;
+        }
+    }
+    li.info__text--2 {
+        background-color: #8eac00;
+        p.visit__icon {
+            color: #8eac00;
+        }
+    }
+    li.info__text--3 {
+        background-color: #127a97;
+        p.visit__icon {
+            color: #127a97;
+        }
+    }
+    li.info__text--4 {
+        background-color: #452b72;
+        p.visit__icon {
+            color: #452b72;
+        }
+    }
+    li.info__img {
+        position: relative;
+        width: 74.3%;
+        float: left;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
