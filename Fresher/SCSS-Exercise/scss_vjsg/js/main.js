@@ -49,3 +49,20 @@ function closeMenu() {
     $('ul.js__nav__menu').animate({ right: "-68%" }, 300);
     $(".js__menu__btn").animate({ right: 0 });
 }
+
+// Hover run animation change text
+var box = $("ul.content__img li.box__img");
+for (var i = 0; i < box.length; i++) {
+    box[i].addEventListener('mouseenter', function (e) {
+        TweenMax.to(e.target.querySelector('img'), 0.25, { scale: 1.1 });
+        TweenMax.to(e.target.querySelector('li.info__img a p'), 0.5, {opacity: 1, scale: 1 });
+        TweenMax.to(e.target.querySelector('li.info__img a'), 0.5, { backgroundColor: 'rgba(0,0,0,0.5)' });
+    });
+
+    // When mouse leave
+    box[i].addEventListener('mouseleave', function (e) {
+        TweenMax.to(e.target.querySelector('img'), 0.35, { scale: 1 });
+        TweenMax.to(e.target.querySelector('li.info__img a p'), 0.5,{ opacity: 0, scale: 0, });
+        TweenMax.to(e.target.querySelector('li.info__img a'), 0.5, { backgroundColor: 'rgba(0,0,0,0)' });
+    });
+}
