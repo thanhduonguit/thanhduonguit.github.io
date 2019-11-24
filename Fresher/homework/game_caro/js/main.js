@@ -79,7 +79,7 @@ function randomInArray(array) {
         };
 
         // Function cellCheck - check each player playing in the cell
-        // @param slt - strengthen
+        // @param slt - position of each element is browsed
         // @param obj - object
         this.cellCheck = function(slt, obj) {
             this.data.currentCheck = $(slt);
@@ -97,7 +97,7 @@ function randomInArray(array) {
         };
 
         // Function userCheck - check person is playing in the cell
-        // @param slt - strengthen
+        // @param slt - position of each element is browsed
         this.userCheck = function(slt) {
             console.log("********************");
             console.log("Người chơi đi");
@@ -110,7 +110,8 @@ function randomInArray(array) {
                     console.log("Người chơi đi xong");
                     this.machineCheck();
                 } else {
-                    console.log("Chưa đến lượt người chơi");
+                    // console.log("Chưa đến lượt người chơi");
+                    alert('Vui lòng click "Play Again" để chơi lượt kế tiếp!')
                 }
             }
         };
@@ -192,10 +193,10 @@ function randomInArray(array) {
         };
 
         // Function createWeightedNumber
-        // @param slt - strengthen
+        // @param slt - position of each element is browsed
         // @param obj - object
         this.createWeightedNumber = function(slt, obj) {
-            var trongso = 0;
+            var weightedNumber = 0;
             var cx = $(slt).attr("data-x") * 1.0;
             var cy = $(slt).attr("data-y") * 1.0;
             var ilenght = this.data.weightedAdd.length;
@@ -209,7 +210,7 @@ function randomInArray(array) {
                                 && this.validCellCoor(cx + (i+1) * x, cy + (i+1) * y) === true){
                             if ($("#game-cell-" + (cx + i * x) + "_" + (cy + i * y)).hasClass(obj)
                                     && ! $("#game-cell-" + (cx + (i+1) * x) + "_" + (cy + (i+1) * y)).hasClass(this.competitor(obj))) {
-                                trongso += this.data.weightedAdd[i];
+                                weightedNumber += this.data.weightedAdd[i];
                             } else {
                                 nextcheck = false;
                             }
@@ -220,20 +221,19 @@ function randomInArray(array) {
                 }
             }
             if (obj === 'person') {
-                if (trongso > this.data.weightedMaxPerson) {
-                    this.data.weightedMaxPerson = trongso;
+                if (weightedNumber > this.data.weightedMaxPerson) {
+                    this.data.weightedMaxPerson = weightedNumber;
                 }
             } else {
-                if (trongso > this.data.weightedMaxMachine) {
-                    this.data.weightedMaxMachine = trongso;
+                if (weightedNumber > this.data.weightedMaxMachine) {
+                    this.data.weightedMaxMachine = weightedNumber;
                 }
             }
-
-            $(slt).attr("data-" + obj, trongso);
+            $(slt).attr("data-" + obj, weightedNumber);
         };
 
         // Function check win - check highlight color for 5 win cell 
-        // @param slt - strengthen
+        // @param slt - position of each element is browsed
         // @param obj - object
         this.checkwin = function(slt, obj) {
             var cx = $(slt).attr("data-x") * 1.0;
@@ -291,16 +291,16 @@ function randomInArray(array) {
             this.endgame();
         };
 
-        // Function start game
-        this.start = function() {
+        // Function reset new game
+        this.resetNewGame = function() {
             this.data.status = 'ready';
-            var gamecontent = $("#game-content");
-            var w = gamecontent.width();
-            var h = gamecontent.height();
+            var gameContent = $("#game-content");
+            var w = gameContent.width();
+            var h = gameContent.height();
             var bh = $(window).height();
             if (h > bh) {
                 h = bh;
-                gamecontent.css({'height':h+'px'});
+                gameContent.css({'height':h+'px'});
             }
             this.data.cellWidth = Math.floor(w / this.cellMinX);
             this.data.cellHeight = Math.floor(h / this.cellMinX);
@@ -321,10 +321,10 @@ function randomInArray(array) {
             alert('End game...!');
             clearTimeout(this.runtimeTimeout);
         };
-        this.start();
+        this.resetNewGame();
     
         $(".js-control").click(function() {
-            play.start();
+            play.resetNewGame();
         });
     };
 
