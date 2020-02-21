@@ -1,0 +1,65 @@
+@charset "utf-8";
+// color
+$white: #FFF;
+$base-color: #FBF8F2;
+$body-color: #86807C;
+$footer-color: #3A3A3A;
+
+$gray: #EEEEEE;
+$gray-light: #F4F1EC;
+
+$primary-color-light-2: #A7DDDD;
+$green-base: #86D488;
+$yellow-base: #EACB4E;
+$pink-base: #DF7F80;
+$purple-base: #D844B6;
+$blue-base: #5F9CED;
+$red-base: #FF4646;
+$red-darken-1: #C9003F;
+
+
+// font
+$font-sans-serif: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans",メイリオ,Meiryo,sans-serif;
+$font-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+// margin
+$margin--xs: 10px;
+$margin--sm: 14px;
+$margin--md: 30px;
+$margin--lg: 50px;
+$margin--xl: 70px;
+
+// size
+$font-size--xs: 14px;
+$font-size--sm: 18px;
+$font-size--md: 21px;
+$font-size--lg: 24px;
+$font-size--title: 30px;
+
+// container
+$container--pc: 992px;
+$container--sp: 100%;
+
+
+// ==========================================================================
+// Materialize variables (Custom)
+// ==========================================================================
+
+// 1. Colors
+// ==========================================================================
+
+$primary-color: #34A3AA;
+$primary-color-light: #E8F6F6;
+$secondary-color: $primary-color;
+$success-color: $primary-color;
+$error-color: #C9003F;
+
+
+$font-stack: $font-sans-serif;
+// Header Styles
+$h1-fontsize: 80px;
+$h2-fontsize: 29px;
+$h3-fontsize: 2.4rem;
+$h4-fontsize: 1.8rem;
+$h5-fontsize: 1.6rem;
+$h6-fontsize: 1.4rem;

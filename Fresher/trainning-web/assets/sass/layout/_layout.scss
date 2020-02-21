@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* Group main
+----------------------------------------------------------------- */
+.group__main {
+  background-color: silver;
+  width: 100%;
+  height: 100%;
+  .group__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    padding: 56px 0 80px 0;
+  }
+  .group__left {
+    width: 29%;
+    // float: left;
+    background: $green-base;
+    background-image: url(../images/icon02.png);
+    background-repeat: no-repeat;
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+    }
+    p {
+      color: $white;
+      font-size: 13px;
+      &:nth-child(1) {
+        padding-top: 77px;
+      }
+      &:nth-child(2) {
+        padding: 20px 0 50px 0;
+        text-align: center;
+      }
+      &:nth-child(4) {
+        padding: 42px 30px 95px 30px;
+      }
+    }
+  }
+  .icon__company {
+    display: flex;
+    justify-content: center;
+  }
+  .group__right {
+    width: calc(100% - 29% - 20px);
+    // float: right;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .group__item__1 {
+      display: flex;
+      .item__1 {
+        position: relative;
+        width: 48.55%;
+        // float: left;
+      }
+      .item__2 {
+        position: relative;
+        width: calc(100% - 48.55% - 20px);
+        // float: right;
+        margin-left: 20px;
+      }
+    }
+    .group__item__2 {
+      position: relative;
+      margin-top: 16px;
+    }
+    p {
+      position: absolute;
+      bottom: 0px;
+      background-color: rgba(51, 51, 51, 0.7);
+      color: #ffffff;
+      width: calc(100% - 50px);
+      font-size: 19px;
+      padding: 25px;
+    }
+  }
+}
+
+.banner__content {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .banner__text {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    p {
+      font-size: 28px;
+      color: $white;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 0px 2px 10px #000000, 0px 2px 10px #000000;
+    }
+  }
+}
+
+.group__entry {
+  p {
+    text-align: center;
+    &:nth-child(1) {
+      font-size: 22px;
+      color: $pink-base;
+      font-weight: bold;
+      padding-top: 72px;
+    }
+    &:nth-child(2) {
+      font-size: 12px;
+      color: $pink-base;
+      padding: 20px 0 48px 0;
+    }
+  }
+  .img__entry {
+    display: flex;
+    justify-content: center;
+  }
+}

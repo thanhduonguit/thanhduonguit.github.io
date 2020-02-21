@@ -1,0 +1,68 @@
+//breakpoints
+$breakpoints-spfirst: (
+  'xs': 'screen and (min-width: 480px)',
+  'sm': 'screen and (min-width: 769px)',
+  'md': 'screen and (min-width: 992px)',
+  'lg': 'screen and (min-width: 1200px)',
+) !default;
+$breakpoints-pcfirst: (
+  'xs': 'screen and (max-width: 479px)',
+  'sm': 'screen and (max-width: 768px)',
+  'md': 'screen and (max-width: 991px)',
+  'lg': 'screen and (max-width: 1199px)',
+) !default;
+
+@mixin media-query-spfirst($breakpoint) {
+  @if map-has-key($breakpoints-spfirst, $breakpoint) {
+    @media #{unquote(map-get($breakpoints-spfirst, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    + "Available breakpoints are: #{map-keys($breakpoints-spfirst)}.";
+  }
+}
+@mixin media-query-pcfirst($breakpoint) {
+  @if map-has-key($breakpoints-pcfirst, $breakpoint) {
+    @media #{unquote(map-get($breakpoints-pcfirst, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    + "Available breakpoints are: #{map-keys($breakpoints-pcfirst)}.";
+  }
+}
+@mixin mq-pc {
+  @include media-query-spfirst(md) {
+    @content;
+  }
+}
+@mixin mq-sp {
+  @include media-query-pcfirst(md) {
+    @content;
+  }
+}
+
+@mixin hover-pc {
+  @include mq-pc {
+    transition: 0.2s opacity;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.2s opacity ease-in;
+    }
+  }
+}
+
+@mixin svgfont {
+  font-family: 'iconpaw' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* Header
+----------------------------------------------------------------- */
+header {
+  background: url(../images/bg-top.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 49.833%;
+  div.banner__text {
+    position: absolute;
+    // width: 23%;
+    padding-left: 100px;
+    padding-top: 78px;
+  }
+  p {
+    color: $white;
+    &:nth-child(1),
+    &:nth-child(4) {
+      font-size: 80px;
+      font-weight: bold;
+    }
+    &:nth-child(2) {
+      font-size: 29px;
+      font-weight: bold;
+    }
+    &:nth-child(5),
+    &:nth-child(6) {
+      font-size: 22px;
+    }
+  }
+}

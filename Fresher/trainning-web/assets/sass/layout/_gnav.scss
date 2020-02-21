@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* Gnav
+------------------------------------------------- */
+// vue fade
+.vue-gnav-enter,
+.vue-gnav-leave-to {
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+.vue-gnav-enter-to,
+.vue-gnav-leave {
+  visibility: visible;
+  transform: translateY(0);
+}
+.vue-gnav-enter-active,
+.vue-gnav-leave-active {
+  transition: .3s;
+}
+/* [Gnav] グロナビ レイアウト
+-----------------------------------------------*/
+.l-gnav__container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 130;
+  align-items: center;
+  padding: 0 0 0 20px;
+  width: 100%;
+  transition: background-color .2s;
+  @include mq-sp {
+    padding: 0;
+  }
+}
+.l-gnav {
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #fff;
+  margin: 0;
+  min-width: inherit;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: .5s;
+  //scroll
+  height: 0;
+  will-change: visibility,transform;
+  &__scroller {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: inherit;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    height: 100vh;
+    @include mq-sp {
+      align-items: flex-start;
+      padding-top: 110px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  &.is-opened {
+    z-index: 120;
+    transform: translateY(0%);
+    transition: .3s;
+    visibility: visible;
+    height: 100vh;
+    //scroll
+    @include mq-sp {
+      -webkit-overflow-scrolling: touch;
+      overflow: auto;
+      height: 100%;
+    }
+  }
+}
+/* [Gnav] ハンバーガーボタン
+-----------------------------------------------*/
+.l-gnav__button {
+  display: none;
+  @include mq-sp {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    z-index: 150;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: $primary-color;
+    padding: 25px 25px;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    padding: 10px 12px;
+    width: 50px;
+    height: 50px;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(#fff, 0.3);
+    transition: opacity .3s, transform .2s;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  > span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    &:before,
+    &:after {
+      position: relative;
+      content: "";
+      display: block;
+      top: 0px;
+      width: 100%;
+      background-color: #fff;
+      height: 3px;
+      transition: .2s;
+      transform-origin: center;
+      @include mq-sp {
+        height: 2px;
+      }
+    }
+    > span {
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      height: 3px;
+      transition: .2s;
+      @include mq-sp {
+        height: 2px;
+      }
+    }
+  }
+  &:hover {
+    @include mq-pc {
+      &:after {
+        transform: translateY(0%);
+      }
+    }
+  }
+  &.is-opened {
+    padding: 25px 20px;
+    @include mq-sp {
+      padding: 10px;
+    }
+    > span {
+      &:before,
+      &:after {
+        background-color: #fff;
+      }
+      &:before {
+        top: 10px;
+        transform: rotate(45deg);
+      }
+      &:after {
+        top: -10px;
+        transform: rotate(-45deg);
+      }
+      > span {
+        transform: scaleX(0.1);
+        background-color: #fff;
+        opacity: 0;
+      }
+    }
+  }
+}
+/* [Gnav] リンクレイアウト
+-----------------------------------------------*/
+.l-gnav-list-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: $container--pc;
+  width: 100%;
+  @include mq-sp {
+    display: block;
+    padding: 0 0 40px;
+  }
+}
+.l-gnav-list {
+  margin: 0 calc(2000% / 1200);
+  padding: 0;
+  list-style: none;
+  @include mq-sp {
+    margin: 25px 0 0;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  > li {
+    position: relative;
+    display: block;
+    margin-top: 60px;
+    padding: 0;
+    @include mq-sp {
+      margin-top: 25px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -50%;
+      top: 0;
+      bottom: 0;
+      right: 0%;
+      z-index: 5;
+      background-color: #fff;
+      .is-opened & {
+        transition: left 0.5s 0.2s ease-out;
+        left: 100%;
+        @include mq-sp {
+          transition: left 0.3s 0.2s ease-out;
+        }
+      }
+    }
+  }
+  &__item {
+    display: block;
+    padding: 0;
+    line-height: 1;
+    transition: opacity 0.2s;
+    &:hover {
+      @include mq-pc {
+        opacity: .6;
+      }
+    }
+    .text-1 {
+      position: relative;
+      z-index: 2;
+      display: block;
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 1.2;
+      background-color: #fff;
+      color: #fff;
+      @include mq-sp {
+        font-size: 2.2rem;
+      }
+      .is-opened & {
+        transition: color 0.1s 0.3s;
+        color: $primary-color;
+      }
+    }
+    .text-2 {
+      position: relative;
+      display: block;
+      margin-top: 10px;
+      font-size: 1.4rem;
+      line-height: 1;
+      color: #fff;
+      @include mq-sp {
+        margin-top: 5px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+      .is-opened & {
+        transition: color 0.1s 0.3s;
+        color: $primary-color;
+      }
+    }
+  }
+}
+.l-gnav__child {
+  overflow: hidden;
+  margin-top: 20px;
+  @include mq-sp {
+    margin-top: (27.5px-12px+14*0.4/2);
+    margin-bottom: (-12.5px+14*0.4/2);
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      display: block;
+      color: #fff;
+      .is-opened & {
+        transition: color 0.1s 0.3s;
+        color: #333333;
+      }
+      > a {
+        position: relative;
+        display: block;
+        padding: (10px-16*0.4/2) 0;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        transition: opacity .1s;
+        @include mq-sp {
+          padding: (12.5px-14*0.4/2) 0;
+          font-size: 1.4rem;
+        }
+        &:hover {
+          @include mq-pc {
+            opacity: 0.6;
+          }
+        }
+        > span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
