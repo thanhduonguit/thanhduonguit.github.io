@@ -1,0 +1,122 @@
+@charset "utf-8";
+// Footer 21/02/2020
+footer {
+    position: relative;
+    background-color: $footer-bg-color;
+    .navbar.navbar-footer {
+        padding-right: calc(100 / 1200 * 100%);
+        .menu {
+            a {
+                position: relative;
+                padding: 22px 15px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 1px;
+                    height: 50%;
+                    background-color: $footer-bg-line;
+                }
+                span {
+                    &:first-child {
+                        height: 20px;
+                    }
+                }
+            }
+            li {
+                &:last-child {
+                    a {
+                        background-color: $menu-bg-hover;
+                        color: $white;
+                        align-items: center;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            width: 1px;
+                            height: 50%;
+                            background-color: $footer-bg-line;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:  $media-sp) { 
+        .navbar.navbar-footer {
+            height: auto;
+            flex-direction: column;
+            padding-right: 0;
+            .logo {
+                padding: 2.1% 0;
+            }
+            .menu {
+                width: 100%;
+                margin-left: 0;
+                a {
+                    padding: 2.9% 15px;
+                    align-items: flex-start;
+                    &::before {
+                        content: none;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 15px;
+                        width: 8px;
+                        height: 14px;
+                        background: url(../images/icon01.png) no-repeat;
+                    }
+                    span {
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
+                li {
+                    &:hover {
+                        a {
+                            &::after {
+                                background: none;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        &:hover {
+                            background: none;
+                        }
+                        a {
+                            margin: 15px;
+                            &::after {
+                                content: none;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    // Footer coppyRight
+    .copyright {
+        background-color: $footer-color;
+        color: $white;
+        padding: 33.3px 0;
+        text-align: center;
+    }
+
+    @media (max-width:  $media-sp) { 
+        .copyright {
+            padding: 4% 0;
+        }
+    }
+
+    .js-page-top {
+        position: absolute;
+        top: -80px;
+        right: 30px;
+        cursor: pointer;
+    }
+}

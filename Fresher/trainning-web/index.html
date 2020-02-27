@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout IFV</title>
+  <title>Layout IFV Index</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.min.js"></script>
 </head>
 
 <body>
   <!-- Header -->
   <header>
-    <div class="banner__text">
+    <div class="header__text">
       <p>TOKYU</p>
       <p>FACILITY SERVICE</p>
-      <img src="assets/images/img29.png" alt="X Icon">
+      <div class="header__img">
+        <img src="assets/images/img29.png" alt="X Icon">
+      </div>
       <p>TOKYO</p>
       <p>東京の暮らしを支える</p>
       <p>本物の価値を共に創造しよう</p>
@@ -22,49 +25,102 @@
   </header>
   <!-- End of Header -->
 
-  <!-- Menu -->
+  <!-- Menu 21/2/2020-->
+  <div class="navbar ">
+    <div class="logo">
+      <a href="#">
+        <img src="./assets/images/logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="navbar-togger js-change">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <span>MENU</span>
+    </div>
+    <div class="navbar-colspan">
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <span class="icon__company">
+              <img src="assets/images/menu01.png" alt="Company">
+            </span>
+            <p>COMPANY</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon__work">
+              <img src="assets/images/menu02.png" alt="Work">
+            </span>
+            <p>WORK</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon__interview">
+              <img src="assets/images/menu03.png" alt="Interview">
+            </span>
+            <p>INTERVIEW</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon__entry">
+              <img src="assets/images/menu04.png" alt="Entry">
+            </span>
+            <p>ENTRY</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- End of Menu -->
 
   <!-- Group Company -->
   <div class="group__main">
     <div class="group__inner">
       <div class="group__left">
-        <p class="title">COMPANY</p>
-        <p>会社を知る</p>
-        <div class="icon__company">
-          <img src="assets/images/img01.png" alt="">
+        <div class="group__title">
+          <p>COMPANY</p>
+          <p>会社を知る</p>
         </div>
-        <p>
-          本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しようしよう本物の価値を共に創造しよう本物の価値を共に創造
-        </p>
+        <div class="icon__title">
+          <img class="item__pc" src="assets/images/img01.png" alt="">
+          <img class="item__sp" src="assets/images/img05.png" alt="">
+        </div>
+        <div class="text__left">
+          本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に
+        </div>
       </div>
-      <div class="group__right">
+      <div class="group__right ml-20">
         <div class="group__item__1">
           <div class="item__1">
             <a href="">
-              <img src="assets/images/img03.png" alt="">
+              <img class="item__pc" src="assets/images/img02.png" alt="">
+              <img class="item__sp" src="assets/images/img07.png" alt="">
               <p>社長メッセージ</p>
             </a>
           </div>
           <div class="item__2">
             <a href="">
-              <img src="assets/images/img03.png" alt="">
+              <img class="item__pc" src="assets/images/img03.png" alt="">
+              <img class="item__sp" src="assets/images/img08.png" alt="">
               <p>求める人物像</p>
             </a>
           </div>
         </div>
         <div class="group__item__2">
           <a href="">
-            <img src="assets/images/img04.png" alt="">
+            <img class="item__pc" src="assets/images/img04.png" alt="">
+            <img class="item__sp" src="assets/images/img09.png" alt="">
             <p>アクティビティ</p>
           </a>
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="banner__content">
-    <img src="assets/images/img06.png" alt="">
+  <div class="banner__content banner__content1">
     <div class="banner__text">
       <p>本物の価値を共に創造しよう本物の価値を共に創造しよ</p>
     </div>
@@ -72,33 +128,189 @@
   <!-- End of Group Company -->
 
   <!-- Group Work -->
+  <div class="group__main bg__none">
+    <div class="group__inner group__work">
+      <div class="group__left">
+        <div class="group__title">
+          <p>WORKS</p>
+          <p>会社を知る</p>
+        </div>
+        <div class="icon__title">
+          <img class="item__pc" src="assets/images/img13.png" alt="">
+          <img class="item__sp" src="assets/images/img13.png" alt="">
+        </div>
+        <div class="text__left">
+          本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に
+        </div>
+      </div>
+      <div class="group__right mr-20">
+        <div class="group__item__1">
+          <div class="item__1">
+            <a href="">
+              <img class="item__pc" src="assets/images/img11.png" alt="">
+              <img class="item__sp" src="assets/images/img07.png" alt="">
+              <p>社長メッセージ</p>
+            </a>
+          </div>
+          <div class="item__2">
+            <a href="">
+              <img class="item__pc" src="assets/images/img10.png" alt="">
+              <img class="item__sp" src="assets/images/img08.png" alt="">
+              <p>求める人物像</p>
+            </a>
+          </div>
+        </div>
+        <div class="group__item__2">
+          <a href="">
+            <img class="item__pc" src="assets/images/img23.png" alt="">
+            <img class="item__sp" src="assets/images/img09.png" alt="">
+            <p>アクティビティ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner__content banner__content2">
+    <div class="banner__text">
+      <p>本物の価値を共に創造しよう本物の価値を共に創造しよ</p>
+    </div>
+  </div>
   <!-- End of Group Work -->
 
   <!-- Group Interview -->
+  <div class="group__main">
+    <div class="group__inner group__interview">
+      <div class="group__left">
+        <div class="group__title">
+          <p>INTERVIEW</p>
+          <p>会社を知る</p>
+        </div>
+        <div class="icon__title">
+          <img class="item__pc" src="assets/images/img15.png" alt="">
+          <img class="item__sp" src="assets/images/img15.png" alt="">
+        </div>
+        <div class="text__left">
+          本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に創造しよう本物の価値を共に
+        </div>
+      </div>
+      <div class="group__right ml-20">
+        <div class="group__item__1">
+          <div class="item__1">
+            <a href="">
+              <img class="img-pc" src="assets/images/img16.png" alt="">
+              <img class="img-tb" src="assets/images/img24.png" alt="">
+              <p class="fsize-13">ジ社長メッセージ社長メッセージ社長メッ</br>セージ社長メ</br><span class="fsize-22">社長メッセージ</span></p>
+            </a>
+          </div>
+          <div class="item__2">
+            <a href="">
+              <img class="img-pc" src="assets/images/img17.png" alt="">
+              <img class="img-tb" src="assets/images/img25.png" alt="">
+              <p class="fsize-13">ジ社長メッセージ社長メッセージ社長メッ</br>セージ社長メ</br><span class="fsize-22">社長メッセージ</span></p>
+            </a>
+          </div>
+        </div>
+        <div class="group__item__1 pt-20">
+          <div class="item__1 pt-10">
+            <a href="">
+              <img class="img-pc" src="assets/images/img18.png" alt="">
+              <img class="img-tb" src="assets/images/img26.png" alt="">
+              <p class="fsize-13">ジ社長メッセージ社長メッセージ社長メッ</br>セージ社長メ</br><span class="fsize-22">社長メッセージ</span></p>
+            </a>
+          </div>
+          <div class="item__2">
+            <a href="">
+              <img class="img-pc" src="assets/images/img19.png" alt="">
+              <img class="img-tb" src="assets/images/img27.png" alt="">
+              <p class="fsize-13">ジ社長メッセージ社長メッセージ社長メッ</br>セージ社長メ</br><span class="fsize-22">社長メッセージ</span></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- End of Group Interview -->
 
   <!-- Group Entry -->
   <div class="group__entry">
     <p>ENTRY</p>
-    <P>本物の価</P>
+    <P>価値を共</P>
     <div class="img__entry">
       <img src="assets/images/img28.png" alt="">
     </div>
     <p>本物の価値を共に創造しよう本物の価値を共に創造しよ</p>
     <p>本物の価値を共に創造しよう本物の価値</p>
     <div class="group__btn">
-      <div class="btn">
-        <p>本物の価</p>
+      <div class="btn btn--1">
+        本物の価
       </div>
-      <div class="btn">
-        <p>う本物の価</p>
+      <div class="btn btn--2">
+        う本物の価
       </div>
     </div>
   </div>
   <!-- End of Group Entry -->
 
-  <!-- Footer -->
-  <!-- End of Footer -->
+  <!-- Footer 21/2/2020-->
+  <footer>
+    <div class="navbar navbar-footer">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Logo">
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <span class="icon__company">
+              会社を知る
+            </span>
+            <p>COMPANY</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon__work">
+              仕事を知る
+            </span>
+            <p>WORK</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon__interview">
+              人を知る
+            </span>
+            <p>INTERVIEW</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon__requirement">
+              募集要項
+            </span>
+            <p>REQUIREMENTS</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <span class="icon__entry">
+              エントリー
+            </span>
+            <p>ENTRY</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      Copyright © Tokyu Facility Service Co., Ltd. All Right Reserved
+    </div>
+
+     <!-- Page on top -->
+     <div class="js-page-top">
+      <img src="assets/images/page-top.png" alt="Page on top">
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

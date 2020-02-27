@@ -12,6 +12,8 @@
 @import "layout/header";
 @import "layout/gnav";
 @import "layout/grid";
+@import "layout/footer";
+
 
 // ==========================================================================
 // Object
@@ -30,5 +32,5 @@
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@import "project/page-system";
-
+@import "project/page-entry";
+@import "project/page-company";

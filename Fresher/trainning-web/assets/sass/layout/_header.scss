@@ -1,31 +1,72 @@
+
 @charset "utf-8";
 /* Header
 ----------------------------------------------------------------- */
 header {
-  background: url(../images/bg-top.png) no-repeat;
-  background-size: cover;
+  background: url(../images/bg-top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 100%;
   padding-bottom: 49.833%;
-  div.banner__text {
-    position: absolute;
-    // width: 23%;
-    padding-left: 100px;
-    padding-top: 78px;
+  @media (max-width: $sreen-sp) {
+    background: url(../images/bg-top-sp.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 158.41%;
+    justify-content: center;
+  }
+  @media (max-width: $sreen-pc) {
+    position: relative;
+    display: flex;
+    align-items: center;
   }
   p {
+    font-family: Helvetica;
     color: $white;
     &:nth-child(1),
     &:nth-child(4) {
-      font-size: 80px;
+      font-size: $font-size-80;
       font-weight: bold;
+      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+        font-size: 60px;
+      }
     }
     &:nth-child(2) {
-      font-size: 29px;
+      font-size: $font-size-28;
       font-weight: bold;
+      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+        font-size: $font-size-22;
+      }
     }
     &:nth-child(5),
     &:nth-child(6) {
-      font-size: 22px;
+      font-size: $font-size-22;
+      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+        font-size: $font-size-15;
+      }
     }
+  }
+}
+.header__text {
+  position: absolute;
+  top: 78px;
+  padding-left: 100px;
+  @media (min-width: 320px) and (max-width: $sreen-pc) {
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0;
+  }
+  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+    padding-left: 100px;
+  }
+}
+.header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  img {
+    width: 40px;
+    height: 40px;
   }
 }

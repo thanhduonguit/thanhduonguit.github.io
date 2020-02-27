@@ -1,68 +1,46 @@
-//breakpoints
-$breakpoints-spfirst: (
-  'xs': 'screen and (min-width: 480px)',
-  'sm': 'screen and (min-width: 769px)',
-  'md': 'screen and (min-width: 992px)',
-  'lg': 'screen and (min-width: 1200px)',
-) !default;
-$breakpoints-pcfirst: (
-  'xs': 'screen and (max-width: 479px)',
-  'sm': 'screen and (max-width: 768px)',
-  'md': 'screen and (max-width: 991px)',
-  'lg': 'screen and (max-width: 1199px)',
-) !default;
+@mixin image($width, $height) {
+  width: $width;
+  height: $height;
+}
 
-@mixin media-query-spfirst($breakpoint) {
-  @if map-has-key($breakpoints-spfirst, $breakpoint) {
-    @media #{unquote(map-get($breakpoints-spfirst, $breakpoint))} {
-      @content;
-    }
-  }
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-    + "Available breakpoints are: #{map-keys($breakpoints-spfirst)}.";
-  }
+// Total %
+@mixin percentWidth($present, $maxWidth) {
+  width: calc($present / $maxWidth * 100%);
 }
-@mixin media-query-pcfirst($breakpoint) {
-  @if map-has-key($breakpoints-pcfirst, $breakpoint) {
-    @media #{unquote(map-get($breakpoints-pcfirst, $breakpoint))} {
-      @content;
-    }
+
+%banner__content {
+  position: relative;
+  width: 100%;
+  padding-bottom: 27.5%;
+  @media (max-width: $sreen-sp) {
+    display: none;
   }
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-    + "Available breakpoints are: #{map-keys($breakpoints-pcfirst)}.";
-  }
-}
-@mixin mq-pc {
-  @include media-query-spfirst(md) {
-    @content;
-  }
-}
-@mixin mq-sp {
-  @include media-query-pcfirst(md) {
-    @content;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
-@mixin hover-pc {
-  @include mq-pc {
-    transition: 0.2s opacity;
-    &:hover {
-      opacity: 0.5;
-      transition: 0.2s opacity ease-in;
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
     }
   }
 }
 
-@mixin svgfont {
-  font-family: 'iconpaw' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}

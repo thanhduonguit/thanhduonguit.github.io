@@ -2,42 +2,13 @@
 /**
  * Icons
 **/
-.svg-alert_circle-dims { width: 18px; height: 18px; }
-.svg-calender_small-dims { width: 12px; height: 14px; }
-.svg-chart_bar-dims { width: 24px; height: 18px; }
-.svg-check_input-dims { width: 27.25px; height: 12.25px; }
-.svg-drag-dims { width: 14px; height: 18px; }
-.svg-edit-dims { width: 24px; height: 21.33px; }
-.svg-face_bad-dims { width: 22px; height: 24.6px; }
-.svg-face_good-dims { width: 22px; height: 24.12px; }
-.svg-face_normal-dims { width: 22px; height: 24.12px; }
-.svg-face_sobad-dims { width: 22px; height: 24.12px; }
-.svg-faces-dims { width: 28px; height: 22px; }
-.svg-number_selector-dims { width: 27px; height: 12px; }
-.svg-photo-dims { width: 16px; height: 12px; }
-.svg-radio_button-dims { width: 28.33px; height: 13.33px; }
-.svg-selector-dims { width: 27px; height: 19px; }
-.svg-setting-dims { width: 23px; height: 23px; }
-.svg-staff-dims { width: 14px; height: 14px; }
-.svg-star-dims { width: 14.47px; height: 14.5px; }
-.svg-star_line-dims { width: 15.49px; height: 15.51px; }
-.svg-text_fields-dims { width: 14px; height: 11.05px; }
-.svg-text_fields_multiple-dims { width: 26px; height: 12.05px; }
-.svg-user-dims { width: 18px; height: 20.57px; }
-
-.material-icons {
-  &.ascend {
-    color: $blue-base;
-  }
-  &.descend {
-    color: $red-darken-1;
-  }
-}
-i {
-  &.left {
-    margin-right: 8px;
-  }
-  &.right {
-    margin-left: 8px;
+.icon {
+  &__company,
+  &__work, 
+  &__interview,
+  &__entry,
+  &__requirement {
+    height: 44px;
+    font-family: "hirakakupro";
   }
 }
