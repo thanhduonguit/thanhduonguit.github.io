@@ -7,7 +7,7 @@
   min-height: 51px;
   // Menu logo
   .logo {
-    padding-left: calc(100 / 1200 * 100%);
+    // padding-left: calc(100 / 1200 * 100%);
     img {
       @include image(100%, auto);
     }
@@ -18,9 +18,9 @@
     }
   }
 
-  .navbar-colspan {
-    margin-right: calc(84 / 1200 * 100%);
-  }
+  // .navbar-colspan {
+  //   margin-right: calc(84 / 1200 * 100%);
+  // }
   @media (max-width: $media-sp) {
     .navbar-colspan {
       position: absolute;

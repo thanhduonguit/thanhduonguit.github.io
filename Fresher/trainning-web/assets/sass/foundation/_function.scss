@@ -1,0 +1,4 @@
+//width: calc-percent(100, 1000);→width: 10%;
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}

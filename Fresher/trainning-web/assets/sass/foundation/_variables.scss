@@ -48,15 +48,6 @@ $min_font_14: 14px;
 $max_font_14: 14px;
 $max_font_16: 16px;
 
-
-
-// margin
-$margin--xs: 10px;
-$margin--sm: 14px;
-$margin--md: 30px;
-$margin--lg: 50px;
-$margin--xl: 70px;
-
 // size
 $font-size-80: 80px;
 $font-size-28: 28px;
@@ -71,27 +62,11 @@ $container--pc: 992px;
 $container--sp: 100%;
 $media-sp: 768px;
 
-// ==========================================================================
-// Materialize variables (Custom)
-// ==========================================================================
-
-// 1. Colors
-// ==========================================================================
-
-$primary-color: #34A3AA;
-$primary-color-light: #E8F6F6;
-$secondary-color: $primary-color;
-$success-color: $primary-color;
-$error-color: #C9003F;
-
-// Header Styles
-$h1-fontsize: 80px;
-$h2-fontsize: 29px;
-$h3-fontsize: 2.4rem;
-$h4-fontsize: 1.8rem;
-$h5-fontsize: 1.6rem;
-$h6-fontsize: 1.4rem;
-
+// 640
+// 768
+// 1200
+// 1000
+// 991
 $sreen-sp: 639.98px;
 $sreen-tb: 640px;
 $sreen-pc: 990.98px;

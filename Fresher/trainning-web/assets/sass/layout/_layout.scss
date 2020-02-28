@@ -1,14 +1,23 @@
 .group__main {
   background: url(../images/group-bg.png);
-  .group__inner {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 56px 20px 80px 20px;
-    @media (max-width: $sreen-sp) {
-      flex-direction: column;
-      padding: 0 0 40px 0;
-    }
+  max-width: 1200px;
+}
+.group__inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.inner__content {
+  display: flex;
+  padding: 56px 0 80px 0;
+  @media (max-width: $sreen-sp) {
+    flex-direction: column;
+    padding: 0 0 40px 0;
+  }
+  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+    padding: 28px 0 40px 0;
   }
 }
 .group__left {
@@ -54,7 +63,7 @@
     }
   }
 }
-.text__left {
+.group__text {
   color: $white;
   padding: 42px 30px 0 30px;
   font-family: hirakakupro;
@@ -102,13 +111,13 @@
     }
   }
 }
-.group__item__1 {
+.group__item__top {
   display: flex;
   @media (max-width: $sreen-sp) {
     flex-direction: column;
   }
 }
-.item__1 {
+.item__top__left {
   position: relative;
   width: 48.55%;
   @media (max-width: $sreen-sp) {
@@ -116,7 +125,7 @@
     padding: 25px 15px 0 15px;
   }
 }
-.item__2 {
+.item__top__right {
   position: relative;
   width: calc(100% - 48.55% - 20px);
   margin-left: 20px;
@@ -126,7 +135,7 @@
     margin-left: 0;
   }
 }
-.group__item__2 {
+.group__item__bot {
   position: relative;
   margin-top: 16px;
   @media (max-width: $sreen-sp) {
@@ -134,7 +143,7 @@
     margin-top: 10px;
   }
 }
-.icon__title {
+.group__icon {
   display: flex;
   justify-content: center;
 }
@@ -149,13 +158,13 @@
   }
 }
 .banner {
-  &__content1 {
+  &__content--1 {
     @extend %banner__content;
     background: url(../images/img06.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  &__content2 {
+  &__content--2 {
     @extend %banner__content;
     background: url(../images/img14.png);
     background-repeat: no-repeat;
@@ -208,26 +217,33 @@
   }
 }
 .group__work {
-  flex-direction: row-reverse;
-  .group__left {
-    background-color: $blue;
+  background: none !important;
+  .group__inner {
+    @media (min-width: $sreen-tb) {
+      flex-direction: row-reverse;
+    }
+    .group__left {
+      background-color: $blue;
+    }
   }
 }
 .group__interview {
-  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-    flex-direction: column;
-  }
-  .group__left {
-    background-color: $yellow-base;
+  .group__inner {
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-      width: 100%;
+      flex-direction: column;
     }
-  }
-  .group__right {
-    @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-      width: 100%;
-      margin-left: 0 !important;
-      margin-top: 20px;;
+    .group__left {
+      background-color: $yellow-base;
+      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+        width: 100%;
+      }
+    }
+    .group__right {
+      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 20px;;
+      }
     }
   }
 }

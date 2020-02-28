@@ -53,6 +53,8 @@ a {
     display: none;
   }
 }
-.bg__none {
-  background: none !important;
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

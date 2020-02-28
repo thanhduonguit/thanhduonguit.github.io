@@ -12,16 +12,8 @@
     padding-bottom: 150.9375%;
   }
   @media (max-width: $sreen-sp) {
-    background: url(../images/company-banner-sp.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     padding-bottom: 217.9375%;
   }
-}
-.d-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .banner__top {
   position: absolute;
@@ -67,9 +59,9 @@
     color: $white;
     width: 100%;
     text-align: center;
+    font-weight: bold;
     &:nth-child(1) {
       font-size: 34px;
-      text-align: center;
       @media (max-width: $sreen-sp) {
         font-size: 22px;
       }
@@ -86,25 +78,24 @@
     }
   }
 }
-.banner__bottom {
+.banner__bot {
   position: absolute;
   width: calc(100% - 200px);
   left: 100px;
   top: 357px;
-  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+  @media (max-width: $sreen-pc) {
     flex-direction: column;
-    width: calc(100% - 60px);
-    padding: 0 30px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+    width: calc(100% - 60px);
+    padding: 0 30px;
     top: 285px;
   }
   @media (max-width: $sreen-sp) {
-    flex-direction: column;
     width: calc(100% - 30px);
     padding: 0 15px;
-    left: 50%;
-    transform: translateX(-50%);
     top: 180px;
   }
 }
@@ -125,9 +116,7 @@
       font-size: 24px;
       line-height: 36px;
     }
-    @media (max-width: $sreen-sp) {
-      font-size: 16px;
-      line-height: 28px;
+    @media (max-width: $sreen-sp) { 
       padding: 0 15px 15px 15px;
     }
   }
@@ -175,7 +164,7 @@
     }
   }
 }
-.title__bottom {
+.banner__bot__title {
   font-size: 20px;
   line-height: 50px;
   color: #7fdc22;
@@ -186,7 +175,6 @@
     font-size: 26px;
   }
   @media (max-width: $sreen-sp) {
-    font-size: 20px;
     padding: 10px 15px 7.5px 15px;
   }
 }
@@ -194,7 +182,7 @@
   flex-direction: column;
   padding: 66px 0 30px 0;
   @media (max-width: $sreen-sp) {
-    padding: 33px 0 15px 0;
+    padding: 33px 0 20px 0;
   }
   p {
     font-family: hirakakupro;
@@ -205,9 +193,6 @@
     padding-bottom: 3px;
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
       font-size: 40px;
-    }
-    @media (max-width: $sreen-sp) {
-      font-size: 30px;
     }
   }
   hr {
@@ -238,7 +223,10 @@
   }
   p {
     color: #2a2a2a;
-    width: 100%;
+    width: 78.333333333%;
+    @media (max-width: $sreen-pc) {
+      width: 100%;
+    }
     &:nth-child(1) {
       font-size: 26px;
       line-height: 40px;
@@ -284,7 +272,7 @@
     height: auto;
   }
 }
-.text__bottom {
+.box__left__txt {
   padding: 24px 30px 0 0;
   display: flex;
   justify-content: flex-end;
