@@ -5,6 +5,9 @@
   background-size: 100% 100%;
   padding-bottom: 53.833333%;
   font-family: hirakakupro;
+  @media (min-width: $sreen-pc-2) and (max-width: $sreen-pc-3) {
+    padding-bottom: 73.833333%;
+  }
   @media (max-width: $sreen-pc) {
     background: url(../images/company-banner-sp.png);
     background-repeat: no-repeat;
@@ -27,7 +30,7 @@
     margin-left: 10px;
     font-family: Helvetica;
     @media (max-width: $sreen-sp) {
-      font-size: 20px;
+      font-size: $font-size-20;
     }
   }
   img {
@@ -61,19 +64,19 @@
     text-align: center;
     font-weight: bold;
     &:nth-child(1) {
-      font-size: 34px;
+      font-size: $font-size-34;
       @media (max-width: $sreen-sp) {
-        font-size: 22px;
+        font-size: $font-size-22;
       }
     }
     &:nth-child(2) {
-      font-size: 20px;
+      font-size: $font-size-20;
       padding-top: 7px;
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: 24px;
+        font-size: $font-size-24;
       }
       @media (max-width: $sreen-sp) {
-        font-size: 16px;
+        font-size: $font-size-16;
       }
     }
   }
@@ -103,6 +106,9 @@
   flex-direction: column;
   width: 48.5%;
   background-color: rgba(51, 51, 51, 0.7);
+  @media (min-width: $sreen-pc-2) and (max-width: $sreen-pc-3) {
+    min-height: 376px;
+  }
   @media (max-width: $sreen-pc) {
     width: 100%;
   }
@@ -110,10 +116,10 @@
     color: $white;
     text-align: center;
     padding: 0 15px 34px 15px;
-    font-size: 16px;
+    font-size: $font-size-16;
     line-height: 28px;
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-      font-size: 24px;
+      font-size: $font-size-24;
       line-height: 36px;
     }
     @media (max-width: $sreen-sp) { 
@@ -131,6 +137,9 @@
   width: calc(100% - 48.5% - 30px);
   margin-left: 30px;
   background-color: rgba(51, 51, 51, 0.7);
+  @media (min-width: $sreen-pc-2) and (max-width: $sreen-pc-3) {
+    min-height: 376px;
+  }
   @media (max-width: $sreen-pc) {
     width: 100%;
     margin-left: 0;
@@ -142,19 +151,19 @@
       font-size: 30px;
       line-height: 50px;
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: 34px;
+        font-size: $font-size-34;
       }
       @media (max-width: $sreen-sp) {
-        font-size: 20px;
+        font-size: $font-size-20;
         line-height: 28px;
       }
     }
     &:nth-child(3) {
-      font-size: 16px;
+      font-size: $font-size-16;
       line-height: 28px;
       padding: 20px 15px 48px 15px;
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: 24px;
+        font-size: $font-size-24;
         line-height: 36px;
         padding: 20px 15px 25px 15px;
       }
@@ -165,14 +174,14 @@
   }
 }
 .banner__bot__title {
-  font-size: 20px;
+  font-size: $font-size-20;
   line-height: 50px;
   color: #7fdc22;
   text-align: center;
   font-weight: bold;
   padding: 22px 15px 15px 15px;
   @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-    font-size: 26px;
+    font-size: $font-size-26;
   }
   @media (max-width: $sreen-sp) {
     padding: 10px 15px 7.5px 15px;
@@ -186,7 +195,7 @@
   }
   p {
     font-family: hirakakupro;
-    font-size: 34px;
+    font-size: $font-size-34;
     line-height: 50px;
     color: #2a2a2a;
     text-align: center;
@@ -228,7 +237,7 @@
       width: 100%;
     }
     &:nth-child(1) {
-      font-size: 26px;
+      font-size: $font-size-26;
       line-height: 40px;
       padding: 76px 30px 20px 100px;
       font-weight: bold;
@@ -252,7 +261,7 @@
       }
       @media (max-width: $sreen-sp) {
         padding: 16px 0 0 0;
-        font-size: 16px;
+        font-size: $font-size-16;
       }
     }
   }
@@ -269,7 +278,7 @@
   }
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 .box__left__txt {
@@ -288,14 +297,11 @@
   }
   span {
     &:nth-child(1) {
-      font-size: 16px;
+      font-size: $font-size-16;
       line-height: 40px;
       color: #2a2a2a;
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: 24px;
-      }
-      @media (max-width: $sreen-sp) {
-        font-size: 14px;
+        font-size: $font-size-24;
       }
     }
     &:nth-child(2) {
@@ -310,7 +316,6 @@
         font-size: 46px;
       }
       @media (max-width: $sreen-sp) {
-        font-size: 28px;
         padding-top: 0;
       }
     }
@@ -323,17 +328,17 @@
   background-size: 100% 100%;
   padding-bottom: 48.33333%;
   font-family: hirakakupro;
-  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
+  @media (min-width: $sreen-pc-2) and (max-width: $sreen-pc-3) {
+    padding-bottom: 57.2%;
+  }
+  @media  (max-width: $sreen-pc) {
     background: url(../images/img32.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-bottom: 290.5625%;
   }
   @media (max-width: $sreen-sp) {
-    background: url(../images/img33.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-bottom: 386.5625%;
+    padding-bottom: 343.5625%;
   }
 }
 .box__text {
@@ -357,18 +362,14 @@
   p {
     text-align: center;
     color: $white;
-    font-size: 14px;
+    font-size: $font-size-16;
     line-height: 23px;
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
       font-size: 28px;
       line-height: 40px;
     }
-    @media (max-width: $sreen-sp) {
-      font-size: 16px;
-      line-height: 28px;
-    }
     &:nth-child(1) {
-      font-size: 26px;
+      font-size: $font-size-26;
       line-height: 40px;
       padding: 30px 0 15px 0;
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
@@ -377,7 +378,7 @@
         padding: 30px 30px 15px 30px;
       }
       @media (max-width: $sreen-sp) {
-        font-size: 18px;
+        font-size: $font-size-20;
         line-height: 30px;
         padding: 15px;
       }
