@@ -1636,7 +1636,7 @@ footer {
   @media (max-width: 640px) {
     /* line 26, ../sass/project/_page-work.scss */
     .banner__centerw {
-      top: 10.45%;
+      top: 6.45%;
       width: calc(100% - 60px);
       padding: 0 30px; } }
   /* line 39, ../sass/project/_page-work.scss */
