@@ -1,0 +1,285 @@
+.header__interview {
+    position: relative;
+    background: url(../images/img34.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-bottom: 47.9166667%;
+    @media (max-width: $sreen-sp){
+        background: url(../images/img43.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        padding-bottom: 109.0625%;
+    }
+}
+.banner__top {
+    position: absolute;
+    padding-top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: $sreen-sp) {
+        padding-top: 18px;
+    }
+    p {
+        font-size: 30px;
+        color: $white;
+        font-weight: bold;
+        margin-left: 10px;
+        font-family: Helvetica;
+        @media (max-width: $sreen-sp) {
+            font-size: get-vw(40px);
+        }
+    }
+}
+.header__txt {
+    position: absolute;
+    font-family: hirakakupro;
+    font-size: $font-size-34;
+    color: $white;
+    filter: drop-shadow(0 0 21.5px rgba(183,172,150,0.55));
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 8.33333333333333%;
+    font-weight: bold;
+    @media (max-width: $sreen-sp) {
+        top: 70%;
+        padding: 0 30px;
+        font-size: get-vw(38px);
+    }
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        top: 62%;
+        font-size: get-vw-tb($font-size-34);
+    }
+}
+.banner__interview {
+    position: relative;
+    background: url(../images/img36.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-bottom: 23.33333333%;
+    @media (max-width: $sreen-sp) {
+        background: url(../images/img44.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        padding-bottom: 69.84375%;
+    }
+}
+.banner__iv {
+    position: absolute;
+    width: calc(100% - 40% - 30px);
+    height: auto;
+    left: 40%;
+    color: $white;
+    font-family: hirakakupro;
+    padding-right: 30px;
+    h1 {
+        font-size: $font-size-34;
+        padding: 42px 0 30px 0;
+        @media (max-width: $sreen-sp) {
+            display: flex;
+            flex-direction: column;
+            font-size: get-vw($font-size-34);
+            padding: 21px 0 15px 0;
+        }
+        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+            font-size: get-vw-tb($font-size-34);
+            padding: 21px 0 15px 0;
+        }
+        span {
+            font-size: $font-size-14;
+            margin-left: 15px;
+            @media (max-width: $sreen-sp) {
+                margin-left: 0;
+                font-size: get-vw(20px);
+            }
+            @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+                font-size: get-vw-tb($font-size-14);
+            }
+        }
+    }
+    h2 {
+        font-size: $font-size-20;
+        padding-bottom: 20px;
+        @media (max-width: $sreen-sp) {
+            font-size: get-vw(24px);
+        }
+        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+            font-size: get-vw-tb(20px);
+        }
+    }
+    div {
+        display: flex;
+        @media (max-width: $sreen-sp) {
+            flex-direction: column;
+        }
+        p {
+            font-size: 12px;
+            @media (max-width: $sreen-sp) {
+                font-size: get-vw(20px);
+            }
+            @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+                font-size: get-vw-tb(12px);
+            }
+        }
+    }
+}
+.iv__title {
+    font-family: hirakakupro;
+    font-size: $font-size-34;
+    color: #ffc411;
+    padding: 75px 0 30px 0;
+    @media (max-width: $sreen-sp) {
+        padding: 37.5px 30px 15px 30px;
+        font-size: get-vw(40px);
+    }
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        padding: 50px 30px 20px 30px;
+    }
+}
+.box__iv {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $sreen-sp) {
+        padding: 0 30px;
+        flex-direction: column-reverse;
+    }
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        padding: 0 30px;
+    }
+}
+.box__iv__edit {
+    flex-direction: row-reverse;
+    @media (max-width: $sreen-sp) {
+        flex-direction: column-reverse;
+    }
+}
+.iv__txt {
+    width: calc(100% - 50% - 15px);
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        height: 210px;
+        overflow: auto;
+    }
+    @media (max-width: $sreen-sp) {
+        width: 100%;
+        margin-top: 30px;
+    }
+    p {
+        font-family: hirakakupro;
+        font-size: $font-size-14;
+        line-height: 38px;
+        color: #2a2a2a;
+        @media (max-width: $sreen-sp) {
+            font-size: get-vw(28px);
+        }
+    }
+}
+.iv__img {
+    width: calc(100% - 50% - 15px);
+    @media (max-width: $sreen-sp) {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.pic__iv {
+    background: url(../images/img39.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-bottom: 33.33333333%;
+    margin-top: 72px;
+    @media (max-width: $sreen-sp) {
+        background: url(../images/img45.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-bottom: 51.42857%;
+        width: calc(100% - 60px);
+        margin: 0 0 20px 30px;
+    }
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        margin-top: 48px;
+    }
+}
+.orther__title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffc000;
+    font-family: $font-helvetica;
+    font-weight: bold;
+    text-align: center;
+    padding: 75px 0 30px 0;
+    @media (max-width: $sreen-sp) {
+        font-size: get-vw(40px);
+        padding: 37.5px 30px 15px 30px;
+    }
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        padding: 50px 0 20px 0;
+    }
+}
+.orther__img {
+    display: flex;
+    @media (max-width: $sreen-sp) {
+        flex-direction: column;
+    }
+}
+.orther__item {
+    position: relative;
+    font-weight: hirakakupro;
+    width: 33.3333333333%;
+    @media (max-width: $sreen-sp) {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 44px);
+        font-size: $font-size-14;
+        line-height: 20px;
+        color: $white;
+        padding: 40px 22px;
+        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+            padding: 20px 22px;
+        }
+        @media (max-width: $sreen-sp) {
+            font-size: get-vw(28px);
+            line-height: 34px;
+        }
+        span {
+            font-size: 30px;
+            line-height: 45px;
+            color: $white;
+            @media (max-width: $sreen-sp) {
+                font-size: get-vw(38px);
+                line-height: 45px;
+            }
+        }
+    }
+}
+.orther__item,
+.iv__img {
+    .item__sp {
+        @media (max-width: $sreen-sp) {
+            display: block;
+        }
+    }
+    .item__pc {
+        @media (min-width: $sreen-tb) {
+            display: block;
+        }
+    }
+}
+.flex-reverse-iv {
+    @media (max-width: $sreen-sp) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

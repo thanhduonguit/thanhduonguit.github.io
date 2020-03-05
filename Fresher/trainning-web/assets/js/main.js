@@ -1,15 +1,15 @@
  // Change icon button togger
- $(".js-change").click(function() {
+ $(".js-change-menu").click(function() {
     (this).classList.toggle("change");
     var _menu = $(this).parent().find(".navbar-colspan");
     $(this).css({'pointer-events':'none'});
     if(_menu.hasClass("open")) {
         _menu.slideUp(400)
-        setTimeout(function(){ $(".js-change").css({'pointer-events':'auto'}); }, 300);
+        setTimeout(function(){ $(".js-change-menu").css({'pointer-events':'auto'}); }, 300);
         _menu.removeClass("open")
     }else {
         _menu.slideDown(400)
-        setTimeout(function(){ $(".js-change").css({'pointer-events':'auto'}); }, 300);
+        setTimeout(function(){ $(".js-change-menu").css({'pointer-events':'auto'}); }, 300);
         _menu.addClass("open")
     }
 })
@@ -41,11 +41,11 @@ if($('html').find('.js-page-top').length == 1){
 }
 
 $(window).resize(function(){
-    if($(this).width() > 768 && $(".js-change").next().css({"display" : "none"})) {
-        $(".js-change").next().css({"display" : "block"})        
+    if($(this).width() > 768 && $(".js-change-menu").next().css({"display" : "none"})) {
+        $(".js-change-menu").next().css({"display" : "block"})        
     }
 
-    if($(this).width() < 769 &&  !$(".js-change").hasClass("change")) {
-        $(".js-change").next().css({"display" : "none"})  
+    if($(this).width() < 769 &&  !$(".js-change-menu").hasClass("change")) {
+        $(".js-change-menu").next().css({"display" : "none"})  
     }
 });

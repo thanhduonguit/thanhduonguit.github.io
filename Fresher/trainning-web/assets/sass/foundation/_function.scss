@@ -2,3 +2,12 @@
 @function calc-percent($target, $container) {
   @return ($target / $container) * 100%;
 }
+
+@function get-vw($target) { 
+  $vw-context: (768*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+@function get-vw-tb($target) { 
+  $vw-context: (1200*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}

@@ -111,7 +111,7 @@
     }
   }
 }
-.group__item__top {
+.item__top {
   display: flex;
   @media (max-width: $sreen-sp) {
     flex-direction: column;
@@ -135,7 +135,7 @@
     margin-left: 0;
   }
 }
-.group__item__bot {
+.item__bot {
   position: relative;
   margin-top: 16px;
   @media (max-width: $sreen-sp) {
@@ -158,13 +158,13 @@
   }
 }
 .banner {
-  &__content--1 {
+  &__first {
     @extend %banner__content;
     background: url(../images/img06.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  &__content--2 {
+  &__second {
     @extend %banner__content;
     background: url(../images/img14.png);
     background-repeat: no-repeat;
