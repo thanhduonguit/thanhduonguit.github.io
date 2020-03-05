@@ -1872,43 +1872,40 @@ footer {
 
 /* line 249, ../sass/project/_page-work.scss */
 .article__right {
-  width: calc(100% - 51.25% - 130px);
-  padding: 0 100px 0 30px;
+  width: calc(100% - 51.25% - 2.5% - 8.33333%);
+  padding-left: 2.5%;
+  padding-right: 8.33333%;
   font-family: hirakakupro;
   color: #FFF; }
-  /* line 254, ../sass/project/_page-work.scss */
+  /* line 255, ../sass/project/_page-work.scss */
   .article__right h2 {
     font-size: 26px;
     padding: 0 0 15px 0; }
     @media (min-width: 641px) and (max-width: 1200px) {
-      /* line 254, ../sass/project/_page-work.scss */
+      /* line 255, ../sass/project/_page-work.scss */
       .article__right h2 {
         font-size: 2.1666666667vw; } }
-  /* line 261, ../sass/project/_page-work.scss */
+  /* line 262, ../sass/project/_page-work.scss */
   .article__right p {
     font-size: 14px; }
     @media (min-width: 641px) and (max-width: 1200px) {
-      /* line 261, ../sass/project/_page-work.scss */
+      /* line 262, ../sass/project/_page-work.scss */
       .article__right p {
         font-size: 1.1666666667vw; } }
 
-/* line 268, ../sass/project/_page-work.scss */
+/* line 269, ../sass/project/_page-work.scss */
 .article__edit {
   top: 46.2459%;
   flex-direction: row-reverse; }
-  /* line 271, ../sass/project/_page-work.scss */
+  /* line 272, ../sass/project/_page-work.scss */
   .article__edit .article__left {
     width: 51.25% !important; }
-  /* line 274, ../sass/project/_page-work.scss */
+  /* line 275, ../sass/project/_page-work.scss */
   .article__edit .article__right {
-    width: calc(100% - 51.25% - 130px);
-    padding: 0 30px 0 100px !important; }
-    @media (min-width: 641px) and (max-width: 1200px) {
-      /* line 274, ../sass/project/_page-work.scss */
-      .article__edit .article__right {
-        width: calc(100% - 51.25% - 50px);
-        padding: 0 30px 0 30px !important; } }
+    width: calc(100% - 51.25% - 2.5% - 8.33333%);
+    padding-left: 8.33333% !important;
+    padding-right: 2.5% !important; }
 
-/* line 283, ../sass/project/_page-work.scss */
+/* line 281, ../sass/project/_page-work.scss */
 .pb-50 {
   padding-bottom: 50px; }
