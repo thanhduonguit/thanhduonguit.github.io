@@ -103,12 +103,21 @@
     @media (max-width: $sreen-sp) {
       width: calc(100% - 50px);
       padding: 10px;
-      bottom: 6px;
       font-size: 16px;
     }
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
       padding: 15px 20px 15px 20px;
     }
+  }
+  .item__sp {
+    @media (max-width: $sreen-sp) {
+        display: block;
+    }
+  }
+  .item__pc {
+      @media (min-width: $sreen-tb) {
+          display: block;
+      }
   }
 }
 .item__top {
@@ -117,7 +126,7 @@
     flex-direction: column;
   }
 }
-.item__top__left {
+.item__topl {
   position: relative;
   width: 48.55%;
   @media (max-width: $sreen-sp) {
@@ -125,7 +134,7 @@
     padding: 25px 15px 0 15px;
   }
 }
-.item__top__right {
+.item__topr {
   position: relative;
   width: calc(100% - 48.55% - 20px);
   margin-left: 20px;
@@ -243,6 +252,11 @@
         width: 100%;
         margin-left: 0 !important;
         margin-top: 20px;;
+      }
+      p {
+        @media (max-width: $sreen-sp) {
+          bottom: 6px !important;
+        }
       }
     }
   }
