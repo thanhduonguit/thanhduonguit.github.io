@@ -21,6 +21,9 @@
                 height: 28px;
             }
         }
+        p {
+            margin-top: 5px;
+        }
     }
 }
 .banner__centerw {
@@ -143,6 +146,9 @@
     @media (max-width: $sreen-sp) {
         padding: 18px 30px 15px 30px;
     }
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        padding: 44px 30px 20px 30px;
+    }
     p {
         font-family: hirakakupro;
         font-size: $font-size-34;
@@ -151,6 +157,9 @@
         padding-bottom: 3px;
         @media (max-width: $sreen-sp) {
             font-size: get-vw(40px);
+        }
+        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
+            font-size: get-vw-tb(34px);
         }
     }
     hr {

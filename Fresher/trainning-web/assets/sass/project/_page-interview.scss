@@ -30,6 +30,9 @@
         @media (max-width: $sreen-sp) {
             font-size: get-vw(40px);
         }
+        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
+            font-size: get-vw-tb(30px);
+        }
     }
 }
 .header__txt {
@@ -137,6 +140,7 @@
     }
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
         padding: 50px 30px 20px 30px;
+        font-size: get-vw-tb(34px);
     }
 }
 .box__iv {
