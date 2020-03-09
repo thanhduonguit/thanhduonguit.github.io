@@ -13,9 +13,10 @@
         padding-bottom: 293.59375%;
     }
     .banner__topw {
+        padding-top: 43px !important;
         img {
-            width: 24px;
-            height: 34px;
+            width: 31px;
+            height: 39px;
             @media (max-width: $sreen-sp) {
                 width: 20px;
                 height: 28px;
@@ -23,6 +24,7 @@
         }
         p {
             margin-top: 5px;
+            margin-left: 8px !important;
         }
     }
 }
@@ -30,12 +32,12 @@
     position: absolute;
     padding-left: 8.3333333333333333%;
     width: 60.58%;
-    top: 18.2%;
+    top: 17.5%;
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
         top: 30%;
     }
     @media (max-width: $sreen-sp) {
-        top: 6.45%;
+        top: 8.45%;
         width: calc(100% - 60px);
         padding: 0 30px;
     }
@@ -43,22 +45,27 @@
         font-family: hirakakupro;
         color: $white;
         &:nth-child(1) {
-            font-size: $font-size-26;
-            padding-bottom: 10px;
+            padding-bottom: 17px;
             @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
                 font-size: get-vw-tb($font-size-26);
             }
             @media (max-width: $sreen-sp) {
                 font-size: get-vw(38px);
             }
+            @media (min-width: 1200px) {
+                font-size: $font-size-26;
+            }
         }
         &:nth-child(2) {
-            font-size: $font-size-14;
             @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
                 font-size: get-vw-tb($font-size-14);
             }
             @media (max-width: $sreen-sp) {
                 font-size: get-vw($font-size-28);
+            }
+            @media (min-width: 1200px) {
+                font-size: $font-size-14;
+                line-height: 23px;
             }
         }
     }
@@ -118,7 +125,7 @@
     position: absolute;
     display: flex;
     align-items: center;
-    padding: 20px 20px;
+    padding: 19px 20px;
     bottom: 0;
     background-color: rgba(51, 51, 51, 0.7);
     width: calc(100% - 40px);
@@ -138,12 +145,12 @@
         }
     }
     img {
-        margin: 0 0 3px 10px;
+        margin: 0 0 -2px 5px;
     }
 }
 .article__title {
     flex-direction: column;
-    padding: 66px 30px 30px 30px;
+    padding: 68px 30px 30px 30px;
     @media (max-width: $sreen-sp) {
         padding: 18px 30px 15px 30px;
     }
@@ -155,7 +162,7 @@
         font-size: $font-size-34;
         color: #2a2a2a;
         text-align: center;
-        padding-bottom: 3px;
+        padding-bottom: 7px;
         @media (max-width: $sreen-sp) {
             font-size: get-vw(40px);
         }
@@ -183,25 +190,42 @@
 }
 .work__txt {
     position: absolute;
-    width: calc(100% - 50% - 100px);
+    width: calc(100% - 51% - 8.333333%);
     height: auto;
-    left: 50%;
+    left: 51%;
     color: $white;
     font-family: hirakakupro;
-    padding-right: 100px;
-    h2 {
-        font-size: $font-size-26;
-        padding: 88px 0 15px 0;
-        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
-            font-size: get-vw-tb($font-size-26);
-            padding: 66px 0 15px 0;
-        }
+    padding-right: 8.333333%;
+    .work__txtfirst {
+        padding-top: 18.776%;
+        padding-bottom: 3.4692%;
     }
-    p {
+}
+.work__txtfirst {
+    font-family: hirakakupro;
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        font-size: get-vw-tb($font-size-26);
+    }
+    @media (min-width: 1200px) {
+        font-size: $font-size-26;
+        line-height: 40px;
+    }
+    @media (max-width: $sreen-sp) {
+        font-size: get-vw(36px);
+        padding: 16px 0;
+    }
+}
+.work__txtsecond {
+    font-family: hirakakupro;
+    @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
+        font-size: get-vw-tb($font-size-14);
+    }
+    @media (min-width: 1200px) {
         font-size: $font-size-14;
-        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
-            font-size: get-vw-tb($font-size-14);
-        }
+        line-height: 23px;
+    }
+    @media (max-width: $sreen-sp) {
+        font-size: get-vw($font-size-28);
     }
 }
 .article__worksp {
@@ -216,20 +240,6 @@
         img {
             width: 100%;
             height: auto;
-        }
-    }
-    .work__txtsp {
-        font-family: hirakakupro;
-        h2 {
-            @media (max-width: $sreen-sp) {
-                font-size: get-vw(36px);
-                padding: 16px 0;
-            }
-        }
-        p {
-            @media (max-width: $sreen-sp) {
-                font-size: get-vw($font-size-28);
-            }
         }
     }
 }
@@ -262,18 +272,8 @@
     padding-right: 8.33333%;
     font-family: hirakakupro;
     color: $white;
-    h2 {
-        font-size: $font-size-26;
-        padding: 0 0 15px 0;
-        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
-            font-size: get-vw-tb($font-size-26);
-        }
-    }
-    p {
-        font-size: $font-size-14;
-        @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
-            font-size: get-vw-tb($font-size-14);
-        }
+    .work__txtfirst {
+        padding-bottom: 11px;
     }
 }
 .article__edit {
