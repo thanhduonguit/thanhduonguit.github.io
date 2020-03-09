@@ -4,18 +4,19 @@ footer {
     position: relative;
     background-color: $footer-bg-color;
     .navbar.navbar-footer {
-        // padding-right: calc(100 / 1200 * 100%);
         .menu {
             a {
                 position: relative;
-                padding: 22px 15px;
+                padding: 30px;
                 &:before {
                     content: "";
                     position: absolute;
                     left: 0;
                     width: 1px;
-                    height: 50%;
+                    height: 30%;
                     background-color: $footer-bg-line;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
                 span {
                     &:first-child {
@@ -25,20 +26,29 @@ footer {
             }
             li {
                 &:last-child {
-                    a {
                         background-color: $menu-bg-hover;
-                        color: $white;
+                        // color: $white;
                         align-items: center;
+                    a {
+                        color: $white;
                         &:after {
                             content: "";
                             position: absolute;
                             right: 0;
                             width: 1px;
-                            height: 50%;
+                            height: 30%;
                             background-color: $footer-bg-line;
+                            top: 50%;
+                            transform: translateY(-50%);
                         }
                     }
                 }
+            }
+        }
+        .logo {
+            padding-left: 8.33333333%;
+            @media (min-width: $media-sp) and (max-width: $sreen-pc) {
+                padding-left: 0;
             }
         }
     }
@@ -87,7 +97,7 @@ footer {
                             background: none;
                         }
                         a {
-                            margin: 15px;
+                            // margin: 15px;
                             &::after {
                                 content: none;
                             }
@@ -105,6 +115,7 @@ footer {
         color: $white;
         padding: 33.3px 0;
         text-align: center;
+        font-size: 12px;
     }
 
     @media (max-width:  $media-sp) { 
@@ -118,5 +129,13 @@ footer {
         top: -80px;
         right: 30px;
         cursor: pointer;
+    }
+}
+.footer__br {
+    @media (max-width: $media-sp) {
+        display: none;
+    }
+    @media (min-width: $sreen-pc) {
+        display: none;
     }
 }
