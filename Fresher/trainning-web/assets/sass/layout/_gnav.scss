@@ -53,6 +53,9 @@
       text-decoration: none;
       color: $footer-color;
       font-size: 13px;
+      @media (max-width: $sreen-sp) {
+        font-size: get-vw(22px);
+      }
     }
     p {
       font-family: $font-helvetica;
