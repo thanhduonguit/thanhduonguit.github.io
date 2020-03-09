@@ -108,6 +108,7 @@
         span {
             font-size: $font-size-14;
             margin-left: 15px;
+            font-weight: bold;
             @media (max-width: $sreen-sp) {
                 margin-left: 0;
                 font-size: get-vw($font-size-20);
