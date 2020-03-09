@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   justify-content: space-between;
-  min-height: 51px;
+  min-height: 57px;
   // Menu logo
   .logo {
     // padding-left: calc(100 / 1200 * 100%);
@@ -48,6 +48,7 @@
       text-decoration: none;
       color: $footer-color;
       font-size: 14px;
+      transition: all .5s;
       @media (max-width: $sreen-sp) {
         font-size: get-vw(22px);
       }

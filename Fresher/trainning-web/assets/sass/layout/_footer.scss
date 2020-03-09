@@ -8,6 +8,9 @@ footer {
             a {
                 position: relative;
                 padding: 30px;
+                @media (min-width: $media-sp) and (max-width: $sreen-pc) {
+                    padding: 15px 30px;
+                }
                 &:before {
                     content: "";
                     position: absolute;
@@ -40,6 +43,9 @@ footer {
                             background-color: $footer-bg-line;
                             top: 50%;
                             transform: translateY(-50%);
+                        }
+                        @media (min-width: $media-sp) and (max-width: $sreen-pc) {
+                            margin-top: 10px;
                         }
                     }
                 }
