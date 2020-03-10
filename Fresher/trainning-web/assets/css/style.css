@@ -891,31 +891,33 @@ footer {
       background-size: 100% 100%;
       padding-bottom: 150.9375%; } }
 
-@media (max-width: 1199px) {
-  /* line 16, ../sass/project/_page-company.scss */
-  .banner__topc img {
-    width: 20px !important;
-    height: 30px !important; } }
+/* line 15, ../sass/project/_page-company.scss */
+.banner__topc {
+  padding-top: 42px !important; }
+  @media (max-width: 1199px) {
+    /* line 17, ../sass/project/_page-company.scss */
+    .banner__topc img {
+      width: 20px !important;
+      height: 30px !important; } }
 
-/* line 23, ../sass/project/_page-company.scss */
+/* line 24, ../sass/project/_page-company.scss */
 .banner__center {
   position: absolute;
   flex-direction: column;
   left: 50%;
   transform: translateX(-50%);
-  top: 22.58%;
+  top: 26.58%;
   width: calc(100% - 60px);
   padding: 0 30px; }
   @media (max-width: 640px) {
-    /* line 23, ../sass/project/_page-company.scss */
+    /* line 24, ../sass/project/_page-company.scss */
     .banner__center {
       top: 16.21%; } }
-  /* line 34, ../sass/project/_page-company.scss */
+  /* line 35, ../sass/project/_page-company.scss */
   .banner__center p {
     color: #FFF;
     width: 100%;
-    text-align: center;
-    font-weight: bold; }
+    text-align: center; }
     /* line 39, ../sass/project/_page-company.scss */
     .banner__center p:nth-child(1) {
       font-size: 34px; }
@@ -930,7 +932,7 @@ footer {
     /* line 48, ../sass/project/_page-company.scss */
     .banner__center p:nth-child(2) {
       font-size: 20px;
-      padding-top: 7px; }
+      padding-top: 10px; }
       @media (max-width: 640px) {
         /* line 48, ../sass/project/_page-company.scss */
         .banner__center p:nth-child(2) {
@@ -956,209 +958,217 @@ footer {
       padding: 0 30px; } }
 
 /* line 73, ../sass/project/_page-company.scss */
+.bot__title {
+  color: #7fdc22;
+  text-align: center;
+  font-weight: bold;
+  padding: 22px 15px 15px 15px; }
+  @media (max-width: 640px) {
+    /* line 73, ../sass/project/_page-company.scss */
+    .bot__title {
+      padding: 20px 15px 15px 15px;
+      font-size: 3.3854166667vw; } }
+  @media (min-width: 641px) and (max-width: 1199px) {
+    /* line 73, ../sass/project/_page-company.scss */
+    .bot__title {
+      font-size: 1.6666666667vw; } }
+  @media (min-width: 1200px) {
+    /* line 73, ../sass/project/_page-company.scss */
+    .bot__title {
+      font-size: 20px;
+      line-height: 50px; } }
+
+/* line 90, ../sass/project/_page-company.scss */
 .banner__left {
   flex-direction: column;
   width: 48.5%;
   background-color: rgba(51, 51, 51, 0.7); }
   @media (max-width: 640px) {
-    /* line 73, ../sass/project/_page-company.scss */
+    /* line 90, ../sass/project/_page-company.scss */
     .banner__left {
       width: 100%; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 73, ../sass/project/_page-company.scss */
+    /* line 90, ../sass/project/_page-company.scss */
     .banner__left {
       align-self: stretch; } }
-  /* line 83, ../sass/project/_page-company.scss */
+  /* line 100, ../sass/project/_page-company.scss */
   .banner__left p {
     color: #FFF;
     text-align: center;
-    padding: 0 15px 40px 15px;
-    font-size: 16px; }
+    padding: 0 15px 40px 15px; }
     @media (max-width: 640px) {
-      /* line 83, ../sass/project/_page-company.scss */
+      /* line 100, ../sass/project/_page-company.scss */
       .banner__left p {
         padding: 0 30px 20px 30px;
         font-size: 3.125vw; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 83, ../sass/project/_page-company.scss */
+      /* line 100, ../sass/project/_page-company.scss */
       .banner__left p {
         font-size: 1.3333333333vw;
         padding-bottom: 20px; } }
+    @media (min-width: 1200px) {
+      /* line 100, ../sass/project/_page-company.scss */
+      .banner__left p {
+        font-size: 16px;
+        line-height: 28px; } }
   @media (max-width: 640px) {
-    /* line 97, ../sass/project/_page-company.scss */
+    /* line 117, ../sass/project/_page-company.scss */
     .banner__left br {
       display: none; } }
 
-/* line 103, ../sass/project/_page-company.scss */
+/* line 123, ../sass/project/_page-company.scss */
 .banner__right {
   flex-direction: column;
   width: calc(100% - 48.5% - 30px);
   margin-left: 30px;
   background-color: rgba(51, 51, 51, 0.7); }
   @media (max-width: 640px) {
-    /* line 103, ../sass/project/_page-company.scss */
+    /* line 123, ../sass/project/_page-company.scss */
     .banner__right {
       width: 100%;
       margin-left: 0;
       margin-top: 10px; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 103, ../sass/project/_page-company.scss */
+    /* line 123, ../sass/project/_page-company.scss */
     .banner__right {
       align-self: stretch; } }
-  /* line 116, ../sass/project/_page-company.scss */
+  /* line 136, ../sass/project/_page-company.scss */
   .banner__right p {
     color: #FFF; }
-    /* line 118, ../sass/project/_page-company.scss */
+    /* line 138, ../sass/project/_page-company.scss */
     .banner__right p:nth-child(2) {
       font-size: 30px; }
       @media (max-width: 640px) {
-        /* line 118, ../sass/project/_page-company.scss */
+        /* line 138, ../sass/project/_page-company.scss */
         .banner__right p:nth-child(2) {
           font-size: 4.4270833333vw; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 118, ../sass/project/_page-company.scss */
+        /* line 138, ../sass/project/_page-company.scss */
         .banner__right p:nth-child(2) {
           font-size: 2.5vw; } }
-    /* line 127, ../sass/project/_page-company.scss */
+    /* line 147, ../sass/project/_page-company.scss */
     .banner__right p:nth-child(3) {
       font-size: 16px;
       padding: 20px 15px 47px 15px; }
       @media (max-width: 640px) {
-        /* line 127, ../sass/project/_page-company.scss */
+        /* line 147, ../sass/project/_page-company.scss */
         .banner__right p:nth-child(3) {
           font-size: 3.3854166667vw;
           padding: 10px 15px 15px 15px; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 127, ../sass/project/_page-company.scss */
+        /* line 147, ../sass/project/_page-company.scss */
         .banner__right p:nth-child(3) {
           font-size: 1.3333333333vw;
           padding: 15px 15px 20px 15px; } }
 
-/* line 141, ../sass/project/_page-company.scss */
-.bot__title {
-  font-size: 20px;
-  color: #7fdc22;
-  text-align: center;
-  font-weight: bold;
-  padding: 22px 15px 15px 15px; }
-  @media (max-width: 640px) {
-    /* line 141, ../sass/project/_page-company.scss */
-    .bot__title {
-      padding: 20px 15px 15px 15px;
-      font-size: 3.3854166667vw; } }
-  @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 141, ../sass/project/_page-company.scss */
-    .bot__title {
-      font-size: 1.6666666667vw; } }
-
-/* line 156, ../sass/project/_page-company.scss */
+/* line 162, ../sass/project/_page-company.scss */
 .article__titlec hr {
   background-color: #7fdc22 !important; }
 
-/* line 160, ../sass/project/_page-company.scss */
+/* line 166, ../sass/project/_page-company.scss */
 .box__wrap {
   display: flex;
   background-color: #f4f4f7;
   font-family: hirakakupro; }
   @media (max-width: 640px) {
-    /* line 160, ../sass/project/_page-company.scss */
+    /* line 166, ../sass/project/_page-company.scss */
     .box__wrap {
       flex-direction: column-reverse;
       background: none; } }
 
-/* line 169, ../sass/project/_page-company.scss */
+/* line 175, ../sass/project/_page-company.scss */
 .box__left {
   width: 50%; }
   @media (max-width: 640px) {
-    /* line 169, ../sass/project/_page-company.scss */
+    /* line 175, ../sass/project/_page-company.scss */
     .box__left {
       width: calc(100% - 60px);
       padding: 0 30px; } }
-  /* line 175, ../sass/project/_page-company.scss */
+  /* line 181, ../sass/project/_page-company.scss */
   .box__left p {
     color: #2a2a2a;
     width: 78.333333333%;
     padding-left: 16.6666667%;
     padding-right: 5%; }
     @media (max-width: 640px) {
-      /* line 175, ../sass/project/_page-company.scss */
+      /* line 181, ../sass/project/_page-company.scss */
       .box__left p {
         width: 100%; } }
-    /* line 183, ../sass/project/_page-company.scss */
+    /* line 189, ../sass/project/_page-company.scss */
     .box__left p:nth-child(1) {
       font-size: 26px;
       padding-top: 12.33%;
       padding-bottom: 20px;
       font-weight: bold; }
       @media (max-width: 640px) {
-        /* line 183, ../sass/project/_page-company.scss */
+        /* line 189, ../sass/project/_page-company.scss */
         .box__left p:nth-child(1) {
           padding: 30px 0;
           font-size: 4.9479166667vw; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 183, ../sass/project/_page-company.scss */
+        /* line 189, ../sass/project/_page-company.scss */
         .box__left p:nth-child(1) {
           font-size: 2.1666666667vw; } }
-    /* line 196, ../sass/project/_page-company.scss */
+    /* line 202, ../sass/project/_page-company.scss */
     .box__left p:nth-child(2) {
       font-size: 14px; }
       @media (max-width: 640px) {
-        /* line 196, ../sass/project/_page-company.scss */
+        /* line 202, ../sass/project/_page-company.scss */
         .box__left p:nth-child(2) {
           padding: 0;
           font-size: 3.6458333333vw; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 196, ../sass/project/_page-company.scss */
+        /* line 202, ../sass/project/_page-company.scss */
         .box__left p:nth-child(2) {
           font-size: 1.1666666667vw; } }
 
-/* line 208, ../sass/project/_page-company.scss */
+/* line 214, ../sass/project/_page-company.scss */
 .box__right {
   width: calc(100% - 50%); }
   @media (max-width: 640px) {
-    /* line 208, ../sass/project/_page-company.scss */
+    /* line 214, ../sass/project/_page-company.scss */
     .box__right {
       width: calc(100% - 60px);
       padding: 0 30px; } }
-  /* line 214, ../sass/project/_page-company.scss */
+  /* line 220, ../sass/project/_page-company.scss */
   .box__right img {
     width: 100%;
     height: auto; }
   @media (max-width: 640px) {
-    /* line 218, ../sass/project/_page-company.scss */
+    /* line 224, ../sass/project/_page-company.scss */
     .box__right .item__sp {
       display: block; } }
   @media (min-width: 641px) {
-    /* line 223, ../sass/project/_page-company.scss */
+    /* line 229, ../sass/project/_page-company.scss */
     .box__right .item__pc {
       display: block; } }
 
-/* line 229, ../sass/project/_page-company.scss */
+/* line 235, ../sass/project/_page-company.scss */
 .bot__txt {
   padding: 24px 30px 24px 0;
   display: flex;
   justify-content: flex-end;
   align-items: baseline; }
   @media (max-width: 640px) {
-    /* line 229, ../sass/project/_page-company.scss */
+    /* line 235, ../sass/project/_page-company.scss */
     .bot__txt {
       text-align: right;
       flex-direction: column;
       align-items: flex-end;
       padding: 12px 0; } }
-  /* line 241, ../sass/project/_page-company.scss */
+  /* line 247, ../sass/project/_page-company.scss */
   .bot__txt span:nth-child(1) {
     font-size: 16px;
     color: #2a2a2a; }
     @media (max-width: 640px) {
-      /* line 241, ../sass/project/_page-company.scss */
+      /* line 247, ../sass/project/_page-company.scss */
       .bot__txt span:nth-child(1) {
         font-size: 3.125vw; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 241, ../sass/project/_page-company.scss */
+      /* line 247, ../sass/project/_page-company.scss */
       .bot__txt span:nth-child(1) {
         font-size: 1.3333333333vw; } }
-  /* line 251, ../sass/project/_page-company.scss */
+  /* line 257, ../sass/project/_page-company.scss */
   .bot__txt span:nth-child(2) {
     font-family: Gyosho;
     font-size: 36px;
@@ -1167,16 +1177,16 @@ footer {
     font-weight: bold;
     padding-top: 5px; }
     @media (max-width: 640px) {
-      /* line 251, ../sass/project/_page-company.scss */
+      /* line 257, ../sass/project/_page-company.scss */
       .bot__txt span:nth-child(2) {
         padding-top: 0;
         font-size: 5.9895833333vw; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 251, ../sass/project/_page-company.scss */
+      /* line 257, ../sass/project/_page-company.scss */
       .bot__txt span:nth-child(2) {
         font-size: 3vw; } }
 
-/* line 268, ../sass/project/_page-company.scss */
+/* line 274, ../sass/project/_page-company.scss */
 .box__content {
   position: relative;
   background: url(../images/img31.png);
@@ -1185,14 +1195,14 @@ footer {
   padding-bottom: 48.33333%;
   font-family: hirakakupro; }
   @media (max-width: 640px) {
-    /* line 268, ../sass/project/_page-company.scss */
+    /* line 274, ../sass/project/_page-company.scss */
     .box__content {
       background: url(../images/img32.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
       padding-bottom: 271.5625%; } }
 
-/* line 282, ../sass/project/_page-company.scss */
+/* line 288, ../sass/project/_page-company.scss */
 .box__text {
   position: absolute;
   left: 50%;
@@ -1202,56 +1212,56 @@ footer {
   background-color: rgba(51, 51, 51, 0.7);
   box-shadow: -23px -23px 0px -2px rgba(255, 255, 255, 0.2); }
   @media (max-width: 640px) {
-    /* line 282, ../sass/project/_page-company.scss */
+    /* line 288, ../sass/project/_page-company.scss */
     .box__text {
       width: calc(100% - 60px);
       top: 2.876869%;
       box-shadow: none; } }
-  /* line 295, ../sass/project/_page-company.scss */
+  /* line 301, ../sass/project/_page-company.scss */
   .box__text p {
     text-align: center;
     color: #FFF;
     font-size: 16px;
     padding: 0 20px 20px 20px; }
     @media (max-width: 640px) {
-      /* line 295, ../sass/project/_page-company.scss */
+      /* line 301, ../sass/project/_page-company.scss */
       .box__text p {
         font-size: 3.6458333333vw;
         padding: 0 30px 30px 30px; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 295, ../sass/project/_page-company.scss */
+      /* line 301, ../sass/project/_page-company.scss */
       .box__text p {
         font-size: 1.3333333333vw;
         padding: 0 15px 15px 15px; } }
-    /* line 308, ../sass/project/_page-company.scss */
+    /* line 314, ../sass/project/_page-company.scss */
     .box__text p:nth-child(1) {
       font-size: 26px;
       padding: 30px 0 15px 0; }
       @media (max-width: 640px) {
-        /* line 308, ../sass/project/_page-company.scss */
+        /* line 314, ../sass/project/_page-company.scss */
         .box__text p:nth-child(1) {
           font-size: 4.9479166667vw;
           padding: 30px; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 308, ../sass/project/_page-company.scss */
+        /* line 314, ../sass/project/_page-company.scss */
         .box__text p:nth-child(1) {
           font-size: 2.1666666667vw;
           padding: 15px 30px; } }
     @media (min-width: 641px) {
-      /* line 320, ../sass/project/_page-company.scss */
+      /* line 326, ../sass/project/_page-company.scss */
       .box__text p:last-child {
         padding-bottom: 40px; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 320, ../sass/project/_page-company.scss */
+      /* line 326, ../sass/project/_page-company.scss */
       .box__text p:last-child {
         padding-bottom: 20px; } }
   @media (max-width: 640px) {
-    /* line 329, ../sass/project/_page-company.scss */
+    /* line 335, ../sass/project/_page-company.scss */
     .box__text br {
       display: none; } }
 
 /* line 1, ../sass/project/_page-interview.scss */
-.header__iv {
+.header__menu {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;

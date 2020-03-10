@@ -13,6 +13,7 @@
   }
 }
 .banner__topc {
+  padding-top: 42px !important;
   img {
     @media (max-width: $sreen-pc-3) { 
       width: 20px !important;
@@ -25,7 +26,7 @@
   flex-direction: column;
   left: 50%;
   transform: translateX(-50%);
-  top: 22.58%;
+  top: 26.58%;
   width: calc(100% - 60px);
   padding: 0 30px;
   @media (max-width: $sreen-sp) {
@@ -35,7 +36,6 @@
     color: $white;
     width: 100%;
     text-align: center;
-    font-weight: bold;
     &:nth-child(1) {
       font-size: $font-size-34;
       @media (max-width: $sreen-sp) {
@@ -47,7 +47,7 @@
     }
     &:nth-child(2) {
       font-size: $font-size-20;
-      padding-top: 7px;
+      padding-top: 10px;
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-24);
       }
@@ -70,6 +70,23 @@
     padding: 0 30px;
   }
 }
+.bot__title {
+  color: #7fdc22;
+  text-align: center;
+  font-weight: bold;
+  padding: 22px 15px 15px 15px;
+  @media (max-width: $sreen-sp) {
+    padding: 20px 15px 15px 15px;
+    font-size: get-vw($font-size-26);
+  }
+  @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
+    font-size: get-vw-tb(20px);
+  }
+  @media (min-width: 1200px) {
+    font-size: $font-size-20;
+    line-height: 50px;
+  }
+}
 .banner__left {
   flex-direction: column;
   width: 48.5%;
@@ -84,7 +101,6 @@
     color: $white;
     text-align: center;
     padding: 0 15px 40px 15px;
-    font-size: $font-size-16;
     @media (max-width: $sreen-sp) { 
       padding: 0 30px 20px 30px;
       font-size: get-vw($font-size-24);
@@ -92,6 +108,10 @@
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
       font-size: get-vw-tb($font-size-16);
       padding-bottom: 20px;
+    }
+    @media (min-width: 1200px) {
+      font-size: $font-size-16;
+      line-height: 28px;
     }
   }
   br {
@@ -136,20 +156,6 @@
         padding: 15px 15px 20px 15px;
       }
     }
-  }
-}
-.bot__title {
-  font-size: $font-size-20;
-  color: #7fdc22;
-  text-align: center;
-  font-weight: bold;
-  padding: 22px 15px 15px 15px;
-  @media (max-width: $sreen-sp) {
-    padding: 20px 15px 15px 15px;
-    font-size: get-vw($font-size-26);
-  }
-  @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
-    font-size: get-vw-tb(20px);
   }
 }
 .article__titlec {
