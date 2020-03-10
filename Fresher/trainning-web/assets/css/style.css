@@ -1661,11 +1661,11 @@ footer {
     .banner__work .banner__topw img {
       width: 31px;
       height: 39px; }
-      @media (max-width: 640px) {
+      @media (max-width: 1199px) {
         /* line 17, ../sass/project/_page-work.scss */
         .banner__work .banner__topw img {
-          width: 20px;
-          height: 28px; } }
+          width: 23px;
+          height: 30px; } }
     /* line 25, ../sass/project/_page-work.scss */
     .banner__work .banner__topw p {
       margin-top: 5px;
