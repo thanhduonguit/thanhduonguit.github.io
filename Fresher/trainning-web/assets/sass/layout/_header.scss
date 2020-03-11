@@ -28,8 +28,8 @@ header {
       font-weight: bold;
       @media (min-width: 1200px) {
         font-size: 114px;
-        line-height: 124px;
-        padding-top: 18%;
+        line-height: 85px;
+        padding-top: 24%;
       }
       @media (min-width: $sreen-tb) and (max-width: 1199px) {
         font-size: get-vw-tb(114px);
@@ -40,6 +40,7 @@ header {
     }
     &:nth-child(4) {
       padding-top: 0 !important;
+      margin-top: 21px;
     }
     &:nth-child(2) {
       font-weight: bold;
@@ -57,7 +58,8 @@ header {
     &:nth-child(6) {
       @media (min-width: 1200px) {
         font-size: 27px;
-        line-height: 30px;
+        line-height: 19px;
+        margin-top: 20px;
       }
       @media (min-width: $sreen-tb) and (max-width: 1199px) {
         font-size: get-vw-tb(27px);
@@ -82,6 +84,7 @@ header {
   align-items: center;
   @media (min-width: 1200px) {
     margin-right: 25px;
+    margin-top: 10px;
   }
   @media (max-width: $sreen-sp) {
     margin-top: 10px;

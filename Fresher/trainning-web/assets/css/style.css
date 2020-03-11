@@ -476,8 +476,8 @@ header {
         /* line 26, ../sass/layout/_header.scss */
         header p:nth-child(1), header p:nth-child(4) {
           font-size: 114px;
-          line-height: 124px;
-          padding-top: 18%; } }
+          line-height: 85px;
+          padding-top: 24%; } }
       @media (min-width: 641px) and (max-width: 1199px) {
         /* line 26, ../sass/layout/_header.scss */
         header p:nth-child(1), header p:nth-child(4) {
@@ -488,60 +488,63 @@ header {
           font-size: 23.046875vw; } }
     /* line 41, ../sass/layout/_header.scss */
     header p:nth-child(4) {
-      padding-top: 0 !important; }
-    /* line 44, ../sass/layout/_header.scss */
+      padding-top: 0 !important;
+      margin-top: 21px; }
+    /* line 45, ../sass/layout/_header.scss */
     header p:nth-child(2) {
       font-weight: bold; }
       @media (min-width: 1200px) {
-        /* line 44, ../sass/layout/_header.scss */
+        /* line 45, ../sass/layout/_header.scss */
         header p:nth-child(2) {
           font-size: 43px; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 44, ../sass/layout/_header.scss */
+        /* line 45, ../sass/layout/_header.scss */
         header p:nth-child(2) {
           font-size: 3.5833333333vw; } }
       @media (max-width: 640px) {
-        /* line 44, ../sass/layout/_header.scss */
+        /* line 45, ../sass/layout/_header.scss */
         header p:nth-child(2) {
           font-size: 7.5520833333vw; } }
     @media (min-width: 1200px) {
-      /* line 56, ../sass/layout/_header.scss */
+      /* line 57, ../sass/layout/_header.scss */
       header p:nth-child(5), header p:nth-child(6) {
         font-size: 27px;
-        line-height: 30px; } }
+        line-height: 19px;
+        margin-top: 20px; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 56, ../sass/layout/_header.scss */
+      /* line 57, ../sass/layout/_header.scss */
       header p:nth-child(5), header p:nth-child(6) {
         font-size: 2.25vw; } }
     @media (max-width: 640px) {
-      /* line 56, ../sass/layout/_header.scss */
+      /* line 57, ../sass/layout/_header.scss */
       header p:nth-child(5), header p:nth-child(6) {
         font-size: 4.296875vw; } }
 
-/* line 71, ../sass/layout/_header.scss */
+/* line 73, ../sass/layout/_header.scss */
 .header__text {
   position: absolute;
   padding-left: 5.33333333%; }
   @media (max-width: 1200px) {
-    /* line 71, ../sass/layout/_header.scss */
+    /* line 73, ../sass/layout/_header.scss */
     .header__text {
       top: 50%;
       transform: translateY(-50%); } }
 
-/* line 79, ../sass/layout/_header.scss */
+/* line 81, ../sass/layout/_header.scss */
 .header__img {
   display: flex;
   justify-content: center;
   align-items: center; }
   @media (min-width: 1200px) {
-    /* line 79, ../sass/layout/_header.scss */
+    /* line 81, ../sass/layout/_header.scss */
     .header__img {
-      margin-right: 25px; } }
+      margin-right: 25px;
+      margin-top: 10px; } }
   @media (max-width: 640px) {
-    /* line 79, ../sass/layout/_header.scss */
+    /* line 81, ../sass/layout/_header.scss */
     .header__img {
       margin-top: 10px; } }
-  /* line 89, ../sass/layout/_header.scss */
+  /* line 92, ../sass/layout/_header.scss */
   .header__img img {
     width: 40px;
     height: 40px; }
