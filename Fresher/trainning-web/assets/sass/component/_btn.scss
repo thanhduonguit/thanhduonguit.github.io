@@ -17,8 +17,9 @@
     background-image: url(../images/penbg.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-      width: 24%;
+    @media (min-width: $sreen-tb) and (max-width: 1199px) {
+      font-size: get-vw-tb(20px);
+      padding: 20px 0;
     }
   }
   .btn--1 {

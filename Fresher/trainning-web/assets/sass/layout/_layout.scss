@@ -101,7 +101,7 @@
   }
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   p {
     position: absolute;
@@ -219,21 +219,37 @@
   p {
     text-align: center;
     font-size: $font-size-13;
+    @media (min-width: $sreen-tb) and (max-width: 1199px) {
+      font-size: get-vw-tb(20px);
+    }
     &:nth-child(1) {
-      font-size: 28px !important;
+      font-size: 28px;
       color: $pink-base;
       font-weight: bold;
       padding-top: 72px;
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        font-size: get-vw-tb(34px);
+        padding-top: 50px;
+      }
     }
     &:nth-child(2) {
       color: $pink-base;
       padding: 8px 0 43px 0;
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        padding-bottom: 30px;
+      }
     }
     &:nth-child(4) {
       padding-top: 47px;
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        padding-top: 30px;
+      }
     }
     &:nth-child(5) {
       padding-bottom: 50px;
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        padding-bottom: 30px;
+      }
     }
   }
   .img__entry {
