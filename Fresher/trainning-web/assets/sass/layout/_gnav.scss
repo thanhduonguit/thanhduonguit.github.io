@@ -171,3 +171,12 @@
     background: #F85050;
   }
 }
+.navbar-index {
+  .menu {
+    a {
+      @media (min-width: 1200px) {
+        padding: 20.5px 21px !important;
+      }
+    }
+  }
+}
