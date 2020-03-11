@@ -15,7 +15,7 @@ header {
     padding-bottom: 158.41%;
     justify-content: center;
   }
-  @media (max-width: $sreen-pc) {
+  @media (max-width: 1200px) {
     position: relative;
     display: flex;
     align-items: center;
@@ -25,46 +25,67 @@ header {
     color: $white;
     &:nth-child(1),
     &:nth-child(4) {
-      font-size: $font-size-80;
       font-weight: bold;
-      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: 60px;
+      @media (min-width: 1200px) {
+        font-size: 114px;
+        line-height: 124px;
+        padding-top: 18%;
+      }
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        font-size: get-vw-tb(114px);
+      }
+      @media (max-width: $sreen-sp) {
+        font-size: get-vw(177px);
       }
     }
+    &:nth-child(4) {
+      padding-top: 0 !important;
+    }
     &:nth-child(2) {
-      font-size: $font-size-28;
       font-weight: bold;
-      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: $font-size-22;
+      @media (min-width: 1200px) {
+        font-size: 43px;
+      }
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        font-size: get-vw-tb(43px);
+      }
+      @media (max-width: $sreen-sp) {
+        font-size: get-vw(58px);
       }
     }
     &:nth-child(5),
     &:nth-child(6) {
-      font-size: $font-size-22;
-      @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-        font-size: $font-size-15;
+      @media (min-width: 1200px) {
+        font-size: 27px;
+        line-height: 30px;
+      }
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        font-size: get-vw-tb(27px);
+      }
+      @media (max-width: $sreen-sp) {
+        font-size: get-vw(33px);
       }
     }
   }
 }
 .header__text {
   position: absolute;
-  top: 78px;
-  padding-left: 100px;
-  @media (min-width: 320px) and (max-width: $sreen-pc) {
+  padding-left: 5.33333333%;
+  @media (max-width: 1200px) {
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 0;
-  }
-  @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-    padding-left: 100px;
   }
 }
 .header__img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  @media (min-width: 1200px) {
+    margin-right: 25px;
+  }
+  @media (max-width: $sreen-sp) {
+    margin-top: 10px;
+  }
   img {
     width: 40px;
     height: 40px;

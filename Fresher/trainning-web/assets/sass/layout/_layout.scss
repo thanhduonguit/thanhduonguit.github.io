@@ -12,6 +12,7 @@
 .inner__content {
   display: flex;
   padding: 56px 0 80px 0;
+  justify-content: space-between;
   @media (max-width: $sreen-sp) {
     flex-direction: column;
     padding: 0 0 40px 0;
@@ -23,7 +24,7 @@
 .group__left {
   width: 29%;
   background: $green-base;
-  background-image: url(../images/icon02.png);
+  background-image: url(../images/penbg.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   font-family: Helvetica;
@@ -42,20 +43,31 @@
   p {
     color: $white;
     &:nth-child(1) {
-      font-size: $font-size-22;
       font-weight: bold;
       text-align: center;
-      padding-top: 70px;
-      @media (max-width: $sreen-pc) {
+      padding-top: 26.3%;
+      @media (min-width: 1200px) {
+        font-size: $font-size-30;
+      }
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        font-size: get-vw-tb(34px);
+      }
+      @media (max-width: $sreen-sp) {
         padding-top: 35px;
+        font-size: get-vw(40px);
       }
     }
     &:nth-child(2) {
-    font-size: $font-size-13;
-      padding: 15px 0 40px 0;
+      font-size: $font-size-13;
+      padding-top: 3.55%;
+      padding-bottom: 16%;
       text-align: center;
       @media (max-width: $sreen-sp) {
         padding: 2px 0 40px 0;
+        font-size: get-vw(20px);
+      }
+      @media (min-width: $sreen-tb) and (max-width: 1199px) {
+        font-size: get-vw-tb(16px);
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
         padding: 7.5px 0 20px 0;
@@ -65,18 +77,20 @@
 }
 .group__text {
   color: $white;
-  padding: 42px 30px 0 30px;
+  padding-left: 11%;
+  padding-right: 11%;
+  padding-top: 15%;
   font-family: hirakakupro;
+  font-size: 15px;
   @media (max-width: $sreen-sp) {
     display: none;
+  }
+  @media (min-width: $sreen-tb) and (max-width: 1199px) {
+    font-size: get-vw-tb(18px);
   }
   @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
     padding: 0 15px 15px 15px;
     margin-top: 21px;
-  }
-  @media (min-width: $sreen-tb) and (max-width: 770.98px) {
-    height: 100px;
-    overflow-x: auto;
   }
 }
 .group__right {
@@ -87,7 +101,7 @@
   }
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   p {
     position: absolute;
@@ -95,15 +109,18 @@
     background-color: rgba(51, 51, 51, 0.7);
     color: #ffffff;
     width: calc(100% - 40px);
-    font-size: $font-size-20;
+    font-size: 18px;
     padding: 20px;
-    background-image: url(../images/icon02.png);
+    background-image: url(../images/penbg.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+    @media (min-width: $sreen-tb) and (max-width: 1199px) {
+      font-size: get-vw-tb(18px);
+    }
     @media (max-width: $sreen-sp) {
       width: calc(100% - 50px);
       padding: 10px;
-      font-size: 16px;
+      font-size: get-vw(26px);
     }
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
       padding: 15px 20px 15px 20px;
@@ -122,6 +139,7 @@
 }
 .item__top {
   display: flex;
+  justify-content: space-between;
   @media (max-width: $sreen-sp) {
     flex-direction: column;
   }
@@ -137,16 +155,14 @@
 .item__topr {
   position: relative;
   width: calc(100% - 48.55% - 20px);
-  margin-left: 20px;
   @media (max-width: $sreen-sp) {
     width: calc(100% - 30px);
     padding: 10px 15px 0 15px;
-    margin-left: 0;
   }
 }
 .item__bot {
   position: relative;
-  margin-top: 16px;
+  margin-top: 20px;
   @media (max-width: $sreen-sp) {
     padding: 0 15px 0 15px;
     margin-top: 10px;
@@ -187,12 +203,12 @@
   top: 50%;
   transform: translateY(-50%);
   p {
-    font-size: $font-size-25;
+    font-size: 26px;
     color: $white;
     font-weight: bold;
     text-align: center;
-    @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
-      font-size: $font-size-22;
+    @media (min-width: $sreen-tb) and (max-width: 1199px) {
+      font-size: get-vw-tb(26px);
     }
   }
 }
@@ -204,17 +220,17 @@
     text-align: center;
     font-size: $font-size-13;
     &:nth-child(1) {
-      font-size: $font-size-22 !important;
+      font-size: 28px !important;
       color: $pink-base;
       font-weight: bold;
       padding-top: 72px;
     }
     &:nth-child(2) {
       color: $pink-base;
-      padding: 20px 0 48px 0;
+      padding: 8px 0 43px 0;
     }
     &:nth-child(4) {
-      padding-top: 50px;
+      padding-top: 47px;
     }
     &:nth-child(5) {
       padding-bottom: 50px;
@@ -226,6 +242,7 @@
   }
 }
 .group__work {
+  padding-top: 23px;
   background: none !important;
   .group__inner {
     @media (min-width: $sreen-tb) {
@@ -233,10 +250,19 @@
     }
     .group__left {
       background-color: $blue;
+      .group__icon {
+        .item__pc {
+          @media (min-width: 1200px) {
+            width: 74px !important;
+            height: 99px !important;
+          }
+        }
+      }
     }
   }
 }
 .group__interview {
+  padding-top: 23px;
   .group__inner {
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
       flex-direction: column;
@@ -246,6 +272,23 @@
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
         width: 100%;
       }
+      .group__title {
+        p {
+          &:nth-child(1) {
+            @media (min-width: $sreen-tb) and (max-width: 1199px) {
+              padding-top: 20px !important;
+            }
+          }
+        }
+      }
+      .group__icon {
+        .item__pc {
+          @media (min-width: 1200px) {
+            width: 100px !important;
+            height: 94px !important;
+          }
+        }
+      }
     }
     .group__right {
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc) {
@@ -254,10 +297,30 @@
         margin-top: 20px;;
       }
       p {
+        font-size: 13px;
+        line-height: 22px;
+        padding: 11px 20px;
         @media (max-width: $sreen-sp) {
-          bottom: 6px !important;
+          font-size: get-vw(18px);
+          width: calc(100% - 70px);
         }
       }
+      span {
+        font-size: 22px;
+        @media (max-width: $sreen-sp) {
+          font-size: get-vw(26px);
+        }
+      }
+    }
+  }
+  .img-pc {
+    @media (min-width: 992px) {
+        display: block;
+    }
+  }
+  .img-tb {
+    @media (max-width: 991px) {
+        display: block;
     }
   }
 }

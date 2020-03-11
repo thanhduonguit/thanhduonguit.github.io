@@ -3,7 +3,7 @@
   background: url(../images/company-banner.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-bottom: 53.833333%;
+  padding-bottom: 53.91666667%;
   font-family: hirakakupro;
   @media (max-width: $sreen-sp) {
     background: url(../images/company-banner-sp.png);
@@ -62,6 +62,7 @@
   width: calc(100% - 16.666666666666%);
   left: 8.33333333333%;
   bottom: 0;
+  justify-content: space-between;
   @media (max-width: $sreen-sp) {
     flex-direction: column;
     left: 50%;
@@ -74,7 +75,7 @@
   color: #7fdc22;
   text-align: center;
   font-weight: bold;
-  padding: 22px 15px 15px 15px;
+  padding: 23px 15px 0 15px;
   @media (max-width: $sreen-sp) {
     padding: 20px 15px 15px 15px;
     font-size: get-vw($font-size-26);
@@ -100,7 +101,7 @@
   p {
     color: $white;
     text-align: center;
-    padding: 0 15px 40px 15px;
+    padding: 9px 15px 36px 15px;
     @media (max-width: $sreen-sp) { 
       padding: 0 30px 20px 30px;
       font-size: get-vw($font-size-24);
@@ -123,11 +124,11 @@
 .banner__right {
   flex-direction: column;
   width: calc(100% - 48.5% - 30px);
-  margin-left: 30px;
+  // margin-left: 30px;
   background-color: rgba(51, 51, 51, 0.7);
   @media (max-width: $sreen-sp) {
     width: 100%;
-    margin-left: 0;
+    // margin-left: 0;
     margin-top: 10px;
   }
   @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
@@ -136,17 +137,19 @@
   p {
     color: $white;
     &:nth-child(2) {
-      font-size: 30px;
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-34);
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb(30px);
       }
+      @media (min-width: 1200px) {
+        font-size: $font-size-30;
+        line-height: 50px;
+      }
     }
     &:nth-child(3) {
-      font-size: $font-size-16;
-      padding: 20px 15px 47px 15px;
+      padding: 30px 15px 49px 15px;
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-26);
         padding: 10px 15px 15px 15px;
@@ -155,10 +158,17 @@
         font-size: get-vw-tb($font-size-16);
         padding: 15px 15px 20px 15px;
       }
+      @media (min-width: 1200px) {
+        font-size: $font-size-16;
+        line-height: 28px;
+      }
     }
   }
 }
 .article__titlec {
+  @media (min-width: 1200px) {
+    padding: 68px 30px 32px 30px !important;
+  }
   hr {
       background-color: #7fdc22 !important;
   }
@@ -180,17 +190,14 @@
   }
   p {
     color: #2a2a2a;
-    width: 78.333333333%;
     padding-left: 16.6666667%;
-    padding-right: 5%;
+    padding-right: 2.5%;
     @media (max-width: $sreen-sp) {
       width: 100%;
     }
     &:nth-child(1) {
-      font-size: $font-size-26;
       padding-top: 12.33%;
-      padding-bottom: 20px;
-      font-weight: bold;
+      padding-bottom: 25px;
       @media (max-width: $sreen-sp) {
         padding: 30px 0;
         font-size: get-vw(38px);
@@ -198,15 +205,22 @@
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb($font-size-26);
       }
+      @media (min-width: 1200px) {
+        font-size: $font-size-26;
+        line-height: 40px;
+      }
     }
     &:nth-child(2) {
-      font-size: 14px;
       @media (max-width: $sreen-sp) {
         padding: 0;
         font-size: get-vw(28px);
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb(14px);
+      }
+      @media (min-width: 1200px) {
+        font-size: $font-size-14;
+        line-height: 23px;
       }
     }
   }
@@ -233,10 +247,12 @@
   }
 }
 .bot__txt {
-  padding: 24px 30px 24px 0;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+  padding-right: 2.5%;
+  padding-top: 11px;
+  // padding-bottom: 13.6%;
   @media (max-width: $sreen-sp) {
     text-align: right;
     flex-direction: column;
@@ -287,10 +303,10 @@
 }
 .box__text {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  top: 12.069%;
+  left: 52.5%;
+  transform: translateX(-52%);
+  width: 50.25%;
+  top: 12.33%;
   background-color: rgba(51, 51, 51, 0.7);
   box-shadow: -23px -23px 0px -2px rgba(255, 255, 255, 0.2);
   @media (max-width: $sreen-sp) {
@@ -301,8 +317,7 @@
   p {
     text-align: center;
     color: $white;
-    font-size: $font-size-16;
-    padding: 0 20px 20px 20px;
+    padding-bottom: 23px;
     @media (max-width: $sreen-sp) {
       font-size: get-vw(28px);
       padding: 0 30px 30px 30px;
@@ -311,8 +326,11 @@
       font-size: get-vw-tb($font-size-16);
       padding: 0 15px 15px 15px;
     }
+    @media (min-width: 1200px) {
+      font-size: $font-size-14;
+      line-height: 23px;
+    }
     &:nth-child(1) {
-      font-size: $font-size-26;
       padding: 30px 0 15px 0;
       @media (max-width: $sreen-sp) {
         font-size: get-vw(38px);
@@ -321,6 +339,10 @@
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb($font-size-26);
         padding: 15px 30px;
+      }
+      @media (min-width: 1200px) {
+        font-size: $font-size-26;
+        line-height: 40px;
       }
     }
     &:last-child {
