@@ -32,7 +32,12 @@ footer {
                         background-color: $menu-bg-hover;
                         // color: $white;
                         align-items: center;
-                    a {
+                        &:hover {
+                            a {
+                              color: #FACB3A;
+                            }
+                          }
+                        a {
                         color: $white;
                         &:after {
                             content: "";
