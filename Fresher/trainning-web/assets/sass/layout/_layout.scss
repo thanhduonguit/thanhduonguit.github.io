@@ -202,14 +202,12 @@
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-  p {
-    font-size: 26px;
-    color: $white;
-    font-weight: bold;
-    text-align: center;
-    @media (min-width: $sreen-tb) and (max-width: 1199px) {
-      font-size: get-vw-tb(26px);
-    }
+  font-size: 26px;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+  @media (min-width: $sreen-tb) and (max-width: 1199px) {
+    font-size: get-vw-tb(26px);
   }
 }
 .group__entry {
