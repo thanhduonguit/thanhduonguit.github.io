@@ -36,6 +36,7 @@
     color: $white;
     width: 100%;
     text-align: center;
+    font-weight: bold;
     &:nth-child(1) {
       font-size: $font-size-34;
       @media (max-width: $sreen-sp) {
@@ -137,6 +138,7 @@
   p {
     color: $white;
     &:nth-child(2) {
+      font-weight: bold;
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-34);
       }
