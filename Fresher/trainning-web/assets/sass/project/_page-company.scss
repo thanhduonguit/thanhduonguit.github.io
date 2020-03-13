@@ -12,12 +12,14 @@
     padding-bottom: 150.9375%;
   }
 }
-.banner__topc {
-  padding-top: 42px !important;
-  img {
-    @media (max-width: $sreen-pc-3) { 
-      width: 20px !important;
-      height: 30px !important;
+.company__wrapper {
+  .banner__top {
+    padding-top: 42px !important;
+    img {
+      @media (max-width: $sreen-pc-3) { 
+        width: 20px !important;
+        height: 30px !important;
+      }
     }
   }
 }
