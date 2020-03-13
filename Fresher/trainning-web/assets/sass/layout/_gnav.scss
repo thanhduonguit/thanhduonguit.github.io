@@ -119,12 +119,16 @@
   }
 
   .active {
-    // background-color: $menu-bg-hover;
+    background-color: $menu-bg-hover;
     // color: $white!important;
     &:before {
       content: unset !important;
     }
+    // &:after {
+    //   content: unset !important;
+    // }
   }
+  
 }
 
 /* Hover menu */

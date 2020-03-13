@@ -39,40 +39,40 @@ a {
   text-decoration: none; }
 
 @media (min-width: 641px) {
-  /* line 26, ../sass/foundation/_base.scss */
+  /* line 16, ../sass/foundation/_base.scss */
   .pt-20 {
     padding-top: 20px; } }
 
 @media (max-width: 639.98px) {
-  /* line 31, ../sass/foundation/_base.scss */
+  /* line 21, ../sass/foundation/_base.scss */
   .pt-10 {
     padding-top: 10px !important; } }
 
 @media (min-width: 641px) {
-  /* line 36, ../sass/foundation/_base.scss */
+  /* line 26, ../sass/foundation/_base.scss */
   .ml-20 {
     margin-left: 20px; } }
 
-/* line 41, ../sass/foundation/_base.scss */
+/* line 31, ../sass/foundation/_base.scss */
 .mt-0 {
   margin-top: 0 !important; }
 
 @media (min-width: 641px) {
-  /* line 44, ../sass/foundation/_base.scss */
+  /* line 34, ../sass/foundation/_base.scss */
   .mr-20 {
     margin-right: 20px; } }
 
 @media (max-width: 990px) {
-  /* line 49, ../sass/foundation/_base.scss */
+  /* line 39, ../sass/foundation/_base.scss */
   .img-pc {
     display: none; } }
 
 @media (min-width: 991px) {
-  /* line 54, ../sass/foundation/_base.scss */
+  /* line 44, ../sass/foundation/_base.scss */
   .img-tb {
     display: none; } }
 
-/* line 59, ../sass/foundation/_base.scss */
+/* line 49, ../sass/foundation/_base.scss */
 .d-flex {
   display: flex;
   justify-content: center;
@@ -653,16 +653,19 @@ header {
     .navbar .navbar-togger {
       display: block;
       margin-right: 15px; } }
-  /* line 124, ../sass/layout/_gnav.scss */
-  .navbar .active:before {
-    content: unset !important; }
+  /* line 121, ../sass/layout/_gnav.scss */
+  .navbar .active {
+    background-color: #F85050; }
+    /* line 124, ../sass/layout/_gnav.scss */
+    .navbar .active:before {
+      content: unset !important; }
 
 /* Hover menu */
-/* line 131, ../sass/layout/_gnav.scss */
+/* line 135, ../sass/layout/_gnav.scss */
 .fill ul li a {
   position: relative; }
 
-/* line 134, ../sass/layout/_gnav.scss */
+/* line 138, ../sass/layout/_gnav.scss */
 .fill ul li a:after {
   position: absolute;
   bottom: 0;
@@ -675,22 +678,22 @@ header {
   background: #aaa;
   height: 1px; }
 
-/* line 146, ../sass/layout/_gnav.scss */
+/* line 150, ../sass/layout/_gnav.scss */
 .fill ul li a {
   transition: all 2s; }
 
-/* line 150, ../sass/layout/_gnav.scss */
+/* line 154, ../sass/layout/_gnav.scss */
 .fill ul li a:after {
   text-align: left;
   content: '.';
   margin: 0;
   opacity: 0; }
 
-/* line 156, ../sass/layout/_gnav.scss */
+/* line 160, ../sass/layout/_gnav.scss */
 .fill ul li a:hover {
   z-index: 1; }
 
-/* line 159, ../sass/layout/_gnav.scss */
+/* line 163, ../sass/layout/_gnav.scss */
 .fill ul li a:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
@@ -710,7 +713,7 @@ header {
     height: 100%;
     background: #F85050; } }
 @media (min-width: 1200px) {
-  /* line 183, ../sass/layout/_gnav.scss */
+  /* line 187, ../sass/layout/_gnav.scss */
   .navbar-index .menu a {
     padding: 20.5px 21px !important; } }
 
@@ -741,18 +744,14 @@ footer {
       height: 20px; }
   /* line 31, ../sass/layout/_footer.scss */
   footer .navbar.navbar-footer .menu li:last-child {
-    background-color: #F85050;
     align-items: center; }
     /* line 36, ../sass/layout/_footer.scss */
     footer .navbar.navbar-footer .menu li:last-child:hover a {
       color: #FACB3A; }
-    /* line 40, ../sass/layout/_footer.scss */
-    footer .navbar.navbar-footer .menu li:last-child a {
-      color: #FFF; }
-      @media (min-width: 768px) and (max-width: 990px) {
-        /* line 40, ../sass/layout/_footer.scss */
-        footer .navbar.navbar-footer .menu li:last-child a {
-          margin-top: 10px; } }
+    @media (min-width: 768px) and (max-width: 990px) {
+      /* line 40, ../sass/layout/_footer.scss */
+      footer .navbar.navbar-footer .menu li:last-child a {
+        margin-top: 10px; } }
   /* line 59, ../sass/layout/_footer.scss */
   footer .navbar.navbar-footer .logo {
     display: flex;
@@ -2191,16 +2190,3 @@ footer {
 /* line 295, ../sass/project/_page-work.scss */
 .pb-50 {
   padding-bottom: 50px; }
-
-/* line 1, ../sass/project/_page-entry-2.scss */
-.banner__entry {
-  position: relative;
-  background: url(../images/entry01.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  padding-bottom: 28.333333%; }
-
-/* line 10, ../sass/project/_page-entry-2.scss */
-.article__titlee hr {
-  background-color: #f85050; }
