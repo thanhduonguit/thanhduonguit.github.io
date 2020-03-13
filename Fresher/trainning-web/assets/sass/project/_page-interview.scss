@@ -42,8 +42,10 @@
         }
     }
 }
-.banner__topiv {
-    padding-top: 20px !important;
+.interview__wrapper {
+    .banner__top {
+        padding-top: 20px !important;
+    }
 }
 .banner__txtiv {
     position: absolute;
