@@ -152,7 +152,7 @@
     flex-direction: column;
     padding: 68px 30px 30px 30px;
     @media (max-width: $sreen-sp) {
-        padding: 18px 30px 15px 30px;
+        padding: 34px 30px 15px 30px;
     }
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
         padding: 44px 30px 20px 30px;
@@ -175,6 +175,10 @@
         height: 4px;
         background-color: #007eff;
         border: none;
+        @media (max-width: $sreen-sp) {
+            width: 15px;
+            height: 3px;
+        }
     }
 }
 .article__work {

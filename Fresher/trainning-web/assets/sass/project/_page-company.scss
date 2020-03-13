@@ -78,7 +78,7 @@
   font-weight: bold;
   padding: 23px 15px 0 15px;
   @media (max-width: $sreen-sp) {
-    padding: 20px 15px 15px 15px;
+    padding: 11.5px 15px 7.5px 15px;
     font-size: get-vw($font-size-26);
   }
   @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
@@ -104,7 +104,7 @@
     text-align: center;
     padding: 9px 15px 36px 15px;
     @media (max-width: $sreen-sp) { 
-      padding: 0 30px 20px 30px;
+      padding: 0 30px 18px 30px;
       font-size: get-vw($font-size-24);
     }
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
@@ -137,8 +137,8 @@
   }
   p {
     color: $white;
+    font-weight: bold;
     &:nth-child(2) {
-      font-weight: bold;
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-34);
       }
@@ -167,12 +167,14 @@
     }
   }
 }
-.article__titlec {
-  @media (min-width: 1200px) {
-    padding: 68px 30px 32px 30px !important;
-  }
-  hr {
-      background-color: #7fdc22 !important;
+.company__wrapper {
+  .article__title {
+    @media (min-width: 1200px) {
+      padding: 68px 30px 32px 30px !important;
+    }
+    hr {
+        background-color: #7fdc22 !important;
+    }
   }
 }
 .box__wrap {
@@ -201,7 +203,7 @@
       padding-top: 12.33%;
       padding-bottom: 25px;
       @media (max-width: $sreen-sp) {
-        padding: 30px 0;
+        padding: 25px 0;
         font-size: get-vw(38px);
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
@@ -218,7 +220,7 @@
         font-size: get-vw(28px);
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
-        font-size: get-vw-tb(14px);
+        font-size: get-vw-tb(16px);
       }
       @media (min-width: 1200px) {
         font-size: $font-size-14;
@@ -310,7 +312,19 @@
   width: 50.25%;
   top: 12.33%;
   background-color: rgba(51, 51, 51, 0.7);
-  box-shadow: -23px -23px 0px -2px rgba(255, 255, 255, 0.2);
+  box-shadow: -23px -23px 0px -2px rgba(255, 255, 255, 0.32);
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -19px;
+    width: 99%;
+    height: 99%;
+    background: rgba(255, 255, 255, 0.05);
+    @media (max-width: $sreen-sp) {
+      background: none;
+    }
+  }
   @media (max-width: $sreen-sp) {
     width: calc(100% - 60px);
     top: 2.876869%;
@@ -322,7 +336,7 @@
     padding-bottom: 23px;
     @media (max-width: $sreen-sp) {
       font-size: get-vw(28px);
-      padding: 0 30px 30px 30px;
+      padding: 0 30px 25px 30px;
     }
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
       font-size: get-vw-tb($font-size-16);
@@ -336,7 +350,7 @@
       padding: 30px 0 15px 0;
       @media (max-width: $sreen-sp) {
         font-size: get-vw(38px);
-        padding: 30px;
+        padding: 25px 30px;
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb($font-size-26);
