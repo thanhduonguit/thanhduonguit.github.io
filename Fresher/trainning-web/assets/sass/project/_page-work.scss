@@ -294,4 +294,12 @@
 }
 .pb-50 {
     padding-bottom: 50px;
+    @media (max-width: $sreen-sp) {
+        padding-bottom: 25px;
+    }
+}
+.pb-0 {
+    @media (max-width: $sreen-sp) {
+        padding-bottom: 0;
+    }
 }
