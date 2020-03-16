@@ -640,39 +640,40 @@ header {
       transition: 0.4s; }
     /* line 93, ../sass/layout/_gnav.scss */
     .navbar .navbar-togger span {
-      font-size: 14px; }
-  /* line 100, ../sass/layout/_gnav.scss */
+      font-size: 12px;
+      color: #333; }
+  /* line 101, ../sass/layout/_gnav.scss */
   .navbar .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-8px, 7px);
     transform: rotate(-45deg) translate(-8px, 7px); }
-  /* line 104, ../sass/layout/_gnav.scss */
+  /* line 105, ../sass/layout/_gnav.scss */
   .navbar .change .bar2 {
     opacity: 0; }
-  /* line 105, ../sass/layout/_gnav.scss */
+  /* line 106, ../sass/layout/_gnav.scss */
   .navbar .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-5px, -5px);
     transform: rotate(45deg) translate(-5px, -5px); }
-  /* line 109, ../sass/layout/_gnav.scss */
+  /* line 110, ../sass/layout/_gnav.scss */
   .navbar .change span {
     display: none; }
   @media (max-width: 768px) {
-    /* line 115, ../sass/layout/_gnav.scss */
+    /* line 116, ../sass/layout/_gnav.scss */
     .navbar .navbar-togger {
       display: block;
       margin-right: 15px; } }
-  /* line 121, ../sass/layout/_gnav.scss */
+  /* line 122, ../sass/layout/_gnav.scss */
   .navbar .active {
     background-color: #F85050; }
-    /* line 125, ../sass/layout/_gnav.scss */
+    /* line 126, ../sass/layout/_gnav.scss */
     .navbar .active a:before {
       content: unset !important; }
 
 /* Hover menu */
-/* line 137, ../sass/layout/_gnav.scss */
+/* line 138, ../sass/layout/_gnav.scss */
 .fill ul li a {
   position: relative; }
 
-/* line 140, ../sass/layout/_gnav.scss */
+/* line 141, ../sass/layout/_gnav.scss */
 .fill ul li a:after {
   position: absolute;
   bottom: 0;
@@ -685,22 +686,22 @@ header {
   background: #aaa;
   height: 1px; }
 
-/* line 152, ../sass/layout/_gnav.scss */
+/* line 153, ../sass/layout/_gnav.scss */
 .fill ul li a {
   transition: all 2s; }
 
-/* line 156, ../sass/layout/_gnav.scss */
+/* line 157, ../sass/layout/_gnav.scss */
 .fill ul li a:after {
   text-align: left;
   content: '.';
   margin: 0;
   opacity: 0; }
 
-/* line 162, ../sass/layout/_gnav.scss */
+/* line 163, ../sass/layout/_gnav.scss */
 .fill ul li a:hover {
   z-index: 1; }
 
-/* line 165, ../sass/layout/_gnav.scss */
+/* line 166, ../sass/layout/_gnav.scss */
 .fill ul li a:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
@@ -720,7 +721,7 @@ header {
     height: 100%;
     background: #F85050; } }
 @media (min-width: 1200px) {
-  /* line 189, ../sass/layout/_gnav.scss */
+  /* line 190, ../sass/layout/_gnav.scss */
   .navbar-index .menu a {
     padding: 20.5px 21px !important; } }
 
