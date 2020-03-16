@@ -45,6 +45,14 @@
 .interview__wrapper {
     .banner__top {
         padding-top: 20px !important;
+        @media (max-width: $sreen-sp) {
+            padding-top: 40px !important;
+        }
+    }
+    br.show-sp {
+        @media (min-width: 641px) {
+            display: none;
+        }
     }
 }
 .banner__txtiv {
@@ -129,6 +137,7 @@
     .titleiv__second {
         font-size: $font-size-20;
         padding-bottom: 16px;
+        font-weight: bold;
         @media (max-width: $sreen-sp) {
             font-size: get-vw($font-size-24);
         }
