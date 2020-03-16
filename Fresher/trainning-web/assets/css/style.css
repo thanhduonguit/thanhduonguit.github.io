@@ -26,53 +26,60 @@
   padding: 0; }
 
 /* line 6, ../sass/foundation/_base.scss */
+body {
+  font-family: hirakakupro;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.64; }
+
+/* line 12, ../sass/foundation/_base.scss */
 .wrapper {
   max-width: 1200px;
   margin: 0 auto; }
 
-/* line 10, ../sass/foundation/_base.scss */
+/* line 16, ../sass/foundation/_base.scss */
 ul {
   list-style-type: none; }
 
-/* line 13, ../sass/foundation/_base.scss */
+/* line 19, ../sass/foundation/_base.scss */
 a {
   text-decoration: none; }
 
 @media (min-width: 641px) {
-  /* line 16, ../sass/foundation/_base.scss */
+  /* line 22, ../sass/foundation/_base.scss */
   .pt-20 {
     padding-top: 20px; } }
 
 @media (max-width: 639.98px) {
-  /* line 21, ../sass/foundation/_base.scss */
+  /* line 27, ../sass/foundation/_base.scss */
   .pt-10 {
     padding-top: 10px !important; } }
 
 @media (min-width: 641px) {
-  /* line 26, ../sass/foundation/_base.scss */
+  /* line 32, ../sass/foundation/_base.scss */
   .ml-20 {
     margin-left: 20px; } }
 
-/* line 31, ../sass/foundation/_base.scss */
+/* line 37, ../sass/foundation/_base.scss */
 .mt-0 {
   margin-top: 0 !important; }
 
 @media (min-width: 641px) {
-  /* line 34, ../sass/foundation/_base.scss */
+  /* line 40, ../sass/foundation/_base.scss */
   .mr-20 {
     margin-right: 20px; } }
 
 @media (max-width: 990px) {
-  /* line 39, ../sass/foundation/_base.scss */
+  /* line 45, ../sass/foundation/_base.scss */
   .img-pc {
     display: none; } }
 
 @media (min-width: 991px) {
-  /* line 44, ../sass/foundation/_base.scss */
+  /* line 50, ../sass/foundation/_base.scss */
   .img-tb {
     display: none; } }
 
-/* line 49, ../sass/foundation/_base.scss */
+/* line 55, ../sass/foundation/_base.scss */
 .d-flex {
   display: flex;
   justify-content: center;
@@ -1508,7 +1515,6 @@ footer {
   /* line 31, ../sass/project/_page-interview.scss */
   .banner__top p {
     font-size: 30px;
-    color: #FFF;
     font-weight: bold;
     margin-left: 10px;
     font-family: Helvetica; }
@@ -1521,45 +1527,43 @@ footer {
       .banner__top p {
         font-size: 2.5vw; } }
 
-/* line 46, ../sass/project/_page-interview.scss */
+/* line 45, ../sass/project/_page-interview.scss */
 .interview__wrapper .banner__top {
-  padding-top: 20px !important; }
+  padding-top: 12px !important; }
   @media (max-width: 640px) {
-    /* line 46, ../sass/project/_page-interview.scss */
+    /* line 45, ../sass/project/_page-interview.scss */
     .interview__wrapper .banner__top {
       padding-top: 40px !important; } }
 @media (min-width: 641px) {
-  /* line 52, ../sass/project/_page-interview.scss */
+  /* line 51, ../sass/project/_page-interview.scss */
   .interview__wrapper br.show-sp {
     display: none; } }
 
-/* line 58, ../sass/project/_page-interview.scss */
+/* line 57, ../sass/project/_page-interview.scss */
 .banner__txtiv {
   position: absolute;
-  font-family: hirakakupro;
-  color: #FFF;
   filter: drop-shadow(0 0 21.5px rgba(183, 172, 150, 0.55));
   top: 48.2%;
   transform: translateY(-48.2%);
   padding-left: 8.33333333333333%;
   font-weight: bold; }
   @media (max-width: 640px) {
-    /* line 58, ../sass/project/_page-interview.scss */
+    /* line 57, ../sass/project/_page-interview.scss */
     .banner__txtiv {
       top: 70%;
       padding: 0 30px;
       font-size: 4.9479166667vw; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 58, ../sass/project/_page-interview.scss */
+    /* line 57, ../sass/project/_page-interview.scss */
     .banner__txtiv {
       top: 62%;
       font-size: 2.8333333333vw; } }
   @media (min-width: 1200px) {
-    /* line 58, ../sass/project/_page-interview.scss */
+    /* line 57, ../sass/project/_page-interview.scss */
     .banner__txtiv {
       font-size: 34px; } }
 
-/* line 82, ../sass/project/_page-interview.scss */
+/* line 78, ../sass/project/_page-interview.scss */
 .sup__banner {
   position: relative;
   background: url(../images/img36.png);
@@ -1568,7 +1572,7 @@ footer {
   width: 100%;
   padding-bottom: 23.33333333%; }
   @media (max-width: 640px) {
-    /* line 82, ../sass/project/_page-interview.scss */
+    /* line 78, ../sass/project/_page-interview.scss */
     .sup__banner {
       background: url(../images/img44.png);
       background-repeat: no-repeat;
@@ -1576,171 +1580,163 @@ footer {
       width: 100%;
       padding-bottom: 69.84375%; } }
 
-/* line 97, ../sass/project/_page-interview.scss */
+/* line 93, ../sass/project/_page-interview.scss */
 .sup__banneriv {
   position: absolute;
   width: calc(100% - 40% - 30px);
   height: auto;
   left: 40%;
-  color: #FFF;
-  font-family: hirakakupro;
   padding-right: 30px; }
   @media (min-width: 1200px) {
-    /* line 97, ../sass/project/_page-interview.scss */
+    /* line 93, ../sass/project/_page-interview.scss */
     .sup__banneriv {
       width: calc(100% - 50% - 30px);
       left: 50%; } }
-  /* line 109, ../sass/project/_page-interview.scss */
+  /* line 103, ../sass/project/_page-interview.scss */
   .sup__banneriv .titleiv__first {
-    padding: 46px 0 24px 0; }
+    padding: 46px 0 24px 0;
+    font-size: 34px;
+    line-height: 1.56; }
     @media (max-width: 640px) {
-      /* line 109, ../sass/project/_page-interview.scss */
+      /* line 103, ../sass/project/_page-interview.scss */
       .sup__banneriv .titleiv__first {
         display: flex;
         flex-direction: column;
         font-size: 4.4270833333vw;
         padding: 21px 0 15px 0; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 109, ../sass/project/_page-interview.scss */
+      /* line 103, ../sass/project/_page-interview.scss */
       .sup__banneriv .titleiv__first {
         font-size: 2.8333333333vw;
         padding: 21px 0 15px 0; } }
-    @media (min-width: 1200px) {
-      /* line 109, ../sass/project/_page-interview.scss */
-      .sup__banneriv .titleiv__first {
-        font-size: 34px;
-        line-height: 53px; } }
-    /* line 125, ../sass/project/_page-interview.scss */
+    /* line 117, ../sass/project/_page-interview.scss */
     .sup__banneriv .titleiv__first span {
       font-size: 14px;
       margin-left: 15px; }
       @media (max-width: 640px) {
-        /* line 125, ../sass/project/_page-interview.scss */
+        /* line 117, ../sass/project/_page-interview.scss */
         .sup__banneriv .titleiv__first span {
           margin-left: 0;
           font-size: 2.6041666667vw; } }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 125, ../sass/project/_page-interview.scss */
+        /* line 117, ../sass/project/_page-interview.scss */
         .sup__banneriv .titleiv__first span {
           font-size: 1.1666666667vw; } }
-  /* line 137, ../sass/project/_page-interview.scss */
+  /* line 129, ../sass/project/_page-interview.scss */
   .sup__banneriv .titleiv__second {
     font-size: 20px;
     padding-bottom: 16px;
     font-weight: bold; }
     @media (max-width: 640px) {
-      /* line 137, ../sass/project/_page-interview.scss */
+      /* line 129, ../sass/project/_page-interview.scss */
       .sup__banneriv .titleiv__second {
         font-size: 3.125vw; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 137, ../sass/project/_page-interview.scss */
+      /* line 129, ../sass/project/_page-interview.scss */
       .sup__banneriv .titleiv__second {
         font-size: 1.6666666667vw; } }
-  /* line 148, ../sass/project/_page-interview.scss */
+  /* line 140, ../sass/project/_page-interview.scss */
   .sup__banneriv div {
     display: flex; }
     @media (max-width: 640px) {
-      /* line 148, ../sass/project/_page-interview.scss */
+      /* line 140, ../sass/project/_page-interview.scss */
       .sup__banneriv div {
         flex-direction: column; } }
     @media (max-width: 640px) {
-      /* line 153, ../sass/project/_page-interview.scss */
+      /* line 145, ../sass/project/_page-interview.scss */
       .sup__banneriv div p {
         font-size: 2.6041666667vw; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 153, ../sass/project/_page-interview.scss */
+      /* line 145, ../sass/project/_page-interview.scss */
       .sup__banneriv div p {
-        font-size: 1vw; } }
+        font-size: 1.1666666667vw; } }
     @media (min-width: 1200px) {
-      /* line 153, ../sass/project/_page-interview.scss */
+      /* line 145, ../sass/project/_page-interview.scss */
       .sup__banneriv div p {
         font-size: 12px;
         line-height: 24px; } }
     @media (min-width: 1200px) {
-      /* line 164, ../sass/project/_page-interview.scss */
+      /* line 156, ../sass/project/_page-interview.scss */
       .sup__banneriv div p:nth-child(2) {
         padding-left: 15px; } }
 
-/* line 172, ../sass/project/_page-interview.scss */
+/* line 164, ../sass/project/_page-interview.scss */
 .iv__title {
-  font-family: hirakakupro;
   font-size: 34px;
+  line-height: 1.32;
   color: #ffc411;
-  padding: 72px 0 20px 0; }
+  padding: 72px 0 30px 0; }
   @media (max-width: 640px) {
-    /* line 172, ../sass/project/_page-interview.scss */
+    /* line 164, ../sass/project/_page-interview.scss */
     .iv__title {
       padding: 37.5px 30px 15px 30px;
       font-size: 5.2083333333vw; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 172, ../sass/project/_page-interview.scss */
+    /* line 164, ../sass/project/_page-interview.scss */
     .iv__title {
       padding: 50px 30px 20px 30px;
       font-size: 2.8333333333vw; } }
 
-/* line 186, ../sass/project/_page-interview.scss */
+/* line 178, ../sass/project/_page-interview.scss */
 .box__iv {
   display: flex;
   justify-content: space-between; }
   @media (max-width: 640px) {
-    /* line 186, ../sass/project/_page-interview.scss */
+    /* line 178, ../sass/project/_page-interview.scss */
     .box__iv {
       padding: 0 30px;
       flex-direction: column-reverse; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 186, ../sass/project/_page-interview.scss */
+    /* line 178, ../sass/project/_page-interview.scss */
     .box__iv {
       padding: 0 30px; } }
 
-/* line 197, ../sass/project/_page-interview.scss */
+/* line 189, ../sass/project/_page-interview.scss */
 .box__iv__edit {
   flex-direction: row-reverse; }
   @media (max-width: 640px) {
-    /* line 197, ../sass/project/_page-interview.scss */
+    /* line 189, ../sass/project/_page-interview.scss */
     .box__iv__edit {
       flex-direction: column-reverse; } }
 
-/* line 203, ../sass/project/_page-interview.scss */
+/* line 195, ../sass/project/_page-interview.scss */
 .iv__txt {
   width: calc(100% - 50% - 15px); }
   @media (max-width: 640px) {
-    /* line 203, ../sass/project/_page-interview.scss */
+    /* line 195, ../sass/project/_page-interview.scss */
     .iv__txt {
       width: 100%;
       margin-top: 30px; } }
-  /* line 209, ../sass/project/_page-interview.scss */
+  /* line 201, ../sass/project/_page-interview.scss */
   .iv__txt p {
-    font-family: hirakakupro;
-    font-size: 14px;
-    line-height: 30px;
+    line-height: 2.2;
     color: #2a2a2a; }
     @media (max-width: 640px) {
-      /* line 209, ../sass/project/_page-interview.scss */
+      /* line 201, ../sass/project/_page-interview.scss */
       .iv__txt p {
         font-size: 3.6458333333vw; } }
 
 @media (min-width: 1199px) {
-  /* line 220, ../sass/project/_page-interview.scss */
+  /* line 210, ../sass/project/_page-interview.scss */
   .iv__txtedit p {
-    font-size: 14px;
-    line-height: 25px !important; } }
+    line-height: 1.8 !important; } }
 
-/* line 227, ../sass/project/_page-interview.scss */
+/* line 216, ../sass/project/_page-interview.scss */
 .iv__img {
   width: calc(100% - 50% - 15px); }
   @media (max-width: 640px) {
-    /* line 227, ../sass/project/_page-interview.scss */
+    /* line 216, ../sass/project/_page-interview.scss */
     .iv__img {
       width: 100%; } }
-  /* line 232, ../sass/project/_page-interview.scss */
+  /* line 221, ../sass/project/_page-interview.scss */
   .iv__img img {
     width: 100%;
     height: auto; }
-  /* line 236, ../sass/project/_page-interview.scss */
+  /* line 225, ../sass/project/_page-interview.scss */
   .iv__img .item__pc {
     margin-top: 10px; }
 
-/* line 240, ../sass/project/_page-interview.scss */
+/* line 229, ../sass/project/_page-interview.scss */
 .pic__iv {
   background: url(../images/img39.png);
   background-repeat: no-repeat;
@@ -1749,7 +1745,7 @@ footer {
   padding-bottom: 33.33333333%;
   margin-top: 72px; }
   @media (max-width: 640px) {
-    /* line 240, ../sass/project/_page-interview.scss */
+    /* line 229, ../sass/project/_page-interview.scss */
     .pic__iv {
       background: url(../images/img45.png);
       background-repeat: no-repeat;
@@ -1758,114 +1754,104 @@ footer {
       width: calc(100% - 60px);
       margin: 0 0 20px 30px; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 240, ../sass/project/_page-interview.scss */
+    /* line 229, ../sass/project/_page-interview.scss */
     .pic__iv {
       margin-top: 48px; } }
 
-/* line 259, ../sass/project/_page-interview.scss */
+/* line 248, ../sass/project/_page-interview.scss */
 .orther__title {
   color: #ffc000;
   font-family: "Helvetica";
   font-weight: bold;
   text-align: center;
-  padding: 79px 0 30px 0; }
+  padding: 73px 0 34px 0;
+  font-size: 30px;
+  line-height: 1; }
   @media (max-width: 640px) {
-    /* line 259, ../sass/project/_page-interview.scss */
+    /* line 248, ../sass/project/_page-interview.scss */
     .orther__title {
       font-size: 5.2083333333vw;
       padding: 37.5px 30px 15px 30px; } }
   @media (min-width: 641px) and (max-width: 1199px) {
-    /* line 259, ../sass/project/_page-interview.scss */
+    /* line 248, ../sass/project/_page-interview.scss */
     .orther__title {
       padding: 50px 0 20px 0;
       font-size: 2.5vw; } }
-  @media (min-width: 1200px) {
-    /* line 259, ../sass/project/_page-interview.scss */
-    .orther__title {
-      font-size: 30px;
-      line-height: 30px; } }
 
-/* line 278, ../sass/project/_page-interview.scss */
+/* line 265, ../sass/project/_page-interview.scss */
 .orther__img {
   display: flex; }
   @media (max-width: 640px) {
-    /* line 278, ../sass/project/_page-interview.scss */
+    /* line 265, ../sass/project/_page-interview.scss */
     .orther__img {
       flex-direction: column; } }
 
-/* line 284, ../sass/project/_page-interview.scss */
+/* line 271, ../sass/project/_page-interview.scss */
 .orther__item {
   position: relative;
   font-weight: hirakakupro;
   width: 33.3333333333%; }
   @media (max-width: 640px) {
-    /* line 284, ../sass/project/_page-interview.scss */
+    /* line 271, ../sass/project/_page-interview.scss */
     .orther__item {
       width: 100%; } }
-  /* line 291, ../sass/project/_page-interview.scss */
+  /* line 278, ../sass/project/_page-interview.scss */
   .orther__item img {
     width: 100%;
     height: auto; }
-  /* line 295, ../sass/project/_page-interview.scss */
+  /* line 282, ../sass/project/_page-interview.scss */
   .orther__item p {
     position: absolute;
     bottom: 0px;
     width: calc(100% - 44px);
-    color: #FFF;
     padding: 40px 22px; }
-    @media (min-width: 1200px) {
-      /* line 295, ../sass/project/_page-interview.scss */
-      .orther__item p {
-        font-size: 14px;
-        line-height: 20px; } }
     @media (min-width: 641px) and (max-width: 1199px) {
-      /* line 295, ../sass/project/_page-interview.scss */
+      /* line 282, ../sass/project/_page-interview.scss */
       .orther__item p {
         padding: 20px 22px;
         font-size: 1.1666666667vw; } }
     @media (max-width: 640px) {
-      /* line 295, ../sass/project/_page-interview.scss */
+      /* line 282, ../sass/project/_page-interview.scss */
       .orther__item p {
         font-size: 3.6458333333vw;
-        line-height: 34px; } }
-    /* line 313, ../sass/project/_page-interview.scss */
+        line-height: 1.3; } }
+    /* line 295, ../sass/project/_page-interview.scss */
     .orther__item p span {
-      color: #FFF; }
-      @media (min-width: 1200px) {
-        /* line 313, ../sass/project/_page-interview.scss */
-        .orther__item p span {
-          font-size: 30px;
-          line-height: 40px; } }
+      font-size: 30px;
+      line-height: 1.33; }
       @media (min-width: 641px) and (max-width: 1199px) {
-        /* line 313, ../sass/project/_page-interview.scss */
+        /* line 295, ../sass/project/_page-interview.scss */
         .orther__item p span {
           font-size: 2.5vw; } }
       @media (max-width: 640px) {
-        /* line 313, ../sass/project/_page-interview.scss */
+        /* line 295, ../sass/project/_page-interview.scss */
         .orther__item p span {
-          font-size: 4.9479166667vw;
-          line-height: 40px; } }
+          font-size: 4.9479166667vw; } }
 
 @media (max-width: 640px) {
-  /* line 331, ../sass/project/_page-interview.scss */
+  /* line 309, ../sass/project/_page-interview.scss */
   .orther__item .item__sp,
   .iv__img .item__sp {
     display: block; } }
 @media (min-width: 641px) {
-  /* line 336, ../sass/project/_page-interview.scss */
+  /* line 314, ../sass/project/_page-interview.scss */
   .orther__item .item__pc,
   .iv__img .item__pc {
     display: block; } }
 
 @media (max-width: 640px) {
-  /* line 342, ../sass/project/_page-interview.scss */
+  /* line 320, ../sass/project/_page-interview.scss */
   .flex-reverse-iv {
     display: flex;
     flex-direction: column-reverse; } }
 
-/* line 348, ../sass/project/_page-interview.scss */
+/* line 326, ../sass/project/_page-interview.scss */
 .pt-37 {
   padding-top: 37px !important; }
+
+/* line 329, ../sass/project/_page-interview.scss */
+.pb-25 {
+  padding-bottom: 25px !important; }
 
 /* line 1, ../sass/project/_page-work.scss */
 .banner__work {

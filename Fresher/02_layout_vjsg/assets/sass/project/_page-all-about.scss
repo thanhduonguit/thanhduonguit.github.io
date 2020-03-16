@@ -55,7 +55,11 @@
 }
 
 
-
+.main {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 .place-map__inner {
     background: #dbebf2;
     max-width: 1900px;
@@ -80,9 +84,7 @@
     width: 100%;
     z-index: -1;
     padding-top: 55.58824%;
-    padding-top: 61.82353%;
-    /* height: 1051px; */
-    background: transparent url(../images/map_01@2x.png) center center no-repeat;
+    background: transparent url(../images/map_01@2x.png) no-repeat;
     background-image: -webkit-linear-gradient(transparent, transparent), url(../images/map_01.svg);
     background-image: linear-gradient(transparent, transparent), url(../images/map_01.svg);
 }
@@ -148,6 +150,15 @@
     top: 0;
     height: 100%;
     width: 100%;
+}
+.circle-content {
+    display: table;
+    width: 100%;
+    height: 100%;
+    div {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 .show-pc {
     display: block !important;
