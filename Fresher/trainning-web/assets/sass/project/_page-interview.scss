@@ -61,6 +61,8 @@
     transform: translateY(-48.2%);
     padding-left: 8.33333333333333%;
     font-weight: bold;
+    font-size: $font-size-34;
+    line-height: 1.6;
     @media (max-width: $sreen-sp) {
         top: 70%;
         padding: 0 30px;
@@ -69,10 +71,6 @@
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
         top: 62%;
         font-size: get-vw-tb($font-size-34);
-    }
-    @media (min-width: 1200px) {
-        font-size: $font-size-34;
-        // line-height: calc(54/34);
     }
 }
 .sup__banner {
