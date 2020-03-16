@@ -1423,7 +1423,7 @@ footer {
       /* line 335, ../sass/project/_page-company.scss */
       .box__text p {
         font-size: 3.6458333333vw;
-        padding: 0 30px 25px 30px; } }
+        padding: 0 30px 15px 30px; } }
     @media (min-width: 641px) and (max-width: 1199px) {
       /* line 335, ../sass/project/_page-company.scss */
       .box__text p {
@@ -1441,12 +1441,12 @@ footer {
         /* line 351, ../sass/project/_page-company.scss */
         .box__text p:nth-child(1) {
           font-size: 4.9479166667vw;
-          padding: 25px 30px; } }
+          padding: 25px 30px 15px 30px; } }
       @media (min-width: 641px) and (max-width: 1199px) {
         /* line 351, ../sass/project/_page-company.scss */
         .box__text p:nth-child(1) {
           font-size: 2.1666666667vw;
-          padding: 15px 30px; } }
+          padding: 15px 15px; } }
       @media (min-width: 1200px) {
         /* line 351, ../sass/project/_page-company.scss */
         .box__text p:nth-child(1) {

@@ -1,0 +1,81 @@
+@charset "utf-8";
+// color
+$white: #FFF;
+$base-color: #FBF8F2;
+$body-color: #86807C;
+$footer-color: #3A3A3A;
+$footer-bg-color: #ECECEC;
+$footer-bg-line: #BCBCBC;
+$menu-bg-hover: #F85050;
+
+$gray: #EEEEEE;
+$gray-light: #F4F1EC;
+
+$primary-color-light-2: #A7DDDD;
+$green-base: #78D020;
+$yellow-base: #FFC000;
+$pink: #DF7F80;
+$pink-base: #F85050;
+$purple-base: #D844B6;
+$blue-base: #5F9CED;
+$red-base: #FF4646;
+$red-darken-1: #C9003F;
+$blue: #007EFF;
+$pink-light: #FA9B9B;
+
+
+// font
+$font-helvetica: "Helvetica";
+
+@font-face {
+    font-family: 'hirakakupro';
+    font-style: normal;
+    src: local('hirakakupro'), url('../font/hirakakupro-w3-opentype_bigfontsite.com.otf');
+}
+@font-face {
+    font-family: 'Gyosho';
+    font-style: normal;
+    src: local('Gyosho'), url('../font/Gyosho.ttf');
+}
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+$min_font_12: 12px;
+$min_font_13: 13px;
+$min_font_14: 14px;
+$max_font_14: 14px;
+$max_font_16: 16px;
+
+// size
+$font-size-80: 80px;
+$font-size-34: 34px;
+$font-size-30: 30px;
+$font-size-28: 28px;
+$font-size-26: 26px;
+$font-size-25: 25px;
+$font-size-24: 24px;
+$font-size-22: 22px;
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-15: 15px;
+$font-size-14: 14px;
+$font-size-13: 13px;
+
+// container
+$container--pc: 992px;
+$container--sp: 100%;
+$media-sp: 768px;
+
+// 640
+// 768
+// 1200
+// 1000
+// 991
+$sreen-sp: 640px;
+$sreen-tb: 641px;
+$sreen-pc: 990px;
+$sreen-pc-2: 991px;
+$sreen-pc-3: 1199px;

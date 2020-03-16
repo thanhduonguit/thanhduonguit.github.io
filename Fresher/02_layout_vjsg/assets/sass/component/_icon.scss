@@ -1,0 +1,14 @@
+@charset "utf-8";
+/**
+ * Icons
+**/
+.icon {
+  &__company,
+  &__work, 
+  &__interview,
+  &__entry,
+  &__requirement {
+    height: 44px;
+    font-family: "hirakakupro";
+  }
+}
