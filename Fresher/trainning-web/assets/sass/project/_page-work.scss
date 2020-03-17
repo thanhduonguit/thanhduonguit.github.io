@@ -44,26 +44,21 @@
     p {
         &:nth-child(1) {
             padding-bottom: 17px;
+            font-size: $font-size-26;
             @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
                 font-size: get-vw-tb($font-size-26);
             }
             @media (max-width: $sreen-sp) {
                 font-size: get-vw(38px);
             }
-            @media (min-width: 1200px) {
-                font-size: $font-size-26;
-            }
         }
         &:nth-child(2) {
+            line-height: 1.7;
             @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
                 font-size: get-vw-tb($font-size-14);
             }
             @media (max-width: $sreen-sp) {
                 font-size: get-vw($font-size-28);
-            }
-            @media (min-width: 1200px) {
-                font-size: $font-size-14;
-                line-height: 23px;
             }
         }
     }
