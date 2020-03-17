@@ -121,10 +121,12 @@
 
   .active {
     background-color: $menu-bg-hover;
-    // color: $white!important;
     a {
       &:before {
         content: unset !important;
+      }
+      p {
+        color: $white!important;
       }
     }
     // &:after {

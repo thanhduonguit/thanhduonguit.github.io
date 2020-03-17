@@ -8,8 +8,8 @@ footer {
             a {
                 position: relative;
                 padding: 30px;
-                @media (min-width: $media-sp) and (max-width: $sreen-pc) {
-                    padding: 15px 30px;
+                @media (min-width: 769px) and (max-width: $sreen-pc) {
+                    padding: 20px 18px;
                 }
                 &:before {
                     content: "";
@@ -37,30 +37,14 @@ footer {
                               color: #FACB3A;
                             }
                           }
-                        a {
-                        // color: $white;
-                        // &:after {
-                        //     content: "";
-                        //     position: absolute;
-                        //     right: 0;
-                        //     width: 1px;
-                        //     height: 30%;
-                        //     background-color: $footer-bg-line;
-                        //     top: 50%;
-                        //     transform: translateY(-50%);
-                        // }
-                        @media (min-width: $media-sp) and (max-width: $sreen-pc) {
-                            margin-top: 10px;
-                        }
-                    }
                 }
             }
         }
         .logo {
             display: flex;
             padding-left: 8.33333333%;
-            @media (min-width: $media-sp) and (max-width: $sreen-pc) {
-                padding-left: 0;
+            @media (max-width: 1199px) {
+                padding-left: 15px;
             }
         }
     }
@@ -114,7 +98,10 @@ footer {
                                 content: none;
                             }
                         }
-                        
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        border-bottom: 1px solid #BCBCBC;
                     }
                 }
             }
@@ -158,7 +145,7 @@ footer {
     }
 }
 
-#pageTop {
+.page-top {
     position: fixed;
     bottom: 50px;
     right: 30px;
@@ -180,6 +167,28 @@ footer {
         }
     }
 }
-#pageTop.show {
+.page-top.show {
     opacity: 1;
+}
+
+.entry-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: $menu-bg-hover;
+    width: calc(100% - 30px);
+    margin: 20px 15px 30px 15px;
+    @media (min-width: 769px) {
+        display: none;
+    }
+    @media (max-width: 480px) {
+        margin: 10px 15px 15px 15px;
+    }
+    p {
+        padding: 2.5% 0;
+        @media (max-width: $sreen-sp) {
+            font-size: get-vw(28px);
+        }
+    }
 }
