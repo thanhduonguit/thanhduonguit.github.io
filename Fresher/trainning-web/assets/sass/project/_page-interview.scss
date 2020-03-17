@@ -141,15 +141,13 @@
             flex-direction: column;
         }
         p {
+            font-size: 12px;
+            line-height: 2;
             @media (max-width: $sreen-sp) {
                 font-size: get-vw($font-size-20);
             }
             @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) {
                 font-size: get-vw-tb(14px);
-            }
-            @media (min-width: 1200px) {
-                font-size: 12px;
-                line-height: 24px;
             }
             &:nth-child(2) {
                 @media (min-width: 1200px) {
