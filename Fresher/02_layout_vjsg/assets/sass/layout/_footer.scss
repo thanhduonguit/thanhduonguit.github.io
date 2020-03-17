@@ -1,0 +1,11 @@
+footer {
+    @media only screen and (max-width: 575.98px) {
+        font-size: -mobile(24px);
+    }
+    width: 100%;
+    background: $bgLightBlack;
+    text-align: center;
+    padding: 30px 0;
+    color: $textWhite;
+    font-family: DejaVuSans;
+}

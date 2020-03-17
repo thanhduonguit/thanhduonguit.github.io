@@ -11,3 +11,20 @@
   $vw-context: (1200*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
+
+// Background image
+@mixin  -background($position, $size, $repeat) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}
+
+// Set font size, space / 1.5 in tablet
+@function -tablet($size) {
+  @return ($size / 1.5);
+}
+
+// Set font size, space / 2 in mobile
+@function -mobile($size) {
+  @return ($size / 2);
+}

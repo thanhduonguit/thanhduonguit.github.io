@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    // line-height: 2.125;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.clear-both {
+    clear: both;
+}
+@font-face {
+	font-family: 'BebasNeue Book';
+	font-style: normal;
+	src: url('../font/BebasNeue\ Book.ttf') format('woff2');
+}
+@font-face{
+    font-family: BebasNeue;
+    src: url("../font/BebasNeue-Regular.ttf");
+    font-weight: normal;
+}
+@font-face{
+    font-family: BebasNeueBook;
+    src: url("../font/BebasNeue-Book.ttf");
+}
+
+@font-face{
+    font-family: ArialBold;
+    src: url("../font/arial-mt-bold.ttf");
+    font-weight: normal;
+}
+@font-face{
+    font-family: MEIRYO;
+    src: url("../font/MEIRYO.TTC");
+    font-weight: normal;
+}
+@font-face{
+    font-family: ArialMT;
+    src: url("../font/ARI.ttf");
+}
+@font-face{
+    font-family: DejaVuSans;
+    src: url("../font/DejaVuSans.ttf");
+}

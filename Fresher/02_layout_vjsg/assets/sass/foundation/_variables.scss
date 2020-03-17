@@ -79,3 +79,64 @@ $sreen-tb: 641px;
 $sreen-pc: 990px;
 $sreen-pc-2: 991px;
 $sreen-pc-3: 1199px;
+
+
+
+// Reponsive
+$fullWidth: 1900px;
+$desktop: 1700px;
+$laptop: 1290px;
+$maxTablet: 1024px;
+$minTablet: 640px;
+$maxMobile: 475px;
+$minMobile: 367px;
+
+// Font size
+$size-14: 14px;
+$size-16: 16px;
+$size-18: 18px;
+$size-19: 19px;
+$size-20: 20px;
+$size-25: 25px;
+$size-27: 27px;
+$size-36: 36px;
+$size-37: 37px;
+$size-47: 47px;
+
+// Font weight
+$weightBold: 700;
+$weightNormal: 500;
+$weightSmall: 300;
+
+// Background
+$bgPink: #e63d5c;
+$bgLightGray: #e1e1e1;
+$bgDarkGray: #f2f2f2;
+$bgLightBlack: #303030;
+$bgBorderLightGray: #454545;
+$bgGrayBlack: #333333;
+$bgBlack: #000000;
+$bgYellow: #f9ba16;
+$bgLightBlue: #127a97;
+$bgLightViolet: #452b72;
+$bgLightGreen: #8eac00;
+$bgsSkyBlue: #5dabed;
+$bgBlueFacebook: #324d96;
+
+// Text
+$textLightGrey: #666666;
+$textWhite: #ffffff;
+$textGray: #737373;
+$textGrey: #cccccc;
+$textYellow: #fcff27;
+$textRed : red;
+
+// Icon
+$visit: "../../../images/icn_pin.png";
+$iconPolygons: "../../../images/icon_item.svg";
+$fa-var-angle-down: "\f107";
+$fa-var-search: "\f002";
+$fa-var-twitter: "\f099";
+$fa-var-instagram: "\f16d";
+$fa-var-facebook: "\f09a";
+$fa-map-marker-alt: "\f3c5";
