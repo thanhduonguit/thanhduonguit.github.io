@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-bottom: 53.91666667%;
-  font-family: hirakakupro;
   @media (max-width: $sreen-sp) {
     background: url(../images/company-banner-sp.png);
     background-repeat: no-repeat;
@@ -35,7 +34,6 @@
     top: 16.21%;
   }
   p {
-    color: $white;
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -79,16 +77,15 @@
   text-align: center;
   font-weight: bold;
   padding: 23px 15px 0 15px;
+  font-size: $font-size-20;
+  line-height: 2.6;
   @media (max-width: $sreen-sp) {
     padding: 11.5px 15px 7.5px 15px;
     font-size: get-vw($font-size-26);
   }
   @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
     font-size: get-vw-tb(20px);
-  }
-  @media (min-width: 1200px) {
-    font-size: $font-size-20;
-    line-height: 50px;
+    padding: 15px 15px 0 15px;
   }
 }
 .banner__left {
@@ -102,9 +99,10 @@
     align-self: stretch;
   }
   p {
-    color: $white;
     text-align: center;
     padding: 9px 15px 36px 15px;
+    font-size: $font-size-16;
+    line-height: 1.75;
     @media (max-width: $sreen-sp) { 
       padding: 0 30px 18px 30px;
       font-size: get-vw($font-size-24);
@@ -112,10 +110,6 @@
     @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
       font-size: get-vw-tb($font-size-16);
       padding-bottom: 20px;
-    }
-    @media (min-width: 1200px) {
-      font-size: $font-size-16;
-      line-height: 28px;
     }
   }
   br {
@@ -127,19 +121,18 @@
 .banner__right {
   flex-direction: column;
   width: calc(100% - 48.5% - 30px);
-  // margin-left: 30px;
   background-color: rgba(51, 51, 51, 0.7);
   @media (max-width: $sreen-sp) {
     width: 100%;
-    // margin-left: 0;
     margin-top: 10px;
   }
   @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
     align-self: stretch;
   }
   p {
-    color: $white;
     font-weight: bold;
+    font-size: $font-size-30;
+    line-height: 1.6;
     &:nth-child(2) {
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-34);
@@ -147,13 +140,11 @@
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb(30px);
       }
-      @media (min-width: 1200px) {
-        font-size: $font-size-30;
-        line-height: 50px;
-      }
     }
     &:nth-child(3) {
       padding: 30px 15px 49px 15px;
+      font-size: $font-size-16;
+      line-height: 1.75;
       @media (max-width: $sreen-sp) {
         font-size: get-vw($font-size-26);
         padding: 10px 15px 15px 15px;
@@ -162,17 +153,13 @@
         font-size: get-vw-tb($font-size-16);
         padding: 15px 15px 20px 15px;
       }
-      @media (min-width: 1200px) {
-        font-size: $font-size-16;
-        line-height: 28px;
-      }
     }
   }
 }
 .company__wrapper {
   .article__title {
     @media (min-width: 1200px) {
-      padding: 68px 30px 32px 30px !important;
+      padding: 68px 30px 34px 30px !important;
     }
     hr {
         background-color: #7fdc22 !important;
@@ -182,7 +169,6 @@
 .box__wrap {
   display: flex;
   background-color: #f4f4f7;
-  font-family: hirakakupro;
   @media (max-width: $sreen-sp) {
     flex-direction: column-reverse;
     background: none;
@@ -204,6 +190,8 @@
     &:nth-child(1) {
       padding-top: 12.33%;
       padding-bottom: 25px;
+      font-size: $font-size-26;
+      line-height: 1.53;
       @media (max-width: $sreen-sp) {
         padding: 25px 0;
         font-size: get-vw(38px);
@@ -211,22 +199,15 @@
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb($font-size-26);
       }
-      @media (min-width: 1200px) {
-        font-size: $font-size-26;
-        line-height: 40px;
-      }
     }
     &:nth-child(2) {
+      line-height: 1.7;
       @media (max-width: $sreen-sp) {
         padding: 0;
         font-size: get-vw(28px);
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
         font-size: get-vw-tb(16px);
-      }
-      @media (min-width: 1200px) {
-        font-size: $font-size-14;
-        line-height: 23px;
       }
     }
   }
@@ -299,7 +280,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-bottom: 48.33333%;
-  font-family: hirakakupro;
   @media (max-width: $sreen-sp) {
     background: url(../images/img32.png);
     background-repeat: no-repeat;
@@ -334,8 +314,8 @@
   }
   p {
     text-align: center;
-    color: $white;
     padding-bottom: 23px;
+    line-height: 1.7;
     @media (max-width: $sreen-sp) {
       font-size: get-vw(28px);
       padding: 0 30px 15px 30px;
@@ -344,11 +324,9 @@
       font-size: get-vw-tb($font-size-16);
       padding: 0 15px 15px 15px;
     }
-    @media (min-width: 1200px) {
-      font-size: $font-size-14;
-      line-height: 23px;
-    }
     &:nth-child(1) {
+      font-size: $font-size-26;
+      line-height: 1.53;
       padding: 30px 0 15px 0;
       @media (max-width: $sreen-sp) {
         font-size: get-vw(38px);
@@ -358,17 +336,13 @@
         font-size: get-vw-tb($font-size-26);
         padding: 15px 15px;
       }
-      @media (min-width: 1200px) {
-        font-size: $font-size-26;
-        line-height: 40px;
-      }
     }
     &:last-child {
       @media (min-width: $sreen-tb) {
         padding-bottom: 40px;
       }
       @media (min-width: $sreen-tb) and (max-width: $sreen-pc-3) { 
-        padding-bottom: 20px;
+        padding-bottom: 15px;
       }
     }
   }

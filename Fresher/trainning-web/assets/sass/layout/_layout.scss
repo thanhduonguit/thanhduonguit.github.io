@@ -80,7 +80,6 @@
   padding-left: 11%;
   padding-right: 11%;
   padding-top: 15%;
-  font-family: hirakakupro;
   font-size: 15px;
   @media (max-width: $sreen-sp) {
     display: none;
@@ -95,7 +94,6 @@
 }
 .group__right {
   width: calc(100% - 29% - 20px);
-  font-family: hirakakupro;
   @media (max-width: $sreen-sp) {
     width: 100%;
   }
