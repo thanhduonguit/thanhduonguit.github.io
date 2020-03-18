@@ -31,7 +31,7 @@ header {
                 }
             }
         }
-        button.js-navbar-toggler {
+        button.button-menu {
             display: none;
             @media only screen and (max-width: 1024px) {
                 display: block;
@@ -49,9 +49,9 @@ header {
             }
         }          
     }
-    .navbar-toggler {
-        display: none;
-    }
+    // .navbar-toggler {
+    //     display: none;
+    // }
     p.header-menu-btn {
         z-index: 2;
         display: none;
@@ -69,7 +69,7 @@ header {
             display: block;
         }
     }
-    p.js-pageTop {
+    .pageTop {
         font-family: BebasNeue;
             position: fixed;
             height: 65px;
@@ -104,9 +104,6 @@ header {
                 width: 68%;
                 top: 54px;
                 z-index: 4;
-                // height: 267px;
-                // overflow-x: hidden;
-                // overflow-y: auto;
             }
             @media only screen and (min-width: 1024.98px) {
                 right: 0!important;
@@ -228,7 +225,7 @@ header {
                     }
                 }
             }
-            li.nav-item.js-close-menu {
+            li.nav-item.close-menu {
                 @media only screen and (min-width: 1024.98px) {
                     display: none;
                 }
