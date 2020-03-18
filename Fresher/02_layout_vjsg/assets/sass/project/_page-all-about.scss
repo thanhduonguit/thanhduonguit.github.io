@@ -125,12 +125,6 @@
     }
 }
 
-
-.main {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
 .place-map__inner {
     background: #dbebf2;
     max-width: 1900px;
@@ -335,10 +329,11 @@
 .box__info {
     display: flex;
     width: 100%;
+    margin-bottom: 4.4%;
 }
 .info__text {
-    width: calc(100% - 40% - 9.7647%);
-    margin-left: 9.7647%;
+    width: calc(100% - 46% - 12.7647%);
+    margin-left: 12.7647%;
 }
 .info__title {
     font-size: 60px;
@@ -346,23 +341,30 @@
     font-weight: bold;
 }
 .info__txt {
-    line-height: 2.125;
-    border-bottom: 1px dotted;
+    margin-top: 3%;
+    margin-bottom: 4.2%;
+    line-height: 2.125
 }
 .info__access {
+    border-top: 1px dotted;
+    padding-top: 2%;
+    line-height: 2.125;
     b {
         margin-right: 5px;
     }
 }
 .info__link {
     display: inline-block;
-    padding: 4px 5px;
+    padding: 0 5px;
+    // margin-top: 2.1%;
+    line-height: 2.125;
     a {
         color: $white;
     }
 }
 .info__pic {
-    width: calc(100% - 60%);
+    width: 46%;
+    margin-top: -2%;
     img {
         width: 100%;
         height: auto;
@@ -371,7 +373,7 @@
 .box__reverse {
     flex-direction: row-reverse;
     .info__text {
-        margin-right: 9.7647%;
+        margin-right: 11.7647%;
         margin-left: 0;
     }
 }
@@ -382,8 +384,12 @@
     .info__link {
         background-color: #907AA1;
     }
+    .info__txt {
+        margin-bottom: 1%;
+    }
 }
 .box__saga {
+    margin-bottom: 6.5%;
     .info__title {
         color: #B74D52;
     }
@@ -400,6 +406,7 @@
     }
 }
 .box__oita {
+    margin-bottom: 6%;
     .info__title {
         color: #4A6E33;
     }
@@ -416,6 +423,7 @@
     }
 }
 .box__miyazaki {
+    margin-bottom: 3.6%;
     .info__title {
         color: #5B81C1;
     }
@@ -424,6 +432,7 @@
     }
 }
 .box__kagoshima {
+    margin-bottom: 9%;
     .info__title {
         color: #48886B;
     }
@@ -438,8 +447,18 @@
     margin: auto;
     background-color: #dbebf2
 }
+.basic__title {
+    font-size: 35px;
+    line-height: calc(50 / 35);
+    font-weight: bold;
+    text-align: center;
+}
+.basic__infotitle {
+    margin-top: -8.3%;
+    margin-bottom: 4%
+}
 .basic__top {
-    padding-top: 15.76471%;
+    padding-top: 15.6%;
     /* height: 264px; */
     background: transparent url(../images/bg_wave_4_pc@2x.png) center center no-repeat;
     background-image: -webkit-linear-gradient(transparent, transparent), url(../images/bg_wave_4_pc.svg);
@@ -447,8 +466,8 @@
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #fff !important;
-    margin-bottom: -3px;
+    background-color: #FFF !important;
+    // margin-bottom: -3px;
 }
 .inner-960 {
     max-width: 960px;
@@ -458,16 +477,18 @@
     display: flex;
     justify-content: center;
     img {
-        width: calc(100% - 40%);
+        width: calc(100% - 30%);
         height: auto;
     }
 }
 .basic__txt {
     line-height: 2.125;
+    margin-top: 9.5%;
 }
 .basic__link {
     display: flex;
     align-items: center;
+    margin-top: 1%;
     p {
         &:nth-child(2) {
             display: inline-block;
@@ -477,13 +498,18 @@
             // line-height: 2.5625;
             a {
                 color: $white;
+                padding: 0 5px;
             }
         }
     }
 }
-.basic__link2 {
-    margin-top: 10px;
+.basic__linkfirst {
+    margin-top: 7.4%;
 }
+.basic__linksecond {
+    padding-bottom: 10%;
+}
+
 .utility__wrap {
     width: 100%;
     max-width: 1900px;
@@ -502,6 +528,35 @@
     background-size: 105%;
     background-color: #dbebf2;
     margin-bottom: -2px;
+}
+.utility__title {
+    margin-top: -6.5%;
+}
+.utility__suptitle {
+    font-size: 29px;
+    line-height: calc(50 / 35);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5%;
+}
+.utility__txt {
+    p {
+        line-height: 2.125;
+        margin-top: 3.5%;
+        &:nth-child(2) {
+            margin-bottom: 4.5%;
+        }
+    }
+}
+.group__link {
+    // margin-bottom: 7.8%;
+    .basic__link {
+        margin-top: 1.2%;
+    }
+}
+.menu__footer {
+    margin-top: 3.9%;
+    margin-bottom: 6.58%;
 }
 
 .title {

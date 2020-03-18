@@ -354,13 +354,10 @@ footer {
   width: 100%;
   background: #303030;
   text-align: center;
-  padding: 30px 0;
-  color: #ffffff;
-  font-family: DejaVuSans; }
-  @media only screen and (max-width: 575.98px) {
-    /* line 1, ../sass/layout/_footer.scss */
-    footer {
-      font-size: 12px; } }
+  padding: 44px 0;
+  color: #FFF;
+  font-size: 14px;
+  line-height: calc(17 / 14); }
 
 /**
  * Icons
@@ -487,19 +484,13 @@ footer {
       .breadcrumb li a:nth-child(1), .breadcrumb li a:nth-child(2) {
         border-bottom: 1px solid #666666; }
 
-/* line 129, ../sass/project/_page-all-about.scss */
-.main {
-  width: 100%;
-  margin: 0 auto;
-  position: relative; }
-
-/* line 134, ../sass/project/_page-all-about.scss */
+/* line 128, ../sass/project/_page-all-about.scss */
 .place-map__inner {
   background: #dbebf2;
   max-width: 1900px;
   margin: auto; }
 
-/* line 139, ../sass/project/_page-all-about.scss */
+/* line 133, ../sass/project/_page-all-about.scss */
 .place-map-top {
   position: relative;
   display: block;
@@ -510,7 +501,7 @@ footer {
   background-size: auto;
   z-index: 1; }
 
-/* line 149, ../sass/project/_page-all-about.scss */
+/* line 143, ../sass/project/_page-all-about.scss */
 .place-map {
   background-position: 85% 0;
   background-size: auto;
@@ -524,19 +515,19 @@ footer {
   background-image: linear-gradient(transparent, transparent), url(../images/map_01.svg);
   background-repeat: no-repeat; }
 
-/* line 164, ../sass/project/_page-all-about.scss */
+/* line 158, ../sass/project/_page-all-about.scss */
 .place-inner {
   padding-bottom: 26.47059%;
   z-index: 20;
   display: block; }
 
-/* line 169, ../sass/project/_page-all-about.scss */
+/* line 163, ../sass/project/_page-all-about.scss */
 .place-content {
   margin: 0 auto;
   width: 100%;
   max-width: 690px; }
 
-/* line 175, ../sass/project/_page-all-about.scss */
+/* line 169, ../sass/project/_page-all-about.scss */
 .inner {
   width: 100%;
   max-width: 1316px;
@@ -544,14 +535,14 @@ footer {
   margin: 0 auto;
   padding: 0 13px; }
 
-/* line 183, ../sass/project/_page-all-about.scss */
+/* line 177, ../sass/project/_page-all-about.scss */
 .circle {
   position: relative;
   width: 45%;
   margin: 0 auto;
   margin-top: -5.8%;
   margin-right: 23%; }
-  /* line 192, ../sass/project/_page-all-about.scss */
+  /* line 186, ../sass/project/_page-all-about.scss */
   .circle:before {
     padding-bottom: 65%;
     width: 65%;
@@ -569,7 +560,7 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%; }
-  /* line 213, ../sass/project/_page-all-about.scss */
+  /* line 207, ../sass/project/_page-all-about.scss */
   .circle:after {
     display: block;
     padding-bottom: 100%;
@@ -580,37 +571,37 @@ footer {
     box-sizing: border-box;
     background-color: #ffffff; }
 
-/* line 224, ../sass/project/_page-all-about.scss */
+/* line 218, ../sass/project/_page-all-about.scss */
 .circle-inner {
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%; }
 
-/* line 230, ../sass/project/_page-all-about.scss */
+/* line 224, ../sass/project/_page-all-about.scss */
 .circle-content {
   display: table;
   width: 100%;
   height: 100%; }
-  /* line 234, ../sass/project/_page-all-about.scss */
+  /* line 228, ../sass/project/_page-all-about.scss */
   .circle-content p {
     display: table-cell;
     vertical-align: middle;
     padding: 0 15%;
     line-height: 2.125; }
 
-/* line 241, ../sass/project/_page-all-about.scss */
+/* line 235, ../sass/project/_page-all-about.scss */
 .show-pc {
   display: block !important; }
 
-/* line 245, ../sass/project/_page-all-about.scss */
+/* line 239, ../sass/project/_page-all-about.scss */
 .place-activity {
   width: 100%;
   max-width: 1900px;
   margin: auto;
   background-color: #61aed3; }
 
-/* line 251, ../sass/project/_page-all-about.scss */
+/* line 245, ../sass/project/_page-all-about.scss */
 .place-activity-top {
   padding-top: 13.5%;
   /* height: 264px; */
@@ -623,60 +614,60 @@ footer {
   margin-bottom: -2px;
   background-color: #dbebf2; }
 
-/* line 263, ../sass/project/_page-all-about.scss */
+/* line 257, ../sass/project/_page-all-about.scss */
 .place-activity-mid__inner {
   width: 100%;
   margin: 0 auto;
   position: relative;
   max-width: 1290px; }
 
-/* line 269, ../sass/project/_page-all-about.scss */
+/* line 263, ../sass/project/_page-all-about.scss */
 .activity--text {
   margin: 0 auto;
   position: relative;
   width: 54%; }
-  /* line 276, ../sass/project/_page-all-about.scss */
+  /* line 270, ../sass/project/_page-all-about.scss */
   .activity--text p {
     color: #FFF;
     line-height: 2.125;
     padding-top: 5%; }
-    /* line 280, ../sass/project/_page-all-about.scss */
+    /* line 274, ../sass/project/_page-all-about.scss */
     .activity--text p:nth-child(1) {
       padding-top: 7%; }
-    /* line 283, ../sass/project/_page-all-about.scss */
+    /* line 277, ../sass/project/_page-all-about.scss */
     .activity--text p:nth-child(3) {
       padding-bottom: 6%; }
 
-/* line 288, ../sass/project/_page-all-about.scss */
+/* line 282, ../sass/project/_page-all-about.scss */
 .wave__pic {
   position: absolute;
   height: auto; }
 
-/* line 292, ../sass/project/_page-all-about.scss */
+/* line 286, ../sass/project/_page-all-about.scss */
 .wave__pic--1 {
   width: 47%;
   left: -47.12%;
   top: 32.84%; }
 
-/* line 297, ../sass/project/_page-all-about.scss */
+/* line 291, ../sass/project/_page-all-about.scss */
 .wave__pic--2 {
   width: 36%;
   top: 59.84%;
   right: -37.8%; }
 
-/* line 302, ../sass/project/_page-all-about.scss */
+/* line 296, ../sass/project/_page-all-about.scss */
 .wave__pic--3 {
   width: 54%;
   top: -11.15543%;
   right: -56%; }
 
-/* line 308, ../sass/project/_page-all-about.scss */
+/* line 302, ../sass/project/_page-all-about.scss */
 .play-group {
   width: 100%;
   max-width: 1900px;
   margin: auto; }
 
-/* line 313, ../sass/project/_page-all-about.scss */
+/* line 307, ../sass/project/_page-all-about.scss */
 .place-group-top {
   padding-top: 12.70588%;
   /* height: 216px; */
@@ -691,123 +682,159 @@ footer {
   background-color: #61aed3;
   margin-bottom: -2px; }
 
-/* line 327, ../sass/project/_page-all-about.scss */
+/* line 321, ../sass/project/_page-all-about.scss */
 .box__title {
   margin-top: -6.9%;
   margin-bottom: 7.3%; }
 
-/* line 331, ../sass/project/_page-all-about.scss */
+/* line 325, ../sass/project/_page-all-about.scss */
 .inner-1290 {
   max-width: 1290px;
   margin: 0 auto; }
 
-/* line 335, ../sass/project/_page-all-about.scss */
+/* line 329, ../sass/project/_page-all-about.scss */
 .box__info {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 4.4%; }
 
-/* line 339, ../sass/project/_page-all-about.scss */
+/* line 334, ../sass/project/_page-all-about.scss */
 .info__text {
-  width: calc(100% - 40% - 9.7647%);
-  margin-left: 9.7647%; }
+  width: calc(100% - 46% - 12.7647%);
+  margin-left: 12.7647%; }
 
-/* line 343, ../sass/project/_page-all-about.scss */
+/* line 338, ../sass/project/_page-all-about.scss */
 .info__title {
   font-size: 60px;
   font-weight: bold; }
 
-/* line 348, ../sass/project/_page-all-about.scss */
+/* line 343, ../sass/project/_page-all-about.scss */
 .info__txt {
-  line-height: 2.125;
-  border-bottom: 1px dotted; }
+  margin-top: 3%;
+  margin-bottom: 4.2%;
+  line-height: 2.125; }
 
-/* line 353, ../sass/project/_page-all-about.scss */
-.info__access b {
-  margin-right: 5px; }
+/* line 348, ../sass/project/_page-all-about.scss */
+.info__access {
+  border-top: 1px dotted;
+  padding-top: 2%;
+  line-height: 2.125; }
+  /* line 352, ../sass/project/_page-all-about.scss */
+  .info__access b {
+    margin-right: 5px; }
 
-/* line 357, ../sass/project/_page-all-about.scss */
+/* line 356, ../sass/project/_page-all-about.scss */
 .info__link {
   display: inline-block;
-  padding: 4px 5px; }
-  /* line 360, ../sass/project/_page-all-about.scss */
+  padding: 0 5px;
+  line-height: 2.125; }
+  /* line 361, ../sass/project/_page-all-about.scss */
   .info__link a {
     color: #FFF; }
 
-/* line 364, ../sass/project/_page-all-about.scss */
+/* line 365, ../sass/project/_page-all-about.scss */
 .info__pic {
-  width: calc(100% - 60%); }
-  /* line 366, ../sass/project/_page-all-about.scss */
+  width: 46%;
+  margin-top: -2%; }
+  /* line 368, ../sass/project/_page-all-about.scss */
   .info__pic img {
     width: 100%;
     height: auto; }
 
-/* line 371, ../sass/project/_page-all-about.scss */
+/* line 373, ../sass/project/_page-all-about.scss */
 .box__reverse {
   flex-direction: row-reverse; }
-  /* line 373, ../sass/project/_page-all-about.scss */
+  /* line 375, ../sass/project/_page-all-about.scss */
   .box__reverse .info__text {
-    margin-right: 9.7647%;
+    margin-right: 11.7647%;
     margin-left: 0; }
 
-/* line 379, ../sass/project/_page-all-about.scss */
+/* line 381, ../sass/project/_page-all-about.scss */
 .box__fukuoka .info__title {
   color: #907AA1; }
-/* line 382, ../sass/project/_page-all-about.scss */
+/* line 384, ../sass/project/_page-all-about.scss */
 .box__fukuoka .info__link {
   background-color: #907AA1; }
-
 /* line 387, ../sass/project/_page-all-about.scss */
-.box__saga .info__title {
-  color: #B74D52; }
-/* line 390, ../sass/project/_page-all-about.scss */
-.box__saga .info__link {
-  background-color: #B74D52; }
+.box__fukuoka .info__txt {
+  margin-bottom: 1%; }
 
-/* line 395, ../sass/project/_page-all-about.scss */
+/* line 391, ../sass/project/_page-all-about.scss */
+.box__saga {
+  margin-bottom: 6.5%; }
+  /* line 393, ../sass/project/_page-all-about.scss */
+  .box__saga .info__title {
+    color: #B74D52; }
+  /* line 396, ../sass/project/_page-all-about.scss */
+  .box__saga .info__link {
+    background-color: #B74D52; }
+
+/* line 401, ../sass/project/_page-all-about.scss */
 .box__nagasaki .info__title {
   color: #935430; }
-/* line 398, ../sass/project/_page-all-about.scss */
+/* line 404, ../sass/project/_page-all-about.scss */
 .box__nagasaki .info__link {
   background-color: #935430; }
 
-/* line 403, ../sass/project/_page-all-about.scss */
-.box__oita .info__title {
-  color: #4A6E33; }
-/* line 406, ../sass/project/_page-all-about.scss */
-.box__oita .info__link {
-  background-color: #4A6E33; }
+/* line 408, ../sass/project/_page-all-about.scss */
+.box__oita {
+  margin-bottom: 6%; }
+  /* line 410, ../sass/project/_page-all-about.scss */
+  .box__oita .info__title {
+    color: #4A6E33; }
+  /* line 413, ../sass/project/_page-all-about.scss */
+  .box__oita .info__link {
+    background-color: #4A6E33; }
 
-/* line 411, ../sass/project/_page-all-about.scss */
+/* line 418, ../sass/project/_page-all-about.scss */
 .box__kumamoto .info__title {
   color: #8C9A28; }
-/* line 414, ../sass/project/_page-all-about.scss */
+/* line 421, ../sass/project/_page-all-about.scss */
 .box__kumamoto .info__link {
   background-color: #8C9A28; }
 
-/* line 419, ../sass/project/_page-all-about.scss */
-.box__miyazaki .info__title {
-  color: #5B81C1; }
-/* line 422, ../sass/project/_page-all-about.scss */
-.box__miyazaki .info__link {
-  background-color: #5B81C1; }
+/* line 425, ../sass/project/_page-all-about.scss */
+.box__miyazaki {
+  margin-bottom: 3.6%; }
+  /* line 427, ../sass/project/_page-all-about.scss */
+  .box__miyazaki .info__title {
+    color: #5B81C1; }
+  /* line 430, ../sass/project/_page-all-about.scss */
+  .box__miyazaki .info__link {
+    background-color: #5B81C1; }
 
-/* line 427, ../sass/project/_page-all-about.scss */
-.box__kagoshima .info__title {
-  color: #48886B; }
-/* line 430, ../sass/project/_page-all-about.scss */
-.box__kagoshima .info__link {
-  background-color: #48886B; }
+/* line 434, ../sass/project/_page-all-about.scss */
+.box__kagoshima {
+  margin-bottom: 9%; }
+  /* line 436, ../sass/project/_page-all-about.scss */
+  .box__kagoshima .info__title {
+    color: #48886B; }
+  /* line 439, ../sass/project/_page-all-about.scss */
+  .box__kagoshima .info__link {
+    background-color: #48886B; }
 
-/* line 435, ../sass/project/_page-all-about.scss */
+/* line 444, ../sass/project/_page-all-about.scss */
 .basic__info {
   width: 100%;
   max-width: 1900px;
   margin: auto;
   background-color: #dbebf2; }
 
-/* line 441, ../sass/project/_page-all-about.scss */
+/* line 450, ../sass/project/_page-all-about.scss */
+.basic__title {
+  font-size: 35px;
+  line-height: calc(50 / 35);
+  font-weight: bold;
+  text-align: center; }
+
+/* line 456, ../sass/project/_page-all-about.scss */
+.basic__infotitle {
+  margin-top: -8.3%;
+  margin-bottom: 4%; }
+
+/* line 460, ../sass/project/_page-all-about.scss */
 .basic__top {
-  padding-top: 15.76471%;
+  padding-top: 15.6%;
   /* height: 264px; */
   background: transparent url(../images/bg_wave_4_pc@2x.png) center center no-repeat;
   background-image: -webkit-linear-gradient(transparent, transparent), url(../images/bg_wave_4_pc.svg);
@@ -815,52 +842,58 @@ footer {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #fff !important;
-  margin-bottom: -3px; }
+  background-color: #FFF !important; }
 
-/* line 453, ../sass/project/_page-all-about.scss */
+/* line 472, ../sass/project/_page-all-about.scss */
 .inner-960 {
   max-width: 960px;
   margin: 0 auto; }
 
-/* line 457, ../sass/project/_page-all-about.scss */
+/* line 476, ../sass/project/_page-all-about.scss */
 .basic__pic {
   display: flex;
   justify-content: center; }
-  /* line 460, ../sass/project/_page-all-about.scss */
+  /* line 479, ../sass/project/_page-all-about.scss */
   .basic__pic img {
-    width: calc(100% - 40%);
+    width: calc(100% - 30%);
     height: auto; }
 
-/* line 465, ../sass/project/_page-all-about.scss */
+/* line 484, ../sass/project/_page-all-about.scss */
 .basic__txt {
-  line-height: 2.125; }
+  line-height: 2.125;
+  margin-top: 9.5%; }
 
-/* line 468, ../sass/project/_page-all-about.scss */
+/* line 488, ../sass/project/_page-all-about.scss */
 .basic__link {
   display: flex;
-  align-items: center; }
-  /* line 472, ../sass/project/_page-all-about.scss */
+  align-items: center;
+  margin-top: 1%; }
+  /* line 493, ../sass/project/_page-all-about.scss */
   .basic__link p:nth-child(2) {
     display: inline-block;
     padding: 4px 5px;
     background-color: #F44D5C;
     margin-left: 10px; }
-    /* line 478, ../sass/project/_page-all-about.scss */
+    /* line 499, ../sass/project/_page-all-about.scss */
     .basic__link p:nth-child(2) a {
-      color: #FFF; }
+      color: #FFF;
+      padding: 0 5px; }
 
-/* line 484, ../sass/project/_page-all-about.scss */
-.basic__link2 {
-  margin-top: 10px; }
+/* line 506, ../sass/project/_page-all-about.scss */
+.basic__linkfirst {
+  margin-top: 7.4%; }
 
-/* line 487, ../sass/project/_page-all-about.scss */
+/* line 509, ../sass/project/_page-all-about.scss */
+.basic__linksecond {
+  padding-bottom: 10%; }
+
+/* line 513, ../sass/project/_page-all-about.scss */
 .utility__wrap {
   width: 100%;
   max-width: 1900px;
   margin: auto; }
 
-/* line 492, ../sass/project/_page-all-about.scss */
+/* line 518, ../sass/project/_page-all-about.scss */
 .utility {
   padding-top: 12.70588%;
   /* height: 216px; */
@@ -875,7 +908,36 @@ footer {
   background-color: #dbebf2;
   margin-bottom: -2px; }
 
-/* line 507, ../sass/project/_page-all-about.scss */
+/* line 532, ../sass/project/_page-all-about.scss */
+.utility__title {
+  margin-top: -6.5%; }
+
+/* line 535, ../sass/project/_page-all-about.scss */
+.utility__suptitle {
+  font-size: 29px;
+  line-height: calc(50 / 35);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5%; }
+
+/* line 543, ../sass/project/_page-all-about.scss */
+.utility__txt p {
+  line-height: 2.125;
+  margin-top: 3.5%; }
+  /* line 546, ../sass/project/_page-all-about.scss */
+  .utility__txt p:nth-child(2) {
+    margin-bottom: 4.5%; }
+
+/* line 553, ../sass/project/_page-all-about.scss */
+.group__link .basic__link {
+  margin-top: 1.2%; }
+
+/* line 557, ../sass/project/_page-all-about.scss */
+.menu__footer {
+  margin-top: 3.9%;
+  margin-bottom: 6.58%; }
+
+/* line 562, ../sass/project/_page-all-about.scss */
 .title {
   font-size: 40px;
   line-height: calc(30 / 40);
@@ -884,13 +946,13 @@ footer {
   padding-top: 16.6%;
   padding-bottom: 3%; }
 
-/* line 515, ../sass/project/_page-all-about.scss */
+/* line 570, ../sass/project/_page-all-about.scss */
 .sup__title {
   font-size: 28px;
   font-weight: bold;
   text-align: center; }
 
-/* line 523, ../sass/project/_page-all-about.scss */
+/* line 578, ../sass/project/_page-all-about.scss */
 .section__txt p {
   line-height: 2.125;
   padding-top: 5%; }
