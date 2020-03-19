@@ -69,12 +69,15 @@
     position: absolute;
     bottom: 0;
     width: calc(100% - 16.666666666666666%);
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    // transform: translateX(-50%);
+    left: 8.333333%;
     @media (max-width: $sreen-sp) {
         flex-direction: column;
-        width: calc(100% - 60px);
-        padding: 0 30px;
+        // width: calc(100% - 60px);
+        // padding: 0 30px;
+        width: 88%;
+        left: 6%;
     }
 }
 .list__imgw {
