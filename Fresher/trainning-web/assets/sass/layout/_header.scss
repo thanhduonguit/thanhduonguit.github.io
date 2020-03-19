@@ -3,34 +3,32 @@
 /* Header
 ----------------------------------------------------------------- */
 header {
+  position: relative;
   background: url(../images/bg-top.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
   padding-bottom: 49.83333%;
   @media (max-width: $sreen-sp) {
+    position: relative;
     background: url(../images/bg-top-sp.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-bottom: 158.41%;
     justify-content: center;
   }
-  @media (max-width: 1200px) {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
   p {
+    position: absolute;
+    left: 8.33333%;
     font-family: Helvetica;
     color: $white;
+    @media (max-width: $sreen-sp) {
+      left: 10%;
+    }
     &:nth-child(1),
     &:nth-child(4) {
       font-weight: bold;
-      @media (min-width: 1200px) {
-        font-size: 114px;
-        line-height: 85px;
-        padding-top: 24%;
-      }
+      font-size: 114px;
       @media (min-width: $sreen-tb) and (max-width: 1199px) {
         font-size: get-vw-tb(114px);
       }
@@ -38,29 +36,43 @@ header {
         font-size: get-vw(177px);
       }
     }
+    &:nth-child(1) {
+      top: 8%;
+    }
     &:nth-child(4) {
-      padding-top: 0 !important;
-      margin-top: 21px;
+      top: 42%;
+      @media (max-width: $sreen-sp) {
+        top: 46%;
+      }
     }
     &:nth-child(2) {
+      top: 28.8%;
       font-weight: bold;
-      @media (min-width: 1200px) {
-        font-size: 43px;
-      }
+      font-size: 43px;
       @media (min-width: $sreen-tb) and (max-width: 1199px) {
         font-size: get-vw-tb(43px);
       }
       @media (max-width: $sreen-sp) {
         font-size: get-vw(58px);
+        top: 26%;
+      }
+    }
+    &:nth-child(5) {
+      top: 66%;
+      @media (max-width: $sreen-sp) {
+        top: 65%;
+      }
+    }
+    &:nth-child(6) {
+      top: 72%;
+      @media (max-width: $sreen-sp) {
+        top: 69%;
       }
     }
     &:nth-child(5),
     &:nth-child(6) {
-      @media (min-width: 1200px) {
-        font-size: 27px;
-        line-height: 19px;
-        margin-top: 20px;
-      }
+      font-size: 27px;
+      font-weight: bold;
       @media (min-width: $sreen-tb) and (max-width: 1199px) {
         font-size: get-vw-tb(27px);
       }
@@ -70,27 +82,26 @@ header {
     }
   }
 }
-.header__text {
-  position: absolute;
-  padding-left: 5.33333333%;
-  @media (max-width: 1200px) {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
 .header__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: 1200px) {
-    margin-right: 25px;
-    margin-top: 10px;
+  position: absolute;
+  top: 40.5%;
+  left: 22.5%;
+  @media (min-width: 641PX) and (max-width: 990px) {
+    top: 39.5%;
   }
   @media (max-width: $sreen-sp) {
-    margin-top: 10px;
+    top: 38.5%;
+    left: 45.5%;
   }
   img {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: auto;
+    @media (min-width: 641PX) and (max-width: 990px) {
+      width: 28px;
+      height: 28px;
+    }
+    // @media (max-width: $sreen-sp) {
+    //   width: 200%;
+    // }
   }
 }
