@@ -361,6 +361,10 @@ footer {
   color: #FFF;
   font-size: 14px;
   line-height: calc(17 / 14); }
+  @media (min-width: 768px) and (max-width: 1099px) {
+    /* line 1, ../sass/layout/_footer.scss */
+    footer {
+      padding: 30px 0; } }
 
 /**
  * Icons
@@ -373,11 +377,16 @@ footer {
 /* line 1, ../sass/project/_page-all-about.scss */
 .banner {
   position: relative;
-  background: url(../images/img04.png);
-  background-repeat: no-repeat;
+  background: url(../images/img04.png) no-repeat;
   background-size: 100% 100%;
   padding-bottom: 25.8823529%; }
-  /* line 7, ../sass/project/_page-all-about.scss */
+  @media (max-width: 767px) {
+    /* line 1, ../sass/project/_page-all-about.scss */
+    .banner {
+      background: url(../images/img17.png) no-repeat;
+      background-size: 100% 100%;
+      padding-bottom: 67.03125%; } }
+  /* line 11, ../sass/project/_page-all-about.scss */
   .banner p {
     position: absolute;
     top: 50%;
@@ -389,42 +398,54 @@ footer {
     color: #FFF;
     font-weight: 400;
     font-family: 'BebasNeue Book'; }
+    @media (min-width: 768px) and (max-width: 1099px) {
+      /* line 11, ../sass/project/_page-all-about.scss */
+      .banner p {
+        font-size: 60px; } }
+    @media (max-width: 767px) {
+      /* line 11, ../sass/project/_page-all-about.scss */
+      .banner p {
+        font-size: 48px; } }
+    @media (max-width: 480px) {
+      /* line 11, ../sass/project/_page-all-about.scss */
+      .banner p {
+        font-size: 40px; } }
 
-/* line 20, ../sass/project/_page-all-about.scss */
+/* line 33, ../sass/project/_page-all-about.scss */
 .menu__content {
   padding: 8px 0px;
   background-color: #ffffff; }
-  /* line 23, ../sass/project/_page-all-about.scss */
+  /* line 36, ../sass/project/_page-all-about.scss */
   .menu__content ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto; }
-    /* line 30, ../sass/project/_page-all-about.scss */
+    /* line 42, ../sass/project/_page-all-about.scss */
     .menu__content ul li.active-bg-dark {
       background: #000000; }
-      /* line 32, ../sass/project/_page-all-about.scss */
+      /* line 44, ../sass/project/_page-all-about.scss */
       .menu__content ul li.active-bg-dark a {
         color: #ffffff; }
-        /* line 35, ../sass/project/_page-all-about.scss */
+        /* line 46, ../sass/project/_page-all-about.scss */
         .menu__content ul li.active-bg-dark a:before {
           content: unset; }
-        /* line 38, ../sass/project/_page-all-about.scss */
+        /* line 49, ../sass/project/_page-all-about.scss */
         .menu__content ul li.active-bg-dark a:after {
           content: unset !important; }
-    /* line 43, ../sass/project/_page-all-about.scss */
+    /* line 54, ../sass/project/_page-all-about.scss */
     .menu__content ul li {
       background: url("../images/img16.png") no-repeat right center;
       margin: 8px 0; }
-      /* line 45, ../sass/project/_page-all-about.scss */
+      /* line 56, ../sass/project/_page-all-about.scss */
       .menu__content ul li:last-child {
         background-image: none !important; }
-      /* line 48, ../sass/project/_page-all-about.scss */
+      /* line 59, ../sass/project/_page-all-about.scss */
       .menu__content ul li:hover {
         background-color: #000000;
         background-image: none !important; }
-      /* line 53, ../sass/project/_page-all-about.scss */
+      /* line 64, ../sass/project/_page-all-about.scss */
       .menu__content ul li a {
         position: relative;
         font-family: 'BebasNeue', sans-serif;
@@ -434,65 +455,67 @@ footer {
         line-height: calc(17 / 27);
         color: #000000;
         width: 100%; }
+        @media (min-width: 768px) and (max-width: 1099px) {
+          /* line 64, ../sass/project/_page-all-about.scss */
+          .menu__content ul li a {
+            font-size: 24px; } }
         @media (max-width: 767px) {
-          /* line 53, ../sass/project/_page-all-about.scss */
+          /* line 64, ../sass/project/_page-all-about.scss */
           .menu__content ul li a {
             font-size: 18px; } }
         @media (max-width: 480px) {
-          /* line 53, ../sass/project/_page-all-about.scss */
+          /* line 64, ../sass/project/_page-all-about.scss */
           .menu__content ul li a {
             font-size: 14px; } }
-        /* line 68, ../sass/project/_page-all-about.scss */
+        /* line 82, ../sass/project/_page-all-about.scss */
         .menu__content ul li a:hover {
           color: #ffffff; }
-          /* line 70, ../sass/project/_page-all-about.scss */
+          /* line 84, ../sass/project/_page-all-about.scss */
           .menu__content ul li a:hover:before {
             content: unset; }
-          /* line 73, ../sass/project/_page-all-about.scss */
+          /* line 87, ../sass/project/_page-all-about.scss */
           .menu__content ul li a:hover:after {
             content: unset !important; }
 
-/* line 91, ../sass/project/_page-all-about.scss */
+/* line 95, ../sass/project/_page-all-about.scss */
 .breadcrumb {
   width: 100%;
-  max-width: 1290px;
+  max-width: 1320px;
   position: relative;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 0.78%; }
-  /* line 98, ../sass/project/_page-all-about.scss */
+  @media (max-width: 767px) {
+    /* line 95, ../sass/project/_page-all-about.scss */
+    .breadcrumb {
+      display: none; } }
+  /* line 107, ../sass/project/_page-all-about.scss */
   .breadcrumb li {
     color: #666666;
     display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
     line-height: calc(34 / 16); }
-    /* line 104, ../sass/project/_page-all-about.scss */
+    /* line 113, ../sass/project/_page-all-about.scss */
     .breadcrumb li:nth-child(1)::after, .breadcrumb li:nth-child(2)::after {
       content: '>';
       padding-left: 5px; }
-    @media (min-width: 320px) and (max-width: 424.98px) {
-      /* line 109, ../sass/project/_page-all-about.scss */
-      .breadcrumb li:nth-child(3) {
-        font-size: 11px; } }
-    /* line 114, ../sass/project/_page-all-about.scss */
+    /* line 118, ../sass/project/_page-all-about.scss */
     .breadcrumb li a {
       color: #666666; }
-      @media (min-width: 320px) and (max-width: 424.98px) {
-        /* line 114, ../sass/project/_page-all-about.scss */
-        .breadcrumb li a {
-          font-size: 11px; } }
-      /* line 119, ../sass/project/_page-all-about.scss */
+      /* line 120, ../sass/project/_page-all-about.scss */
       .breadcrumb li a:nth-child(1), .breadcrumb li a:nth-child(2) {
         border-bottom: 1px solid #666666; }
 
-/* line 127, ../sass/project/_page-all-about.scss */
+/* line 128, ../sass/project/_page-all-about.scss */
 .section {
   width: 100%;
   max-width: 1900px;
   margin: auto; }
 
-/* line 132, ../sass/project/_page-all-about.scss */
+/* line 133, ../sass/project/_page-all-about.scss */
 .title {
   font-size: 40px;
   line-height: calc(30 / 40);
@@ -501,22 +524,22 @@ footer {
   padding-top: 16.6%;
   padding-bottom: 3%; }
 
-/* line 140, ../sass/project/_page-all-about.scss */
+/* line 141, ../sass/project/_page-all-about.scss */
 .sup__title {
   font-size: 28px;
   font-weight: bold;
   text-align: center; }
 
-/* line 148, ../sass/project/_page-all-about.scss */
+/* line 147, ../sass/project/_page-all-about.scss */
 .section__txt p {
   line-height: 2.125;
   padding-top: 5%; }
 
-/* line 153, ../sass/project/_page-all-about.scss */
+/* line 152, ../sass/project/_page-all-about.scss */
 .section__map {
   background: #dbebf2; }
 
-/* line 156, ../sass/project/_page-all-about.scss */
+/* line 155, ../sass/project/_page-all-about.scss */
 .inner__1700 {
   position: relative;
   display: block;
@@ -527,7 +550,7 @@ footer {
   background-size: auto;
   z-index: 1; }
 
-/* line 166, ../sass/project/_page-all-about.scss */
+/* line 165, ../sass/project/_page-all-about.scss */
 .map__bg {
   background-position: 85% 0;
   background-size: auto;
@@ -537,37 +560,40 @@ footer {
   width: 100%;
   z-index: -1;
   padding-top: 52.58824%;
-  background-image: -webkit-linear-gradient(transparent, transparent), url(../images/map_01.svg);
   background-image: linear-gradient(transparent, transparent), url(../images/map_01.svg);
   background-repeat: no-repeat; }
 
-/* line 181, ../sass/project/_page-all-about.scss */
+/* line 180, ../sass/project/_page-all-about.scss */
 .map__content {
   padding-bottom: 26.47059%;
   z-index: 20;
   display: block; }
 
-/* line 186, ../sass/project/_page-all-about.scss */
+/* line 185, ../sass/project/_page-all-about.scss */
 .inner__690 {
   margin: 0 auto;
   width: 100%;
   max-width: 690px; }
 
-/* line 192, ../sass/project/_page-all-about.scss */
+/* line 191, ../sass/project/_page-all-about.scss */
 .inner__1290 {
   width: 100%;
   max-width: 1290px;
   position: relative;
   margin: 0 auto; }
 
-/* line 200, ../sass/project/_page-all-about.scss */
+/* line 199, ../sass/project/_page-all-about.scss */
 .circle__map {
   position: relative;
   width: 45%;
   margin: 0 auto;
   margin-top: -5.8%;
   margin-right: 23%; }
-  /* line 209, ../sass/project/_page-all-about.scss */
+  @media (min-width: 768px) and (max-width: 1099px) {
+    /* line 199, ../sass/project/_page-all-about.scss */
+    .circle__map {
+      width: 63%; } }
+  /* line 211, ../sass/project/_page-all-about.scss */
   .circle__map:before {
     position: absolute;
     content: "";
@@ -582,7 +608,7 @@ footer {
     background: linear-gradient(transparent, transparent), url(../images/map_02.svg) center center no-repeat;
     background-size: 77%;
     border-radius: 50%; }
-  /* line 227, ../sass/project/_page-all-about.scss */
+  /* line 229, ../sass/project/_page-all-about.scss */
   .circle__map:after {
     display: block;
     padding-bottom: 100%;
@@ -593,30 +619,35 @@ footer {
     /* box-sizing: border-box; */
     background-color: #ffffff; }
 
-/* line 238, ../sass/project/_page-all-about.scss */
+/* line 240, ../sass/project/_page-all-about.scss */
 .circle__content {
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%; }
 
-/* line 244, ../sass/project/_page-all-about.scss */
+/* line 246, ../sass/project/_page-all-about.scss */
 .circle__txt {
   display: table;
   width: 100%;
   height: 100%; }
-  /* line 248, ../sass/project/_page-all-about.scss */
+  /* line 250, ../sass/project/_page-all-about.scss */
   .circle__txt p {
     display: table-cell;
     vertical-align: middle;
     padding: 0 15%;
     line-height: 2.125; }
+    @media (min-width: 768px) and (max-width: 1099px) {
+      /* line 250, ../sass/project/_page-all-about.scss */
+      .circle__txt p {
+        font-size: 14px;
+        padding: 0 12%; } }
 
-/* line 257, ../sass/project/_page-all-about.scss */
+/* line 263, ../sass/project/_page-all-about.scss */
 .section__wave {
   background-color: #61aed3; }
 
-/* line 260, ../sass/project/_page-all-about.scss */
+/* line 266, ../sass/project/_page-all-about.scss */
 .wave__bg {
   padding-top: 13.5%;
   /* height: 264px; */
@@ -624,54 +655,69 @@ footer {
   background-size: 100% auto;
   background-color: #dbebf2; }
 
-/* line 272, ../sass/project/_page-all-about.scss */
+/* line 278, ../sass/project/_page-all-about.scss */
 .wave__txt {
   margin: 0 auto;
   position: relative;
   width: 54%; }
-  /* line 279, ../sass/project/_page-all-about.scss */
+  @media (min-width: 768px) and (max-width: 1499px) {
+    /* line 278, ../sass/project/_page-all-about.scss */
+    .wave__txt {
+      width: 51%; } }
+  /* line 288, ../sass/project/_page-all-about.scss */
   .wave__txt p {
     color: #FFF;
     line-height: 2.125;
     padding-top: 5%; }
-    /* line 283, ../sass/project/_page-all-about.scss */
+    @media (min-width: 768px) and (max-width: 1499px) {
+      /* line 288, ../sass/project/_page-all-about.scss */
+      .wave__txt p {
+        padding: 0 15px; } }
+    /* line 295, ../sass/project/_page-all-about.scss */
     .wave__txt p:nth-child(1) {
       padding-top: 7%; }
-    /* line 286, ../sass/project/_page-all-about.scss */
+    /* line 298, ../sass/project/_page-all-about.scss */
     .wave__txt p:nth-child(3) {
       padding-bottom: 6%; }
 
-/* line 291, ../sass/project/_page-all-about.scss */
+/* line 303, ../sass/project/_page-all-about.scss */
 .wave__pic {
   position: absolute;
   height: auto; }
+  @media (max-width: 767px) {
+    /* line 303, ../sass/project/_page-all-about.scss */
+    .wave__pic {
+      display: none; } }
 
-/* line 295, ../sass/project/_page-all-about.scss */
+/* line 310, ../sass/project/_page-all-about.scss */
 .wave__pic--1 {
   width: 47%;
   left: -47.12%;
   top: 32.84%; }
 
-/* line 300, ../sass/project/_page-all-about.scss */
+/* line 315, ../sass/project/_page-all-about.scss */
 .wave__pic--2 {
   width: 36%;
   top: 59.84%;
   right: -37.8%; }
 
-/* line 305, ../sass/project/_page-all-about.scss */
+/* line 320, ../sass/project/_page-all-about.scss */
 .wave__pic--3 {
-  display: none;
   width: 54%;
   top: -11.15543%;
   right: -56%; }
+  @media (min-width: 768px) and (max-width: 1499px) {
+    /* line 320, ../sass/project/_page-all-about.scss */
+    .wave__pic--3 {
+      right: -48%; } }
 
-/* line 313, ../sass/project/_page-all-about.scss */
+/* line 330, ../sass/project/_page-all-about.scss */
 .play-group {
   width: 100%;
   max-width: 1900px;
   margin: auto; }
 
-/* line 318, ../sass/project/_page-all-about.scss */
+/* line 335, ../sass/project/_page-all-about.scss */
 .info__bg {
   padding-top: 12.70588%;
   /* height: 216px; */
@@ -680,149 +726,159 @@ footer {
   background-size: 105%;
   background-color: #61aed3; }
 
-/* line 330, ../sass/project/_page-all-about.scss */
+/* line 347, ../sass/project/_page-all-about.scss */
 .box__title {
   margin-top: -6.9%;
   margin-bottom: 7.3%; }
 
-/* line 334, ../sass/project/_page-all-about.scss */
+/* line 351, ../sass/project/_page-all-about.scss */
 .box__info {
   display: flex;
   width: 100%;
   margin-bottom: 4.4%; }
 
-/* line 339, ../sass/project/_page-all-about.scss */
+/* line 356, ../sass/project/_page-all-about.scss */
 .info__text {
   width: calc(100% - 46% - 12.7647%);
   margin-left: 12.7647%; }
+  @media (min-width: 768px) and (max-width: 1099px) {
+    /* line 356, ../sass/project/_page-all-about.scss */
+    .info__text {
+      width: calc(100% - 46% - 6.38235%);
+      margin-left: 6.38235%; } }
 
-/* line 343, ../sass/project/_page-all-about.scss */
+/* line 364, ../sass/project/_page-all-about.scss */
 .info__title {
   font-size: 60px;
   font-weight: bold; }
 
-/* line 348, ../sass/project/_page-all-about.scss */
+/* line 368, ../sass/project/_page-all-about.scss */
 .info__txt {
   margin-top: 3%;
   margin-bottom: 4.2%;
   line-height: 2.125; }
 
-/* line 353, ../sass/project/_page-all-about.scss */
+/* line 373, ../sass/project/_page-all-about.scss */
 .info__access {
   border-top: 1px dotted;
   padding-top: 2%;
   line-height: 2.125; }
-  /* line 357, ../sass/project/_page-all-about.scss */
+  /* line 377, ../sass/project/_page-all-about.scss */
   .info__access b {
     margin-right: 5px; }
 
-/* line 361, ../sass/project/_page-all-about.scss */
+/* line 381, ../sass/project/_page-all-about.scss */
 .info__link {
   display: inline-block;
   padding: 0 5px;
   line-height: 2.125; }
-  /* line 366, ../sass/project/_page-all-about.scss */
+  /* line 386, ../sass/project/_page-all-about.scss */
   .info__link a {
     color: #FFF; }
 
-/* line 370, ../sass/project/_page-all-about.scss */
+/* line 390, ../sass/project/_page-all-about.scss */
 .info__pic {
   width: 46%;
   margin-top: -2%; }
-  /* line 373, ../sass/project/_page-all-about.scss */
+  /* line 393, ../sass/project/_page-all-about.scss */
   .info__pic img {
     width: 100%;
     height: auto; }
 
-/* line 378, ../sass/project/_page-all-about.scss */
+/* line 398, ../sass/project/_page-all-about.scss */
 .box__reverse {
   flex-direction: row-reverse; }
-  /* line 380, ../sass/project/_page-all-about.scss */
+  /* line 400, ../sass/project/_page-all-about.scss */
   .box__reverse .info__text {
     margin-right: 11.7647%;
     margin-left: 0; }
+    @media (min-width: 768px) and (max-width: 1099px) {
+      /* line 400, ../sass/project/_page-all-about.scss */
+      .box__reverse .info__text {
+        margin-right: 6.38235%;
+        margin-left: 0; } }
 
-/* line 386, ../sass/project/_page-all-about.scss */
+/* line 410, ../sass/project/_page-all-about.scss */
 .box__fukuoka .info__title {
   color: #907AA1; }
-/* line 389, ../sass/project/_page-all-about.scss */
+/* line 413, ../sass/project/_page-all-about.scss */
 .box__fukuoka .info__link {
   background-color: #907AA1; }
-/* line 392, ../sass/project/_page-all-about.scss */
+/* line 416, ../sass/project/_page-all-about.scss */
 .box__fukuoka .info__txt {
   margin-bottom: 1%; }
 
-/* line 396, ../sass/project/_page-all-about.scss */
+/* line 420, ../sass/project/_page-all-about.scss */
 .box__saga {
   margin-bottom: 6.5%; }
-  /* line 398, ../sass/project/_page-all-about.scss */
+  /* line 422, ../sass/project/_page-all-about.scss */
   .box__saga .info__title {
     color: #B74D52; }
-  /* line 401, ../sass/project/_page-all-about.scss */
+  /* line 425, ../sass/project/_page-all-about.scss */
   .box__saga .info__link {
     background-color: #B74D52; }
 
-/* line 406, ../sass/project/_page-all-about.scss */
+/* line 430, ../sass/project/_page-all-about.scss */
 .box__nagasaki .info__title {
   color: #935430; }
-/* line 409, ../sass/project/_page-all-about.scss */
+/* line 433, ../sass/project/_page-all-about.scss */
 .box__nagasaki .info__link {
   background-color: #935430; }
 
-/* line 413, ../sass/project/_page-all-about.scss */
+/* line 437, ../sass/project/_page-all-about.scss */
 .box__oita {
   margin-bottom: 6%; }
-  /* line 415, ../sass/project/_page-all-about.scss */
+  /* line 439, ../sass/project/_page-all-about.scss */
   .box__oita .info__title {
     color: #4A6E33; }
-  /* line 418, ../sass/project/_page-all-about.scss */
+  /* line 442, ../sass/project/_page-all-about.scss */
   .box__oita .info__link {
     background-color: #4A6E33; }
 
-/* line 423, ../sass/project/_page-all-about.scss */
+/* line 447, ../sass/project/_page-all-about.scss */
 .box__kumamoto .info__title {
   color: #8C9A28; }
-/* line 426, ../sass/project/_page-all-about.scss */
+/* line 450, ../sass/project/_page-all-about.scss */
 .box__kumamoto .info__link {
   background-color: #8C9A28; }
 
-/* line 430, ../sass/project/_page-all-about.scss */
+/* line 454, ../sass/project/_page-all-about.scss */
 .box__miyazaki {
   margin-bottom: 3.6%; }
-  /* line 432, ../sass/project/_page-all-about.scss */
+  /* line 456, ../sass/project/_page-all-about.scss */
   .box__miyazaki .info__title {
     color: #5B81C1; }
-  /* line 435, ../sass/project/_page-all-about.scss */
+  /* line 459, ../sass/project/_page-all-about.scss */
   .box__miyazaki .info__link {
     background-color: #5B81C1; }
 
-/* line 439, ../sass/project/_page-all-about.scss */
+/* line 463, ../sass/project/_page-all-about.scss */
 .box__kagoshima {
   margin-bottom: 9%; }
-  /* line 441, ../sass/project/_page-all-about.scss */
+  /* line 465, ../sass/project/_page-all-about.scss */
   .box__kagoshima .info__title {
     color: #48886B; }
-  /* line 444, ../sass/project/_page-all-about.scss */
+  /* line 468, ../sass/project/_page-all-about.scss */
   .box__kagoshima .info__link {
     background-color: #48886B; }
 
-/* line 449, ../sass/project/_page-all-about.scss */
+/* line 473, ../sass/project/_page-all-about.scss */
 .section__basicinfo {
   background-color: #DBEBF2; }
 
-/* line 452, ../sass/project/_page-all-about.scss */
+/* line 476, ../sass/project/_page-all-about.scss */
 .basic__title {
   font-size: 35px;
   line-height: calc(50 / 35);
   font-weight: bold;
   text-align: center; }
 
-/* line 458, ../sass/project/_page-all-about.scss */
+/* line 482, ../sass/project/_page-all-about.scss */
 .basic__infotitle {
   margin-top: -8.3%;
   margin-bottom: 4%; }
 
-/* line 462, ../sass/project/_page-all-about.scss */
+/* line 486, ../sass/project/_page-all-about.scss */
 .basic__bg {
   padding-top: 15.6%;
   /* height: 264px; */
@@ -830,55 +886,69 @@ footer {
   background-size: 100% auto;
   background-color: #FFF !important; }
 
-/* line 474, ../sass/project/_page-all-about.scss */
+/* line 498, ../sass/project/_page-all-about.scss */
 .inner__960 {
   width: 100%;
   max-width: 960px;
   margin: 0 auto; }
+  @media (min-width: 768px) and (max-width: 1099px) {
+    /* line 498, ../sass/project/_page-all-about.scss */
+    .inner__960 {
+      padding: 0 30px; } }
 
-/* line 479, ../sass/project/_page-all-about.scss */
+/* line 506, ../sass/project/_page-all-about.scss */
 .basic__pic {
   display: flex;
   justify-content: center; }
-  /* line 482, ../sass/project/_page-all-about.scss */
+  /* line 509, ../sass/project/_page-all-about.scss */
   .basic__pic img {
     width: calc(100% - 30%);
     height: auto; }
 
-/* line 487, ../sass/project/_page-all-about.scss */
+/* line 514, ../sass/project/_page-all-about.scss */
 .basic__txt {
   line-height: 2.125;
   margin-top: 9.5%; }
 
-/* line 491, ../sass/project/_page-all-about.scss */
+/* line 518, ../sass/project/_page-all-about.scss */
 .basic__link {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 1%; }
-  /* line 496, ../sass/project/_page-all-about.scss */
+  @media (min-width: 768px) and (max-width: 890px) {
+    /* line 518, ../sass/project/_page-all-about.scss */
+    .basic__link {
+      flex-direction: column;
+      align-items: flex-start; } }
+  /* line 527, ../sass/project/_page-all-about.scss */
   .basic__link p {
     word-break: break-all; }
-    /* line 498, ../sass/project/_page-all-about.scss */
+    /* line 529, ../sass/project/_page-all-about.scss */
     .basic__link p:nth-child(2) {
       display: inline-block;
       padding: 4px 5px;
       background-color: #F44D5C;
       margin-left: 10px; }
-      /* line 504, ../sass/project/_page-all-about.scss */
+      @media (min-width: 768px) and (max-width: 890px) {
+        /* line 529, ../sass/project/_page-all-about.scss */
+        .basic__link p:nth-child(2) {
+          margin-left: 0;
+          margin-top: 5px; } }
+      /* line 538, ../sass/project/_page-all-about.scss */
       .basic__link p:nth-child(2) a {
         color: #FFF;
         padding: 0 5px; }
 
-/* line 511, ../sass/project/_page-all-about.scss */
+/* line 545, ../sass/project/_page-all-about.scss */
 .basic__linkfirst {
   margin-top: 7.4%; }
 
-/* line 514, ../sass/project/_page-all-about.scss */
+/* line 548, ../sass/project/_page-all-about.scss */
 .basic__linksecond {
   padding-bottom: 10%; }
 
-/* line 517, ../sass/project/_page-all-about.scss */
+/* line 551, ../sass/project/_page-all-about.scss */
 .utility__bg {
   padding-top: 12.70588%;
   /* height: 216px; */
@@ -887,11 +957,11 @@ footer {
   background-size: 105%;
   background-color: #dbebf2; }
 
-/* line 531, ../sass/project/_page-all-about.scss */
+/* line 565, ../sass/project/_page-all-about.scss */
 .utility__title {
   margin-top: -6.5%; }
 
-/* line 534, ../sass/project/_page-all-about.scss */
+/* line 568, ../sass/project/_page-all-about.scss */
 .utility__suptitle {
   font-size: 29px;
   line-height: calc(50 / 35);
@@ -899,19 +969,19 @@ footer {
   text-align: center;
   margin-top: 0.5%; }
 
-/* line 542, ../sass/project/_page-all-about.scss */
+/* line 576, ../sass/project/_page-all-about.scss */
 .utility__txt p {
   line-height: 2.125;
   margin-top: 3.5%; }
-  /* line 545, ../sass/project/_page-all-about.scss */
+  /* line 579, ../sass/project/_page-all-about.scss */
   .utility__txt p:nth-child(2) {
     margin-bottom: 4.5%; }
 
-/* line 552, ../sass/project/_page-all-about.scss */
+/* line 586, ../sass/project/_page-all-about.scss */
 .group__link .basic__link {
   margin-top: 1.2%; }
 
-/* line 556, ../sass/project/_page-all-about.scss */
+/* line 590, ../sass/project/_page-all-about.scss */
 .menu__footer {
   margin-top: 3.9%;
   margin-bottom: 6.58%; }

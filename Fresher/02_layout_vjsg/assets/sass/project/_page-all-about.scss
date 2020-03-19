@@ -1,9 +1,13 @@
 .banner {
     position: relative;
-    background: url(../images/img04.png);
-    background-repeat: no-repeat;
+    background: url(../images/img04.png) no-repeat;
     background-size: 100% 100%;
     padding-bottom: 25.8823529%;
+    @media (max-width: 767px) {
+        background: url(../images/img17.png) no-repeat;
+        background-size: 100% 100%;
+        padding-bottom: 67.03125%;
+    }
     p {
         position: absolute;
         top: 50%;
@@ -15,13 +19,21 @@
         color: $white;
         font-weight: 400;
         font-family: 'BebasNeue Book';
+        @media (min-width: 768px) and (max-width: 1099px) {
+            font-size: 60px;
+        }
+        @media (max-width: 767px) {
+            font-size: 48px;
+        }
+        @media (max-width: 480px) {
+            font-size: 40px;
+        }
     }
 }
 .menu__content {
     padding: 8px 0px;
     background-color: #ffffff;
     ul {
-        // max-width: 1290px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,7 +43,6 @@
             background: #000000;
             a {
                 color: #ffffff;
-                // font-size: 24px !important;
                 &:before {
                     content: unset;
                 }
@@ -59,6 +70,9 @@
                 line-height: calc(17 / 27);
                 color: #000000;
                 width: 100%;
+                @media (min-width: 768px) and (max-width: 1099px) {
+                    font-size: 24px;
+                }
                 @media (max-width: 767px) {
                     font-size: 18px;
                 }
@@ -74,27 +88,22 @@
                         content: unset !important;
                     }
                 }
-                // &:before {
-                //     content: "";
-                //     position: absolute;
-                //     left: -11%;
-                //     width: 2px;
-                //     height: 60%;
-                //     background-color: #BCBCBC;
-                //     top: 50%;
-                //     transform: translateY(-50%);
-                // }
             }
         }
     }
 }
 .breadcrumb {
     width: 100%;
-    max-width: 1290px;
+    max-width: 1320px;
     position: relative;
     margin: 0 auto;
     box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 0.78%;
+    @media (max-width: 767px) {
+        display: none;
+    }
     li {
         color: #666666;
         display: inline-block;
@@ -106,15 +115,7 @@
             content: '>';
             padding-left: 5px;
         }
-        &:nth-child(3) {
-            @media (min-width: 320px) and (max-width: 424.98px) {
-                font-size: 11px;
-            }
-        }
         a {
-            @media (min-width: 320px) and (max-width: 424.98px) {
-                font-size: 11px;
-            }
             color: #666666;
             &:nth-child(1),
             &:nth-child(2) {
@@ -139,10 +140,8 @@
 }
 .sup__title {
     font-size: 28px;
-    // line-height: calc(51 / 28);
     font-weight: bold;
     text-align: center;
-    // padding-top: 3%;
 }
 .section__txt {
     p {
@@ -173,7 +172,7 @@
     z-index: -1;
     padding-top: 52.58824%;
     // background: transparent url(../images/map_01@2x.png) center center no-repeat;
-    background-image: -webkit-linear-gradient(transparent, transparent), url(../images/map_01.svg);
+    // background-image: -webkit-linear-gradient(transparent, transparent), url(../images/map_01.svg);
     background-image: linear-gradient(transparent, transparent), url(../images/map_01.svg);
     // background-position: center right;
     background-repeat: no-repeat;
@@ -206,6 +205,9 @@
     margin: 0 auto;
     margin-top: -5.8%;
     margin-right: 23%;
+    @media (min-width: 768px) and (max-width: 1099px) {
+        width: 63%;
+    }
     &:before {
         position: absolute;
         content: "";
@@ -250,6 +252,10 @@
         vertical-align: middle;
         padding: 0 15%;
         line-height: 2.125;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            font-size: 14px;
+            padding: 0 12%;
+        }
     }
 }
 
@@ -276,10 +282,16 @@
     margin: 0 auto;
     position: relative;
     width: 54%;
+    @media (min-width: 768px) and (max-width: 1499px) {
+        width: 51%;
+    }
     p {
         color: $white;
         line-height: 2.125;
         padding-top: 5%;
+        @media (min-width: 768px) and (max-width: 1499px) {
+            padding: 0 15px;
+        }
         &:nth-child(1) {
             padding-top: 7%;
         }
@@ -291,6 +303,9 @@
 .wave__pic {
     position: absolute;
     height: auto;
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 .wave__pic--1 {
     width: 47%;
@@ -303,10 +318,12 @@
     right: -37.8%;
 }
 .wave__pic--3 {
-    display: none;
     width: 54%;
     top: -11.15543%;
     right: -56%;
+    @media (min-width: 768px) and (max-width: 1499px) {
+        right: -48%;
+    }
 }
 
 // Section infomation
@@ -339,10 +356,13 @@
 .info__text {
     width: calc(100% - 46% - 12.7647%);
     margin-left: 12.7647%;
+    @media (min-width: 768px) and (max-width: 1099px) {
+        width: calc(100% - 46% - 6.38235%);
+        margin-left: 6.38235%;
+    }
 }
 .info__title {
     font-size: 60px;
-    // line-height: calc(34 / 60);
     font-weight: bold;
 }
 .info__txt {
@@ -380,6 +400,10 @@
     .info__text {
         margin-right: 11.7647%;
         margin-left: 0;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            margin-right: 6.38235%;
+            margin-left: 0;
+        }
     }
 }
 .box__fukuoka {
@@ -475,6 +499,9 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    @media (min-width: 768px) and (max-width: 1099px) {
+        padding: 0 30px;
+    }
 }
 .basic__pic {
     display: flex;
@@ -493,6 +520,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1%;
+    @media (min-width: 768px) and (max-width: 890px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     p {
         word-break: break-all;
         &:nth-child(2) {
@@ -500,7 +531,10 @@
             padding: 4px 5px;
             background-color: #F44D5C;
             margin-left: 10px;
-            // line-height: 2.5625;
+            @media (min-width: 768px) and (max-width: 890px) {
+                margin-left: 0;
+                margin-top: 5px;
+            }
             a {
                 color: $white;
                 padding: 0 5px;
