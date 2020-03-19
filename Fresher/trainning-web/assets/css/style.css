@@ -847,6 +847,31 @@ footer {
     display: none; } }
 
 /* line 148, ../sass/layout/_footer.scss */
+.entry-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F85050;
+  width: calc(100% - 30px);
+  margin: 20px 15px 30px 15px; }
+  @media (min-width: 769px) {
+    /* line 148, ../sass/layout/_footer.scss */
+    .entry-btn {
+      display: none; } }
+  @media (max-width: 480px) {
+    /* line 148, ../sass/layout/_footer.scss */
+    .entry-btn {
+      margin: 10px 15px 15px 15px; } }
+  /* line 162, ../sass/layout/_footer.scss */
+  .entry-btn p {
+    padding: 2.5% 0; }
+    @media (max-width: 640px) {
+      /* line 162, ../sass/layout/_footer.scss */
+      .entry-btn p {
+        font-size: 3.6458333333vw; } }
+
+/* line 169, ../sass/layout/_footer.scss */
 .page-top {
   position: fixed;
   bottom: 50px;
@@ -858,44 +883,19 @@ footer {
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   transition: all 0.3s linear; }
-  /* line 160, ../sass/layout/_footer.scss */
+  /* line 181, ../sass/layout/_footer.scss */
   .page-top a img {
     width: 100%;
     height: auto; }
     @media (max-width: 640px) {
-      /* line 160, ../sass/layout/_footer.scss */
+      /* line 181, ../sass/layout/_footer.scss */
       .page-top a img {
         width: 60px;
         height: 60px; } }
 
-/* line 170, ../sass/layout/_footer.scss */
+/* line 191, ../sass/layout/_footer.scss */
 .page-top.show {
   opacity: 1; }
-
-/* line 174, ../sass/layout/_footer.scss */
-.entry-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background-color: #F85050;
-  width: calc(100% - 30px);
-  margin: 20px 15px 30px 15px; }
-  @media (min-width: 769px) {
-    /* line 174, ../sass/layout/_footer.scss */
-    .entry-btn {
-      display: none; } }
-  @media (max-width: 480px) {
-    /* line 174, ../sass/layout/_footer.scss */
-    .entry-btn {
-      margin: 10px 15px 15px 15px; } }
-  /* line 188, ../sass/layout/_footer.scss */
-  .entry-btn p {
-    padding: 2.5% 0; }
-    @media (max-width: 640px) {
-      /* line 188, ../sass/layout/_footer.scss */
-      .entry-btn p {
-        font-size: 3.6458333333vw; } }
 
 /* line 1, ../sass/layout/_animation.scss */
 .item__topl,
