@@ -139,6 +139,12 @@
     padding-bottom: 3%;
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 30px;
+        padding-bottom: 6%;
+    }
+    @media (max-width: 480px) {
+        font-size: 22px;
+        padding-bottom: 6%;
+        padding-top: 12%;
     }
 }
 .sup__title {
@@ -148,6 +154,9 @@
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 25px;
     }
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
 }
 .section__txt {
     p {
@@ -155,6 +164,12 @@
         padding-top: 5%;
         @media (min-width: 481px) and (max-width: 767px) {
             font-size: 22px;
+        }
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+        @media (max-width: 480px) {
+            padding-top: 2.5%;
         }
     }
 }
@@ -188,10 +203,10 @@
 }
 .map__content {
     padding-bottom: 26.47059%;
-    z-index: 20;
+    // z-index: 20;
     display: block;
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        padding-bottom: 45%;
     }
 }
 .inner__690 {
@@ -199,6 +214,12 @@
     // padding-top: 5.88235%;
     width: 100%;
     max-width: 690px;
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 480px) {
+        padding: 0 15px;
+    }
 }
 .inner__1290 {
     width: 100%;
@@ -219,6 +240,9 @@
     margin-right: 23%;
     @media (min-width: 768px) and (max-width: 1099px) {
         width: 63%;
+    }
+    @media (max-width: 767px) {
+        display: none;
     }
     &:before {
         position: absolute;
@@ -297,10 +321,17 @@
     @media (min-width: 768px) and (max-width: 1499px) {
         width: 51%;
     }
+    @media (max-width: 767px) {
+        width: 100%;
+        padding: 40px 30px 20px 30px;
+    }
     p {
         color: $white;
         line-height: 2.125;
         padding-top: 5%;
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 22px;
+        }
         @media (min-width: 768px) and (max-width: 1499px) {
             padding: 0 15px;
         }
@@ -359,6 +390,9 @@
 .box__title {
     margin-top: -6.9%;
     margin-bottom: 7.3%;
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 1.5%;
+    }
 }
 .box__info {
     display: flex;
@@ -381,7 +415,7 @@
             margin-left: 0;
         }
         @media (max-width: 767px) {
-            width: calc(100% - 60px);
+            width: 100%;
             padding: 0 30px;
             margin-left: 0 !important;
             margin-right: 0 !important;
@@ -396,10 +430,15 @@
         margin-left: 6.38235%;
     }
     @media (max-width: 767px) {
-        width: calc(100% - 60px);
+        width: 100%;
         padding: 0 30px;
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+    p {
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 22px;
+        }
     }
 }
 .info__pic {
@@ -410,18 +449,28 @@
         height: auto;
     }
     @media (max-width: 767px) {
-        width: calc(100% - 60px);
+        width: 100%;
         padding: 0 30px;
+        margin-top: 20px;
     }
 }
 .info__title {
     font-size: 60px;
     font-weight: bold;
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 45px !important;
+    }
+    @media (max-width: 480px) {
+        font-size: 30px !important;
+    }
 }
 .info__txt {
     margin-top: 3%;
     margin-bottom: 4.2%;
-    line-height: 2.125
+    line-height: 2.125;
+    @media (max-width: 767px) {
+        margin-bottom: 3% !important;
+    }
 }
 .info__access {
     border-top: 1px dotted;
@@ -436,6 +485,9 @@
     padding: 0 5px;
     // margin-top: 2.1%;
     line-height: 2.125;
+    @media (max-width: 767px) {
+        margin-top: 10px;
+    }
     a {
         color: $white;
     }
