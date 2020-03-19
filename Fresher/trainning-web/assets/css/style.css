@@ -733,44 +733,17 @@ footer {
 .page-top.show {
   opacity: 1; }
 
-.item__topl,
-.item__topr,
-.item__bot {
-  overflow: hidden; }
-  .item__topl img,
-  .item__topr img,
-  .item__bot img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out; }
-  .item__topl:hover,
-  .item__topr:hover,
-  .item__bot:hover {
-    background: rgba(255, 255, 255, 0.8); }
-    .item__topl:hover img,
-    .item__topr:hover img,
-    .item__bot:hover img {
-      opacity: 1;
-      -webkit-animation: flash 1.5s;
-      animation: flash 1.5s;
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2); }
+.item__topl img,
+.item__topr img,
+.item__bot img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+.item__topl:hover,
+.item__topr:hover,
+.item__bot:hover {
+  opacity: .5; }
 
-@-webkit-keyframes flash {
-  0% {
-    opacity: 0.3; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    opacity: 1; } }
-@keyframes flash {
-  0% {
-    opacity: 0.3; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    opacity: 1; } }
 /**
  * Icons
 **/
