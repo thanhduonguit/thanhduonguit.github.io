@@ -138,6 +138,13 @@ header {
                         padding: 14.5px;
                     }
                 }
+                background: url("../images/img16.png") no-repeat right center;
+                margin-left: -6px;
+                cursor: pointer;
+                position: relative;
+                &:nth-child(5) {
+                    background-image: none;
+                }
                 &:last-child {
                     .close {
                         .bar1 {
@@ -159,10 +166,6 @@ header {
                         font-family: BebasNeue;
                     }
                 }
-                background-image: url("../../images/bg_menu_border.png") no-repeat right center;
-                margin-left: -6px;
-                cursor: pointer;
-                position: relative;
                 @media only screen and (min-width: 1024.98px) {
                     &:hover {
                         background: $bgBlack;
