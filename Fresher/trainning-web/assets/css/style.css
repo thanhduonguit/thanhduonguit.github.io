@@ -662,9 +662,6 @@ header {
   /* line 122, ../sass/layout/_gnav.scss */
   .navbar .active {
     background-color: #F85050; }
-    /* line 125, ../sass/layout/_gnav.scss */
-    .navbar .active a:before {
-      content: unset !important; }
     /* line 128, ../sass/layout/_gnav.scss */
     .navbar .active a p {
       color: #FFF !important; }
@@ -757,35 +754,38 @@ footer {
     /* line 36, ../sass/layout/_footer.scss */
     footer .navbar.navbar-footer .menu li:last-child:hover a {
       color: #FACB3A; }
-  /* line 43, ../sass/layout/_footer.scss */
+    /* line 41, ../sass/layout/_footer.scss */
+    footer .navbar.navbar-footer .menu li:last-child a:before {
+      content: none !important; }
+  /* line 48, ../sass/layout/_footer.scss */
   footer .navbar.navbar-footer .logo {
     display: flex;
     padding-left: 8.33333333%; }
     @media (max-width: 1199px) {
-      /* line 43, ../sass/layout/_footer.scss */
+      /* line 48, ../sass/layout/_footer.scss */
       footer .navbar.navbar-footer .logo {
         padding-left: 15px; } }
   @media (max-width: 768px) {
-    /* line 53, ../sass/layout/_footer.scss */
+    /* line 58, ../sass/layout/_footer.scss */
     footer .navbar.navbar-footer {
       height: auto;
       flex-direction: column;
       padding-right: 0; }
-      /* line 57, ../sass/layout/_footer.scss */
+      /* line 62, ../sass/layout/_footer.scss */
       footer .navbar.navbar-footer .logo {
         padding: 2.1% 0; }
-      /* line 60, ../sass/layout/_footer.scss */
+      /* line 65, ../sass/layout/_footer.scss */
       footer .navbar.navbar-footer .menu {
         width: 100%;
         margin-left: 0; }
-        /* line 63, ../sass/layout/_footer.scss */
+        /* line 68, ../sass/layout/_footer.scss */
         footer .navbar.navbar-footer .menu a {
           padding: 2.9% 15px;
           align-items: flex-start; }
-          /* line 66, ../sass/layout/_footer.scss */
+          /* line 71, ../sass/layout/_footer.scss */
           footer .navbar.navbar-footer .menu a::before {
             content: none; }
-          /* line 69, ../sass/layout/_footer.scss */
+          /* line 74, ../sass/layout/_footer.scss */
           footer .navbar.navbar-footer .menu a::after {
             content: "";
             position: absolute;
@@ -793,25 +793,25 @@ footer {
             width: 8px;
             height: 14px;
             background: url(../images/icon01.png) no-repeat; }
-          /* line 78, ../sass/layout/_footer.scss */
+          /* line 83, ../sass/layout/_footer.scss */
           footer .navbar.navbar-footer .menu a span:first-child {
             display: none; }
-        /* line 86, ../sass/layout/_footer.scss */
+        /* line 91, ../sass/layout/_footer.scss */
         footer .navbar.navbar-footer .menu li:hover a::after {
           background: none; }
-        /* line 91, ../sass/layout/_footer.scss */
+        /* line 96, ../sass/layout/_footer.scss */
         footer .navbar.navbar-footer .menu li:last-child {
           display: none; }
-          /* line 92, ../sass/layout/_footer.scss */
+          /* line 97, ../sass/layout/_footer.scss */
           footer .navbar.navbar-footer .menu li:last-child:hover {
             background: none; }
-          /* line 97, ../sass/layout/_footer.scss */
+          /* line 102, ../sass/layout/_footer.scss */
           footer .navbar.navbar-footer .menu li:last-child a::after {
             content: none; }
-        /* line 103, ../sass/layout/_footer.scss */
+        /* line 108, ../sass/layout/_footer.scss */
         footer .navbar.navbar-footer .menu li:nth-child(4) {
           border-bottom: 1px solid #BCBCBC; } }
-  /* line 112, ../sass/layout/_footer.scss */
+  /* line 117, ../sass/layout/_footer.scss */
   footer .copyright {
     background-color: #3A3A3A;
     color: #FFF;
@@ -819,34 +819,34 @@ footer {
     text-align: center;
     font-size: 12px; }
     @media (max-width: 640px) {
-      /* line 112, ../sass/layout/_footer.scss */
+      /* line 117, ../sass/layout/_footer.scss */
       footer .copyright {
         font-size: 2.8645833333vw; } }
     @media (min-width: 641px) {
-      /* line 112, ../sass/layout/_footer.scss */
+      /* line 117, ../sass/layout/_footer.scss */
       footer .copyright {
         display: flex;
         justify-content: center;
         align-items: center; } }
     @media (min-width: 641px) {
-      /* line 126, ../sass/layout/_footer.scss */
+      /* line 131, ../sass/layout/_footer.scss */
       footer .copyright span {
         margin: 0 3px; } }
   @media (max-width: 768px) {
-    /* line 134, ../sass/layout/_footer.scss */
+    /* line 139, ../sass/layout/_footer.scss */
     footer .copyright {
       padding: 4% 0; } }
 
 @media (max-width: 768px) {
-  /* line 139, ../sass/layout/_footer.scss */
+  /* line 144, ../sass/layout/_footer.scss */
   .footer__br {
     display: none; } }
 @media (min-width: 990px) {
-  /* line 139, ../sass/layout/_footer.scss */
+  /* line 144, ../sass/layout/_footer.scss */
   .footer__br {
     display: none; } }
 
-/* line 148, ../sass/layout/_footer.scss */
+/* line 153, ../sass/layout/_footer.scss */
 .entry-btn {
   display: flex;
   justify-content: center;
@@ -856,22 +856,22 @@ footer {
   width: calc(100% - 30px);
   margin: 20px 15px 30px 15px; }
   @media (min-width: 769px) {
-    /* line 148, ../sass/layout/_footer.scss */
+    /* line 153, ../sass/layout/_footer.scss */
     .entry-btn {
       display: none; } }
   @media (max-width: 480px) {
-    /* line 148, ../sass/layout/_footer.scss */
+    /* line 153, ../sass/layout/_footer.scss */
     .entry-btn {
       margin: 10px 15px 15px 15px; } }
-  /* line 162, ../sass/layout/_footer.scss */
+  /* line 167, ../sass/layout/_footer.scss */
   .entry-btn p {
     padding: 2.5% 0; }
     @media (max-width: 640px) {
-      /* line 162, ../sass/layout/_footer.scss */
+      /* line 167, ../sass/layout/_footer.scss */
       .entry-btn p {
         font-size: 3.6458333333vw; } }
 
-/* line 169, ../sass/layout/_footer.scss */
+/* line 174, ../sass/layout/_footer.scss */
 .page-top {
   position: fixed;
   bottom: 50px;
@@ -883,17 +883,17 @@ footer {
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   transition: all 0.3s linear; }
-  /* line 181, ../sass/layout/_footer.scss */
+  /* line 186, ../sass/layout/_footer.scss */
   .page-top a img {
     width: 100%;
     height: auto; }
     @media (max-width: 640px) {
-      /* line 181, ../sass/layout/_footer.scss */
+      /* line 186, ../sass/layout/_footer.scss */
       .page-top a img {
         width: 60px;
         height: 60px; } }
 
-/* line 191, ../sass/layout/_footer.scss */
+/* line 196, ../sass/layout/_footer.scss */
 .page-top.show {
   opacity: 1; }
 

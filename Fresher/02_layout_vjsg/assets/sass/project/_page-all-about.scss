@@ -137,16 +137,25 @@
     text-align: center;
     padding-top: 16.6%;
     padding-bottom: 3%;
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 30px;
+    }
 }
 .sup__title {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 25px;
+    }
 }
 .section__txt {
     p {
         line-height: 2.125;
         padding-top: 5%;
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 22px;
+        }
     }
 }
 .section__map {
@@ -181,6 +190,9 @@
     padding-bottom: 26.47059%;
     z-index: 20;
     display: block;
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 0 30px;
+    }
 }
 .inner__690 {
     margin: 0 auto;
@@ -352,6 +364,29 @@
     display: flex;
     width: 100%;
     margin-bottom: 4.4%;
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+    }
+}
+.box__reverse {
+    flex-direction: row-reverse;
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+    }
+    .info__text {
+        margin-right: 11.7647%;
+        margin-left: 0;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            margin-right: 6.38235%;
+            margin-left: 0;
+        }
+        @media (max-width: 767px) {
+            width: calc(100% - 60px);
+            padding: 0 30px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
 }
 .info__text {
     width: calc(100% - 46% - 12.7647%);
@@ -359,6 +394,24 @@
     @media (min-width: 768px) and (max-width: 1099px) {
         width: calc(100% - 46% - 6.38235%);
         margin-left: 6.38235%;
+    }
+    @media (max-width: 767px) {
+        width: calc(100% - 60px);
+        padding: 0 30px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+.info__pic {
+    width: 46%;
+    margin-top: -2%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width: 767px) {
+        width: calc(100% - 60px);
+        padding: 0 30px;
     }
 }
 .info__title {
@@ -385,25 +438,6 @@
     line-height: 2.125;
     a {
         color: $white;
-    }
-}
-.info__pic {
-    width: 46%;
-    margin-top: -2%;
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-.box__reverse {
-    flex-direction: row-reverse;
-    .info__text {
-        margin-right: 11.7647%;
-        margin-left: 0;
-        @media (min-width: 768px) and (max-width: 1099px) {
-            margin-right: 6.38235%;
-            margin-left: 0;
-        }
     }
 }
 .box__fukuoka {

@@ -29,14 +29,19 @@ footer {
             }
             li {
                 &:last-child {
-                        // background-color: $menu-bg-hover;
-                        // color: $white;
-                        align-items: center;
-                        &:hover {
-                            a {
-                              color: #FACB3A;
-                            }
-                          }
+                    // background-color: $menu-bg-hover;
+                    // color: $white;
+                    align-items: center;
+                    &:hover {
+                        a {
+                            color: #FACB3A;
+                        }
+                    }
+                    a {
+                        &:before {
+                            content: none !important;
+                        }
+                    }
                 }
             }
         }
