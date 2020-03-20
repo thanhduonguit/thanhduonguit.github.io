@@ -69,3 +69,9 @@ if($(window).innerWidth() > $(this).innerWidth()) {
     }
 }
 
+// Create pic animation with TweenMax
+TweenMax.from(".js__animate--1", 1.5, {opacity: 0, rotation: -50, x: -700, delay: 1.8});
+TweenMax.from(".js__animate--2", 1.5, {opacity: 0, rotation: -50, x: -700, delay: 2.2});
+TweenMax.from(".js__animate--3", 1.5, {opacity: 0, rotation: -50, x: -700, delay: 2.6});
+TweenMax.from(".js__animate--4", 1.5, {opacity: 0, rotation: -50, x: -700, delay: 3});
+TweenMax.from(".js__animate--5", 1.8, { x: 800, delay: 2}, 3);
