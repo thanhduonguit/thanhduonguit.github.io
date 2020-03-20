@@ -546,6 +546,9 @@
 }
 .box__kagoshima {
     margin-bottom: 9%;
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-bottom: 15%;
+    }
     .info__title {
         color: #48886B;
     }
