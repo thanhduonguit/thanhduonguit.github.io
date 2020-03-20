@@ -148,6 +148,7 @@
 .item__topl {
   position: relative;
   width: 48.55%;
+  height: 100%;
   @media (max-width: $sreen-sp) {
     width: calc(100% - 30px);
     padding: 25px 15px 0 15px;
@@ -155,6 +156,7 @@
 }
 .item__topr {
   position: relative;
+  height: 100%;
   width: calc(100% - 48.55% - 20px);
   @media (max-width: $sreen-sp) {
     width: calc(100% - 30px);
@@ -164,6 +166,7 @@
 .item__bot {
   position: relative;
   margin-top: 20px;
+  // height: 100%;
   @media (max-width: $sreen-sp) {
     padding: 0 15px 0 15px;
     margin-top: 10px;
