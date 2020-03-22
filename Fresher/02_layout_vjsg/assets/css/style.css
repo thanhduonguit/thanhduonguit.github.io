@@ -466,18 +466,14 @@ footer {
         line-height: calc(17 / 27);
         color: #000000;
         width: 100%; }
-        @media (min-width: 768px) and (max-width: 1099px) {
+        @media (min-width: 481px) and (max-width: 1099px) {
           /* line 64, ../sass/project/_page-all-about.scss */
           .menu__content ul li a {
             font-size: 24px; } }
-        @media (max-width: 767px) {
-          /* line 64, ../sass/project/_page-all-about.scss */
-          .menu__content ul li a {
-            font-size: 18px; } }
         @media (max-width: 480px) {
           /* line 64, ../sass/project/_page-all-about.scss */
           .menu__content ul li a {
-            font-size: 14px; } }
+            font-size: 18px; } }
         /* line 82, ../sass/project/_page-all-about.scss */
         .menu__content ul li a:hover {
           color: #ffffff; }
@@ -596,7 +592,7 @@ footer {
       background-image: none; } }
 
 /* line 191, ../sass/project/_page-all-about.scss */
-.inner__1700 {
+.inner {
   position: relative;
   display: block;
   width: 100%;
@@ -641,21 +637,21 @@ footer {
       padding-bottom: 45%; } }
 
 /* line 229, ../sass/project/_page-all-about.scss */
-.inner__690 {
+.inner__txt {
   margin: 0 auto;
   width: 100%;
   max-width: 690px; }
   @media (min-width: 481px) and (max-width: 767px) {
     /* line 229, ../sass/project/_page-all-about.scss */
-    .inner__690 {
+    .inner__txt {
       padding: 0 30px; } }
   @media (max-width: 480px) {
     /* line 229, ../sass/project/_page-all-about.scss */
-    .inner__690 {
+    .inner__txt {
       padding: 0 15px; } }
 
 /* line 240, ../sass/project/_page-all-about.scss */
-.inner__1290 {
+.inner__content {
   width: 100%;
   max-width: 1290px;
   position: relative;
@@ -1147,13 +1143,13 @@ footer {
   background-color: #FFF !important; }
 
 /* line 666, ../sass/project/_page-all-about.scss */
-.inner__960 {
+.inner__small {
   width: 100%;
   max-width: 960px;
   margin: 0 auto; }
   @media (min-width: 768px) and (max-width: 1099px) {
     /* line 666, ../sass/project/_page-all-about.scss */
-    .inner__960 {
+    .inner__small {
       padding: 0 30px; } }
 
 /* line 674, ../sass/project/_page-all-about.scss */
