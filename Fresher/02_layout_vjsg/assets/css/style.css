@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'hirakakupro';
-  font-style: normal;
-  src: local("hirakakupro"), url("../font/hirakakupro-w3-opentype_bigfontsite.com.otf"); }
-@font-face {
-  font-family: 'Gyosho';
-  font-style: normal;
-  src: local("Gyosho"), url("../font/Gyosho.ttf"); }
 /* line 1, ../sass/foundation/_base.scss */
 * {
   margin: 0;
