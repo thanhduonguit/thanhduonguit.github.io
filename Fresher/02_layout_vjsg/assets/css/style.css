@@ -974,7 +974,7 @@ footer {
   margin-top: -2%; }
   /* line 529, ../sass/project/_page-all-about.scss */
   .info__pic img {
-    width: 100%;
+    max-width: 100%;
     height: auto; }
   @media (min-width: 481px) and (max-width: 767px) {
     /* line 525, ../sass/project/_page-all-about.scss */

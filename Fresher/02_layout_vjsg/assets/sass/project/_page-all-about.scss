@@ -527,7 +527,7 @@
     height: 100%;
     margin-top: -2%;
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
     @media (min-width: 481px) and (max-width: 767px) {
