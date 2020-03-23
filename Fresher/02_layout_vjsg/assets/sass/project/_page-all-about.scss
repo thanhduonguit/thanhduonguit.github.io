@@ -217,14 +217,19 @@
     @media (max-width: 480px) {
         padding-top: 86.5%;
     }
+    // @media (max-width: 767px) {
+    //     background-image: linear-gradient(transparent, transparent), url(../images/img43.png);
+    //     background-position: 100% 0;
+    //     background-size: auto;
+    // }
 }
 .map__content {
     padding-bottom: 26.47059%;
     display: block;
-    @media (min-width: 481px) and (max-width: 767px) {
-        padding-bottom: 45%;
-    }
-    @media (max-width: 480px) {
+    // @media (min-width: 481px) and (max-width: 767px) {
+    //     padding-bottom: 45%;
+    // }
+    @media (max-width: 767px) {
         padding-bottom: 45%;
     }
 }
@@ -233,10 +238,12 @@
     width: 100%;
     max-width: 690px;
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        max-width: 100%;
+        padding: 0 6%;
     }
     @media (max-width: 480px) {
-        padding: 0 15px;
+        max-width: 100%;
+        padding: 0 3%;
     }
 }
 .inner__content {
@@ -318,10 +325,10 @@
     background-color: #FFF;
     margin-top: -3px;
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        padding: 0 6%;
     }
     @media (max-width: 480px) {
-        padding: 0 15px;
+        padding: 0 3%;
     }
 }
 .circlesp__txt {
@@ -383,11 +390,11 @@
             padding: 0 15px;
         }
         @media (min-width: 481px) and (max-width: 767px) {
-            padding: 0 30px;
+            padding: 0 6%;
             font-size: 22px;
         }
         @media (max-width: 480px) {
-            padding: 0 15px;
+            padding: 0 3%;
             font-size: 14px;
         }
         &:nth-child(1) {
@@ -447,11 +454,11 @@
     margin-top: -6.9%;
     margin-bottom: 7.3%;
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        padding: 0 6%;
         margin-top: 1%;
     }
     @media (max-width: 480px) {
-        padding: 0 15px;
+        padding: 0 3%;
         margin-top: 1%;
     }
 }
@@ -481,10 +488,10 @@
             margin-right: 0 !important;
         }
         @media (min-width: 481px) and (max-width: 767px) {
-            padding: 0 30px;
+            padding: 0 6%;
         }
         @media (max-width: 480px) {
-            padding: 0 15px;
+            padding: 0 3%;
         }
     }
 }
@@ -501,10 +508,10 @@
         margin-right: 0 !important;
     }
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        padding: 0 6%;
     }
     @media (max-width: 480px) {
-        padding: 0 15px;
+        padding: 0 3%;
     }
     p {
         @media (min-width: 481px) and (max-width: 767px) {
@@ -523,13 +530,15 @@
         width: 100%;
         height: auto;
     }
-    @media (max-width: 767px) {
+    @media (min-width: 481px) and (max-width: 767px) {
         width: 100%;
-        padding: 0 30px;
         margin-top: 20px;
+        padding: 0 6%;
     }
     @media (max-width: 480px) {
+        width: 100%;
         margin-top: 10px;
+        padding: 0 3%;
     }
 }
 .info__title {
@@ -651,12 +660,12 @@
     margin-bottom: 4%;
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 28px;
-        padding: 0 30px;
+        padding: 0 6%;
         margin-top: 1%;
     }
     @media (max-width: 480px) {
         font-size: 22px;
-        padding: 0 15px;
+        padding: 0 3%;
         margin-top: 1%;
     }
 }
@@ -680,8 +689,8 @@
     height: auto;
     margin: 0 14.5%;
     @media (min-width: 481px) and (max-width: 767px) {
-        width: 90%;
-        margin: 0 5%;
+        width: 88%;
+        margin: 0 6%;
     }
     @media (max-width: 480px) {
         width: 92%;
@@ -693,22 +702,22 @@
     margin-top: 9.5%;
     color: #333333;
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        padding: 0 6%;
         font-size: 22px;
     }
     @media (max-width: 480px) {
-        padding: 0 15px;
+        padding: 0 3%;
         font-size: 14px;
         margin-top: 4.75%;
     }
 }
 .basic__link {
     @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0 30px;
+        padding: 0 6%;
         font-size: 22px;
     }
     @media (max-width: 480px) {
-        padding: 0 15px;
+        padding: 0 3%;
         font-size: 14px;
     }
     span {
@@ -757,12 +766,12 @@
     margin-top: -6.5%;
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 28px;
-        padding: 0 30px;
+        padding: 0 6%;
         margin-top: 1%;
     }
     @media (max-width: 480px) {
         font-size: 22px;
-        padding: 0 15px;
+        padding: 0 3%;
         margin-top: 1%;
     }
 }
@@ -774,11 +783,11 @@
     margin-top: 0.5%;
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 24px;
-        padding: 0 30px;
+        padding: 0 6%;
     }
     @media (max-width: 480px) {
         font-size: 18px;
-        padding: 0 15px;
+        padding: 0 3%;
     }
 }
 .utility__txt {
@@ -794,11 +803,11 @@
             }
         }
         @media (min-width: 481px) and (max-width: 767px) {
-            padding: 0 30px;
+            padding: 0 6%;
             font-size: 22px;
         }
         @media (max-width: 480px) {
-            padding: 0 15px;
+            padding: 0 3%;
             font-size: 14px;
         }
     }
