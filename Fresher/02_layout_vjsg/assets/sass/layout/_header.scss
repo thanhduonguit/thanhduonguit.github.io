@@ -243,6 +243,7 @@ header {
                 right: 80px;
                 top: 50%;
                 transform: translateY(-50%);
+                background-image: none;
                 @media only screen and (max-width: 1024px) {
                     padding: 9px;
                     position: static;

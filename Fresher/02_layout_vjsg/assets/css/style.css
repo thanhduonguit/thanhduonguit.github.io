@@ -296,14 +296,15 @@ header nav.navbar {
       position: absolute;
       right: 80px;
       top: 50%;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      background-image: none; }
       @media only screen and (max-width: 1024px) {
         /* line 241, ../sass/layout/_header.scss */
         header nav.navbar ul.navbar-nav li.nav-item.social {
           padding: 9px;
           position: static;
           transform: none; }
-          /* line 251, ../sass/layout/_header.scss */
+          /* line 252, ../sass/layout/_header.scss */
           header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(1) {
             margin-left: 6px; } }
       @media only screen and (max-width: 1024px) {
@@ -315,37 +316,37 @@ header nav.navbar {
         header nav.navbar ul.navbar-nav li.nav-item.social {
           right: 120px; } }
       @media only screen and (min-width: 1024.98px) {
-        /* line 263, ../sass/layout/_header.scss */
+        /* line 264, ../sass/layout/_header.scss */
         header nav.navbar ul.navbar-nav li.nav-item.social:hover {
           background: none; } }
-      /* line 267, ../sass/layout/_header.scss */
+      /* line 268, ../sass/layout/_header.scss */
       header nav.navbar ul.navbar-nav li.nav-item.social a {
         border-radius: 50%;
         display: inline-block; }
-        /* line 270, ../sass/layout/_header.scss */
+        /* line 271, ../sass/layout/_header.scss */
         header nav.navbar ul.navbar-nav li.nav-item.social a i {
           color: #ffffff;
           font-size: 15px; }
         @media only screen and (max-width: 1024px) {
-          /* line 275, ../sass/layout/_header.scss */
+          /* line 276, ../sass/layout/_header.scss */
           header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(1), header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(3) {
             padding: 5px 8px; }
-          /* line 279, ../sass/layout/_header.scss */
+          /* line 280, ../sass/layout/_header.scss */
           header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(2) {
             padding: 5px 11px; } }
-        /* line 283, ../sass/layout/_header.scss */
+        /* line 284, ../sass/layout/_header.scss */
         header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(1) {
           background: #5dabed;
           padding: 5px 11px; }
-        /* line 287, ../sass/layout/_header.scss */
+        /* line 288, ../sass/layout/_header.scss */
         header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(2) {
           background: #324d96;
           padding: 5px 13px; }
-        /* line 291, ../sass/layout/_header.scss */
+        /* line 292, ../sass/layout/_header.scss */
         header nav.navbar ul.navbar-nav li.nav-item.social a:nth-child(3) {
           background: #e63d5c;
           padding: 5px 11px; }
-/* line 299, ../sass/layout/_header.scss */
+/* line 300, ../sass/layout/_header.scss */
 header .color-bar {
   background: url("../images/img19.png") repeat-x left bottom 5px;
   padding-bottom: 16px; }
@@ -522,7 +523,6 @@ footer {
 /* line 133, ../sass/project/_page-all-about.scss */
 .section {
   width: 100%;
-  max-width: 1900px;
   margin: auto; }
 
 /* line 138, ../sass/project/_page-all-about.scss */
