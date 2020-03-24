@@ -771,7 +771,7 @@ footer {
 /* line 359, ../sass/project/_page-all-about.scss */
 .wave__bg {
   padding-top: 15.5%;
-  background: linear-gradient(transparent, transparent), url(../images/img22.svg) left bottom no-repeat;
+  background: linear-gradient(transparent, transparent), url(../images/img44.png) center center no-repeat;
   background-size: 100% auto;
   background-color: #dbebf2; }
   @media (max-width: 767px) {
@@ -780,7 +780,7 @@ footer {
       padding-top: 26.25%;
       background: linear-gradient(transparent, transparent), url(../images/img32.svg) left top no-repeat;
       background-color: #fff;
-      background-size: auto; } }
+      background-size: 100% 102%; } }
 
 /* line 371, ../sass/project/_page-all-about.scss */
 .wave__txt {
@@ -1134,7 +1134,7 @@ footer {
 /* line 672, ../sass/project/_page-all-about.scss */
 .basic__bg {
   padding-top: 15.6%;
-  background: linear-gradient(transparent, transparent), url(../images/img24.svg) left top no-repeat;
+  background: linear-gradient(transparent, transparent), url(../images/img45.png) center center no-repeat;
   background-size: 100% auto;
   background-color: #FFF !important; }
 
