@@ -43,6 +43,11 @@
     img {
         max-width: 100%;
         height: auto;
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 .access__txt {
@@ -114,17 +119,22 @@
     width: 56%;
     margin: 0 auto;
     margin-top: 3%;
-    @media (min-width: 481px) and (max-width: 767px) {
+    // @media (min-width: 481px) and (max-width: 767px) {
+    //     margin-top: 5%;
+    //     width: 100%;
+    // }
+    @media (max-width: 767px) {
         margin-top: 5%;
-        width: 100%;
-    }
-    @media (max-width: 480px) {
-        margin-top: 2.5%;
         width: 100%;
     }
     img {
         max-width: 100%;
         height: auto;
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 .group__access {
