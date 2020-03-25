@@ -13,7 +13,7 @@
     font-weight: bold;
     text-align: center;
     padding-top: 16.6%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     color: #333333;
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 30px;
@@ -738,7 +738,7 @@
 }
 .img__animate--1 {
     @media (min-width: 1401px) {
-        top: 449px;
+        top: 490px;
         left: -74%;
         width: 78%;
     }
@@ -750,7 +750,7 @@
 }
 .img__animate--2 {
     @media (min-width: 1401px) {
-        top: 674px;
+        top: 695px;
         left: -25%;
         width: 60%;  
     }
@@ -762,9 +762,9 @@
 }
 .img__animate--3 {
     @media (min-width: 1401px) {
-        top: 890px;
-        left: -33%;
-        width: 60%; 
+        top: 918px;
+        left: -36%;
+        width: 60%;
     }
     @media (min-width: 1100px) and (max-width: 1400px) {
         top: 821px;
