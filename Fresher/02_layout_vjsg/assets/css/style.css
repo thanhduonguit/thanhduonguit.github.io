@@ -1538,14 +1538,14 @@ footer {
 /* line 80, ../sass/project/_page-access.scss */
 .access__bg {
   padding-top: 16%;
-  background: linear-gradient(transparent, transparent), url(../images/img37.svg) left bottom no-repeat;
+  background: linear-gradient(transparent, transparent), url(../images/img59.png) left bottom no-repeat;
   background-size: 100% auto;
   background-color: #dbebf2; }
   @media (max-width: 767px) {
     /* line 80, ../sass/project/_page-access.scss */
     .access__bg {
       padding-top: 20%;
-      background: linear-gradient(transparent, transparent), url(../images/img55.svg) left bottom no-repeat;
+      background: linear-gradient(transparent, transparent), url(../images/img60.png) left bottom no-repeat;
       background-size: 100% auto;
       background-color: #dbebf2; } }
 
