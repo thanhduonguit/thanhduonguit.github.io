@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: ArialMT, sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     color: #000;
 }
@@ -49,4 +49,8 @@ a {
 @font-face{
     font-family: DejaVuSans;
     src: url("../font/DejaVuSans.ttf");
+}
+@font-face{
+    font-family: "Arial";
+    src: url("../font/arial.ttf");
 }
