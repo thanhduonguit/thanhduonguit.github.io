@@ -1762,37 +1762,69 @@ footer {
     .border__none {
       padding-bottom: 9% !important; } }
 
-@media (min-width: 1401px) {
+@media (min-width: 1701px) {
   /* line 275, ../sass/project/_page-access.scss */
   .img__animate--6 {
     top: 255px;
     left: -79%;
     width: 51%; } }
-@media (min-width: 1100px) and (max-width: 1400px) {
+@media (min-width: 1401px) and (max-width: 1700px) {
   /* line 275, ../sass/project/_page-access.scss */
   .img__animate--6 {
-    top: 378px;
+    top: 255px;
+    left: -67%;
+    width: 50%; } }
+@media (min-width: 1101px) and (max-width: 1400px) {
+  /* line 275, ../sass/project/_page-access.scss */
+  .img__animate--6 {
+    top: 233px;
     left: -58%;
-    width: 60%; } }
+    width: 45%; } }
 
-/* line 287, ../sass/project/_page-access.scss */
+/* line 292, ../sass/project/_page-access.scss */
 .img__animate--7 {
   display: block !important;
-  position: absolute; }
-  @media (min-width: 1900px) {
-    /* line 287, ../sass/project/_page-access.scss */
+  position: absolute;
+  transform-origin: top right; }
+  @media (min-width: 1701px) {
+    /* line 292, ../sass/project/_page-access.scss */
     .img__animate--7 {
       top: 173px;
       right: -90%;
       width: 79%; } }
+  @media (min-width: 1401px) and (max-width: 1700px) {
+    /* line 292, ../sass/project/_page-access.scss */
+    .img__animate--7 {
+      top: 173px;
+      right: -78%;
+      width: 74%; } }
+  @media (min-width: 1101px) and (max-width: 1400px) {
+    /* line 292, ../sass/project/_page-access.scss */
+    .img__animate--7 {
+      top: 141px;
+      right: -68%;
+      width: 68%; } }
 
 /* line 312, ../sass/project/_page-access.scss */
 .img__animate--8 {
   display: block !important;
-  position: absolute; }
-  @media (min-width: 1900px) {
+  position: absolute;
+  transform-origin: top right; }
+  @media (min-width: 1701px) {
     /* line 312, ../sass/project/_page-access.scss */
     .img__animate--8 {
       top: 644px;
       right: -111%;
       width: 87%; } }
+  @media (min-width: 1401px) and (max-width: 1700px) {
+    /* line 312, ../sass/project/_page-access.scss */
+    .img__animate--8 {
+      top: 644px;
+      right: -84%;
+      width: 84%; } }
+  @media (min-width: 1100px) and (max-width: 1400px) {
+    /* line 312, ../sass/project/_page-access.scss */
+    .img__animate--8 {
+      top: 584px;
+      right: -81%;
+      width: 79%; } }

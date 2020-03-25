@@ -75,3 +75,6 @@ TweenMax.from(".js__animate--2", 1.5, {opacity: 0, rotation: -50, x: -700, delay
 TweenMax.from(".js__animate--3", 1.5, {opacity: 0, rotation: -50, x: -700, delay: 2.6});
 TweenMax.from(".js__animate--4", 1.5, {opacity: 0, rotation: -50, x: -700, delay: 3});
 TweenMax.from(".js__animate--5", 1.8, { x: 800, delay: 2}, 3);
+TweenMax.from(".js__animate--6", 1.8, { x: -800, delay: 1.5}, 3);
+TweenMax.from(".js__animate--7", 1.8, { x: 800, delay: 2}, 3);
+TweenMax.from(".js__animate--8", 1.5, {opacity: 0, rotation: -50, x: 700, delay: 1.8});

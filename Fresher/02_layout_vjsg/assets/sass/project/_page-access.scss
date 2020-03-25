@@ -273,64 +273,59 @@
     }
 }
 .img__animate--6 {
-    @media (min-width: 1401px) {
+    @media (min-width: 1701px) {
         top: 255px;
         left: -79%;
         width: 51%;
     }
-    @media (min-width: 1100px) and (max-width: 1400px) {
-        top: 378px;
+    @media (min-width: 1401px) and (max-width: 1700px) {
+        top: 255px;
+        left: -67%;
+        width: 50%;
+    }
+    @media (min-width: 1101px) and (max-width: 1400px) {
+        top: 233px;
         left: -58%;
-        width: 60%;
+        width: 45%;
     }
 }
 .img__animate--7 {
     display: block !important;
     position: absolute;
-    // transform-origin: top right;
-    @media (min-width: 1900px) {
+    transform-origin: top right;
+    @media (min-width: 1701px) {
         top: 173px;
         right: -90%;
         width: 79%;
     }
-    // @media (min-width: 1701px) and (max-width: 1899px) {
-    //     top: 483px;
-    //     right: -73%;
-    //     width: 60%;
-    // }
-    // @media (min-width: 1401px) and (max-width: 1700px) {
-    //     top: 483px;
-    //     right: -73%;
-    //     width: 71%;
-    // }
-    // @media (min-width: 1100px) and (max-width: 1400px) {
-    //     top: 450px;
-    //     right: -53%;
-    //     width: 60%;
-    // }
+    @media (min-width: 1401px) and (max-width: 1700px) {
+        top: 173px;
+        right: -78%;
+        width: 74%;
+    }
+    @media (min-width: 1101px) and (max-width: 1400px) {
+        top: 141px;
+        right: -68%;
+        width: 68%;
+    }
 }
 .img__animate--8 {
     display: block !important;
     position: absolute;
-    // transform-origin: top right;
-    @media (min-width: 1900px) {
+    transform-origin: top right;
+    @media (min-width: 1701px) {
         top: 644px;
         right: -111%;
         width: 87%;
     }
-    // @media (min-width: 1701px) and (max-width: 1899px) {
-    //     top: 483px;
-    //     right: -73%;
-    //     width: 60%;
-    // }
-    // @media (min-width: 1401px) and (max-width: 1700px) {
-    //     top: 483px;
-    //     right: -73%;
-    //     width: 71%;
-    // }
-    // @media (min-width: 1100px) and (max-width: 1400px) {
-    //     top: 450px;
-    //     right: -53%;
-    //     width: 60%;
-    // }
+    @media (min-width: 1401px) and (max-width: 1700px) {
+        top: 644px;
+        right: -84%;
+        width: 84%;
+    }
+    @media (min-width: 1100px) and (max-width: 1400px) {
+        top: 584px;
+        right: -81%;
+        width: 79%;
+    }
 }
