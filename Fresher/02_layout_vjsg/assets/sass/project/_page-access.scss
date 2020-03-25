@@ -208,6 +208,12 @@
     font-size: 26px;
     line-height: calc(51 / 26);
     font-weight: bold;
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 28px;
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
 }
 .group__txt {
     line-height: 2.125;
