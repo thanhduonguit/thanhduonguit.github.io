@@ -50,6 +50,10 @@ a {
 @font-face {
   font-family: "Arial";
   src: url("../font/arial.ttf"); }
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../font/Myriad Pro Regular.ttf");
+  font-weight: normal; }
 /* line 1, ../sass/layout/_layout.scss */
 .banner {
   position: relative;
@@ -167,7 +171,6 @@ a {
   .breadcrumb li {
     color: #666666;
     display: inline-block;
-    text-transform: uppercase;
     font-size: 16px;
     line-height: calc(34 / 16); }
     /* line 110, ../sass/layout/_layout.scss */
@@ -1858,3 +1861,259 @@ footer {
       top: 584px;
       right: -81%;
       width: 79%; } }
+
+/* line 1, ../sass/project/_page-modelroute.scss */
+.banner__model {
+  background: url(../images/img64.png) no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 25.8823529%; }
+  @media (max-width: 767px) {
+    /* line 1, ../sass/project/_page-modelroute.scss */
+    .banner__model {
+      background: url(../images/img65.png) no-repeat;
+      background-size: 100% 100%;
+      padding-bottom: 67.03125%; } }
+
+/* line 11, ../sass/project/_page-modelroute.scss */
+.model__title {
+  font-size: 50.5px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5.2%;
+  line-height: 1; }
+  /* line 18, ../sass/project/_page-modelroute.scss */
+  .model__title span {
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 22, ../sass/project/_page-modelroute.scss */
+  .model__title .day__trip {
+    position: relative;
+    background-color: #f44d5c;
+    color: #FFF;
+    font-size: 23px;
+    font-weight: bold;
+    flex-shrink: 1;
+    padding: 8px 10px; }
+    /* line 32, ../sass/project/_page-modelroute.scss */
+    .model__title .day__trip:after {
+      position: absolute;
+      content: '';
+      display: block;
+      border-style: solid;
+      width: 0;
+      border-color: transparent #f44d5c;
+      border-width: 7px 0 7px 12px;
+      right: -12px;
+      top: 14px; }
+
+/* line 45, ../sass/project/_page-modelroute.scss */
+.model__edit {
+  margin-top: 0; }
+
+/* line 48, ../sass/project/_page-modelroute.scss */
+.sup__model {
+  margin: 2% 0 3.5% 0; }
+
+/* line 51, ../sass/project/_page-modelroute.scss */
+.box__trip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%; }
+
+/* line 56, ../sass/project/_page-modelroute.scss */
+.trip__txt {
+  width: 62%;
+  height: 100%; }
+  /* line 59, ../sass/project/_page-modelroute.scss */
+  .trip__txt p {
+    line-height: 1.9;
+    color: #333333; }
+
+/* line 64, ../sass/project/_page-modelroute.scss */
+.trip__pic {
+  width: 35.73%;
+  height: 100%;
+  margin-top: -6%; }
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* line 64, ../sass/project/_page-modelroute.scss */
+    .trip__pic {
+      width: 100%; } }
+  @media (max-width: 480px) {
+    /* line 64, ../sass/project/_page-modelroute.scss */
+    .trip__pic {
+      width: 100%; } }
+  /* line 74, ../sass/project/_page-modelroute.scss */
+  .trip__pic img {
+    max-width: 100%;
+    height: auto; }
+    @media (max-width: 767px) {
+      /* line 74, ../sass/project/_page-modelroute.scss */
+      .trip__pic img {
+        width: 100%;
+        height: auto; } }
+
+/* line 83, ../sass/project/_page-modelroute.scss */
+.section__modelmap {
+  background: url(../images/img68.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 49.4118%; }
+  @media (max-width: 767px) {
+    /* line 83, ../sass/project/_page-modelroute.scss */
+    .section__modelmap {
+      background: url(../images/img69.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-bottom: 100%; } }
+
+/* line 95, ../sass/project/_page-modelroute.scss */
+.day__title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #f44d5c;
+  font-size: 26.46px;
+  line-height: 1;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 10.5%;
+  margin-bottom: 2.2%; }
+  /* line 108, ../sass/project/_page-modelroute.scss */
+  .day__title:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-style: solid;
+    width: 0;
+    border-width: 13px 7.5px 0 7.5px;
+    left: 50%;
+    top: 100%;
+    margin-left: -10.5px;
+    border-color: #f44d5c transparent; }
+
+/* line 121, ../sass/project/_page-modelroute.scss */
+.schedule__box {
+  display: flex;
+  width: 100%; }
+
+/* line 125, ../sass/project/_page-modelroute.scss */
+.fz-24 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+  padding: 13px 0; }
+
+/* line 131, ../sass/project/_page-modelroute.scss */
+.schedule__time {
+  width: 14.4%;
+  color: #FFF;
+  background-color: #333333;
+  text-align: center; }
+
+/* line 137, ../sass/project/_page-modelroute.scss */
+.schedule__go {
+  width: 85.6%;
+  background-color: #f2f2f2;
+  padding-left: 2%; }
+
+/* line 142, ../sass/project/_page-modelroute.scss */
+.schedule__herenow {
+  position: relative;
+  margin-top: 6.8%; }
+
+/* line 146, ../sass/project/_page-modelroute.scss */
+.schedule__local {
+  margin-top: 7%; }
+
+/* line 149, ../sass/project/_page-modelroute.scss */
+.here__now {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -4px;
+  left: -33px; }
+  /* line 155, ../sass/project/_page-modelroute.scss */
+  .here__now img {
+    width: 100%;
+    height: 100%; }
+
+/* line 160, ../sass/project/_page-modelroute.scss */
+.schedule__text {
+  width: 83.6%;
+  margin-left: 16.4%;
+  margin-top: 2.2%; }
+
+/* line 165, ../sass/project/_page-modelroute.scss */
+.schedule__txt {
+  color: #333333;
+  line-height: 1.6; }
+
+/* line 169, ../sass/project/_page-modelroute.scss */
+.schedule__link {
+  padding: 6px 10px;
+  background-color: #f44d5c;
+  display: inline-block;
+  margin-top: 2.6%;
+  color: #FFF; }
+
+/* line 176, ../sass/project/_page-modelroute.scss */
+.schedule__edit {
+  align-items: center; }
+  /* line 178, ../sass/project/_page-modelroute.scss */
+  .schedule__edit .schedule__go {
+    width: 59.558333%; }
+
+/* line 182, ../sass/project/_page-modelroute.scss */
+.schedule__img {
+  width: 26.041667%; }
+  /* line 184, ../sass/project/_page-modelroute.scss */
+  .schedule__img img {
+    max-width: 100%;
+    height: auto; }
+
+/* line 189, ../sass/project/_page-modelroute.scss */
+.mt-1 {
+  margin-top: 1%; }
+
+/* line 192, ../sass/project/_page-modelroute.scss */
+.text__edit {
+  width: 55.558333%;
+  margin-top: -2%; }
+
+/* line 197, ../sass/project/_page-modelroute.scss */
+.section__recommended {
+  background-color: #f2f2f2; }
+
+/* line 200, ../sass/project/_page-modelroute.scss */
+.recommended__title {
+  font-family: "Myriad Pro";
+  font-size: 40px;
+  text-align: center;
+  padding: 5% 0 4% 0; }
+
+/* line 206, ../sass/project/_page-modelroute.scss */
+.recommended__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%; }
+
+/* line 211, ../sass/project/_page-modelroute.scss */
+.recommended__item {
+  position: relative;
+  width: 23.488372%; }
+  /* line 214, ../sass/project/_page-modelroute.scss */
+  .recommended__item img {
+    max-width: 100%;
+    height: auto; }
+  /* line 218, ../sass/project/_page-modelroute.scss */
+  .recommended__item p {
+    position: absolute;
+    bottom: 0px;
+    padding: 13px 21px;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold; }
