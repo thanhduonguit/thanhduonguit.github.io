@@ -52,7 +52,7 @@ $(window).resize(function () {
     if($(this).width() >$(this).height()) {
         if($(this).width() <= 500) {
             $("header ul.navbar-nav").css({
-                "height" : "80vh",
+                // "height" : "80vh",
                 "overflow-y" : "auto",
                 "overflow-x" : "hidden"
             });
@@ -62,7 +62,7 @@ $(window).resize(function () {
 if($(window).innerWidth() > $(this).innerWidth()) {
     if($(window).innerWidth() <= 500) {
         $("header ul.navbar-nav").css({
-            "height" : "80vh",
+            // "height" : "80vh",
             "overflow-y" : "auto",
             "overflow-x" : "hidden"
         });
