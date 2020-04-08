@@ -25,9 +25,7 @@
         color: $white;
         font-size: 23px;
         font-weight: bold;
-        // width: 130px;
-        flex-shrink: 1;
-        // margin: 8px auto;
+        // flex-shrink: 1;
         padding: 8px 10px;
         &:after {
             position: absolute;
@@ -52,10 +50,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 4%;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 .trip__txt {
     width: 62%;
     height: 100%;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
     p {
         line-height: 1.9;
         color: #333333;
@@ -65,11 +69,8 @@
     width: 35.73%;
     height: 100%;
     margin-top: -6%;
-    @media (min-width: 481px) and (max-width: 767px) {
+    @media (max-width: 767px) {
         width: 100%;
-    }
-    @media (max-width: 480px) {
-        width: 100%;;
     }
     img {
         max-width: 100%;
@@ -152,6 +153,9 @@
     height: 64px;
     top: -4px;
     left: -33px;
+    @media (min-width: 768px) and (max-width: 1100px) {
+        left: -40px;
+    }
     img {
         width: 100%;
         height: 100%;
@@ -197,16 +201,48 @@
 .section__recommended {
     background-color: #f2f2f2;
 }
+.schedule__edit--2 {
+    align-items: center;
+    .schedule__go {
+        width: 47.370833%;
+    }
+    .schedule__supimg {
+        width: 11.5625%;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .schedule__bar {
+        width: 0.625%;
+        height: 56px;
+        background-color: #f2f2f2;
+    }
+}
+.section__day {
+    .day__title {
+        margin-top: 7.2%;
+    }
+}
+.mt-2 {
+    margin-top: 2%;
+}
+.mt-6 {
+    margin-top: 6%;
+}
+.schedule__last {
+    margin-bottom: 15%;
+}
 .recommended__title {
     font-family: "Myriad Pro";
     font-size: 40px;
     text-align: center;
-    padding: 5% 0 4% 0;
+    padding: 4% 0 2.4% 0
 }
 .recommended__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 .recommended__item {
     position: relative;

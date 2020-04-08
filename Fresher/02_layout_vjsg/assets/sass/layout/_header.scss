@@ -73,6 +73,10 @@ header {
         @media only screen and (max-width: 1024px) {
             display: block;
         }
+        @media (max-width: 767px) {
+            padding: 26px 15px;
+            font-size: 18px;
+        }
     }
     .pageTop {
         font-family: BebasNeue;
@@ -113,6 +117,11 @@ header {
             @media only screen and (min-width: 1024.98px) {
                 right: 0!important;
             }
+            // @media only screen and (max-width: 767px) {
+            //     height: 90vw;
+            //     bottom: 0;
+            //     overflow-y: auto;
+            // }
             text-align: center;
             position: relative;
             li.nav-item.active {
@@ -158,6 +167,7 @@ header {
                             height: 1px;
                             background: white;
                             transform: rotate(45deg);
+                            margin-bottom: -1px;
                         }
                         .bar2 {
                             width: 25px;
@@ -285,14 +295,23 @@ header {
                     &:nth-child(1) {
                         background: $bgsSkyBlue;
                         padding: 5px 11px;
+                        @media only screen and (max-width: 1024px) {
+                            padding: 8px 11px;
+                        }
                     }
                     &:nth-child(2) {
                         background: $bgBlueFacebook;
                         padding: 5px 13px;
+                        @media only screen and (max-width: 1024px) {
+                            padding: 8px 14px;
+                        }
                     }
                     &:nth-child(3) {
                         background: $bgPink;
                         padding: 5px 11px;
+                        @media only screen and (max-width: 1024px) {
+                            padding: 8px 11px;
+                        }
                     }
                 }
             }
