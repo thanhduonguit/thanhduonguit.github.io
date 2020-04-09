@@ -17,19 +17,15 @@ a {
 .clear-both {
     clear: both;
 }
-@font-face {
-	font-family: 'BebasNeue Book';
-	font-style: normal;
-	src: url('../font/BebasNeue\ Book.ttf') format('woff2');
-}
 @font-face{
     font-family: BebasNeue;
-    src: url("../font/BebasNeue-Regular.ttf");
+    src: url("../font/BebasNeue-Regular2.ttf");
     font-weight: normal;
 }
 @font-face{
     font-family: BebasNeueBook;
-    src: url("../font/BebasNeue-Book.ttf");
+    src: url("../font/DejaVuSans.ttf");
+    font-weight: normal;
 }
 
 @font-face{

@@ -23,16 +23,13 @@ a {
   clear: both; }
 
 @font-face {
-  font-family: 'BebasNeue Book';
-  font-style: normal;
-  src: url("../font/BebasNeue Book.ttf") format("woff2"); }
-@font-face {
   font-family: BebasNeue;
-  src: url("../font/BebasNeue-Regular.ttf");
+  src: url("../font/BebasNeue-Regular2.ttf");
   font-weight: normal; }
 @font-face {
   font-family: BebasNeueBook;
-  src: url("../font/BebasNeue-Book.ttf"); }
+  src: url("../font/DejaVuSans.ttf");
+  font-weight: normal; }
 @font-face {
   font-family: ArialBold;
   src: url("../font/arial-mt-bold.ttf");
@@ -77,7 +74,7 @@ a {
     letter-spacing: 2px;
     color: #FFF;
     font-weight: 400;
-    font-family: 'BebasNeue Book'; }
+    font-family: BebasNeueBook; }
     @media (min-width: 768px) and (max-width: 1099px) {
       /* line 11, ../sass/layout/_layout.scss */
       .banner p {
