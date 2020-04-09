@@ -117,11 +117,10 @@ header {
             @media only screen and (min-width: 1024.98px) {
                 right: 0!important;
             }
-            // @media only screen and (max-width: 767px) {
-            //     height: 90vw;
-            //     bottom: 0;
-            //     overflow-y: auto;
-            // }
+            @media (max-width: 767px) {
+                bottom: 0;
+                overflow-y: auto;
+            }
             text-align: center;
             position: relative;
             li.nav-item.active {
