@@ -298,31 +298,32 @@ header {
         font-weight: 400;
         font-size: 14px;
         padding: 12px 13px;
-        color: #000; }
-        /* line 320, styles.scss */
+        color: #000;
+        cursor: pointer; }
+        /* line 321, styles.scss */
         header .hubstaff-navbar .navbar-collapse .hubstaff-nav-link:hover {
           color: #1F95FF; }
-      /* line 324, styles.scss */
+      /* line 325, styles.scss */
       header .hubstaff-navbar .navbar-collapse .hs-navbar-nav > li {
         display: flex;
         align-items: stretch; }
         @media (min-width: 992px) {
-          /* line 324, styles.scss */
+          /* line 325, styles.scss */
           header .hubstaff-navbar .navbar-collapse .hs-navbar-nav > li {
             align-items: center; } }
         @media (max-width: 991px) {
-          /* line 324, styles.scss */
+          /* line 325, styles.scss */
           header .hubstaff-navbar .navbar-collapse .hs-navbar-nav > li {
             width: 100%; } }
       @media (min-width: 992px) {
-        /* line 334, styles.scss */
+        /* line 335, styles.scss */
         header .hubstaff-navbar .navbar-collapse .hs-navbar-nav > li > a {
           display: flex;
           align-items: center; } }
-      /* line 340, styles.scss */
+      /* line 341, styles.scss */
       header .hubstaff-navbar .navbar-collapse .dropdown {
         position: relative; }
-      /* line 343, styles.scss */
+      /* line 344, styles.scss */
       header .hubstaff-navbar .navbar-collapse .sign-in {
         width: 100%;
         padding: 12px 13px;
@@ -330,27 +331,27 @@ header {
         margin-left: 20px;
         color: #000; }
         @media (max-width: 991px) {
-          /* line 343, styles.scss */
+          /* line 344, styles.scss */
           header .hubstaff-navbar .navbar-collapse .sign-in {
             margin-left: 0; } }
-        /* line 352, styles.scss */
+        /* line 353, styles.scss */
         header .hubstaff-navbar .navbar-collapse .sign-in:hover {
           color: #1F95FF; }
-      /* line 356, styles.scss */
+      /* line 357, styles.scss */
       header .hubstaff-navbar .navbar-collapse .mr-auto {
         margin-right: auto !important; }
-    /* line 360, styles.scss */
+    /* line 361, styles.scss */
     header .hubstaff-navbar .navbar-collapse.show__menu {
       display: block; }
-    /* line 363, styles.scss */
+    /* line 364, styles.scss */
     header .hubstaff-navbar .header-menu-btn {
       display: flex;
       align-items: center; }
       @media (min-width: 992px) {
-        /* line 363, styles.scss */
+        /* line 364, styles.scss */
         header .hubstaff-navbar .header-menu-btn {
           display: none; } }
-    /* line 370, styles.scss */
+    /* line 371, styles.scss */
     header .hubstaff-navbar .header-btn {
       width: 100%;
       color: #fff;
@@ -364,17 +365,17 @@ header {
       text-align: center;
       line-height: 1.42857;
       border-radius: 2px; }
-      /* line 383, styles.scss */
+      /* line 384, styles.scss */
       header .hubstaff-navbar .header-btn:hover {
         background-color: blue; }
     @media (max-width: 992px) {
-      /* line 387, styles.scss */
+      /* line 388, styles.scss */
       header .hubstaff-navbar .hide-sp {
         display: none; } }
-    /* line 392, styles.scss */
+    /* line 393, styles.scss */
     header .hubstaff-navbar .main-menu {
       margin-left: 20px; }
-      /* line 394, styles.scss */
+      /* line 395, styles.scss */
       header .hubstaff-navbar .main-menu .menu__btn {
         position: relative;
         width: 35px;
@@ -382,7 +383,7 @@ header {
         margin: 0 auto;
         transition: 0.5s ease-in-out;
         cursor: pointer; }
-        /* line 402, styles.scss */
+        /* line 403, styles.scss */
         header .hubstaff-navbar .main-menu .menu__btn div {
           position: absolute;
           display: block;
@@ -393,34 +394,34 @@ header {
           transition: 0.25s ease-in-out;
           border: none;
           outline: none; }
-          /* line 412, styles.scss */
+          /* line 413, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn div:nth-child(1) {
             top: 0px; }
-          /* line 415, styles.scss */
+          /* line 416, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn div:nth-child(2) {
             top: 10px; }
-          /* line 418, styles.scss */
+          /* line 419, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn div:nth-child(3) {
             top: 10px; }
-          /* line 421, styles.scss */
+          /* line 422, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn div:nth-child(4) {
             padding: 1.7px 0;
             top: 20px; }
-        /* line 427, styles.scss */
+        /* line 428, styles.scss */
         header .hubstaff-navbar .main-menu .menu__btn.show__menu div {
           height: 2px !important; }
-          /* line 430, styles.scss */
+          /* line 431, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn.show__menu div:nth-child(1) {
             top: 18px;
             width: 0%;
             left: 50%; }
-          /* line 435, styles.scss */
+          /* line 436, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn.show__menu div:nth-child(2) {
             transform: rotate(45deg); }
-          /* line 438, styles.scss */
+          /* line 439, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn.show__menu div:nth-child(3) {
             transform: rotate(-45deg); }
-          /* line 441, styles.scss */
+          /* line 442, styles.scss */
           header .hubstaff-navbar .main-menu .menu__btn.show__menu div:nth-child(4) {
             top: 18px;
             width: 0%;

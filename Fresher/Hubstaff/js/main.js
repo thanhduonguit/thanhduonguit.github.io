@@ -7,7 +7,8 @@ $(document).ready(function(){
 
 
     $(".hs-navbar-dropdown").click(function () {
-        $(".dropdown-menu").addClass("active");
+        // $(this).find(".dropdown-menu").removeClass("active");
+        $(".dropdown-menu").toggleClass("active");
     });
 
 	$('ul.js-nav-tab li').click(function(){
