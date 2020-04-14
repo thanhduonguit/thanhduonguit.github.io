@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    // Handle click to toggle main menu
+    $(".js__menu__btn").click(function () {
+        $(".js__menu__btn").toggleClass("show__menu");
+        $(".navbar-collapse").toggleClass("show__menu");
+    });
+
+
+    $(".hs-navbar-dropdown").click(function () {
+        $(".dropdown-menu").addClass("active");
+    });
+
 	$('ul.js-nav-tab li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 		$('ul.js-nav-tab li').removeClass('active');
