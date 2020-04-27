@@ -1,0 +1,155 @@
+/* line 1, styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 6, styles.scss */
+body {
+  font-size: 16px;
+  color: #000; }
+
+/* line 10, styles.scss */
+ul, li {
+  list-style-type: none; }
+
+/* line 13, styles.scss */
+a {
+  text-decoration: none; }
+
+/* line 16, styles.scss */
+header {
+  display: flex !important;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  left: 0;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  z-index: 9;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(176, 190, 197, 0.24); }
+  /* line 30, styles.scss */
+  header .header-logo img {
+    max-height: 30px; }
+  /* line 35, styles.scss */
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 38, styles.scss */
+    header nav ul li {
+      margin: 0 20px;
+      padding: 10px 15px;
+      border-radius: 5px; }
+      /* line 42, styles.scss */
+      header nav ul li:hover {
+        background-color: blue;
+        cursor: pointer; }
+        /* line 45, styles.scss */
+        header nav ul li:hover a {
+          color: #fff; }
+      /* line 49, styles.scss */
+      header nav ul li a {
+        color: blue; }
+    /* line 53, styles.scss */
+    header nav ul li.active {
+      background-color: blue; }
+      /* line 55, styles.scss */
+      header nav ul li.active a {
+        color: #fff; }
+
+/* line 62, styles.scss */
+.container {
+  width: 100%;
+  padding-top: 70px; }
+
+/* line 66, styles.scss */
+.box-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+/* line 71, styles.scss */
+.box-left {
+  position: fixed;
+  top: 70px;
+  width: 15%;
+  background: #6c757e;
+  min-height: 100vh;
+  height: auto; }
+
+/* line 79, styles.scss */
+.box-right {
+  width: 85%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #c1c5c9;
+  padding: 20px 15px;
+  margin-left: 15%; }
+
+/* line 87, styles.scss */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+/* line 92, styles.scss */
+.section-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 96, styles.scss */
+.section-options {
+  width: 15%; }
+  /* line 98, styles.scss */
+  .section-options h1 {
+    width: 100%;
+    background-color: #fff; }
+
+/* line 105, styles.scss */
+#example_filter,
+#example2_filter {
+  display: none; }
+
+/* line 109, styles.scss */
+#example_info,
+#example2_info {
+  display: none; }
+
+/* line 113, styles.scss */
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: none !important; }
+
+/* line 116, styles.scss */
+.section {
+  margin-bottom: 25px; }
+
+/* line 119, styles.scss */
+.section-table {
+  width: 85%;
+  padding: 0 15px;
+  background-color: #fff; }
+  /* line 123, styles.scss */
+  .section-table .table-padding {
+    padding: 20px 0; }
+  /* line 126, styles.scss */
+  .section-table table {
+    padding: 0 15px; }
+    /* line 130, styles.scss */
+    .section-table table thead th {
+      border-top: 1px solid #ddd !important;
+      border-bottom: 1px solid #ddd !important; }
+    /* line 134, styles.scss */
+    .section-table table thead .sorting_asc {
+      background-image: none; }
+    /* line 137, styles.scss */
+    .section-table table thead .sorting {
+      background-image: none; }
+    /* line 145, styles.scss */
+    .section-table table tbody tr:nth-child(odd) td:first-child {
+      background-color: #f9f9f9 !important; }
+    /* line 152, styles.scss */
+    .section-table table tbody tr:nth-child(even) td:first-child {
+      background-color: #fff !important; }

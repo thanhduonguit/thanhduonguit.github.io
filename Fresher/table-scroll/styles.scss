@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    color: #000;
+}
+ul, li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex !important;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    left: 0;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    z-index: 9;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(176,190,197,.24);
+    .header-logo {
+        img {
+            max-height: 30px;
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin: 0 20px;
+                padding: 10px 15px;
+                border-radius: 5px;
+                &:hover {
+                    background-color: blue;
+                    cursor: pointer;
+                    a {
+                        color: #fff;
+                    }
+                }
+                a {
+                    color: blue;
+                }
+            }
+            li.active {
+                background-color: blue;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.container {
+    width: 100%;
+    padding-top: 70px;
+}
+.box-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box-left {
+    position: fixed;
+    top: 70px;
+    width: 15%;
+    background: #6c757e;
+    min-height: 100vh;
+    height: auto;
+}
+.box-right {
+    width: 85%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #c1c5c9;
+    padding: 20px 15px;
+    margin-left: 15%;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-options {
+    width: 15%;
+    h1 {
+        width: 100%;
+        background-color: #fff;
+    }
+}
+
+// Table custom
+#example_filter,
+#example2_filter {
+    display: none;
+}
+#example_info,
+#example2_info {
+    display: none;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: none !important;
+}
+.section {
+    margin-bottom: 25px;
+}
+.section-table {
+    width: 85%;
+    padding: 0 15px;
+    background-color: #fff;
+    .table-padding {
+        padding: 20px 0;
+    }
+    table {
+        padding: 0 15px;
+        // margin: 20px 0;
+        thead {
+            th {
+                border-top: 1px solid #ddd !important;
+                border-bottom: 1px solid #ddd !important;
+            }
+            .sorting_asc {
+                background-image: none;
+            }
+            .sorting {
+                background-image: none;
+            }
+        }
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    td {
+                        &:first-child {
+                            background-color: #f9f9f9 !important;
+                        }
+                    }
+                }
+                &:nth-child(even) {
+                    td {
+                        &:first-child {
+                            background-color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
