@@ -28,7 +28,7 @@ header {
     box-shadow: 0 4px 8px rgba(176,190,197,.24);
     .header-logo {
         img {
-            max-height: 30px;
+            max-height: 22px;
         }
     }
     nav {
@@ -130,6 +130,11 @@ header {
             th {
                 border-top: 1px solid #ddd !important;
                 border-bottom: 1px solid #ddd !important;
+                text-align: left;
+                padding: 10px 18px 10px 10px !important;
+                &:first-child {
+                    width: 5% !important;
+                }
             }
             .sorting_asc {
                 background-image: none;
@@ -152,6 +157,12 @@ header {
                         &:first-child {
                             background-color: #fff !important;
                         }
+                    }
+                }
+                td {
+                    text-align: left;
+                    &:first-child {
+                        width: 5% !important;
                     }
                 }
             }
