@@ -141,26 +141,25 @@ header {
     .section-table table thead th {
       border-top: 1px solid #ddd !important;
       border-bottom: 1px solid #ddd !important;
-      text-align: left;
-      padding: 10px 18px 10px 10px !important; }
-      /* line 135, styles.scss */
+      text-align: left; }
+      /* line 134, styles.scss */
       .section-table table thead th:first-child {
         width: 5% !important; }
-    /* line 139, styles.scss */
+    /* line 138, styles.scss */
     .section-table table thead .sorting_asc {
       background-image: none; }
-    /* line 142, styles.scss */
+    /* line 141, styles.scss */
     .section-table table thead .sorting {
       background-image: none; }
-    /* line 150, styles.scss */
+    /* line 149, styles.scss */
     .section-table table tbody tr:nth-child(odd) td:first-child {
       background-color: #f9f9f9 !important; }
-    /* line 157, styles.scss */
+    /* line 156, styles.scss */
     .section-table table tbody tr:nth-child(even) td:first-child {
       background-color: #fff !important; }
-    /* line 162, styles.scss */
+    /* line 161, styles.scss */
     .section-table table tbody tr td {
       text-align: left; }
-      /* line 164, styles.scss */
+      /* line 163, styles.scss */
       .section-table table tbody tr td:first-child {
         width: 5% !important; }
