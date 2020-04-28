@@ -1,21 +1,32 @@
 $(document).ready(function() {
+
+    // Handle scroll vertical of data table
     $('#example').DataTable( {
         "scrollY":        "600px",
         "scrollCollapse": true,
         "paging":         false
     });
-
     $('#example2').DataTable( {
         "scrollY":        "600px",
         "scrollCollapse": true,
         "paging":         false
     });
 
+    // Handle click active menu
     $('ul.js-nav li').click(function(){
-		var tab_id = $(this).attr('data-tab');
 		$('ul.js-nav li').removeClass('active');
-		$('.js-tab-content').removeClass('active');
         $(this).addClass('active');
-        $("#"+tab_id).addClass('active');
+    });
+
+    // Handle click scroll to table content
+    $('.rika-tab').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#rika-tab").offset().top
+        }, 600);
+    });
+    $('.syakai-tab').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#syakai-tab").offset().top
+        }, 600);
     });
 });
