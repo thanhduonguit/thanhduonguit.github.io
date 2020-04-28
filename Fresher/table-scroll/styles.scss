@@ -29,7 +29,7 @@ header {
     box-shadow: 0 4px 8px rgba(176,190,197,.24);
     .header-logo {
         img {
-            max-height: 22px;
+            max-height: 40px;
         }
     }
     nav {
@@ -103,11 +103,13 @@ header {
 
 // Table custom
 #example_filter,
-#example2_filter {
+#example2_filter,
+#example3_filter {
     display: none;
 }
 #example_info,
-#example2_info {
+#example2_info,
+#example3_info {
     display: none;
 }
 .dataTables_wrapper.no-footer .dataTables_scrollBody {

@@ -34,7 +34,7 @@ header {
   box-shadow: 0 4px 8px rgba(176, 190, 197, 0.24); }
   /* line 31, styles.scss */
   header .header-logo img {
-    max-height: 22px; }
+    max-height: 40px; }
   /* line 36, styles.scss */
   header nav ul {
     display: flex;
@@ -110,56 +110,58 @@ header {
 
 /* line 105, styles.scss */
 #example_filter,
-#example2_filter {
+#example2_filter,
+#example3_filter {
   display: none; }
 
-/* line 109, styles.scss */
+/* line 110, styles.scss */
 #example_info,
-#example2_info {
+#example2_info,
+#example3_info {
   display: none; }
 
-/* line 113, styles.scss */
+/* line 115, styles.scss */
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
   border-bottom: none !important; }
 
-/* line 116, styles.scss */
+/* line 118, styles.scss */
 .section {
   margin-bottom: 25px; }
 
-/* line 119, styles.scss */
+/* line 121, styles.scss */
 .section-table {
   width: 85%;
   padding: 0 15px;
   background-color: #fff; }
-  /* line 123, styles.scss */
+  /* line 125, styles.scss */
   .section-table .table-padding {
     padding: 20px 0; }
-  /* line 126, styles.scss */
+  /* line 128, styles.scss */
   .section-table table {
     padding: 0 15px; }
-    /* line 130, styles.scss */
+    /* line 132, styles.scss */
     .section-table table thead th {
       border-top: 1px solid #ddd !important;
       border-bottom: 1px solid #ddd !important;
       text-align: left; }
-      /* line 134, styles.scss */
+      /* line 136, styles.scss */
       .section-table table thead th:first-child {
         width: 5% !important; }
-    /* line 138, styles.scss */
+    /* line 140, styles.scss */
     .section-table table thead .sorting_asc {
       background-image: none; }
-    /* line 141, styles.scss */
+    /* line 143, styles.scss */
     .section-table table thead .sorting {
       background-image: none; }
-    /* line 149, styles.scss */
+    /* line 151, styles.scss */
     .section-table table tbody tr:nth-child(odd) td:first-child {
       background-color: #f9f9f9 !important; }
-    /* line 156, styles.scss */
+    /* line 158, styles.scss */
     .section-table table tbody tr:nth-child(even) td:first-child {
       background-color: #fff !important; }
-    /* line 161, styles.scss */
+    /* line 163, styles.scss */
     .section-table table tbody tr td {
       text-align: left; }
-      /* line 163, styles.scss */
+      /* line 165, styles.scss */
       .section-table table tbody tr td:first-child {
         width: 5% !important; }

@@ -11,6 +11,11 @@ $(document).ready(function() {
         "scrollCollapse": true,
         "paging":         false
     });
+    $('#example3').DataTable( {
+        "scrollY":        "600px",
+        "scrollCollapse": true,
+        "paging":         false
+    });
 
     // Handle click active menu
     $('ul.js-nav li').click(function(){
@@ -27,6 +32,11 @@ $(document).ready(function() {
     $('.syakai-tab').click(function(){
         $('html, body').animate({
             scrollTop: $("#syakai-tab").offset().top - 80
+        }, 600);
+    });
+    $('.tab-03').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#tab-03").offset().top - 80
         }, 600);
     });
 });
