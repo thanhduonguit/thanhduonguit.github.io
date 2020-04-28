@@ -1,17 +1,7 @@
 $(document).ready(function() {
 
     // Handle scroll vertical of data table
-    $('#example').DataTable( {
-        "scrollY":        "600px",
-        "scrollCollapse": true,
-        "paging":         false
-    });
-    $('#example2').DataTable( {
-        "scrollY":        "600px",
-        "scrollCollapse": true,
-        "paging":         false
-    });
-    $('#example3').DataTable( {
+    $('#example, #example2, #example3').DataTable( {
         "scrollY":        "600px",
         "scrollCollapse": true,
         "paging":         false
