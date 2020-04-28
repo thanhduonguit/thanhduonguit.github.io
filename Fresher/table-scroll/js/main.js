@@ -21,12 +21,12 @@ $(document).ready(function() {
     // Handle click scroll to table content
     $('.rika-tab').click(function(){
         $('html, body').animate({
-            scrollTop: $("#rika-tab").offset().top
+            scrollTop: $("#rika-tab").offset().top - 80
         }, 600);
     });
     $('.syakai-tab').click(function(){
         $('html, body').animate({
-            scrollTop: $("#syakai-tab").offset().top
+            scrollTop: $("#syakai-tab").offset().top - 80
         }, 600);
     });
 });
