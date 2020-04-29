@@ -1,3 +1,12 @@
+// Function click to croll table
+function clickToScrollTable(tableID) {
+    $('.section-0' + tableID).click(function(){
+        $('html, body').animate({
+            scrollTop: $("#section-0" + tableID).offset().top - 59
+        }, 600);
+    });
+}
+
 $(document).ready(function() {
 
     // Handle click active menu
@@ -7,21 +16,9 @@ $(document).ready(function() {
     });
 
     // Handle click scroll to table content
-    $('.section-01').click(function(){
-        $('html, body').animate({
-            scrollTop: $("#table-01").offset().top - 132
-        }, 600);
-    });
-    $('.section-02').click(function(){
-        $('html, body').animate({
-            scrollTop: $("#table-02").offset().top - 132
-        }, 600);
-    });
-    $('.section-03').click(function(){
-        $('html, body').animate({
-            scrollTop: $("#table-03").offset().top - 132
-        }, 600);
-    });
+    clickToScrollTable(1);
+    clickToScrollTable(2);
+    clickToScrollTable(3);
 
     // Handle croll fixed table
     $(window).scroll(function(){
