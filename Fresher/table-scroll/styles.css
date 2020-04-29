@@ -165,3 +165,7 @@ table tbody td {
   table tbody td:first-child {
     width: 3%;
     text-align: center; }
+
+/* line 173, styles.scss */
+.content-test {
+  min-height: 50vh; }
