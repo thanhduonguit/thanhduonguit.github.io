@@ -34,18 +34,18 @@ $(document).ready(function() {
         timer = setTimeout(function() {
             thisPosition = $(window).scrollTop();
             if (thisPosition < height01) {
-                $("#section-01").addClass('active');
-                $("#section-02").removeClass('active');
-                $("#section-03").removeClass('active');
+                $("#section-01, .section-01").addClass('active');
+                $("#section-02, .section-02").removeClass('active');
+                $("#section-03, .section-03").removeClass('active');
             } else if (height01 <= thisPosition < (height01 + height02)) {
-                $("#section-02").addClass('active');
-                $("#section-01").removeClass('active');
-                $("#section-03").removeClass('active');
+                $("#section-02, .section-02").addClass('active');
+                $("#section-01, .section-01").removeClass('active');
+                $("#section-03, .section-03").removeClass('active');
             } 
             if (thisPosition >= (height01 + height02)) {
-                $("#section-03").addClass('active');
-                $("#section-01").removeClass('active');
-                $("#section-02").removeClass('active');
+                $("#section-03, .section-03").addClass('active');
+                $("#section-01, .section-01").removeClass('active');
+                $("#section-02, .section-02").removeClass('active');
             }
         });
     });
